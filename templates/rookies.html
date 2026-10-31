@@ -22,6 +22,7 @@
       <button class="fbtn" data-f="0">一年級 <em>{{ rookies.counts.rookies }}</em></button>
       <button class="fbtn" data-f="1">二年級 <em>{{ rookies.counts.sophomores }}</em></button>
     </div>
+    <div class="table-scroll">
     <table class="board" id="board">
       <thead>
         <tr>
@@ -58,6 +59,7 @@
       {% endfor %}
       </tbody>
     </table>
+    </div>
     <p class="note">數據為每 36 分鐘。GS = PTS + 0.4×FGM − 0.7×FGA − 0.4×(FTA−FT) + 0.7×OREB + 0.3×DREB + STL + 0.7×AST + 0.7×BLK − 0.4×PF − TOV。</p>
   </div>
 
@@ -85,6 +87,7 @@
     {% endif %}
 
     <h2 class="sec" style="margin-top:2rem">觀察名單 <span class="hint">樣本不足</span></h2>
+    <div class="table-scroll">
     <table class="board small">
       <thead><tr><th>球員</th><th>年級</th><th>G</th><th>MIN</th><th>GS/36</th></tr></thead>
       <tbody>
@@ -97,6 +100,7 @@
       {% endfor %}
       </tbody>
     </table>
+    </div>
   </aside>
 </div>
 

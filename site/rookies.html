@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>新人榜 · HoopsLab</title>
 <meta name="description" content="NBA 賽前預測：依實際會上場球員推算兩隊得分級距與不讓分勝率，附新人（一年級＋二年級）每 36 分鐘排行榜。">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=layout-large-20261031">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏀</text></svg>">
 </head>
 <body>
@@ -73,6 +73,7 @@
       <button class="fbtn" data-f="0">一年級 <em>22</em></button>
       <button class="fbtn" data-f="1">二年級 <em>26</em></button>
     </div>
+    <div class="table-scroll">
     <table class="board" id="board">
       <thead>
         <tr>
@@ -716,6 +717,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
     <p class="note">數據為每 36 分鐘。GS = PTS + 0.4×FGM − 0.7×FGA − 0.4×(FTA−FT) + 0.7×OREB + 0.3×DREB + STL + 0.7×AST + 0.7×BLK − 0.4×PF − TOV。</p>
   </div>
 
@@ -905,6 +907,7 @@
     </ol>
 
     <h2 class="sec" style="margin-top:2rem">觀察名單 <span class="hint">樣本不足</span></h2>
+    <div class="table-scroll">
     <table class="board small">
       <thead><tr><th>球員</th><th>年級</th><th>G</th><th>MIN</th><th>GS/36</th></tr></thead>
       <tbody>
@@ -970,6 +973,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
   </aside>
 </div>
 
