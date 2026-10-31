@@ -1,12 +1,12 @@
 {
- "updated_utc": "2026-10-31T03:11:52+00:00",
- "updated_tpe": "2026-10-31 11:11",
- "game_date": "2026-10-30",
+ "updated_utc": "2026-10-31T11:41:59+00:00",
+ "updated_tpe": "2026-10-31 19:41",
+ "game_date": "2026-10-31",
  "season": "2026-27",
  "league": {
-  "ppg": 114.27,
-  "poss": 103.83,
-  "ortg": 110.05,
+  "ppg": 113.73,
+  "poss": 103.34,
+  "ortg": 110.06,
   "ts": 0.57,
   "games_played": 6.0
  },
@@ -32,7 +32,7 @@
   {
    "name": "Yahoo Sports",
    "role": "傷病報告",
-   "count": 102,
+   "count": 92,
    "ok": true
   },
   {
@@ -46,41 +46,41 @@
  "injury_counts": {
   "ESPN": 85,
   "CBS": 86,
-  "Yahoo": 102
+  "Yahoo": 92
  },
- "conflicts": 6,
- "players_tracked": 188,
+ "conflicts": 12,
+ "players_tracked": 178,
  "games": [
   {
-   "event_id": "401909277",
-   "date_utc": "2026-10-30T23:00Z",
-   "status": "STATUS_FINAL",
-   "venue": "Capital One Arena",
+   "event_id": "401909896",
+   "date_utc": "2026-10-31T19:00Z",
+   "status": "STATUS_SCHEDULED",
+   "venue": "Delta Center",
    "home": {
     "team": {
-     "id": "27",
-     "abbrev": "WSH",
-     "name": "Washington Wizards",
-     "short": "Wizards",
-     "location": "Washington",
-     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/wsh.png",
-     "color": "#e31837"
+     "id": "26",
+     "abbrev": "UTAH",
+     "name": "Utah Jazz",
+     "short": "Jazz",
+     "location": "Utah",
+     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
+     "color": "#4e008e"
     },
-    "pred_pts": 111.1,
-    "sigma": 11.3,
-    "ortg": 110.4,
+    "pred_pts": 99.8,
+    "sigma": 12.7,
+    "ortg": 109.5,
     "drtg_opp": 110.1,
-    "pace": 100.8,
-    "availability": 1.0,
-    "season_ppg": 113.6,
-    "lost_points": 0.0,
+    "pace": 103.9,
+    "availability": 0.795,
+    "season_ppg": 112.4,
+    "lost_points": 25.8,
     "out_players": [
      {
-      "name": "Justin Champagnie",
+      "name": "Jaren Jackson Jr.",
       "pos": "F",
       "status": "OUT",
-      "est_lost_points": 0.0,
-      "detail": "Champagnie (foot) is expected to miss several months, per Josh Robbins of The Athletic.",
+      "est_lost_points": 10.2,
+      "detail": "Jackson has been diagnosed with a torn MCL in his right knee and will be sidelined for 6-to-8 weeks, per Shams Charania of ESPN.",
       "sources": {
        "ESPN": "OUT",
        "Yahoo": "OUT"
@@ -88,23 +88,34 @@
       "conflict": false
      },
      {
-      "name": "Tristan Vukcevic",
+      "name": "Blake Hinson",
       "pos": "F",
       "status": "OUT",
-      "est_lost_points": 0.0,
-      "detail": "The Wizards announced Thursday that Vukcevic (hip) will be re-evaluated in four weeks.",
+      "est_lost_points": 6.1,
+      "detail": "Out (Hamstring)",
       "sources": {
-       "ESPN": "OUT",
        "Yahoo": "OUT"
       },
       "conflict": false
      },
      {
-      "name": "Jamir Watkins",
+      "name": "Lauri Markkanen",
+      "pos": "F",
+      "status": "QUESTIONABLE",
+      "est_lost_points": 6.0,
+      "detail": "Markkanen (wrist) is listed as questionable for Saturday's game against Portland.",
+      "sources": {
+       "ESPN": "DAY_TO_DAY",
+       "Yahoo": "QUESTIONABLE"
+      },
+      "conflict": true
+     },
+     {
+      "name": "Trey Alexander",
       "pos": "G",
       "status": "OUT",
-      "est_lost_points": 0.0,
-      "detail": "The Wizards announced Thursday that Watkins has undergone surgery for a torn ACL.",
+      "est_lost_points": 2.5,
+      "detail": "Alexander won't play Wednesday against the Grizzlies due to a left knee bone bruise.",
       "sources": {
        "ESPN": "OUT",
        "Yahoo": "OUT"
@@ -114,99 +125,320 @@
     ],
     "rotation": [
      {
-      "name": "Anthony Davis",
-      "pos": "F",
-      "exp": 15,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6583.png",
-      "status": "AVAILABLE",
-      "proj_min": 30.5,
-      "proj_pts": 19.5
-     },
-     {
-      "name": "Kyshawn George",
-      "pos": "F",
-      "exp": 3,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5174563.png",
-      "status": "AVAILABLE",
-      "proj_min": 28.5,
-      "proj_pts": 14.4
-     },
-     {
-      "name": "Bilal Coulibaly",
+      "name": "Keyonte George",
       "pos": "G",
       "exp": 4,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5104155.png",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433627.png",
       "status": "AVAILABLE",
-      "proj_min": 25.4,
-      "proj_pts": 10.7
+      "proj_min": 31.8,
+      "proj_pts": 23.5
      },
      {
-      "name": "Alex Sarr",
-      "pos": "C",
-      "exp": 3,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5160992.png",
-      "status": "AVAILABLE",
-      "proj_min": 25.4,
-      "proj_pts": 14.0
-     },
-     {
-      "name": "Bub Carrington",
-      "pos": "G",
-      "exp": 3,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4845374.png",
-      "status": "AVAILABLE",
-      "proj_min": 24.3,
-      "proj_pts": 8.8
-     },
-     {
-      "name": "Trae Young",
-      "pos": "G",
-      "exp": 9,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277905.png",
-      "status": "AVAILABLE",
-      "proj_min": 24.2,
-      "proj_pts": 17.6
-     },
-     {
-      "name": "Tre Johnson",
+      "name": "Ace Bailey",
       "pos": "G",
       "exp": 2,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5238230.png",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4873138.png",
       "status": "AVAILABLE",
-      "proj_min": 22.7,
-      "proj_pts": 11.5
+      "proj_min": 27.2,
+      "proj_pts": 13.3
      },
      {
-      "name": "Deandre Ayton",
-      "pos": "C",
+      "name": "Isaiah Collier",
+      "pos": "G",
+      "exp": 3,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683766.png",
+      "status": "AVAILABLE",
+      "proj_min": 22.6,
+      "proj_pts": 9.6
+     },
+     {
+      "name": "Svi Mykhailiuk",
+      "pos": "G",
       "exp": 9,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278129.png",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3133602.png",
       "status": "AVAILABLE",
-      "proj_min": 22.3,
-      "proj_pts": 11.0
+      "proj_min": 20.4,
+      "proj_pts": 7.1
      },
      {
-      "name": "Khris Middleton",
+      "name": "Brice Sensabaugh",
       "pos": "F",
-      "exp": 15,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6609.png",
+      "exp": 4,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105839.png",
       "status": "AVAILABLE",
-      "proj_min": 19.0,
-      "proj_pts": 7.5
+      "proj_min": 20.1,
+      "proj_pts": 13.0
      },
      {
-      "name": "Will Riley",
-      "pos": "G",
-      "exp": 2,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5144126.png",
+      "name": "Jaxson Hayes",
+      "pos": "C",
+      "exp": 8,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397077.png",
       "status": "AVAILABLE",
-      "proj_min": 17.6,
-      "proj_pts": 8.0
+      "proj_min": 19.7,
+      "proj_pts": 8.4
+     },
+     {
+      "name": "Kyle Filipowski",
+      "pos": "F",
+      "exp": 3,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4684793.png",
+      "status": "AVAILABLE",
+      "proj_min": 19.6,
+      "proj_pts": 7.9
+     },
+     {
+      "name": "Mo Bamba",
+      "pos": "C",
+      "exp": 9,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277919.png",
+      "status": "AVAILABLE",
+      "proj_min": 18.7,
+      "proj_pts": 5.6
+     },
+     {
+      "name": "Josh Okogie",
+      "pos": "G",
+      "exp": 9,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065663.png",
+      "status": "AVAILABLE",
+      "proj_min": 16.5,
+      "proj_pts": 3.5
+     },
+     {
+      "name": "Lauri Markkanen",
+      "pos": "F",
+      "exp": 10,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066336.png",
+      "status": "QUESTIONABLE",
+      "proj_min": 15.8,
+      "proj_pts": 11.6
+     },
+     {
+      "name": "Josh Green",
+      "pos": "G",
+      "exp": 7,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432811.png",
+      "status": "AVAILABLE",
+      "proj_min": 15.4,
+      "proj_pts": 4.0
      }
     ],
     "data_games": 5
    },
    "away": {
+    "team": {
+     "id": "22",
+     "abbrev": "POR",
+     "name": "Portland Trail Blazers",
+     "short": "Trail Blazers",
+     "location": "Portland",
+     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/por.png",
+     "color": "#e03a3e"
+    },
+    "pred_pts": 108.4,
+    "sigma": 12.3,
+    "ortg": 112.3,
+    "drtg_opp": 110.1,
+    "pace": 103.9,
+    "availability": 0.893,
+    "season_ppg": 122.8,
+    "lost_points": 12.9,
+    "out_players": [
+     {
+      "name": "Shaedon Sharpe",
+      "pos": "G",
+      "status": "OUT",
+      "est_lost_points": 5.8,
+      "detail": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN.",
+      "sources": {
+       "ESPN": "OUT",
+       "Yahoo": "OUT"
+      },
+      "conflict": false
+     },
+     {
+      "name": "Ja Morant",
+      "pos": "G",
+      "status": "OUT",
+      "est_lost_points": 5.1,
+      "detail": "Morant has been diagnosed with a Grade 2 left hamstring strain and is expected to miss four weeks, Portland announced Friday.",
+      "sources": {
+       "ESPN": "OUT",
+       "Yahoo": "OUT"
+      },
+      "conflict": false
+     },
+     {
+      "name": "Robert Williams III",
+      "pos": "C",
+      "status": "QUESTIONABLE",
+      "est_lost_points": 1.1,
+      "detail": "Williams (knee) is questionable for Saturday's game against the Jazz.",
+      "sources": {
+       "ESPN": "DAY_TO_DAY",
+       "Yahoo": "QUESTIONABLE"
+      },
+      "conflict": true
+     }
+    ],
+    "rotation": [
+     {
+      "name": "Deni Avdija",
+      "pos": "F",
+      "exp": 7,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683021.png",
+      "status": "AVAILABLE",
+      "proj_min": 33.2,
+      "proj_pts": 24.4
+     },
+     {
+      "name": "Toumani Camara",
+      "pos": "F",
+      "exp": 4,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431736.png",
+      "status": "AVAILABLE",
+      "proj_min": 31.5,
+      "proj_pts": 15.0
+     },
+     {
+      "name": "Jrue Holiday",
+      "pos": "G",
+      "exp": 18,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3995.png",
+      "status": "AVAILABLE",
+      "proj_min": 28.6,
+      "proj_pts": 15.4
+     },
+     {
+      "name": "Donovan Clingan",
+      "pos": "C",
+      "exp": 3,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105565.png",
+      "status": "AVAILABLE",
+      "proj_min": 26.7,
+      "proj_pts": 11.9
+     },
+     {
+      "name": "Scoot Henderson",
+      "pos": "G",
+      "exp": 4,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683678.png",
+      "status": "AVAILABLE",
+      "proj_min": 23.6,
+      "proj_pts": 12.1
+     },
+     {
+      "name": "Sidy Cissoko",
+      "pos": "G",
+      "exp": 4,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5081727.png",
+      "status": "AVAILABLE",
+      "proj_min": 20.2,
+      "proj_pts": 5.5
+     },
+     {
+      "name": "Micah Potter",
+      "pos": "C",
+      "exp": 6,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066399.png",
+      "status": "AVAILABLE",
+      "proj_min": 18.2,
+      "proj_pts": 8.9
+     },
+     {
+      "name": "Damian Lillard",
+      "pos": "G",
+      "exp": 15,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6606.png",
+      "status": "AVAILABLE",
+      "proj_min": 12.0,
+      "proj_pts": 5.0
+     },
+     {
+      "name": "Branden Carlson",
+      "pos": "C",
+      "exp": 3,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592435.png",
+      "status": "AVAILABLE",
+      "proj_min": 11.8,
+      "proj_pts": 5.7
+     },
+     {
+      "name": "Robert Williams III",
+      "pos": "C",
+      "exp": 9,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066211.png",
+      "status": "QUESTIONABLE",
+      "proj_min": 8.7,
+      "proj_pts": 4.0
+     },
+     {
+      "name": "Yang Hansen",
+      "pos": "C",
+      "exp": 2,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5217746.png",
+      "status": "AVAILABLE",
+      "proj_min": 7.3,
+      "proj_pts": 2.3
+     }
+    ],
+    "data_games": 4
+   },
+   "sim": {
+    "home_win_prob": 0.3661,
+    "away_win_prob": 0.6339,
+    "exp_margin": -5.9,
+    "home_buckets": [
+     [
+      "101-105",
+      0.1531
+     ],
+     [
+      "96-100",
+      0.1517
+     ],
+     [
+      "106-110",
+      0.13
+     ],
+     [
+      "91-95",
+      0.129
+     ]
+    ],
+    "away_buckets": [
+     [
+      "106-110",
+      0.1616
+     ],
+     [
+      "101-105",
+      0.1548
+     ],
+     [
+      "111-115",
+      0.1394
+     ],
+     [
+      "96-100",
+      0.1254
+     ]
+    ],
+    "likely_score": "104-100",
+    "both_bucket_hit_prob": 0.0247,
+    "confidence": 2.5
+   },
+   "pred_total": 208.2,
+   "pred_total_bucket": "206-210",
+   "pred_margin": -5.8
+  },
+  {
+   "event_id": "401909897",
+   "date_utc": "2026-10-31T22:00Z",
+   "status": "STATUS_SCHEDULED",
+   "venue": "Spectrum Center",
+   "home": {
     "team": {
      "id": "30",
      "abbrev": "CHA",
@@ -216,20 +448,20 @@
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/cha.png",
      "color": "#008ca8"
     },
-    "pred_pts": 99.9,
+    "pred_pts": 101.4,
     "sigma": 11.3,
     "ortg": 107.3,
     "drtg_opp": 110.1,
-    "pace": 100.8,
-    "availability": 0.857,
+    "pace": 101.8,
+    "availability": 0.863,
     "season_ppg": 101.0,
-    "lost_points": 16.7,
+    "lost_points": 16.1,
     "out_players": [
      {
       "name": "Kon Knueppel",
       "pos": "G",
       "status": "OUT",
-      "est_lost_points": 7.2,
+      "est_lost_points": 6.9,
       "detail": "Knueppel (hamstring) was recalled from the G League's Greensboro Swarm on Friday. He remains out for Friday's contest against the Wizards.",
       "sources": {
        "ESPN": "OUT",
@@ -241,7 +473,7 @@
       "name": "Coby White",
       "pos": "G",
       "status": "OUT",
-      "est_lost_points": 6.0,
+      "est_lost_points": 5.8,
       "detail": "Head coach Charles Lee said Monday that White (calf) remains without a timeline for a return, though Lee added that he'll have a better idea of where things stand following the Hornets' two-game road trip, Rod Boone of T",
       "sources": {
        "ESPN": "OUT",
@@ -253,7 +485,7 @@
       "name": "Grant Williams",
       "pos": "F",
       "status": "OUT",
-      "est_lost_points": 2.7,
+      "est_lost_points": 2.6,
       "detail": "Williams (hamstring) will be re-evaluated following Charlotte's upcoming two-game road trip, Rod Boone reports.",
       "sources": {
        "ESPN": "OUT",
@@ -269,8 +501,8 @@
       "exp": 4,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433287.png",
       "status": "AVAILABLE",
-      "proj_min": 32.4,
-      "proj_pts": 22.2
+      "proj_min": 33.0,
+      "proj_pts": 22.1
      },
      {
       "name": "Grayson Allen",
@@ -278,8 +510,8 @@
       "exp": 9,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3135045.png",
       "status": "AVAILABLE",
-      "proj_min": 29.5,
-      "proj_pts": 16.9
+      "proj_min": 29.3,
+      "proj_pts": 16.2
      },
      {
       "name": "Naz Reid",
@@ -287,8 +519,8 @@
       "exp": 8,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4396971.png",
       "status": "AVAILABLE",
-      "proj_min": 27.3,
-      "proj_pts": 14.9
+      "proj_min": 27.8,
+      "proj_pts": 14.8
      },
      {
       "name": "Royce O'Neale",
@@ -296,8 +528,8 @@
       "exp": 10,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2583632.png",
       "status": "AVAILABLE",
-      "proj_min": 26.0,
-      "proj_pts": 8.4
+      "proj_min": 25.7,
+      "proj_pts": 8.3
      },
      {
       "name": "Sion James",
@@ -305,7 +537,7 @@
       "exp": 2,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4602025.png",
       "status": "AVAILABLE",
-      "proj_min": 24.3,
+      "proj_min": 24.7,
       "proj_pts": 4.7
      },
      {
@@ -314,17 +546,8 @@
       "exp": 2,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4576060.png",
       "status": "AVAILABLE",
-      "proj_min": 20.7,
-      "proj_pts": 7.7
-     },
-     {
-      "name": "PJ Hall",
-      "pos": "C",
-      "exp": 3,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4701225.png",
-      "status": "AVAILABLE",
-      "proj_min": 15.7,
-      "proj_pts": 5.6
+      "proj_min": 20.5,
+      "proj_pts": 7.4
      },
      {
       "name": "Dennis Schroder",
@@ -332,8 +555,17 @@
       "exp": 14,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3032979.png",
       "status": "AVAILABLE",
-      "proj_min": 15.2,
+      "proj_min": 15.3,
       "proj_pts": 5.6
+     },
+     {
+      "name": "PJ Hall",
+      "pos": "C",
+      "exp": 3,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4701225.png",
+      "status": "AVAILABLE",
+      "proj_min": 14.8,
+      "proj_pts": 4.8
      },
      {
       "name": "Moussa Diabate",
@@ -341,7 +573,7 @@
       "exp": 5,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433249.png",
       "status": "AVAILABLE",
-      "proj_min": 14.4,
+      "proj_min": 14.5,
       "proj_pts": 5.0
      },
      {
@@ -350,8 +582,8 @@
       "exp": 2,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5239590.png",
       "status": "AVAILABLE",
-      "proj_min": 11.6,
-      "proj_pts": 3.9
+      "proj_min": 11.2,
+      "proj_pts": 3.6
      },
      {
       "name": "Tidjane Salaun",
@@ -359,693 +591,13 @@
       "exp": 3,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5211176.png",
       "status": "AVAILABLE",
-      "proj_min": 8.6,
+      "proj_min": 8.7,
       "proj_pts": 3.2
      }
     ],
     "data_games": 5
    },
-   "sim": {
-    "home_win_prob": 0.8054,
-    "away_win_prob": 0.1946,
-    "exp_margin": 13.8,
-    "home_buckets": [
-     [
-      "111-115",
-      0.1752
-     ],
-     [
-      "106-110",
-      0.1652
-     ],
-     [
-      "116-120",
-      0.15
-     ],
-     [
-      "101-105",
-      0.1272
-     ]
-    ],
-    "away_buckets": [
-     [
-      "96-100",
-      0.1776
-     ],
-     [
-      "101-105",
-      0.1574
-     ],
-     [
-      "91-95",
-      0.1571
-     ],
-     [
-      "106-110",
-      0.1176
-     ]
-    ],
-    "likely_score": "100-114",
-    "both_bucket_hit_prob": 0.0311,
-    "confidence": 3.5
-   },
-   "pred_total": 211.0,
-   "pred_total_bucket": "211-215",
-   "pred_margin": 14.0
-  },
-  {
-   "event_id": "401909278",
-   "date_utc": "2026-10-30T23:30Z",
-   "status": "STATUS_FINAL",
-   "venue": "TD Garden",
-   "home": {
-    "team": {
-     "id": "2",
-     "abbrev": "BOS",
-     "name": "Boston Celtics",
-     "short": "Celtics",
-     "location": "Boston",
-     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
-     "color": "#008348"
-    },
-    "pred_pts": 116.9,
-    "sigma": 11.5,
-    "ortg": 111.4,
-    "drtg_opp": 110.1,
-    "pace": 107.0,
-    "availability": 0.975,
-    "season_ppg": 119.8,
-    "lost_points": 3.0,
-    "out_players": [
-     {
-      "name": "Devin Carter",
-      "pos": "G",
-      "status": "OUT",
-      "est_lost_points": 3.0,
-      "detail": "Carter has been diagnosed with mononucleosis and is without a timetable for a return, Gary Washburn of The Boston Globe reports.",
-      "sources": {
-       "ESPN": "OUT",
-       "Yahoo": "OUT"
-      },
-      "conflict": false
-     }
-    ],
-    "rotation": [
-     {
-      "name": "Jayson Tatum",
-      "pos": "F",
-      "exp": 10,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065648.png",
-      "status": "AVAILABLE",
-      "proj_min": 32.2,
-      "proj_pts": 21.9
-     },
-     {
-      "name": "Derrick White",
-      "pos": "G",
-      "exp": 10,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3078576.png",
-      "status": "AVAILABLE",
-      "proj_min": 31.8,
-      "proj_pts": 14.5
-     },
-     {
-      "name": "Paul George",
-      "pos": "F",
-      "exp": 17,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4251.png",
-      "status": "AVAILABLE",
-      "proj_min": 29.6,
-      "proj_pts": 17.9
-     },
-     {
-      "name": "Payton Pritchard",
-      "pos": "G",
-      "exp": 7,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066354.png",
-      "status": "AVAILABLE",
-      "proj_min": 29.6,
-      "proj_pts": 15.6
-     },
-     {
-      "name": "Sam Hauser",
-      "pos": "F",
-      "exp": 6,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065804.png",
-      "status": "AVAILABLE",
-      "proj_min": 23.0,
-      "proj_pts": 9.3
-     },
-     {
-      "name": "Neemias Queta",
-      "pos": "C",
-      "exp": 6,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397424.png",
-      "status": "AVAILABLE",
-      "proj_min": 23.0,
-      "proj_pts": 9.8
-     },
-     {
-      "name": "Mitchell Robinson",
-      "pos": "C",
-      "exp": 9,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4351852.png",
-      "status": "AVAILABLE",
-      "proj_min": 19.0,
-      "proj_pts": 5.7
-     },
-     {
-      "name": "Baylor Scheierman",
-      "pos": "G",
-      "exp": 3,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4593841.png",
-      "status": "AVAILABLE",
-      "proj_min": 17.5,
-      "proj_pts": 4.9
-     },
-     {
-      "name": "Jordan Walsh",
-      "pos": "G",
-      "exp": 4,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683689.png",
-      "status": "AVAILABLE",
-      "proj_min": 17.4,
-      "proj_pts": 5.4
-     },
-     {
-      "name": "Mike Conley",
-      "pos": "G",
-      "exp": 20,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3195.png",
-      "status": "AVAILABLE",
-      "proj_min": 16.8,
-      "proj_pts": 5.0
-     }
-    ],
-    "data_games": 4
-   },
    "away": {
-    "team": {
-     "id": "4",
-     "abbrev": "CHI",
-     "name": "Chicago Bulls",
-     "short": "Bulls",
-     "location": "Chicago",
-     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/chi.png",
-     "color": "#ce1141"
-    },
-    "pred_pts": 116.0,
-    "sigma": 11.3,
-    "ortg": 108.0,
-    "drtg_opp": 110.1,
-    "pace": 107.0,
-    "availability": 0.993,
-    "season_ppg": 114.0,
-    "lost_points": 0.8,
-    "out_players": [
-     {
-      "name": "Nic Claxton",
-      "pos": "C",
-      "status": "OUT",
-      "est_lost_points": 0.7,
-      "detail": "Claxton (hamstring) participated in individual drills Monday morning and hopes to join the team for practice next week, Joe Cowley of the Chicago Sun-Times reports.",
-      "sources": {
-       "ESPN": "OUT",
-       "Yahoo": "OUT"
-      },
-      "conflict": false
-     }
-    ],
-    "rotation": [
-     {
-      "name": "Josh Giddey",
-      "pos": "G",
-      "exp": 6,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4871145.png",
-      "status": "AVAILABLE",
-      "proj_min": 29.8,
-      "proj_pts": 13.3
-     },
-     {
-      "name": "Norman Powell",
-      "pos": "G",
-      "exp": 12,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2595516.png",
-      "status": "AVAILABLE",
-      "proj_min": 29.0,
-      "proj_pts": 21.8
-     },
-     {
-      "name": "Matas Buzelis",
-      "pos": "F",
-      "exp": 3,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4711294.png",
-      "status": "AVAILABLE",
-      "proj_min": 27.8,
-      "proj_pts": 15.5
-     },
-     {
-      "name": "Tre Jones",
-      "pos": "G",
-      "exp": 7,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395626.png",
-      "status": "AVAILABLE",
-      "proj_min": 23.8,
-      "proj_pts": 13.4
-     },
-     {
-      "name": "Isaac Okoro",
-      "pos": "F",
-      "exp": 7,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432822.png",
-      "status": "AVAILABLE",
-      "proj_min": 23.7,
-      "proj_pts": 7.7
-     },
-     {
-      "name": "Leonard Miller",
-      "pos": "F",
-      "exp": 4,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5044385.png",
-      "status": "AVAILABLE",
-      "proj_min": 21.8,
-      "proj_pts": 11.2
-     },
-     {
-      "name": "Jalen Smith",
-      "pos": "F",
-      "exp": 7,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397189.png",
-      "status": "AVAILABLE",
-      "proj_min": 21.0,
-      "proj_pts": 11.1
-     },
-     {
-      "name": "Patrick Williams",
-      "pos": "F",
-      "exp": 7,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431687.png",
-      "status": "AVAILABLE",
-      "proj_min": 20.1,
-      "proj_pts": 6.5
-     },
-     {
-      "name": "Zach Collins",
-      "pos": "F",
-      "exp": 10,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066650.png",
-      "status": "AVAILABLE",
-      "proj_min": 16.1,
-      "proj_pts": 7.3
-     },
-     {
-      "name": "Caleb Wilson",
-      "pos": "F",
-      "exp": 0,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5095151.png",
-      "status": "AVAILABLE",
-      "proj_min": 14.1,
-      "proj_pts": 5.9
-     },
-     {
-      "name": "Jordan Hawkins",
-      "pos": "G",
-      "exp": 4,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683750.png",
-      "status": "AVAILABLE",
-      "proj_min": 12.8,
-      "proj_pts": 4.7
-     }
-    ],
-    "data_games": 5
-   },
-   "sim": {
-    "home_win_prob": 0.5826,
-    "away_win_prob": 0.4174,
-    "exp_margin": 3.6,
-    "home_buckets": [
-     [
-      "116-120",
-      0.1737
-     ],
-     [
-      "111-115",
-      0.1588
-     ],
-     [
-      "121-125",
-      0.1526
-     ],
-     [
-      "106-110",
-      0.1204
-     ]
-    ],
-    "away_buckets": [
-     [
-      "111-115",
-      0.1768
-     ],
-     [
-      "116-120",
-      0.1646
-     ],
-     [
-      "106-110",
-      0.1475
-     ],
-     [
-      "121-125",
-      0.129
-     ]
-    ],
-    "likely_score": "112-117",
-    "both_bucket_hit_prob": 0.0307,
-    "confidence": 2.0
-   },
-   "pred_total": 232.9,
-   "pred_total_bucket": "231-235",
-   "pred_margin": 3.7
-  },
-  {
-   "event_id": "401909279",
-   "date_utc": "2026-10-30T23:30Z",
-   "status": "STATUS_FINAL",
-   "venue": "Barclays Center",
-   "home": {
-    "team": {
-     "id": "17",
-     "abbrev": "BKN",
-     "name": "Brooklyn Nets",
-     "short": "Nets",
-     "location": "Brooklyn",
-     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bkn.png",
-     "color": "#000000"
-    },
-    "pred_pts": 112.7,
-    "sigma": 11.5,
-    "ortg": 109.1,
-    "drtg_opp": 110.1,
-    "pace": 102.9,
-    "availability": 1.0,
-    "season_ppg": 114.2,
-    "lost_points": 0.0,
-    "out_players": [],
-    "rotation": [
-     {
-      "name": "Julius Randle",
-      "pos": "F",
-      "exp": 13,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3064514.png",
-      "status": "AVAILABLE",
-      "proj_min": 33.6,
-      "proj_pts": 21.7
-     },
-     {
-      "name": "Michael Porter Jr.",
-      "pos": "F",
-      "exp": 8,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278104.png",
-      "status": "AVAILABLE",
-      "proj_min": 32.3,
-      "proj_pts": 24.2
-     },
-     {
-      "name": "Noah Clowney",
-      "pos": "F",
-      "exp": 4,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4712896.png",
-      "status": "AVAILABLE",
-      "proj_min": 25.6,
-      "proj_pts": 10.6
-     },
-     {
-      "name": "Keon Ellis",
-      "pos": "G",
-      "exp": 5,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702177.png",
-      "status": "AVAILABLE",
-      "proj_min": 25.2,
-      "proj_pts": 7.9
-     },
-     {
-      "name": "Terance Mann",
-      "pos": "G",
-      "exp": 8,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3907823.png",
-      "status": "AVAILABLE",
-      "proj_min": 23.3,
-      "proj_pts": 6.8
-     },
-     {
-      "name": "Chaney Johnson",
-      "pos": "F",
-      "exp": 2,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5174655.png",
-      "status": "AVAILABLE",
-      "proj_min": 20.5,
-      "proj_pts": 8.1
-     },
-     {
-      "name": "Danny Wolf",
-      "pos": "F",
-      "exp": 2,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5107173.png",
-      "status": "AVAILABLE",
-      "proj_min": 20.4,
-      "proj_pts": 8.5
-     },
-     {
-      "name": "Drake Powell",
-      "pos": "G",
-      "exp": 2,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5037873.png",
-      "status": "AVAILABLE",
-      "proj_min": 20.2,
-      "proj_pts": 5.4
-     },
-     {
-      "name": "Ben Saraf",
-      "pos": "G",
-      "exp": 2,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5242502.png",
-      "status": "AVAILABLE",
-      "proj_min": 19.5,
-      "proj_pts": 7.0
-     },
-     {
-      "name": "Day'Ron Sharpe",
-      "pos": "C",
-      "exp": 6,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432194.png",
-      "status": "AVAILABLE",
-      "proj_min": 19.4,
-      "proj_pts": 8.8
-     }
-    ],
-    "data_games": 4
-   },
-   "away": {
-    "team": {
-     "id": "8",
-     "abbrev": "DET",
-     "name": "Detroit Pistons",
-     "short": "Pistons",
-     "location": "Detroit",
-     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/det.png",
-     "color": "#1d428a"
-    },
-    "pred_pts": 108.6,
-    "sigma": 11.3,
-    "ortg": 110.5,
-    "drtg_opp": 110.1,
-    "pace": 102.9,
-    "availability": 0.927,
-    "season_ppg": 109.8,
-    "lost_points": 8.6,
-    "out_players": [
-     {
-      "name": "Jalen Duren",
-      "pos": "C",
-      "status": "OUT",
-      "est_lost_points": 5.6,
-      "detail": "Duren will be re-evaluated in two weeks due to a right hamstring strain, Eric Vincent of ClutchPoints.com reports.",
-      "sources": {
-       "ESPN": "OUT",
-       "Yahoo": "OUT"
-      },
-      "conflict": false
-     },
-     {
-      "name": "Isaiah Joe",
-      "pos": "G",
-      "status": "OUT",
-      "est_lost_points": 3.0,
-      "detail": "Joe (hip) has been ruled out for Friday's game against the Nets.",
-      "sources": {
-       "ESPN": "OUT",
-       "Yahoo": "OUT"
-      },
-      "conflict": false
-     }
-    ],
-    "rotation": [
-     {
-      "name": "Cade Cunningham",
-      "pos": "G",
-      "exp": 6,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432166.png",
-      "status": "AVAILABLE",
-      "proj_min": 33.8,
-      "proj_pts": 23.3
-     },
-     {
-      "name": "Duncan Robinson",
-      "pos": "F",
-      "exp": 9,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3157465.png",
-      "status": "AVAILABLE",
-      "proj_min": 28.0,
-      "proj_pts": 13.7
-     },
-     {
-      "name": "John Collins",
-      "pos": "F",
-      "exp": 10,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3908845.png",
-      "status": "AVAILABLE",
-      "proj_min": 26.7,
-      "proj_pts": 12.7
-     },
-     {
-      "name": "Ausar Thompson",
-      "pos": "G",
-      "exp": 4,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4684742.png",
-      "status": "AVAILABLE",
-      "proj_min": 25.9,
-      "proj_pts": 9.2
-     },
-     {
-      "name": "Daniss Jenkins",
-      "pos": "G",
-      "exp": 3,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5107199.png",
-      "status": "AVAILABLE",
-      "proj_min": 21.3,
-      "proj_pts": 9.9
-     },
-     {
-      "name": "Taurean Prince",
-      "pos": "F",
-      "exp": 11,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2990962.png",
-      "status": "AVAILABLE",
-      "proj_min": 20.9,
-      "proj_pts": 8.0
-     },
-     {
-      "name": "Kevin Huerter",
-      "pos": "G",
-      "exp": 9,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066372.png",
-      "status": "AVAILABLE",
-      "proj_min": 20.1,
-      "proj_pts": 7.3
-     },
-     {
-      "name": "Elijah Harkless",
-      "pos": "G",
-      "exp": 3,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397449.png",
-      "status": "AVAILABLE",
-      "proj_min": 19.4,
-      "proj_pts": 5.4
-     },
-     {
-      "name": "Javonte Green",
-      "pos": "G",
-      "exp": 8,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2596112.png",
-      "status": "AVAILABLE",
-      "proj_min": 17.5,
-      "proj_pts": 7.1
-     },
-     {
-      "name": "Paul Reed",
-      "pos": "F",
-      "exp": 7,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278562.png",
-      "status": "AVAILABLE",
-      "proj_min": 17.2,
-      "proj_pts": 10.2
-     },
-     {
-      "name": "Ronald Holland II",
-      "pos": "F",
-      "exp": 3,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683771.png",
-      "status": "AVAILABLE",
-      "proj_min": 9.1,
-      "proj_pts": 3.1
-     }
-    ],
-    "data_games": 5
-   },
-   "sim": {
-    "home_win_prob": 0.6611,
-    "away_win_prob": 0.3389,
-    "exp_margin": 6.8,
-    "home_buckets": [
-     [
-      "111-115",
-      0.1727
-     ],
-     [
-      "116-120",
-      0.1582
-     ],
-     [
-      "106-110",
-      0.1532
-     ],
-     [
-      "121-125",
-      0.1212
-     ]
-    ],
-    "away_buckets": [
-     [
-      "106-110",
-      0.176
-     ],
-     [
-      "101-105",
-      0.1662
-     ],
-     [
-      "111-115",
-      0.148
-     ],
-     [
-      "96-100",
-      0.1275
-     ]
-    ],
-    "likely_score": "105-113",
-    "both_bucket_hit_prob": 0.0304,
-    "confidence": 3.0
-   },
-   "pred_total": 221.3,
-   "pred_total_bucket": "221-225",
-   "pred_margin": 6.9
-  },
-  {
-   "event_id": "401909280",
-   "date_utc": "2026-10-30T23:30Z",
-   "status": "STATUS_FINAL",
-   "venue": "Xfinity Mobile Arena",
-   "home": {
     "team": {
      "id": "20",
      "abbrev": "PHI",
@@ -1055,26 +607,26 @@
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
      "color": "#1d428a"
     },
-    "pred_pts": 107.8,
-    "sigma": 11.3,
+    "pred_pts": 104.4,
+    "sigma": 11.1,
     "ortg": 107.9,
     "drtg_opp": 110.1,
-    "pace": 104.9,
-    "availability": 0.908,
-    "season_ppg": 110.8,
-    "lost_points": 11.0,
+    "pace": 101.8,
+    "availability": 0.903,
+    "season_ppg": 108.7,
+    "lost_points": 11.2,
     "out_players": [
      {
       "name": "Jaylen Brown",
       "pos": "G",
-      "status": "OUT",
-      "est_lost_points": 6.8,
+      "status": "QUESTIONABLE",
+      "est_lost_points": 6.9,
       "detail": "Brown (knee) is out for Friday's game against the Knicks.",
       "sources": {
-       "ESPN": "OUT",
-       "Yahoo": "OUT"
+       "ESPN": "DAY_TO_DAY",
+       "Yahoo": "QUESTIONABLE"
       },
-      "conflict": false
+      "conflict": true
      },
      {
       "name": "Dominick Barlow",
@@ -1096,8 +648,8 @@
       "exp": 7,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431678.png",
       "status": "AVAILABLE",
-      "proj_min": 37.6,
-      "proj_pts": 28.4
+      "proj_min": 37.5,
+      "proj_pts": 28.3
      },
      {
       "name": "VJ Edgecombe",
@@ -1105,8 +657,8 @@
       "exp": 2,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5124612.png",
       "status": "AVAILABLE",
-      "proj_min": 33.9,
-      "proj_pts": 14.3
+      "proj_min": 34.0,
+      "proj_pts": 14.2
      },
      {
       "name": "LeBron James",
@@ -1124,7 +676,7 @@
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3059318.png",
       "status": "AVAILABLE",
       "proj_min": 32.4,
-      "proj_pts": 25.8
+      "proj_pts": 24.7
      },
      {
       "name": "Rayan Rupert",
@@ -1141,8 +693,8 @@
       "exp": 9,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4351851.png",
       "status": "AVAILABLE",
-      "proj_min": 26.6,
-      "proj_pts": 12.8
+      "proj_min": 26.8,
+      "proj_pts": 13.5
      },
      {
       "name": "Dean Wade",
@@ -1150,8 +702,8 @@
       "exp": 8,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3912848.png",
       "status": "AVAILABLE",
-      "proj_min": 23.2,
-      "proj_pts": 5.7
+      "proj_min": 23.3,
+      "proj_pts": 5.4
      },
      {
       "name": "Kentavious Caldwell-Pope",
@@ -1159,915 +711,90 @@
       "exp": 14,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2581018.png",
       "status": "AVAILABLE",
-      "proj_min": 22.6,
-      "proj_pts": 8.0
+      "proj_min": 22.5,
+      "proj_pts": 7.8
      }
     ],
-    "data_games": 5
-   },
-   "away": {
-    "team": {
-     "id": "18",
-     "abbrev": "NY",
-     "name": "New York Knicks",
-     "short": "Knicks",
-     "location": "New York",
-     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/ny.png",
-     "color": "#1d428a"
-    },
-    "pred_pts": 114.7,
-    "sigma": 11.3,
-    "ortg": 109.0,
-    "drtg_opp": 110.1,
-    "pace": 104.9,
-    "availability": 1.0,
-    "season_ppg": 109.8,
-    "lost_points": 0.0,
-    "out_players": [
-     {
-      "name": "Jose Alvarado",
-      "pos": "G",
-      "status": "OUT",
-      "est_lost_points": 0.0,
-      "detail": "Alvarado (ankle) has been ruled out for Friday's game against Philadelphia.",
-      "sources": {
-       "ESPN": "OUT",
-       "Yahoo": "OUT"
-      },
-      "conflict": false
-     }
-    ],
-    "rotation": [
-     {
-      "name": "Jalen Brunson",
-      "pos": "G",
-      "exp": 9,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3934672.png",
-      "status": "AVAILABLE",
-      "proj_min": 34.8,
-      "proj_pts": 25.6
-     },
-     {
-      "name": "OG Anunoby",
-      "pos": "F",
-      "exp": 10,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3934719.png",
-      "status": "AVAILABLE",
-      "proj_min": 33.0,
-      "proj_pts": 17.2
-     },
-     {
-      "name": "Mikal Bridges",
-      "pos": "G",
-      "exp": 9,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3147657.png",
-      "status": "AVAILABLE",
-      "proj_min": 30.9,
-      "proj_pts": 10.9
-     },
-     {
-      "name": "Josh Hart",
-      "pos": "G",
-      "exp": 10,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3062679.png",
-      "status": "AVAILABLE",
-      "proj_min": 30.7,
-      "proj_pts": 11.2
-     },
-     {
-      "name": "Karl-Anthony Towns",
-      "pos": "C",
-      "exp": 12,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3136195.png",
-      "status": "AVAILABLE",
-      "proj_min": 30.7,
-      "proj_pts": 21.2
-     },
-     {
-      "name": "Miles McBride",
-      "pos": "G",
-      "exp": 6,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431823.png",
-      "status": "AVAILABLE",
-      "proj_min": 23.6,
-      "proj_pts": 10.1
-     },
-     {
-      "name": "Landry Shamet",
-      "pos": "G",
-      "exp": 9,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3914044.png",
-      "status": "AVAILABLE",
-      "proj_min": 23.5,
-      "proj_pts": 9.3
-     },
-     {
-      "name": "Andre Drummond",
-      "pos": "C",
-      "exp": 15,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6585.png",
-      "status": "AVAILABLE",
-      "proj_min": 17.6,
-      "proj_pts": 6.3
-     },
-     {
-      "name": "Jordan Clarkson",
-      "pos": "G",
-      "exp": 13,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2528426.png",
-      "status": "AVAILABLE",
-      "proj_min": 15.3,
-      "proj_pts": 8.1
-     }
-    ],
-    "data_games": 5
+    "data_games": 6
    },
    "sim": {
-    "home_win_prob": 0.3948,
-    "away_win_prob": 0.6052,
-    "exp_margin": -4.2,
+    "home_win_prob": 0.4901,
+    "away_win_prob": 0.5099,
+    "exp_margin": -0.3,
     "home_buckets": [
      [
-      "106-110",
-      0.1758
-     ],
-     [
-      "111-115",
-      0.161
-     ],
-     [
       "101-105",
-      0.1548
-     ],
-     [
-      "116-120",
-      0.1226
-     ]
-    ],
-    "away_buckets": [
-     [
-      "111-115",
-      0.1767
-     ],
-     [
-      "106-110",
-      0.1589
-     ],
-     [
-      "116-120",
-      0.157
-     ],
-     [
-      "101-105",
-      0.117
-     ]
-    ],
-    "likely_score": "111-108",
-    "both_bucket_hit_prob": 0.0311,
-    "confidence": 2.0
-   },
-   "pred_total": 222.5,
-   "pred_total_bucket": "221-225",
-   "pred_margin": -4.1
-  },
-  {
-   "event_id": "401909281",
-   "date_utc": "2026-10-30T23:30Z",
-   "status": "STATUS_FINAL",
-   "venue": "Scotiabank Arena",
-   "home": {
-    "team": {
-     "id": "28",
-     "abbrev": "TOR",
-     "name": "Toronto Raptors",
-     "short": "Raptors",
-     "location": "Toronto",
-     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/tor.png",
-     "color": "#d91244"
-    },
-    "pred_pts": 108.6,
-    "sigma": 11.5,
-    "ortg": 109.9,
-    "drtg_opp": 110.1,
-    "pace": 106.1,
-    "availability": 0.883,
-    "season_ppg": 117.5,
-    "lost_points": 14.3,
-    "out_players": [
-     {
-      "name": "Kawhi Leonard",
-      "pos": "F",
-      "status": "OUT",
-      "est_lost_points": 13.3,
-      "detail": "Leonard (knee) is expected to be sidelined for at least three to four weeks, Chris Haynes of NBA TV reports.",
-      "sources": {
-       "ESPN": "OUT",
-       "Yahoo": "OUT"
-      },
-      "conflict": false
-     }
-    ],
-    "rotation": [
-     {
-      "name": "Scottie Barnes",
-      "pos": "F",
-      "exp": 6,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433134.png",
-      "status": "AVAILABLE",
-      "proj_min": 32.5,
-      "proj_pts": 18.2
-     },
-     {
-      "name": "Immanuel Quickley",
-      "pos": "G",
-      "exp": 7,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395724.png",
-      "status": "AVAILABLE",
-      "proj_min": 30.8,
-      "proj_pts": 16.6
-     },
-     {
-      "name": "RJ Barrett",
-      "pos": "F",
-      "exp": 8,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395625.png",
-      "status": "AVAILABLE",
-      "proj_min": 30.3,
-      "proj_pts": 19.9
-     },
-     {
-      "name": "Malachi Smith",
-      "pos": "G",
-      "exp": 2,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397784.png",
-      "status": "AVAILABLE",
-      "proj_min": 23.8,
-      "proj_pts": 8.4
-     },
-     {
-      "name": "Jakob Poeltl",
-      "pos": "C",
-      "exp": 11,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3134908.png",
-      "status": "AVAILABLE",
-      "proj_min": 23.4,
-      "proj_pts": 8.8
-     },
-     {
-      "name": "Jamal Shead",
-      "pos": "G",
-      "exp": 3,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432241.png",
-      "status": "AVAILABLE",
-      "proj_min": 22.0,
-      "proj_pts": 6.1
-     },
-     {
-      "name": "Ja'Kobe Walter",
-      "pos": "G",
-      "exp": 3,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4684272.png",
-      "status": "AVAILABLE",
-      "proj_min": 21.8,
-      "proj_pts": 9.0
-     },
-     {
-      "name": "Collin Murray-Boyles",
-      "pos": "F",
-      "exp": 2,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5093267.png",
-      "status": "AVAILABLE",
-      "proj_min": 20.7,
-      "proj_pts": 8.2
-     },
-     {
-      "name": "Kyle Anderson",
-      "pos": "F",
-      "exp": 13,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2993874.png",
-      "status": "AVAILABLE",
-      "proj_min": 16.5,
-      "proj_pts": 2.9
-     },
-     {
-      "name": "Jamison Battle",
-      "pos": "F",
-      "exp": 3,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431893.png",
-      "status": "AVAILABLE",
-      "proj_min": 9.8,
-      "proj_pts": 3.9
-     },
-     {
-      "name": "Allen Graves",
-      "pos": "F",
-      "exp": 0,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5149115.png",
-      "status": "AVAILABLE",
-      "proj_min": 8.4,
-      "proj_pts": 2.9
-     }
-    ],
-    "data_games": 4
-   },
-   "away": {
-    "team": {
-     "id": "19",
-     "abbrev": "ORL",
-     "name": "Orlando Magic",
-     "short": "Magic",
-     "location": "Orlando",
-     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png",
-     "color": "#0150b5"
-    },
-    "pred_pts": 109.7,
-    "sigma": 11.5,
-    "ortg": 107.8,
-    "drtg_opp": 110.1,
-    "pace": 106.1,
-    "availability": 0.918,
-    "season_ppg": 107.0,
-    "lost_points": 9.9,
-    "out_players": [
-     {
-      "name": "Paolo Banchero",
-      "pos": "F",
-      "status": "OUT",
-      "est_lost_points": 5.1,
-      "detail": "Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports.",
-      "sources": {
-       "ESPN": "OUT",
-       "Yahoo": "OUT"
-      },
-      "conflict": false
-     },
-     {
-      "name": "Jalen Suggs",
-      "pos": "G",
-      "status": "OUT",
-      "est_lost_points": 2.8,
-      "detail": "Suggs has been diagnosed with a mild bone bruise in his right knee and will be re-evaluated in two weeks, Shams Charania of ESPN reports.",
-      "sources": {
-       "ESPN": "OUT",
-       "Yahoo": "OUT"
-      },
-      "conflict": false
-     },
-     {
-      "name": "Noah Penda",
-      "pos": "F",
-      "status": "OUT",
-      "est_lost_points": 0.8,
-      "detail": "Penda was diagnosed with a partially torn right hamstring Saturday, Jason Beede of the Orlando Sentinel reports.",
-      "sources": {
-       "ESPN": "OUT",
-       "Yahoo": "OUT"
-      },
-      "conflict": false
-     }
-    ],
-    "rotation": [
-     {
-      "name": "Desmond Bane",
-      "pos": "G",
-      "exp": 7,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066320.png",
-      "status": "AVAILABLE",
-      "proj_min": 35.4,
-      "proj_pts": 19.9
-     },
-     {
-      "name": "Franz Wagner",
-      "pos": "F",
-      "exp": 6,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4566434.png",
-      "status": "AVAILABLE",
-      "proj_min": 32.9,
-      "proj_pts": 21.7
-     },
-     {
-      "name": "Wendell Carter Jr.",
-      "pos": "C",
-      "exp": 9,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277847.png",
-      "status": "AVAILABLE",
-      "proj_min": 31.3,
-      "proj_pts": 13.8
-     },
-     {
-      "name": "Anthony Black",
-      "pos": "G",
-      "exp": 4,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4712849.png",
-      "status": "AVAILABLE",
-      "proj_min": 30.9,
-      "proj_pts": 15.6
-     },
-     {
-      "name": "Tristan da Silva",
-      "pos": "F",
-      "exp": 3,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702382.png",
-      "status": "AVAILABLE",
-      "proj_min": 27.4,
-      "proj_pts": 11.8
-     },
-     {
-      "name": "Jevon Carter",
-      "pos": "G",
-      "exp": 9,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3133635.png",
-      "status": "AVAILABLE",
-      "proj_min": 21.3,
-      "proj_pts": 6.6
-     },
-     {
-      "name": "Goga Bitadze",
-      "pos": "C",
-      "exp": 8,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4348700.png",
-      "status": "AVAILABLE",
-      "proj_min": 15.4,
-      "proj_pts": 6.7
-     },
-     {
-      "name": "Jamal Cain",
-      "pos": "F",
-      "exp": 5,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278572.png",
-      "status": "AVAILABLE",
-      "proj_min": 13.4,
-      "proj_pts": 5.3
-     },
-     {
-      "name": "Jase Richardson",
-      "pos": "G",
-      "exp": 2,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5239561.png",
-      "status": "AVAILABLE",
-      "proj_min": 12.7,
-      "proj_pts": 5.1
-     },
-     {
-      "name": "Nikola Vucevic",
-      "pos": "C",
-      "exp": 16,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6478.png",
-      "status": "AVAILABLE",
-      "proj_min": 7.4,
-      "proj_pts": 2.4
-     },
-     {
-      "name": "Alex Morales",
-      "pos": "G",
-      "exp": 2,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4593034.png",
-      "status": "AVAILABLE",
-      "proj_min": 6.3,
-      "proj_pts": 1.9
-     }
-    ],
-    "data_games": 4
-   },
-   "sim": {
-    "home_win_prob": 0.5359,
-    "away_win_prob": 0.4641,
-    "exp_margin": 1.6,
-    "home_buckets": [
-     [
-      "106-110",
-      0.1698
-     ],
-     [
-      "111-115",
-      0.1624
-     ],
-     [
-      "101-105",
-      0.146
-     ],
-     [
-      "116-120",
-      0.1302
-     ]
-    ],
-    "away_buckets": [
-     [
-      "106-110",
-      0.1744
-     ],
-     [
-      "101-105",
-      0.1562
-     ],
-     [
-      "111-115",
-      0.1546
+      0.1748
      ],
      [
       "96-100",
-      0.1168
-     ]
-    ],
-    "likely_score": "109-111",
-    "both_bucket_hit_prob": 0.0296,
-    "confidence": 1.5
-   },
-   "pred_total": 218.3,
-   "pred_total_bucket": "216-220",
-   "pred_margin": 1.7
-  },
-  {
-   "event_id": "401909282",
-   "date_utc": "2026-10-31T00:00Z",
-   "status": "STATUS_FINAL",
-   "venue": "Kaseya Center",
-   "home": {
-    "team": {
-     "id": "14",
-     "abbrev": "MIA",
-     "name": "Miami Heat",
-     "short": "Heat",
-     "location": "Miami",
-     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png",
-     "color": "#98002e"
-    },
-    "pred_pts": 115.5,
-    "sigma": 11.3,
-    "ortg": 108.8,
-    "drtg_opp": 110.1,
-    "pace": 105.7,
-    "availability": 1.0,
-    "season_ppg": 113.0,
-    "lost_points": 0.0,
-    "out_players": [],
-    "rotation": [
-     {
-      "name": "Bam Adebayo",
-      "pos": "C",
-      "exp": 10,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066261.png",
-      "status": "AVAILABLE",
-      "proj_min": 30.3,
-      "proj_pts": 17.0
-     },
-     {
-      "name": "Davion Mitchell",
-      "pos": "G",
-      "exp": 6,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278053.png",
-      "status": "AVAILABLE",
-      "proj_min": 28.6,
-      "proj_pts": 10.8
-     },
-     {
-      "name": "Giannis Antetokounmpo",
-      "pos": "F",
-      "exp": 14,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3032977.png",
-      "status": "AVAILABLE",
-      "proj_min": 28.0,
-      "proj_pts": 27.2
-     },
-     {
-      "name": "Andrew Wiggins",
-      "pos": "F",
-      "exp": 13,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3059319.png",
-      "status": "AVAILABLE",
-      "proj_min": 27.7,
-      "proj_pts": 13.1
-     },
-     {
-      "name": "Pelle Larsson",
-      "pos": "G",
-      "exp": 3,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4601025.png",
-      "status": "AVAILABLE",
-      "proj_min": 26.2,
-      "proj_pts": 10.9
-     },
-     {
-      "name": "Tim Hardaway Jr.",
-      "pos": "G",
-      "exp": 14,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2528210.png",
-      "status": "AVAILABLE",
-      "proj_min": 23.2,
-      "proj_pts": 10.8
-     },
-     {
-      "name": "Bobby Portis",
-      "pos": "F",
-      "exp": 12,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3064482.png",
-      "status": "AVAILABLE",
-      "proj_min": 22.8,
-      "proj_pts": 12.0
-     },
-     {
-      "name": "Klay Thompson",
-      "pos": "G",
-      "exp": 16,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6475.png",
-      "status": "AVAILABLE",
-      "proj_min": 20.1,
-      "proj_pts": 9.7
-     },
-     {
-      "name": "Nick Richards",
-      "pos": "C",
-      "exp": 7,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278076.png",
-      "status": "AVAILABLE",
-      "proj_min": 18.5,
-      "proj_pts": 10.3
-     },
-     {
-      "name": "Dru Smith",
-      "pos": "G",
-      "exp": 5,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066993.png",
-      "status": "AVAILABLE",
-      "proj_min": 14.5,
-      "proj_pts": 5.1
-     }
-    ],
-    "data_games": 5
-   },
-   "away": {
-    "team": {
-     "id": "11",
-     "abbrev": "IND",
-     "name": "Indiana Pacers",
-     "short": "Pacers",
-     "location": "Indiana",
-     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/ind.png",
-     "color": "#0c2340"
-    },
-    "pred_pts": 115.2,
-    "sigma": 11.3,
-    "ortg": 109.9,
-    "drtg_opp": 110.1,
-    "pace": 105.7,
-    "availability": 0.986,
-    "season_ppg": 115.0,
-    "lost_points": 1.7,
-    "out_players": [
-     {
-      "name": "Obi Toppin",
-      "pos": "F",
-      "status": "OUT",
-      "est_lost_points": 0.4,
-      "detail": "Toppin (back) has been ruled out for Friday's game against Miami.",
-      "sources": {
-       "ESPN": "OUT",
-       "Yahoo": "OUT"
-      },
-      "conflict": false
-     },
-     {
-      "name": "Ivica Zubac",
-      "pos": "C",
-      "status": "OUT",
-      "est_lost_points": 0.4,
-      "detail": "Zubac (ankle) is out for Friday's game against the Heat.",
-      "sources": {
-       "ESPN": "OUT",
-       "Yahoo": "OUT"
-      },
-      "conflict": false
-     },
-     {
-      "name": "T.J. McConnell",
-      "pos": "G",
-      "status": "OUT",
-      "est_lost_points": 0.3,
-      "detail": "McConnell (hamstring) is practicing in the G League at Noblesville Boom training camp, per Alex Golden of SI.com.",
-      "sources": {
-       "ESPN": "OUT",
-       "Yahoo": "OUT"
-      },
-      "conflict": false
-     },
-     {
-      "name": "Johnny Furphy",
-      "pos": "G",
-      "status": "OUT",
-      "est_lost_points": 0.2,
-      "detail": "Furphy (knee) is practicing with the G League's Noblesville Boom, per Alex Golden of SI.com.",
-      "sources": {
-       "ESPN": "OUT",
-       "Yahoo": "OUT"
-      },
-      "conflict": false
-     },
-     {
-      "name": "Tyrese Haliburton",
-      "pos": "G",
-      "status": "OUT",
-      "est_lost_points": 0.2,
-      "detail": "Haliburton (hamstring) will miss at least the next two weeks of action, Shams Charania of ESPN reports.",
-      "sources": {
-       "ESPN": "OUT",
-       "Yahoo": "OUT"
-      },
-      "conflict": false
-     },
-     {
-      "name": "Ben Sheppard",
-      "pos": "G",
-      "status": "OUT",
-      "est_lost_points": 0.2,
-      "detail": "Head coach Rick Carlise confirmed Sheppard will miss \"months\" after undergoing surgery to repair a torn meniscus in his left knee, Tony East of Forbes.com reports.",
-      "sources": {
-       "ESPN": "OUT",
-       "Yahoo": "OUT"
-      },
-      "conflict": false
-     }
-    ],
-    "rotation": [
-     {
-      "name": "Pascal Siakam",
-      "pos": "F",
-      "exp": 11,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3149673.png",
-      "status": "AVAILABLE",
-      "proj_min": 32.3,
-      "proj_pts": 23.6
-     },
-     {
-      "name": "Andrew Nembhard",
-      "pos": "G",
-      "exp": 5,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395712.png",
-      "status": "AVAILABLE",
-      "proj_min": 31.1,
-      "proj_pts": 16.6
-     },
-     {
-      "name": "Kelly Oubre Jr.",
-      "pos": "G",
-      "exp": 12,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3133603.png",
-      "status": "AVAILABLE",
-      "proj_min": 28.8,
-      "proj_pts": 12.2
-     },
-     {
-      "name": "Aaron Nesmith",
-      "pos": "G",
-      "exp": 7,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4396909.png",
-      "status": "AVAILABLE",
-      "proj_min": 27.2,
-      "proj_pts": 13.4
-     },
-     {
-      "name": "Jarace Walker",
-      "pos": "F",
-      "exp": 4,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5106060.png",
-      "status": "AVAILABLE",
-      "proj_min": 23.9,
-      "proj_pts": 9.1
-     },
-     {
-      "name": "Kobe Brown",
-      "pos": "G",
-      "exp": 4,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431752.png",
-      "status": "AVAILABLE",
-      "proj_min": 21.0,
-      "proj_pts": 6.7
-     },
-     {
-      "name": "Jalen Slawson",
-      "pos": "F",
-      "exp": 3,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4398207.png",
-      "status": "AVAILABLE",
-      "proj_min": 20.0,
-      "proj_pts": 5.9
-     },
-     {
-      "name": "Jay Huff",
-      "pos": "C",
-      "exp": 6,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065731.png",
-      "status": "AVAILABLE",
-      "proj_min": 19.4,
-      "proj_pts": 8.4
-     },
-     {
-      "name": "Quenton Jackson",
-      "pos": "G",
-      "exp": 5,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592829.png",
-      "status": "AVAILABLE",
-      "proj_min": 18.0,
-      "proj_pts": 7.7
-     },
-     {
-      "name": "Larry Nance Jr.",
-      "pos": "F",
-      "exp": 12,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2580365.png",
-      "status": "AVAILABLE",
-      "proj_min": 12.9,
-      "proj_pts": 3.2
-     },
-     {
-      "name": "Braden Smith",
-      "pos": "G",
-      "exp": 0,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105854.png",
-      "status": "AVAILABLE",
-      "proj_min": 5.4,
-      "proj_pts": 1.6
-     }
-    ],
-    "data_games": 5
-   },
-   "sim": {
-    "home_win_prob": 0.5698,
-    "away_win_prob": 0.4302,
-    "exp_margin": 3.0,
-    "home_buckets": [
-     [
-      "116-120",
-      0.1721
-     ],
-     [
-      "111-115",
-      0.1678
-     ],
-     [
-      "121-125",
-      0.1456
+      0.1634
      ],
      [
       "106-110",
-      0.1345
+      0.1516
+     ],
+     [
+      "91-95",
+      0.1258
      ]
     ],
     "away_buckets": [
      [
-      "111-115",
-      0.1775
+      "101-105",
+      0.1803
      ],
      [
-      "116-120",
-      0.1592
+      "96-100",
+      0.1635
      ],
      [
       "106-110",
-      0.1548
+      0.1568
      ],
      [
-      "121-125",
-      0.123
+      "91-95",
+      0.1196
      ]
     ],
-    "likely_score": "116-115",
-    "both_bucket_hit_prob": 0.0305,
-    "confidence": 2.0
+    "likely_score": "102-96",
+    "both_bucket_hit_prob": 0.0315,
+    "confidence": 1.0
    },
-   "pred_total": 230.7,
-   "pred_total_bucket": "226-230",
-   "pred_margin": 3.1
+   "pred_total": 205.8,
+   "pred_total_bucket": "201-205",
+   "pred_margin": -0.2
   },
   {
-   "event_id": "401909283",
-   "date_utc": "2026-10-31T00:00Z",
-   "status": "STATUS_FINAL",
-   "venue": "American Airlines Center",
+   "event_id": "401909898",
+   "date_utc": "2026-10-31T23:00Z",
+   "status": "STATUS_SCHEDULED",
+   "venue": "Smoothie King Center",
    "home": {
     "team": {
-     "id": "6",
-     "abbrev": "DAL",
-     "name": "Dallas Mavericks",
-     "short": "Mavericks",
-     "location": "Dallas",
-     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
-     "color": "#0064b1"
+     "id": "3",
+     "abbrev": "NO",
+     "name": "New Orleans Pelicans",
+     "short": "Pelicans",
+     "location": "New Orleans",
+     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/no.png",
+     "color": "#0a2240"
     },
-    "pred_pts": 110.9,
+    "pred_pts": 117.7,
     "sigma": 11.3,
-    "ortg": 110.8,
+    "ortg": 110.0,
     "drtg_opp": 110.1,
-    "pace": 100.7,
-    "availability": 0.994,
-    "season_ppg": 113.6,
-    "lost_points": 0.7,
+    "pace": 106.9,
+    "availability": 1.0,
+    "season_ppg": 119.4,
+    "lost_points": 0.0,
     "out_players": [
      {
-      "name": "Santi Aldama",
-      "pos": "F",
+      "name": "Yves Missi",
+      "pos": "C",
       "status": "OUT",
-      "est_lost_points": 0.4,
-      "detail": "Aldama (knee) is listed as out for Friday's game against the Rockets.",
+      "est_lost_points": 0.0,
+      "detail": "Missi (knee) won't play in Saturday's game against Atlanta.",
       "sources": {
        "ESPN": "OUT",
        "Yahoo": "OUT"
@@ -2075,11 +802,11 @@
       "conflict": false
      },
      {
-      "name": "Dereck Lively II",
-      "pos": "C",
+      "name": "Jordan Poole",
+      "pos": "G",
       "status": "OUT",
-      "est_lost_points": 0.1,
-      "detail": "Lively (foot) has been ruled out for Friday's game against the Pacers.",
+      "est_lost_points": 0.0,
+      "detail": "Poole (ankle) has been ruled out for Saturday's game against the Hawks.",
       "sources": {
        "ESPN": "OUT",
        "Yahoo": "OUT"
@@ -2089,320 +816,1058 @@
     ],
     "rotation": [
      {
-      "name": "Cooper Flagg",
+      "name": "Trey Murphy III",
+      "pos": "F",
+      "exp": 6,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397688.png",
+      "status": "AVAILABLE",
+      "proj_min": 32.6,
+      "proj_pts": 18.5
+     },
+     {
+      "name": "Julian Reese",
       "pos": "F",
       "exp": 2,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5041939.png",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683742.png",
       "status": "AVAILABLE",
-      "proj_min": 32.4,
-      "proj_pts": 21.9
+      "proj_min": 29.1,
+      "proj_pts": 11.1
      },
      {
-      "name": "P.J. Washington",
-      "pos": "F",
-      "exp": 8,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278078.png",
-      "status": "AVAILABLE",
-      "proj_min": 31.4,
-      "proj_pts": 14.3
-     },
-     {
-      "name": "Naji Marshall",
+      "name": "Zion Williamson",
       "pos": "F",
       "exp": 7,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278594.png",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395628.png",
       "status": "AVAILABLE",
-      "proj_min": 28.8,
-      "proj_pts": 14.9
+      "proj_min": 28.6,
+      "proj_pts": 21.1
      },
      {
-      "name": "Max Christie",
+      "name": "Saddiq Bey",
       "pos": "G",
-      "exp": 5,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432582.png",
+      "exp": 6,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397136.png",
       "status": "AVAILABLE",
-      "proj_min": 28.5,
-      "proj_pts": 11.4
+      "proj_min": 27.5,
+      "proj_pts": 15.6
      },
      {
-      "name": "Zaccharie Risacher",
-      "pos": "F",
-      "exp": 3,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5211175.png",
-      "status": "AVAILABLE",
-      "proj_min": 24.3,
-      "proj_pts": 9.3
-     },
-     {
-      "name": "Daniel Gafford",
-      "pos": "F",
-      "exp": 8,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278049.png",
-      "status": "AVAILABLE",
-      "proj_min": 21.7,
-      "proj_pts": 9.1
-     },
-     {
-      "name": "Walter Clayton Jr.",
+      "name": "Dejounte Murray",
       "pos": "G",
-      "exp": 2,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4896372.png",
+      "exp": 10,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3907497.png",
       "status": "AVAILABLE",
-      "proj_min": 21.4,
-      "proj_pts": 8.0
-     },
-     {
-      "name": "Marcus Sasser",
-      "pos": "G",
-      "exp": 4,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432107.png",
-      "status": "AVAILABLE",
-      "proj_min": 14.6,
-      "proj_pts": 6.2
-     },
-     {
-      "name": "Caleb Martin",
-      "pos": "F",
-      "exp": 8,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3138160.png",
-      "status": "AVAILABLE",
-      "proj_min": 14.5,
-      "proj_pts": 4.3
-     },
-     {
-      "name": "Jett Howard",
-      "pos": "G",
-      "exp": 4,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105806.png",
-      "status": "AVAILABLE",
-      "proj_min": 11.2,
-      "proj_pts": 5.4
-     },
-     {
-      "name": "Kyrie Irving",
-      "pos": "G",
-      "exp": 15,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6442.png",
-      "status": "AVAILABLE",
-      "proj_min": 11.1,
-      "proj_pts": 4.8
-     }
-    ],
-    "data_games": 5
-   },
-   "away": {
-    "team": {
-     "id": "10",
-     "abbrev": "HOU",
-     "name": "Houston Rockets",
-     "short": "Rockets",
-     "location": "Houston",
-     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png",
-     "color": "#ce0e2d"
-    },
-    "pred_pts": 112.6,
-    "sigma": 11.3,
-    "ortg": 114.3,
-    "drtg_opp": 110.1,
-    "pace": 100.7,
-    "availability": 0.99,
-    "season_ppg": 123.0,
-    "lost_points": 1.2,
-    "out_players": [
-     {
-      "name": "Reed Sheppard",
-      "pos": "G",
-      "status": "OUT",
-      "est_lost_points": 0.6,
-      "detail": "Houston picked up Sheppard's (back) fourth-year team option Friday, per Lachard Binkley of SI.com.",
-      "sources": {
-       "ESPN": "OUT",
-       "Yahoo": "OUT"
-      },
-      "conflict": false
-     },
-     {
-      "name": "Steven Adams",
-      "pos": "C",
-      "status": "OUT",
-      "est_lost_points": 0.3,
-      "detail": "Head coach Ime Udoka said Monday that Adams could be out \"a week or two\" due to his right soleus strain, Lachard Binkley of SI.com reports.",
-      "sources": {
-       "ESPN": "OUT",
-       "Yahoo": "OUT"
-      },
-      "conflict": false
-     },
-     {
-      "name": "Alperen Sengun",
-      "pos": "C",
-      "status": "OUT",
-      "est_lost_points": 0.3,
-      "detail": "Sengun (back) has been ruled out for Friday's game against the Mavericks, Mike Curtis of The Dallas Morning News reports.",
-      "sources": {
-       "ESPN": "OUT",
-       "Yahoo": "OUT"
-      },
-      "conflict": false
-     }
-    ],
-    "rotation": [
-     {
-      "name": "Amen Thompson",
-      "pos": "G",
-      "exp": 4,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4684740.png",
-      "status": "AVAILABLE",
-      "proj_min": 36.3,
-      "proj_pts": 18.6
-     },
-     {
-      "name": "Kevin Durant",
-      "pos": "F",
-      "exp": 20,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3202.png",
-      "status": "AVAILABLE",
-      "proj_min": 35.7,
-      "proj_pts": 26.1
-     },
-     {
-      "name": "Jabari Smith Jr.",
-      "pos": "F",
-      "exp": 5,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432639.png",
-      "status": "AVAILABLE",
-      "proj_min": 34.8,
+      "proj_min": 27.2,
       "proj_pts": 16.0
      },
      {
-      "name": "Marcus Smart",
+      "name": "Herbert Jones",
+      "pos": "F",
+      "exp": 6,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277813.png",
+      "status": "AVAILABLE",
+      "proj_min": 24.5,
+      "proj_pts": 7.2
+     },
+     {
+      "name": "Jeremiah Fears",
+      "pos": "G",
+      "exp": 2,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5144091.png",
+      "status": "AVAILABLE",
+      "proj_min": 23.8,
+      "proj_pts": 12.1
+     },
+     {
+      "name": "Bennedict Mathurin",
+      "pos": "G",
+      "exp": 5,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683634.png",
+      "status": "AVAILABLE",
+      "proj_min": 23.4,
+      "proj_pts": 13.2
+     },
+     {
+      "name": "Derik Queen",
+      "pos": "C",
+      "exp": 2,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4869780.png",
+      "status": "AVAILABLE",
+      "proj_min": 23.2,
+      "proj_pts": 11.1
+     }
+    ],
+    "data_games": 5
+   },
+   "away": {
+    "team": {
+     "id": "1",
+     "abbrev": "ATL",
+     "name": "Atlanta Hawks",
+     "short": "Hawks",
+     "location": "Atlanta",
+     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/atl.png",
+     "color": "#c8102e"
+    },
+    "pred_pts": 118.4,
+    "sigma": 11.1,
+    "ortg": 111.2,
+    "drtg_opp": 110.1,
+    "pace": 106.9,
+    "availability": 1.0,
+    "season_ppg": 119.0,
+    "lost_points": 0.0,
+    "out_players": [
+     {
+      "name": "Mouhamed Gueye",
+      "pos": "F",
+      "status": "OUT",
+      "est_lost_points": 0.0,
+      "detail": "Gueye underwent surgery Tuesday to repair a fractured left foot that he suffered during a workout last week, Brad Rowland of the Locked On Podcast Network reports.",
+      "sources": {
+       "ESPN": "OUT",
+       "Yahoo": "OUT"
+      },
+      "conflict": false
+     }
+    ],
+    "rotation": [
+     {
+      "name": "Jalen Johnson",
+      "pos": "F",
+      "exp": 6,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4701230.png",
+      "status": "AVAILABLE",
+      "proj_min": 33.1,
+      "proj_pts": 20.3
+     },
+     {
+      "name": "Nickeil Alexander-Walker",
+      "pos": "G",
+      "exp": 8,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278039.png",
+      "status": "AVAILABLE",
+      "proj_min": 31.0,
+      "proj_pts": 20.4
+     },
+     {
+      "name": "Dyson Daniels",
+      "pos": "G",
+      "exp": 5,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4869342.png",
+      "status": "AVAILABLE",
+      "proj_min": 30.5,
+      "proj_pts": 10.8
+     },
+     {
+      "name": "Onyeka Okongwu",
+      "pos": "F",
+      "exp": 7,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431680.png",
+      "status": "AVAILABLE",
+      "proj_min": 28.9,
+      "proj_pts": 13.9
+     },
+     {
+      "name": "CJ McCollum",
+      "pos": "G",
+      "exp": 14,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2490149.png",
+      "status": "AVAILABLE",
+      "proj_min": 26.8,
+      "proj_pts": 16.6
+     },
+     {
+      "name": "Keshon Gilbert",
+      "pos": "G",
+      "exp": 2,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4585618.png",
+      "status": "AVAILABLE",
+      "proj_min": 24.9,
+      "proj_pts": 10.6
+     },
+     {
+      "name": "Luguentz Dort",
+      "pos": "G",
+      "exp": 8,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397020.png",
+      "status": "AVAILABLE",
+      "proj_min": 24.4,
+      "proj_pts": 7.7
+     },
+     {
+      "name": "Aaron Wiggins",
+      "pos": "G",
+      "exp": 6,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397183.png",
+      "status": "AVAILABLE",
+      "proj_min": 22.2,
+      "proj_pts": 10.9
+     },
+     {
+      "name": "Jock Landale",
+      "pos": "C",
+      "exp": 6,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3146557.png",
+      "status": "AVAILABLE",
+      "proj_min": 18.0,
+      "proj_pts": 8.1
+     }
+    ],
+    "data_games": 6
+   },
+   "sim": {
+    "home_win_prob": 0.5464,
+    "away_win_prob": 0.4536,
+    "exp_margin": 2.0,
+    "home_buckets": [
+     [
+      "116-120",
+      0.176
+     ],
+     [
+      "121-125",
+      0.161
+     ],
+     [
+      "111-115",
+      0.1548
+     ],
+     [
+      "126-130",
+      0.1216
+     ]
+    ],
+    "away_buckets": [
+     [
+      "116-120",
+      0.1792
+     ],
+     [
+      "111-115",
+      0.1689
+     ],
+     [
+      "121-125",
+      0.1478
+     ],
+     [
+      "106-110",
+      0.1307
+     ]
+    ],
+    "likely_score": "115-118",
+    "both_bucket_hit_prob": 0.0315,
+    "confidence": 1.5
+   },
+   "pred_total": 236.1,
+   "pred_total_bucket": "236-240",
+   "pred_margin": 2.1
+  },
+  {
+   "event_id": "401909899",
+   "date_utc": "2026-11-01T00:00Z",
+   "status": "STATUS_SCHEDULED",
+   "venue": "FedExForum",
+   "home": {
+    "team": {
+     "id": "29",
+     "abbrev": "MEM",
+     "name": "Memphis Grizzlies",
+     "short": "Grizzlies",
+     "location": "Memphis",
+     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/mem.png",
+     "color": "#5d76a9"
+    },
+    "pred_pts": 110.1,
+    "sigma": 11.3,
+    "ortg": 112.0,
+    "drtg_opp": 110.1,
+    "pace": 103.7,
+    "availability": 0.924,
+    "season_ppg": 118.2,
+    "lost_points": 9.1,
+    "out_players": [
+     {
+      "name": "Ty Jerome",
+      "pos": "G",
+      "status": "QUESTIONABLE",
+      "est_lost_points": 5.1,
+      "detail": "Jerome (back) is listed as questionable for Saturday's game against the Kings.",
+      "sources": {
+       "ESPN": "DAY_TO_DAY",
+       "Yahoo": "QUESTIONABLE"
+      },
+      "conflict": true
+     },
+     {
+      "name": "Scotty Pippen Jr.",
+      "pos": "G",
+      "status": "QUESTIONABLE",
+      "est_lost_points": 2.2,
+      "detail": "Pippen (back) is listed as questionable for Saturday's game against the Kings.",
+      "sources": {
+       "ESPN": "DAY_TO_DAY",
+       "Yahoo": "QUESTIONABLE"
+      },
+      "conflict": true
+     },
+     {
+      "name": "Quinten Post",
+      "pos": "C",
+      "status": "DOUBTFUL",
+      "est_lost_points": 1.8,
+      "detail": "Post (ankle) is doubtful for Friday's game against the Kings.",
+      "sources": {
+       "ESPN": "DAY_TO_DAY",
+       "Yahoo": "DOUBTFUL"
+      },
+      "conflict": true
+     }
+    ],
+    "rotation": [
+     {
+      "name": "Jerami Grant",
+      "pos": "F",
+      "exp": 13,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2991070.png",
+      "status": "AVAILABLE",
+      "proj_min": 26.7,
+      "proj_pts": 14.4
+     },
+     {
+      "name": "Jaylen Wells",
+      "pos": "F",
+      "exp": 3,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5112087.png",
+      "status": "AVAILABLE",
+      "proj_min": 25.4,
+      "proj_pts": 12.4
+     },
+     {
+      "name": "Cedric Coward",
+      "pos": "F",
+      "exp": 2,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4903027.png",
+      "status": "AVAILABLE",
+      "proj_min": 25.2,
+      "proj_pts": 13.1
+     },
+     {
+      "name": "Zach Edey",
+      "pos": "C",
+      "exp": 3,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4600663.png",
+      "status": "AVAILABLE",
+      "proj_min": 23.2,
+      "proj_pts": 12.0
+     },
+     {
+      "name": "Cam Spencer",
+      "pos": "G",
+      "exp": 3,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433083.png",
+      "status": "AVAILABLE",
+      "proj_min": 20.9,
+      "proj_pts": 10.4
+     },
+     {
+      "name": "Jahmai Mashack",
+      "pos": "G",
+      "exp": 2,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683934.png",
+      "status": "AVAILABLE",
+      "proj_min": 20.5,
+      "proj_pts": 5.5
+     },
+     {
+      "name": "Isaiah Stewart",
+      "pos": "C",
+      "exp": 7,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432810.png",
+      "status": "AVAILABLE",
+      "proj_min": 20.2,
+      "proj_pts": 10.0
+     },
+     {
+      "name": "Taylor Hendricks",
+      "pos": "F",
+      "exp": 4,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4684806.png",
+      "status": "AVAILABLE",
+      "proj_min": 20.1,
+      "proj_pts": 7.2
+     },
+     {
+      "name": "Kris Murray",
+      "pos": "F",
+      "exp": 4,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4594326.png",
+      "status": "AVAILABLE",
+      "proj_min": 19.9,
+      "proj_pts": 4.0
+     },
+     {
+      "name": "Javon Small",
+      "pos": "G",
+      "exp": 2,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4781746.png",
+      "status": "AVAILABLE",
+      "proj_min": 19.1,
+      "proj_pts": 9.3
+     },
+     {
+      "name": "GG Jackson",
+      "pos": "F",
+      "exp": 4,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105550.png",
+      "status": "AVAILABLE",
+      "proj_min": 18.7,
+      "proj_pts": 9.7
+     }
+    ],
+    "data_games": 5
+   },
+   "away": {
+    "team": {
+     "id": "23",
+     "abbrev": "SAC",
+     "name": "Sacramento Kings",
+     "short": "Kings",
+     "location": "Sacramento",
+     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/sac.png",
+     "color": "#5a2d81"
+    },
+    "pred_pts": 112.5,
+    "sigma": 11.3,
+    "ortg": 108.2,
+    "drtg_opp": 110.1,
+    "pace": 103.7,
+    "availability": 0.992,
+    "season_ppg": 110.2,
+    "lost_points": 0.9,
+    "out_players": [
+     {
+      "name": "Maxime Raynaud",
+      "pos": "C",
+      "status": "OUT",
+      "est_lost_points": 0.4,
+      "detail": "Raynaud (knee) is progressing in his rehabilitation and will be re-evaluated in approximately two weeks, Brenden Nunes of KHTK Sactown Sports 1140 reports.",
+      "sources": {
+       "ESPN": "OUT",
+       "Yahoo": "OUT"
+      },
+      "conflict": false
+     },
+     {
+      "name": "Keegan Murray",
+      "pos": "F",
+      "status": "OUT",
+      "est_lost_points": 0.3,
+      "detail": "Murray (ankle) will be re-evaluated in 10-to-14 days, NBA reporter Marc Stein reports.",
+      "sources": {
+       "ESPN": "OUT",
+       "Yahoo": "OUT"
+      },
+      "conflict": false
+     },
+     {
+      "name": "Dylan Cardwell",
+      "pos": "C",
+      "status": "OUT",
+      "est_lost_points": 0.2,
+      "detail": "Cardwell (calf) will be re-evaluated in one week, Brenden Nunes of KHTK Sactown Sports 1140 reports.",
+      "sources": {
+       "ESPN": "OUT",
+       "Yahoo": "OUT"
+      },
+      "conflict": false
+     }
+    ],
+    "rotation": [
+     {
+      "name": "Zach LaVine",
       "pos": "G",
       "exp": 13,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2990992.png",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3064440.png",
       "status": "AVAILABLE",
-      "proj_min": 27.8,
-      "proj_pts": 8.9
+      "proj_min": 32.3,
+      "proj_pts": 21.3
      },
      {
-      "name": "Tari Eason",
+      "name": "Domantas Sabonis",
       "pos": "F",
-      "exp": 5,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433192.png",
+      "exp": 11,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3155942.png",
       "status": "AVAILABLE",
-      "proj_min": 25.5,
-      "proj_pts": 10.1
+      "proj_min": 31.2,
+      "proj_pts": 16.6
      },
      {
-      "name": "Oscar Tshiebwe",
-      "pos": "C",
-      "exp": 4,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432827.png",
+      "name": "De'Andre Hunter",
+      "pos": "F",
+      "exp": 8,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065732.png",
       "status": "AVAILABLE",
-      "proj_min": 16.4,
+      "proj_min": 26.0,
       "proj_pts": 8.2
      },
      {
-      "name": "Clint Capela",
-      "pos": "C",
-      "exp": 13,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3102529.png",
-      "status": "AVAILABLE",
-      "proj_min": 12.0,
-      "proj_pts": 3.8
-     },
-     {
-      "name": "Fred VanVleet",
-      "pos": "G",
-      "exp": 11,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2991230.png",
-      "status": "AVAILABLE",
-      "proj_min": 11.9,
-      "proj_pts": 4.4
-     },
-     {
-      "name": "Bogdan Bogdanovic",
-      "pos": "G",
-      "exp": 10,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3037789.png",
-      "status": "AVAILABLE",
-      "proj_min": 8.5,
-      "proj_pts": 3.8
-     },
-     {
-      "name": "Julian Phillips",
-      "pos": "F",
-      "exp": 4,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105553.png",
-      "status": "AVAILABLE",
-      "proj_min": 7.2,
-      "proj_pts": 3.1
-     },
-     {
-      "name": "Jae'Sean Tate",
+      "name": "Precious Achiuwa",
       "pos": "F",
       "exp": 7,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3136777.png",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431679.png",
       "status": "AVAILABLE",
-      "proj_min": 7.1,
-      "proj_pts": 1.6
+      "proj_min": 25.1,
+      "proj_pts": 10.9
+     },
+     {
+      "name": "Leaky Black",
+      "pos": "F",
+      "exp": 3,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395650.png",
+      "status": "AVAILABLE",
+      "proj_min": 24.8,
+      "proj_pts": 5.7
+     },
+     {
+      "name": "Daeqwon Plowden",
+      "pos": "G",
+      "exp": 3,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4279318.png",
+      "status": "AVAILABLE",
+      "proj_min": 23.5,
+      "proj_pts": 8.1
+     },
+     {
+      "name": "Nique Clifford",
+      "pos": "G",
+      "exp": 2,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702384.png",
+      "status": "AVAILABLE",
+      "proj_min": 20.1,
+      "proj_pts": 6.3
+     },
+     {
+      "name": "Malik Monk",
+      "pos": "G",
+      "exp": 10,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066262.png",
+      "status": "AVAILABLE",
+      "proj_min": 18.9,
+      "proj_pts": 8.7
+     },
+     {
+      "name": "Darius Acuff Jr.",
+      "pos": "G",
+      "exp": 0,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5142620.png",
+      "status": "AVAILABLE",
+      "proj_min": 14.7,
+      "proj_pts": 6.4
+     },
+     {
+      "name": "Emanuel Sharp",
+      "pos": "G",
+      "exp": 0,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5106058.png",
+      "status": "AVAILABLE",
+      "proj_min": 9.0,
+      "proj_pts": 2.9
+     },
+     {
+      "name": "Jonathan Mogbo",
+      "pos": "F",
+      "exp": 3,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5107897.png",
+      "status": "AVAILABLE",
+      "proj_min": 7.8,
+      "proj_pts": 1.8
      }
     ],
     "data_games": 5
    },
    "sim": {
-    "home_win_prob": 0.5215,
-    "away_win_prob": 0.4785,
-    "exp_margin": 1.0,
+    "home_win_prob": 0.5043,
+    "away_win_prob": 0.4957,
+    "exp_margin": 0.3,
     "home_buckets": [
      [
       "111-115",
-      0.1742
+      0.171
      ],
      [
       "106-110",
-      0.1669
+      0.1696
      ],
      [
       "116-120",
-      0.1471
-     ],
-     [
-      "101-105",
-      0.1296
-     ]
-    ],
-    "away_buckets": [
-     [
-      "111-115",
-      0.1718
-     ],
-     [
-      "106-110",
-      0.1718
-     ],
-     [
-      "116-120",
-      0.1408
+      0.1428
      ],
      [
       "101-105",
       0.1374
      ]
     ],
-    "likely_score": "112-103",
-    "both_bucket_hit_prob": 0.0299,
+    "away_buckets": [
+     [
+      "106-110",
+      0.1718
+     ],
+     [
+      "111-115",
+      0.1716
+     ],
+     [
+      "116-120",
+      0.14
+     ],
+     [
+      "101-105",
+      0.1386
+     ]
+    ],
+    "likely_score": "112-113",
+    "both_bucket_hit_prob": 0.0294,
     "confidence": 1.0
    },
-   "pred_total": 223.5,
+   "pred_total": 222.6,
    "pred_total_bucket": "221-225",
-   "pred_margin": 1.1
+   "pred_margin": 0.4
   },
   {
-   "event_id": "401909284",
-   "date_utc": "2026-10-31T00:00Z",
-   "status": "STATUS_FINAL",
-   "venue": "Target Center",
+   "event_id": "401909900",
+   "date_utc": "2026-11-01T00:00Z",
+   "status": "STATUS_SCHEDULED",
+   "venue": "Fiserv Forum",
    "home": {
+    "team": {
+     "id": "15",
+     "abbrev": "MIL",
+     "name": "Milwaukee Bucks",
+     "short": "Bucks",
+     "location": "Milwaukee",
+     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/mil.png",
+     "color": "#00471b"
+    },
+    "pred_pts": 115.6,
+    "sigma": 11.3,
+    "ortg": 109.4,
+    "drtg_opp": 110.1,
+    "pace": 105.4,
+    "availability": 1.0,
+    "season_ppg": 113.4,
+    "lost_points": 0.0,
+    "out_players": [],
+    "rotation": [
+     {
+      "name": "Tyler Herro",
+      "pos": "G",
+      "exp": 8,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395725.png",
+      "status": "AVAILABLE",
+      "proj_min": 29.7,
+      "proj_pts": 20.9
+     },
+     {
+      "name": "Ryan Rollins",
+      "pos": "G",
+      "exp": 5,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4591725.png",
+      "status": "AVAILABLE",
+      "proj_min": 29.0,
+      "proj_pts": 14.5
+     },
+     {
+      "name": "Jaime Jaquez Jr.",
+      "pos": "F",
+      "exp": 4,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432848.png",
+      "status": "AVAILABLE",
+      "proj_min": 27.2,
+      "proj_pts": 15.5
+     },
+     {
+      "name": "Myles Turner",
+      "pos": "C",
+      "exp": 12,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3133628.png",
+      "status": "AVAILABLE",
+      "proj_min": 25.5,
+      "proj_pts": 9.6
+     },
+     {
+      "name": "Kyle Kuzma",
+      "pos": "F",
+      "exp": 10,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3134907.png",
+      "status": "AVAILABLE",
+      "proj_min": 25.4,
+      "proj_pts": 11.8
+     },
+     {
+      "name": "Cormac Ryan",
+      "pos": "G",
+      "exp": 2,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397114.png",
+      "status": "AVAILABLE",
+      "proj_min": 23.4,
+      "proj_pts": 14.6
+     },
+     {
+      "name": "Ousmane Dieng",
+      "pos": "F",
+      "exp": 5,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4997526.png",
+      "status": "AVAILABLE",
+      "proj_min": 22.3,
+      "proj_pts": 7.7
+     },
+     {
+      "name": "Kel'el Ware",
+      "pos": "C",
+      "exp": 3,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105623.png",
+      "status": "AVAILABLE",
+      "proj_min": 20.1,
+      "proj_pts": 11.0
+     },
+     {
+      "name": "Gary Trent Jr.",
+      "pos": "G",
+      "exp": 9,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277843.png",
+      "status": "AVAILABLE",
+      "proj_min": 19.1,
+      "proj_pts": 7.2
+     },
+     {
+      "name": "Caris LeVert",
+      "pos": "G",
+      "exp": 11,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2991043.png",
+      "status": "AVAILABLE",
+      "proj_min": 18.3,
+      "proj_pts": 6.8
+     }
+    ],
+    "data_games": 5
+   },
+   "away": {
+    "team": {
+     "id": "5",
+     "abbrev": "CLE",
+     "name": "Cleveland Cavaliers",
+     "short": "Cavaliers",
+     "location": "Cleveland",
+     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/cle.png",
+     "color": "#860038"
+    },
+    "pred_pts": 116.0,
+    "sigma": 11.3,
+    "ortg": 110.5,
+    "drtg_opp": 110.1,
+    "pace": 105.4,
+    "availability": 0.997,
+    "season_ppg": 118.0,
+    "lost_points": 0.4,
+    "out_players": [
+     {
+      "name": "Jaylon Tyson",
+      "pos": "G",
+      "status": "OUT",
+      "est_lost_points": 0.3,
+      "detail": "Tyson (ankle) has been ruled out for Saturday's game against the Bucks.",
+      "sources": {
+       "ESPN": "OUT",
+       "Yahoo": "OUT"
+      },
+      "conflict": false
+     }
+    ],
+    "rotation": [
+     {
+      "name": "James Harden",
+      "pos": "G",
+      "exp": 18,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3992.png",
+      "status": "AVAILABLE",
+      "proj_min": 34.1,
+      "proj_pts": 20.1
+     },
+     {
+      "name": "Donovan Mitchell",
+      "pos": "G",
+      "exp": 10,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3908809.png",
+      "status": "AVAILABLE",
+      "proj_min": 33.7,
+      "proj_pts": 27.4
+     },
+     {
+      "name": "Evan Mobley",
+      "pos": "C",
+      "exp": 6,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432158.png",
+      "status": "AVAILABLE",
+      "proj_min": 32.5,
+      "proj_pts": 18.6
+     },
+     {
+      "name": "Peyton Watson",
+      "pos": "G",
+      "exp": 5,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4576087.png",
+      "status": "AVAILABLE",
+      "proj_min": 29.5,
+      "proj_pts": 13.7
+     },
+     {
+      "name": "Jarrett Allen",
+      "pos": "C",
+      "exp": 10,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066328.png",
+      "status": "AVAILABLE",
+      "proj_min": 27.4,
+      "proj_pts": 15.7
+     },
+     {
+      "name": "Sam Merrill",
+      "pos": "G",
+      "exp": 7,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066757.png",
+      "status": "AVAILABLE",
+      "proj_min": 25.8,
+      "proj_pts": 11.9
+     },
+     {
+      "name": "Craig Porter Jr.",
+      "pos": "G",
+      "exp": 4,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4701233.png",
+      "status": "AVAILABLE",
+      "proj_min": 15.4,
+      "proj_pts": 3.7
+     },
+     {
+      "name": "Thomas Bryant",
+      "pos": "C",
+      "exp": 10,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3934723.png",
+      "status": "AVAILABLE",
+      "proj_min": 12.1,
+      "proj_pts": 6.3
+     },
+     {
+      "name": "Tyrese Proctor",
+      "pos": "G",
+      "exp": 2,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5023693.png",
+      "status": "AVAILABLE",
+      "proj_min": 10.7,
+      "proj_pts": 5.0
+     },
+     {
+      "name": "Tristan Enaruna",
+      "pos": "F",
+      "exp": 2,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431734.png",
+      "status": "AVAILABLE",
+      "proj_min": 9.4,
+      "proj_pts": 4.1
+     },
+     {
+      "name": "Mario Hezonja",
+      "pos": "F",
+      "exp": 6,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2995706.png",
+      "status": "AVAILABLE",
+      "proj_min": 9.3,
+      "proj_pts": 3.4
+     }
+    ],
+    "data_games": 5
+   },
+   "sim": {
+    "home_win_prob": 0.5532,
+    "away_win_prob": 0.4468,
+    "exp_margin": 2.3,
+    "home_buckets": [
+     [
+      "116-120",
+      0.1737
+     ],
+     [
+      "111-115",
+      0.1668
+     ],
+     [
+      "121-125",
+      0.1461
+     ],
+     [
+      "106-110",
+      0.1335
+     ]
+    ],
+    "away_buckets": [
+     [
+      "111-115",
+      0.1768
+     ],
+     [
+      "116-120",
+      0.1646
+     ],
+     [
+      "106-110",
+      0.1475
+     ],
+     [
+      "121-125",
+      0.129
+     ]
+    ],
+    "likely_score": "113-116",
+    "both_bucket_hit_prob": 0.0307,
+    "confidence": 1.5
+   },
+   "pred_total": 231.6,
+   "pred_total_bucket": "231-235",
+   "pred_margin": 2.4
+  },
+  {
+   "event_id": "401909901",
+   "date_utc": "2026-11-01T00:00Z",
+   "status": "STATUS_SCHEDULED",
+   "venue": "Frost Bank Center",
+   "home": {
+    "team": {
+     "id": "24",
+     "abbrev": "SA",
+     "name": "San Antonio Spurs",
+     "short": "Spurs",
+     "location": "San Antonio",
+     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
+     "color": "#000000"
+    },
+    "pred_pts": 113.5,
+    "sigma": 11.3,
+    "ortg": 110.4,
+    "drtg_opp": 110.1,
+    "pace": 105.8,
+    "availability": 0.955,
+    "season_ppg": 116.6,
+    "lost_points": 5.4,
+    "out_players": [
+     {
+      "name": "Tobias Harris",
+      "pos": "F",
+      "status": "OUT",
+      "est_lost_points": 4.6,
+      "detail": "Harris (calf) is listed as out for Saturday's game against Minnesota.",
+      "sources": {
+       "ESPN": "OUT",
+       "Yahoo": "OUT"
+      },
+      "conflict": false
+     }
+    ],
+    "rotation": [
+     {
+      "name": "De'Aaron Fox",
+      "pos": "G",
+      "exp": 10,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066259.png",
+      "status": "AVAILABLE",
+      "proj_min": 29.9,
+      "proj_pts": 17.2
+     },
+     {
+      "name": "Devin Vassell",
+      "pos": "G",
+      "exp": 7,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395630.png",
+      "status": "AVAILABLE",
+      "proj_min": 29.7,
+      "proj_pts": 12.9
+     },
+     {
+      "name": "Stephon Castle",
+      "pos": "G",
+      "exp": 3,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4845367.png",
+      "status": "AVAILABLE",
+      "proj_min": 29.1,
+      "proj_pts": 16.1
+     },
+     {
+      "name": "Victor Wembanyama",
+      "pos": "F",
+      "exp": 4,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5104157.png",
+      "status": "AVAILABLE",
+      "proj_min": 28.9,
+      "proj_pts": 24.7
+     },
+     {
+      "name": "Julian Champagnie",
+      "pos": "F",
+      "exp": 5,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592479.png",
+      "status": "AVAILABLE",
+      "proj_min": 26.7,
+      "proj_pts": 11.3
+     },
+     {
+      "name": "Dylan Harper",
+      "pos": "G",
+      "exp": 2,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5037871.png",
+      "status": "AVAILABLE",
+      "proj_min": 24.5,
+      "proj_pts": 12.8
+     },
+     {
+      "name": "Keldon Johnson",
+      "pos": "F",
+      "exp": 8,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395723.png",
+      "status": "AVAILABLE",
+      "proj_min": 22.0,
+      "proj_pts": 11.8
+     },
+     {
+      "name": "Harrison Barnes",
+      "pos": "F",
+      "exp": 15,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6578.png",
+      "status": "AVAILABLE",
+      "proj_min": 20.5,
+      "proj_pts": 6.9
+     },
+     {
+      "name": "Luke Kornet",
+      "pos": "C",
+      "exp": 10,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3064560.png",
+      "status": "AVAILABLE",
+      "proj_min": 18.4,
+      "proj_pts": 5.1
+     },
+     {
+      "name": "Carter Bryant",
+      "pos": "F",
+      "exp": 2,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5061568.png",
+      "status": "AVAILABLE",
+      "proj_min": 10.2,
+      "proj_pts": 3.0
+     }
+    ],
+    "data_games": 5
+   },
+   "away": {
     "team": {
      "id": "16",
      "abbrev": "MIN",
@@ -2412,20 +1877,20 @@
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
      "color": "#266092"
     },
-    "pred_pts": 108.4,
+    "pred_pts": 109.7,
     "sigma": 11.3,
     "ortg": 111.0,
     "drtg_opp": 110.1,
-    "pace": 104.9,
-    "availability": 0.888,
+    "pace": 105.8,
+    "availability": 0.894,
     "season_ppg": 120.4,
-    "lost_points": 13.6,
+    "lost_points": 13.0,
     "out_players": [
      {
       "name": "Anthony Edwards",
       "pos": "G",
       "status": "OUT",
-      "est_lost_points": 9.8,
+      "est_lost_points": 9.3,
       "detail": "Edwards underwent a successful arthroscopic procedure on his right knee Thursday, the Timberwolves announced.",
       "sources": {
        "ESPN": "OUT",
@@ -2437,7 +1902,7 @@
       "name": "Donte DiVincenzo",
       "pos": "G",
       "status": "OUT",
-      "est_lost_points": 3.9,
+      "est_lost_points": 3.7,
       "detail": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports.",
       "sources": {
        "ESPN": "OUT",
@@ -2454,7 +1919,7 @@
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431671.png",
       "status": "AVAILABLE",
       "proj_min": 31.8,
-      "proj_pts": 15.4
+      "proj_pts": 15.9
      },
      {
       "name": "Rudy Gobert",
@@ -2462,8 +1927,8 @@
       "exp": 14,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3032976.png",
       "status": "AVAILABLE",
-      "proj_min": 30.8,
-      "proj_pts": 9.7
+      "proj_min": 30.7,
+      "proj_pts": 9.6
      },
      {
       "name": "Ayo Dosunmu",
@@ -2471,8 +1936,8 @@
       "exp": 6,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397002.png",
       "status": "AVAILABLE",
-      "proj_min": 28.3,
-      "proj_pts": 14.2
+      "proj_min": 28.4,
+      "proj_pts": 14.3
      },
      {
       "name": "LaMelo Ball",
@@ -2480,8 +1945,8 @@
       "exp": 7,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432816.png",
       "status": "AVAILABLE",
-      "proj_min": 27.1,
-      "proj_pts": 17.6
+      "proj_min": 27.2,
+      "proj_pts": 18.0
      },
      {
       "name": "Jonathan Kuminga",
@@ -2489,8 +1954,8 @@
       "exp": 6,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433247.png",
       "status": "AVAILABLE",
-      "proj_min": 24.5,
-      "proj_pts": 12.7
+      "proj_min": 24.3,
+      "proj_pts": 12.3
      },
      {
       "name": "Cody Williams",
@@ -2498,8 +1963,8 @@
       "exp": 3,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4895758.png",
       "status": "AVAILABLE",
-      "proj_min": 20.1,
-      "proj_pts": 5.3
+      "proj_min": 19.0,
+      "proj_pts": 4.6
      },
      {
       "name": "Terrence Shannon Jr.",
@@ -2507,8 +1972,8 @@
       "exp": 3,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432847.png",
       "status": "AVAILABLE",
-      "proj_min": 15.6,
-      "proj_pts": 7.9
+      "proj_min": 15.8,
+      "proj_pts": 8.1
      },
      {
       "name": "Bones Hyland",
@@ -2516,8 +1981,8 @@
       "exp": 6,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592492.png",
       "status": "AVAILABLE",
-      "proj_min": 14.5,
-      "proj_pts": 7.3
+      "proj_min": 14.8,
+      "proj_pts": 8.2
      },
      {
       "name": "Jaylen Clark",
@@ -2525,8 +1990,8 @@
       "exp": 3,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432247.png",
       "status": "AVAILABLE",
-      "proj_min": 10.9,
-      "proj_pts": 3.4
+      "proj_min": 11.3,
+      "proj_pts": 3.5
      },
      {
       "name": "Joan Beringer",
@@ -2534,722 +1999,99 @@
       "exp": 2,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5279133.png",
       "status": "AVAILABLE",
-      "proj_min": 10.1,
+      "proj_min": 10.5,
       "proj_pts": 5.2
      },
      {
-      "name": "Enrique Freeman",
+      "name": "Trey Lyles",
       "pos": "F",
-      "exp": 3,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592699.png",
+      "exp": 11,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3136196.png",
       "status": "AVAILABLE",
-      "proj_min": 9.2,
-      "proj_pts": 3.4
+      "proj_min": 9.3,
+      "proj_pts": 3.3
      }
     ],
     "data_games": 5
    },
-   "away": {
-    "team": {
-     "id": "12",
-     "abbrev": "LAC",
-     "name": "LA Clippers",
-     "short": "Clippers",
-     "location": "LA",
-     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
-     "color": "#12173f"
-    },
-    "pred_pts": 108.1,
-    "sigma": 11.5,
-    "ortg": 108.1,
-    "drtg_opp": 110.1,
-    "pace": 104.9,
-    "availability": 0.909,
-    "season_ppg": 106.5,
-    "lost_points": 10.8,
-    "out_players": [
-     {
-      "name": "Brandon Ingram",
-      "pos": "F",
-      "status": "OUT",
-      "est_lost_points": 4.4,
-      "detail": "Ingram (Achilles) is making progress but is set to miss at least one more week, Ohm Youngmisuk of ESPN.com reports.",
-      "sources": {
-       "ESPN": "OUT",
-       "Yahoo": "OUT"
-      },
-      "conflict": false
-     },
-     {
-      "name": "Max Strus",
-      "pos": "G",
-      "status": "OUT",
-      "est_lost_points": 2.3,
-      "detail": "Strus (foot) is making progress but is set to miss at least one more week, Ohm Youngmisuk of ESPN.com reports.",
-      "sources": {
-       "ESPN": "OUT",
-       "Yahoo": "OUT"
-      },
-      "conflict": false
-     },
-     {
-      "name": "Jordan Miller",
-      "pos": "G",
-      "status": "OUT",
-      "est_lost_points": 2.1,
-      "detail": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic.",
-      "sources": {
-       "ESPN": "OUT",
-       "Yahoo": "OUT"
-      },
-      "conflict": false
-     },
-     {
-      "name": "Bradley Beal",
-      "pos": "G",
-      "status": "OUT",
-      "est_lost_points": 1.6,
-      "detail": "Beal (knee) will not be ready for the start of the regular season, NBA writer Justin Russo reports.",
-      "sources": {
-       "ESPN": "OUT",
-       "Yahoo": "OUT"
-      },
-      "conflict": false
-     }
-    ],
-    "rotation": [
-     {
-      "name": "Darius Garland",
-      "pos": "G",
-      "exp": 8,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4396907.png",
-      "status": "AVAILABLE",
-      "proj_min": 29.8,
-      "proj_pts": 20.6
-     },
-     {
-      "name": "Rui Hachimura",
-      "pos": "F",
-      "exp": 8,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066648.png",
-      "status": "AVAILABLE",
-      "proj_min": 28.8,
-      "proj_pts": 11.2
-     },
-     {
-      "name": "Kris Dunn",
-      "pos": "G",
-      "exp": 11,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2991139.png",
-      "status": "AVAILABLE",
-      "proj_min": 27.8,
-      "proj_pts": 7.7
-     },
-     {
-      "name": "Derrick Jones Jr.",
-      "pos": "F",
-      "exp": 11,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3936099.png",
-      "status": "AVAILABLE",
-      "proj_min": 27.6,
-      "proj_pts": 11.0
-     },
-     {
-      "name": "Brook Lopez",
-      "pos": "C",
-      "exp": 19,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3448.png",
-      "status": "AVAILABLE",
-      "proj_min": 22.0,
-      "proj_pts": 9.9
-     },
-     {
-      "name": "Kobe Sanders",
-      "pos": "G",
-      "exp": 2,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702352.png",
-      "status": "AVAILABLE",
-      "proj_min": 20.1,
-      "proj_pts": 7.2
-     },
-     {
-      "name": "Isaiah Jackson",
-      "pos": "F",
-      "exp": 6,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432170.png",
-      "status": "AVAILABLE",
-      "proj_min": 17.2,
-      "proj_pts": 8.4
-     },
-     {
-      "name": "Gradey Dick",
-      "pos": "G",
-      "exp": 4,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5106258.png",
-      "status": "AVAILABLE",
-      "proj_min": 14.7,
-      "proj_pts": 6.3
-     },
-     {
-      "name": "Jalen Pickett",
-      "pos": "G",
-      "exp": 4,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4398390.png",
-      "status": "AVAILABLE",
-      "proj_min": 14.5,
-      "proj_pts": 5.5
-     },
-     {
-      "name": "Keaton Wagler",
-      "pos": "G",
-      "exp": 0,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5254165.png",
-      "status": "AVAILABLE",
-      "proj_min": 11.1,
-      "proj_pts": 4.5
-     },
-     {
-      "name": "Blake Wesley",
-      "pos": "G",
-      "exp": 5,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683935.png",
-      "status": "AVAILABLE",
-      "proj_min": 11.1,
-      "proj_pts": 4.0
-     }
-    ],
-    "data_games": 4
-   },
    "sim": {
-    "home_win_prob": 0.5697,
-    "away_win_prob": 0.4303,
-    "exp_margin": 3.0,
+    "home_win_prob": 0.6559,
+    "away_win_prob": 0.3441,
+    "exp_margin": 6.5,
     "home_buckets": [
      [
-      "106-110",
-      0.174
-     ],
-     [
       "111-115",
-      0.164
-     ],
-     [
-      "101-105",
-      0.1491
+      0.1734
      ],
      [
       "116-120",
-      0.129
+      0.1651
+     ],
+     [
+      "106-110",
+      0.1484
+     ],
+     [
+      "121-125",
+      0.1298
      ]
     ],
     "away_buckets": [
      [
       "106-110",
-      0.1714
+      0.1767
      ],
      [
       "101-105",
-      0.1658
+      0.1589
      ],
      [
       "111-115",
-      0.1431
+      0.157
      ],
      [
       "96-100",
-      0.1316
+      0.117
      ]
     ],
-    "likely_score": "105-109",
-    "both_bucket_hit_prob": 0.0298,
-    "confidence": 2.0
+    "likely_score": "106-114",
+    "both_bucket_hit_prob": 0.0306,
+    "confidence": 2.5
    },
-   "pred_total": 216.5,
-   "pred_total_bucket": "216-220",
-   "pred_margin": 3.1
-  },
-  {
-   "event_id": "401909285",
-   "date_utc": "2026-10-31T02:00Z",
-   "status": "STATUS_IN_PROGRESS",
-   "venue": "Chase Center",
-   "home": {
-    "team": {
-     "id": "9",
-     "abbrev": "GS",
-     "name": "Golden State Warriors",
-     "short": "Warriors",
-     "location": "Golden State",
-     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
-     "color": "#fdb927"
-    },
-    "pred_pts": 110.9,
-    "sigma": 11.3,
-    "ortg": 111.8,
-    "drtg_opp": 110.1,
-    "pace": 101.6,
-    "availability": 0.971,
-    "season_ppg": 117.6,
-    "lost_points": 3.3,
-    "out_players": [
-     {
-      "name": "Jimmy Butler III",
-      "pos": "F",
-      "status": "OUT",
-      "est_lost_points": 1.9,
-      "detail": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports.",
-      "sources": {
-       "ESPN": "OUT",
-       "Yahoo": "OUT"
-      },
-      "conflict": false
-     },
-     {
-      "name": "Moses Moody",
-      "pos": "G",
-      "status": "OUT",
-      "est_lost_points": 1.1,
-      "detail": "Moody (knee) is progressing toward a potential return between December and January after rupturing his left patellar tendon in March, Anthony Slater of ESPN reports.",
-      "sources": {
-       "ESPN": "OUT",
-       "Yahoo": "OUT"
-      },
-      "conflict": false
-     }
-    ],
-    "rotation": [
-     {
-      "name": "Stephen Curry",
-      "pos": "G",
-      "exp": 18,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3975.png",
-      "status": "AVAILABLE",
-      "proj_min": 28.6,
-      "proj_pts": 27.2
-     },
-     {
-      "name": "Brandin Podziemski",
-      "pos": "G",
-      "exp": 4,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4709138.png",
-      "status": "AVAILABLE",
-      "proj_min": 27.9,
-      "proj_pts": 13.4
-     },
-     {
-      "name": "Draymond Green",
-      "pos": "F",
-      "exp": 15,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6589.png",
-      "status": "AVAILABLE",
-      "proj_min": 26.3,
-      "proj_pts": 6.6
-     },
-     {
-      "name": "De'Anthony Melton",
-      "pos": "G",
-      "exp": 9,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066436.png",
-      "status": "AVAILABLE",
-      "proj_min": 21.5,
-      "proj_pts": 10.7
-     },
-     {
-      "name": "Gui Santos",
-      "pos": "F",
-      "exp": 4,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4997536.png",
-      "status": "AVAILABLE",
-      "proj_min": 20.4,
-      "proj_pts": 9.0
-     },
-     {
-      "name": "Al Horford",
-      "pos": "C",
-      "exp": 20,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3213.png",
-      "status": "AVAILABLE",
-      "proj_min": 19.8,
-      "proj_pts": 6.9
-     },
-     {
-      "name": "Brandon Williams",
-      "pos": "G",
-      "exp": 5,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397040.png",
-      "status": "AVAILABLE",
-      "proj_min": 19.4,
-      "proj_pts": 11.8
-     },
-     {
-      "name": "Will Richard",
-      "pos": "G",
-      "exp": 2,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4897262.png",
-      "status": "AVAILABLE",
-      "proj_min": 18.0,
-      "proj_pts": 5.8
-     },
-     {
-      "name": "Charles Bassey",
-      "pos": "C",
-      "exp": 6,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397886.png",
-      "status": "AVAILABLE",
-      "proj_min": 16.3,
-      "proj_pts": 9.7
-     },
-     {
-      "name": "Gary Payton II",
-      "pos": "G",
-      "exp": 11,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3134903.png",
-      "status": "AVAILABLE",
-      "proj_min": 14.4,
-      "proj_pts": 6.7
-     },
-     {
-      "name": "LJ Cryer",
-      "pos": "G",
-      "exp": 2,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433149.png",
-      "status": "AVAILABLE",
-      "proj_min": 14.0,
-      "proj_pts": 7.7
-     }
-    ],
-    "data_games": 5
-   },
-   "away": {
-    "team": {
-     "id": "13",
-     "abbrev": "LAL",
-     "name": "Los Angeles Lakers",
-     "short": "Lakers",
-     "location": "Los Angeles",
-     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
-     "color": "#552583"
-    },
-    "pred_pts": 112.1,
-    "sigma": 11.3,
-    "ortg": 114.0,
-    "drtg_opp": 110.1,
-    "pace": 101.6,
-    "availability": 0.971,
-    "season_ppg": 123.2,
-    "lost_points": 3.4,
-    "out_players": [
-     {
-      "name": "Ziaire Williams",
-      "pos": "F",
-      "status": "OUT",
-      "est_lost_points": 2.9,
-      "detail": "Williams has been ruled out for Friday's game against the Warriors due to left foot injury management, Mark Medina of TheSportingTribune.com reports.",
-      "sources": {
-       "ESPN": "OUT",
-       "Yahoo": "OUT"
-      },
-      "conflict": false
-     }
-    ],
-    "rotation": [
-     {
-      "name": "Austin Reaves",
-      "pos": "G",
-      "exp": 6,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066457.png",
-      "status": "AVAILABLE",
-      "proj_min": 34.1,
-      "proj_pts": 24.6
-     },
-     {
-      "name": "Walker Kessler",
-      "pos": "C",
-      "exp": 5,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433136.png",
-      "status": "AVAILABLE",
-      "proj_min": 30.1,
-      "proj_pts": 15.9
-     },
-     {
-      "name": "Quentin Grimes",
-      "pos": "G",
-      "exp": 6,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397014.png",
-      "status": "AVAILABLE",
-      "proj_min": 28.2,
-      "proj_pts": 12.3
-     },
-     {
-      "name": "Lawson Lovering",
-      "pos": "C",
-      "exp": 0,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4596528.png",
-      "status": "AVAILABLE",
-      "proj_min": 24.1,
-      "proj_pts": 6.9
-     },
-     {
-      "name": "Jake LaRavia",
-      "pos": "F",
-      "exp": 5,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592691.png",
-      "status": "AVAILABLE",
-      "proj_min": 23.9,
-      "proj_pts": 7.2
-     },
-     {
-      "name": "Collin Sexton",
-      "pos": "G",
-      "exp": 9,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277811.png",
-      "status": "AVAILABLE",
-      "proj_min": 23.5,
-      "proj_pts": 16.0
-     },
-     {
-      "name": "Sandro Mamukelashvili",
-      "pos": "F",
-      "exp": 6,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278580.png",
-      "status": "AVAILABLE",
-      "proj_min": 22.2,
-      "proj_pts": 11.2
-     },
-     {
-      "name": "Jaden Hardy",
-      "pos": "G",
-      "exp": 5,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4868423.png",
-      "status": "AVAILABLE",
-      "proj_min": 18.3,
-      "proj_pts": 10.3
-     },
-     {
-      "name": "Matisse Thybulle",
-      "pos": "G",
-      "exp": 8,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3907498.png",
-      "status": "AVAILABLE",
-      "proj_min": 18.2,
-      "proj_pts": 7.0
-     },
-     {
-      "name": "Jarred Vanderbilt",
-      "pos": "F",
-      "exp": 9,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278077.png",
-      "status": "AVAILABLE",
-      "proj_min": 17.3,
-      "proj_pts": 3.9
-     }
-    ],
-    "data_games": 5
-   },
-   "sim": {
-    "home_win_prob": 0.5339,
-    "away_win_prob": 0.4661,
-    "exp_margin": 1.5,
-    "home_buckets": [
-     [
-      "111-115",
-      0.1742
-     ],
-     [
-      "106-110",
-      0.1669
-     ],
-     [
-      "116-120",
-      0.1471
-     ],
-     [
-      "101-105",
-      0.1296
-     ]
-    ],
-    "away_buckets": [
-     [
-      "106-110",
-      0.1719
-     ],
-     [
-      "111-115",
-      0.1713
-     ],
-     [
-      "101-105",
-      0.1407
-     ],
-     [
-      "116-120",
-      0.1369
-     ]
-    ],
-    "likely_score": "109-111",
-    "both_bucket_hit_prob": 0.03,
-    "confidence": 1.5
-   },
-   "pred_total": 223.0,
+   "pred_total": 223.2,
    "pred_total_bucket": "221-225",
-   "pred_margin": 1.6
+   "pred_margin": 6.6
   },
   {
-   "event_id": "401909286",
-   "date_utc": "2026-10-31T02:00Z",
-   "status": "STATUS_HALFTIME",
-   "venue": "Mortgage Matchup Center",
+   "event_id": "401909902",
+   "date_utc": "2026-11-01T00:30Z",
+   "status": "STATUS_SCHEDULED",
+   "venue": "Toyota Center (Houston)",
    "home": {
     "team": {
-     "id": "21",
-     "abbrev": "PHX",
-     "name": "Phoenix Suns",
-     "short": "Suns",
-     "location": "Phoenix",
-     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
-     "color": "#29127a"
+     "id": "10",
+     "abbrev": "HOU",
+     "name": "Houston Rockets",
+     "short": "Rockets",
+     "location": "Houston",
+     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png",
+     "color": "#ce0e2d"
     },
-    "pred_pts": 108.8,
-    "sigma": 11.7,
-    "ortg": 110.1,
+    "pred_pts": 113.2,
+    "sigma": 12.8,
+    "ortg": 113.9,
     "drtg_opp": 110.1,
-    "pace": 100.0,
-    "availability": 0.979,
-    "season_ppg": 109.3,
-    "lost_points": 2.3,
-    "out_players": [
-     {
-      "name": "Mark Williams",
-      "pos": "C",
-      "status": "OUT",
-      "est_lost_points": 2.3,
-      "detail": "Williams underwent surgery Thursday to repair a torn labrum in his left shoulder and will miss an extended period of time, Shams Charania of ESPN reports.",
-      "sources": {
-       "ESPN": "OUT",
-       "Yahoo": "OUT"
-      },
-      "conflict": false
-     }
-    ],
-    "rotation": [
-     {
-      "name": "Devin Booker",
-      "pos": "G",
-      "exp": 12,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3136193.png",
-      "status": "AVAILABLE",
-      "proj_min": 32.1,
-      "proj_pts": 24.8
-     },
-     {
-      "name": "Miles Bridges",
-      "pos": "F",
-      "exp": 8,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066383.png",
-      "status": "AVAILABLE",
-      "proj_min": 29.8,
-      "proj_pts": 15.6
-     },
-     {
-      "name": "Dillon Brooks",
-      "pos": "F",
-      "exp": 10,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3155526.png",
-      "status": "AVAILABLE",
-      "proj_min": 29.2,
-      "proj_pts": 17.8
-     },
-     {
-      "name": "Collin Gillespie",
-      "pos": "G",
-      "exp": 4,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278585.png",
-      "status": "AVAILABLE",
-      "proj_min": 26.5,
-      "proj_pts": 10.7
-     },
-     {
-      "name": "Jalen Green",
-      "pos": "G",
-      "exp": 6,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4437244.png",
-      "status": "AVAILABLE",
-      "proj_min": 25.1,
-      "proj_pts": 15.9
-     },
-     {
-      "name": "Luke Kennard",
-      "pos": "G",
-      "exp": 10,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3913174.png",
-      "status": "AVAILABLE",
-      "proj_min": 21.2,
-      "proj_pts": 9.6
-     },
-     {
-      "name": "Jordan Goodwin",
-      "pos": "G",
-      "exp": 6,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278402.png",
-      "status": "AVAILABLE",
-      "proj_min": 21.0,
-      "proj_pts": 8.0
-     },
-     {
-      "name": "Oso Ighodaro",
-      "pos": "F",
-      "exp": 3,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4601023.png",
-      "status": "AVAILABLE",
-      "proj_min": 20.6,
-      "proj_pts": 6.7
-     },
-     {
-      "name": "Ryan Dunn",
-      "pos": "F",
-      "exp": 3,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4888725.png",
-      "status": "AVAILABLE",
-      "proj_min": 17.5,
-      "proj_pts": 5.4
-     },
-     {
-      "name": "Pat Spencer",
-      "pos": "G",
-      "exp": 4,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592714.png",
-      "status": "AVAILABLE",
-      "proj_min": 17.0,
-      "proj_pts": 6.5
-     }
-    ],
-    "data_games": 3
-   },
-   "away": {
-    "team": {
-     "id": "7",
-     "abbrev": "DEN",
-     "name": "Denver Nuggets",
-     "short": "Nuggets",
-     "location": "Denver",
-     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
-     "color": "#0e2240"
-    },
-    "pred_pts": 110.1,
-    "sigma": 11.5,
-    "ortg": 110.0,
-    "drtg_opp": 110.1,
-    "pace": 100.0,
+    "pace": 100.8,
     "availability": 1.0,
-    "season_ppg": 110.8,
+    "season_ppg": 121.0,
     "lost_points": 0.0,
     "out_players": [
      {
-      "name": "Spencer Jones",
-      "pos": "F",
+      "name": "Steven Adams",
+      "pos": "C",
       "status": "OUT",
       "est_lost_points": 0.0,
-      "detail": "Jones (hamstring) has been ruled out for Wednesday's game against New Orleans.",
+      "detail": "Head coach Ime Udoka said Monday that Adams could be out \"a week or two\" due to his right soleus strain, Lachard Binkley of SI.com reports.",
       "sources": {
        "ESPN": "OUT",
        "Yahoo": "OUT"
@@ -3257,11 +2099,194 @@
       "conflict": false
      },
      {
-      "name": "Julian Strawther",
+      "name": "Alperen Sengun",
+      "pos": "C",
+      "status": "QUESTIONABLE",
+      "est_lost_points": 0.0,
+      "detail": "Sengun (back) has been ruled out for Friday's game against the Mavericks, Mike Curtis of The Dallas Morning News reports.",
+      "sources": {
+       "ESPN": "DAY_TO_DAY",
+       "Yahoo": "QUESTIONABLE"
+      },
+      "conflict": true
+     },
+     {
+      "name": "Reed Sheppard",
+      "pos": "G",
+      "status": "QUESTIONABLE",
+      "est_lost_points": 0.0,
+      "detail": "Houston picked up Sheppard's (back) fourth-year team option Friday, per Lachard Binkley of SI.com.",
+      "sources": {
+       "ESPN": "DAY_TO_DAY",
+       "Yahoo": "QUESTIONABLE"
+      },
+      "conflict": true
+     }
+    ],
+    "rotation": [
+     {
+      "name": "Amen Thompson",
+      "pos": "G",
+      "exp": 4,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4684740.png",
+      "status": "AVAILABLE",
+      "proj_min": 35.9,
+      "proj_pts": 18.0
+     },
+     {
+      "name": "Kevin Durant",
+      "pos": "F",
+      "exp": 20,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3202.png",
+      "status": "AVAILABLE",
+      "proj_min": 35.2,
+      "proj_pts": 25.8
+     },
+     {
+      "name": "Jabari Smith Jr.",
+      "pos": "F",
+      "exp": 5,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432639.png",
+      "status": "AVAILABLE",
+      "proj_min": 34.3,
+      "proj_pts": 16.1
+     },
+     {
+      "name": "Marcus Smart",
+      "pos": "G",
+      "exp": 13,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2990992.png",
+      "status": "AVAILABLE",
+      "proj_min": 26.7,
+      "proj_pts": 8.8
+     },
+     {
+      "name": "Tari Eason",
+      "pos": "F",
+      "exp": 5,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433192.png",
+      "status": "AVAILABLE",
+      "proj_min": 25.0,
+      "proj_pts": 9.9
+     },
+     {
+      "name": "Oscar Tshiebwe",
+      "pos": "C",
+      "exp": 4,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432827.png",
+      "status": "AVAILABLE",
+      "proj_min": 15.7,
+      "proj_pts": 7.3
+     },
+     {
+      "name": "Clint Capela",
+      "pos": "C",
+      "exp": 13,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3102529.png",
+      "status": "AVAILABLE",
+      "proj_min": 12.9,
+      "proj_pts": 3.7
+     },
+     {
+      "name": "Fred VanVleet",
+      "pos": "G",
+      "exp": 11,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2991230.png",
+      "status": "AVAILABLE",
+      "proj_min": 12.9,
+      "proj_pts": 4.8
+     },
+     {
+      "name": "Reed Sheppard",
+      "pos": "G",
+      "exp": 3,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4711272.png",
+      "status": "QUESTIONABLE",
+      "proj_min": 12.5,
+      "proj_pts": 6.2
+     },
+     {
+      "name": "Bogdan Bogdanovic",
+      "pos": "G",
+      "exp": 10,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3037789.png",
+      "status": "AVAILABLE",
+      "proj_min": 8.3,
+      "proj_pts": 3.7
+     },
+     {
+      "name": "Julian Phillips",
+      "pos": "F",
+      "exp": 4,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105553.png",
+      "status": "AVAILABLE",
+      "proj_min": 7.1,
+      "proj_pts": 3.0
+     }
+    ],
+    "data_games": 6
+   },
+   "away": {
+    "team": {
+     "id": "25",
+     "abbrev": "OKC",
+     "name": "Oklahoma City Thunder",
+     "short": "Thunder",
+     "location": "Oklahoma City",
+     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png",
+     "color": "#007ac1"
+    },
+    "pred_pts": 106.0,
+    "sigma": 11.3,
+    "ortg": 109.1,
+    "drtg_opp": 110.1,
+    "pace": 100.8,
+    "availability": 0.932,
+    "season_ppg": 108.2,
+    "lost_points": 7.7,
+    "out_players": [
+     {
+      "name": "Chet Holmgren",
+      "pos": "C",
+      "status": "OUT",
+      "est_lost_points": 2.5,
+      "detail": "Holmgren underwent a biological treatment Friday to address a small patellar tendon tear and will miss at least 8-10 weeks, Nick Crain of Slam reports.",
+      "sources": {
+       "ESPN": "OUT",
+       "Yahoo": "OUT"
+      },
+      "conflict": false
+     },
+     {
+      "name": "Jalen Williams",
       "pos": "G",
       "status": "OUT",
-      "est_lost_points": 0.0,
-      "detail": "Strawther (knee) was diagnosed with a left knee sprain Friday and will be re-evaluated in six weeks, Vinny Benedetto of The Denver Gazette reports.",
+      "est_lost_points": 2.4,
+      "detail": "Williams (leg) underwent successful surgery Wednesday to \"address a fractured left fibula and reconstruction of ankle ligaments following a fracture and dislocation.\" He will be re-evaluated before the end of the regular",
+      "sources": {
+       "ESPN": "OUT",
+       "Yahoo": "OUT"
+      },
+      "conflict": false
+     },
+     {
+      "name": "Cason Wallace",
+      "pos": "G",
+      "status": "OUT",
+      "est_lost_points": 1.2,
+      "detail": "Wallace underwent surgery Friday to repair a torn labrum in his left shoulder and will be re-evaluated before the end of the regular season, Clemente Almanza of USA Today reports.",
+      "sources": {
+       "ESPN": "OUT",
+       "Yahoo": "OUT"
+      },
+      "conflict": false
+     },
+     {
+      "name": "Alex Caruso",
+      "pos": "G",
+      "status": "OUT",
+      "est_lost_points": 1.0,
+      "detail": "Caruso (ankle) is expected to miss time due to an ankle sprain, Clemente Almanza of USA Today reports.",
       "sources": {
        "ESPN": "OUT",
        "Yahoo": "OUT"
@@ -3271,154 +2296,154 @@
     ],
     "rotation": [
      {
-      "name": "Jamal Murray",
+      "name": "Shai Gilgeous-Alexander",
       "pos": "G",
-      "exp": 10,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3936299.png",
+      "exp": 9,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278073.png",
       "status": "AVAILABLE",
-      "proj_min": 35.6,
-      "proj_pts": 25.0
+      "proj_min": 40.0,
+      "proj_pts": 36.9
      },
      {
-      "name": "Christian Braun",
+      "name": "Ajay Mitchell",
+      "pos": "G",
+      "exp": 3,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4900671.png",
+      "status": "AVAILABLE",
+      "proj_min": 31.0,
+      "proj_pts": 18.4
+     },
+     {
+      "name": "Isaiah Hartenstein",
+      "pos": "C",
+      "exp": 9,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4222252.png",
+      "status": "AVAILABLE",
+      "proj_min": 29.0,
+      "proj_pts": 11.5
+     },
+     {
+      "name": "Jared McCain",
+      "pos": "G",
+      "exp": 3,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683778.png",
+      "status": "AVAILABLE",
+      "proj_min": 23.8,
+      "proj_pts": 12.9
+     },
+     {
+      "name": "Jaylin Williams",
+      "pos": "F",
+      "exp": 5,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432823.png",
+      "status": "AVAILABLE",
+      "proj_min": 22.6,
+      "proj_pts": 6.8
+     },
+     {
+      "name": "Ochai Agbaji",
       "pos": "G",
       "exp": 5,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431767.png",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397018.png",
       "status": "AVAILABLE",
-      "proj_min": 32.3,
-      "proj_pts": 11.8
+      "proj_min": 19.4,
+      "proj_pts": 8.0
      },
      {
-      "name": "DeMar DeRozan",
+      "name": "Kenrich Williams",
       "pos": "G",
-      "exp": 18,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3978.png",
-      "status": "AVAILABLE",
-      "proj_min": 29.6,
-      "proj_pts": 16.8
-     },
-     {
-      "name": "Cameron Johnson",
-      "pos": "F",
-      "exp": 8,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3138196.png",
-      "status": "AVAILABLE",
-      "proj_min": 28.5,
-      "proj_pts": 12.0
-     },
-     {
-      "name": "Aaron Gordon",
-      "pos": "F",
-      "exp": 13,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3064290.png",
-      "status": "AVAILABLE",
-      "proj_min": 28.1,
-      "proj_pts": 15.2
-     },
-     {
-      "name": "Marvin Bagley III",
-      "pos": "F",
       "exp": 9,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277848.png",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3133626.png",
       "status": "AVAILABLE",
-      "proj_min": 18.8,
-      "proj_pts": 9.7
+      "proj_min": 17.3,
+      "proj_pts": 6.7
      },
      {
-      "name": "Ryan Nembhard",
+      "name": "Micah Peavy",
       "pos": "G",
       "exp": 2,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433629.png",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432185.png",
       "status": "AVAILABLE",
-      "proj_min": 16.8,
-      "proj_pts": 9.1
+      "proj_min": 17.1,
+      "proj_pts": 4.1
      },
      {
-      "name": "Cam Whitmore",
-      "pos": "F",
-      "exp": 4,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105592.png",
-      "status": "AVAILABLE",
-      "proj_min": 15.3,
-      "proj_pts": 8.1
-     },
-     {
-      "name": "Nikola Jokic",
+      "name": "Aday Mara",
       "pos": "C",
-      "exp": 12,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3112335.png",
-      "status": "AVAILABLE",
-      "proj_min": 13.5,
-      "proj_pts": 5.6
-     },
-     {
-      "name": "Zeke Nnaji",
-      "pos": "F",
-      "exp": 7,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431690.png",
-      "status": "AVAILABLE",
-      "proj_min": 11.2,
-      "proj_pts": 4.3
-     },
-     {
-      "name": "Trevon Brazile",
-      "pos": "F",
       "exp": 0,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4698719.png",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5174983.png",
       "status": "AVAILABLE",
-      "proj_min": 10.3,
+      "proj_min": 10.7,
       "proj_pts": 3.8
+     },
+     {
+      "name": "Josh Dix",
+      "pos": "G",
+      "exp": 0,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105800.png",
+      "status": "AVAILABLE",
+      "proj_min": 10.1,
+      "proj_pts": 3.0
+     },
+     {
+      "name": "Bennett Stirtz",
+      "pos": "G",
+      "exp": 0,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5241364.png",
+      "status": "AVAILABLE",
+      "proj_min": 9.8,
+      "proj_pts": 3.1
      }
     ],
-    "data_games": 4
+    "data_games": 5
    },
    "sim": {
-    "home_win_prob": 0.5308,
-    "away_win_prob": 0.4692,
-    "exp_margin": 1.4,
+    "home_win_prob": 0.7162,
+    "away_win_prob": 0.2838,
+    "exp_margin": 9.8,
     "home_buckets": [
      [
-      "106-110",
-      0.1657
-     ],
-     [
       "111-115",
-      0.1614
-     ],
-     [
-      "101-105",
-      0.1431
+      0.1538
      ],
      [
       "116-120",
-      0.131
+      0.1448
+     ],
+     [
+      "106-110",
+      0.1383
+     ],
+     [
+      "121-125",
+      0.1219
      ]
     ],
     "away_buckets": [
      [
+      "101-105",
+      0.1768
+     ],
+     [
       "106-110",
-      0.174
+      0.1646
+     ],
+     [
+      "96-100",
+      0.1475
      ],
      [
       "111-115",
-      0.1572
-     ],
-     [
-      "101-105",
-      0.1535
-     ],
-     [
-      "116-120",
-      0.1206
+      0.129
      ]
     ],
-    "likely_score": "106-109",
-    "both_bucket_hit_prob": 0.0288,
-    "confidence": 1.5
+    "likely_score": "103-114",
+    "both_bucket_hit_prob": 0.0272,
+    "confidence": 3.5
    },
-   "pred_total": 218.9,
+   "pred_total": 219.2,
    "pred_total_bucket": "216-220",
-   "pred_margin": 1.5
+   "pred_margin": 10.0
   }
  ],
  "rookies": {
@@ -3434,18 +2459,18 @@
     "team": "DAL",
     "team_name": "Dallas Mavericks",
     "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
-    "g": 4,
-    "mpg": 30.8,
-    "pts36": 29.6,
-    "reb36": 6.1,
-    "ast36": 7.9,
-    "stl36": 3.2,
-    "blk36": 1.5,
-    "ts": 63.6,
-    "gs36": 26.49,
-    "sample": "偏少",
-    "ppg": 25.3,
-    "gs_pg": 22.63,
+    "g": 5,
+    "mpg": 32.2,
+    "pts36": 30.0,
+    "reb36": 6.7,
+    "ast36": 7.4,
+    "stl36": 2.9,
+    "blk36": 1.3,
+    "ts": 65.1,
+    "gs36": 26.77,
+    "sample": "足夠",
+    "ppg": 26.8,
+    "gs_pg": 23.94,
     "rank": 1
    },
    {
@@ -3474,28 +2499,28 @@
     "rank": 2
    },
    {
-    "espn_id": "5175737",
-    "name": "Yaxel Lendeborg",
+    "espn_id": "5149115",
+    "name": "Allen Graves",
     "class": "一年級",
     "exp": 0,
     "pos": "F",
-    "age": 24,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5175737.png",
-    "team": "GS",
-    "team_name": "Golden State Warriors",
-    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
+    "age": 20,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5149115.png",
+    "team": "TOR",
+    "team_name": "Toronto Raptors",
+    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/tor.png",
     "g": 5,
-    "mpg": 33.6,
-    "pts36": 24.2,
-    "reb36": 9.9,
-    "ast36": 4.3,
-    "stl36": 1.1,
-    "blk36": 0.6,
-    "ts": 59.3,
-    "gs36": 18.99,
+    "mpg": 14.6,
+    "pts36": 13.8,
+    "reb36": 8.9,
+    "ast36": 2.0,
+    "stl36": 1.5,
+    "blk36": 2.5,
+    "ts": 63.7,
+    "gs36": 16.79,
     "sample": "足夠",
-    "ppg": 22.6,
-    "gs_pg": 17.72,
+    "ppg": 5.6,
+    "gs_pg": 6.81,
     "rank": 3
    },
    {
@@ -3509,43 +2534,43 @@
     "team": "MIN",
     "team_name": "Minnesota Timberwolves",
     "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
-    "g": 5,
-    "mpg": 15.6,
-    "pts36": 15.7,
-    "reb36": 17.5,
-    "ast36": 1.4,
-    "stl36": 0.5,
-    "blk36": 1.4,
-    "ts": 67.6,
-    "gs36": 18.54,
+    "g": 6,
+    "mpg": 16.0,
+    "pts36": 14.2,
+    "reb36": 15.8,
+    "ast36": 1.1,
+    "stl36": 0.4,
+    "blk36": 1.5,
+    "ts": 65.2,
+    "gs36": 16.65,
     "sample": "足夠",
-    "ppg": 6.8,
-    "gs_pg": 8.03,
+    "ppg": 6.3,
+    "gs_pg": 7.4,
     "rank": 4
    },
    {
-    "espn_id": "4433149",
-    "name": "LJ Cryer",
-    "class": "二年級",
-    "exp": 1,
-    "pos": "G",
-    "age": 25,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433149.png",
+    "espn_id": "5175737",
+    "name": "Yaxel Lendeborg",
+    "class": "一年級",
+    "exp": 0,
+    "pos": "F",
+    "age": 24,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5175737.png",
     "team": "GS",
     "team_name": "Golden State Warriors",
     "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
-    "g": 3,
-    "mpg": 8.7,
-    "pts36": 24.9,
-    "reb36": 2.8,
-    "ast36": 8.3,
-    "stl36": 0.0,
-    "blk36": 0.0,
-    "ts": 60.3,
-    "gs36": 17.13,
-    "sample": "偏少",
-    "ppg": 6.0,
-    "gs_pg": 4.12,
+    "g": 6,
+    "mpg": 32.0,
+    "pts36": 22.3,
+    "reb36": 8.8,
+    "ast36": 3.7,
+    "stl36": 0.9,
+    "blk36": 0.6,
+    "ts": 59.8,
+    "gs36": 16.03,
+    "sample": "足夠",
+    "ppg": 19.8,
+    "gs_pg": 14.25,
     "rank": 5
    },
    {
@@ -3624,28 +2649,28 @@
     "rank": 8
    },
    {
-    "espn_id": "4896372",
-    "name": "Walter Clayton Jr.",
-    "class": "二年級",
-    "exp": 1,
-    "pos": "G",
-    "age": 23,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4896372.png",
-    "team": "DAL",
-    "team_name": "Dallas Mavericks",
-    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
-    "g": 4,
-    "mpg": 11.8,
-    "pts36": 13.8,
-    "reb36": 6.9,
-    "ast36": 10.7,
-    "stl36": 0.8,
-    "blk36": 0.8,
-    "ts": 58.9,
-    "gs36": 14.85,
-    "sample": "偏少",
-    "ppg": 4.5,
-    "gs_pg": 4.85,
+    "espn_id": "5095151",
+    "name": "Caleb Wilson",
+    "class": "一年級",
+    "exp": 0,
+    "pos": "F",
+    "age": 20,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5095151.png",
+    "team": "CHI",
+    "team_name": "Chicago Bulls",
+    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/chi.png",
+    "g": 6,
+    "mpg": 34.2,
+    "pts36": 22.3,
+    "reb36": 7.0,
+    "ast36": 2.6,
+    "stl36": 1.8,
+    "blk36": 1.6,
+    "ts": 51.7,
+    "gs36": 14.8,
+    "sample": "足夠",
+    "ppg": 21.2,
+    "gs_pg": 14.05,
     "rank": 9
    },
    {
@@ -3674,31 +2699,6 @@
     "rank": 10
    },
    {
-    "espn_id": "5149115",
-    "name": "Allen Graves",
-    "class": "一年級",
-    "exp": 0,
-    "pos": "F",
-    "age": 20,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5149115.png",
-    "team": "TOR",
-    "team_name": "Toronto Raptors",
-    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/tor.png",
-    "g": 4,
-    "mpg": 16.0,
-    "pts36": 11.8,
-    "reb36": 7.9,
-    "ast36": 2.3,
-    "stl36": 1.7,
-    "blk36": 2.8,
-    "ts": 55.1,
-    "gs36": 14.58,
-    "sample": "偏少",
-    "ppg": 5.2,
-    "gs_pg": 6.48,
-    "rank": 11
-   },
-   {
     "espn_id": "5037871",
     "name": "Dylan Harper",
     "class": "二年級",
@@ -3721,7 +2721,7 @@
     "sample": "足夠",
     "ppg": 17.2,
     "gs_pg": 13.09,
-    "rank": 12
+    "rank": 11
    },
    {
     "espn_id": "4903027",
@@ -3746,57 +2746,32 @@
     "sample": "偏少",
     "ppg": 13.8,
     "gs_pg": 11.62,
-    "rank": 13
+    "rank": 12
    },
    {
-    "espn_id": "5095151",
-    "name": "Caleb Wilson",
+    "espn_id": "5105555",
+    "name": "Tobe Awaka",
     "class": "一年級",
     "exp": 0,
     "pos": "F",
-    "age": 20,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5095151.png",
+    "age": 22,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105555.png",
     "team": "CHI",
     "team_name": "Chicago Bulls",
     "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/chi.png",
-    "g": 5,
-    "mpg": 34.6,
-    "pts36": 21.6,
-    "reb36": 7.3,
-    "ast36": 2.3,
-    "stl36": 1.9,
-    "blk36": 1.5,
-    "ts": 50.1,
-    "gs36": 14.04,
-    "sample": "足夠",
-    "ppg": 20.8,
-    "gs_pg": 13.49,
-    "rank": 14
-   },
-   {
-    "espn_id": "5254165",
-    "name": "Keaton Wagler",
-    "class": "一年級",
-    "exp": 0,
-    "pos": "G",
-    "age": 19,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5254165.png",
-    "team": "LAC",
-    "team_name": "LA Clippers",
-    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
-    "g": 4,
-    "mpg": 26.5,
-    "pts36": 20.4,
-    "reb36": 5.8,
-    "ast36": 4.8,
-    "stl36": 1.7,
-    "blk36": 0.3,
-    "ts": 58.2,
-    "gs36": 14.04,
+    "g": 3,
+    "mpg": 13.0,
+    "pts36": 7.4,
+    "reb36": 18.5,
+    "ast36": 2.8,
+    "stl36": 0.9,
+    "blk36": 1.8,
+    "ts": 60.5,
+    "gs36": 13.8,
     "sample": "偏少",
-    "ppg": 15.0,
-    "gs_pg": 10.34,
-    "rank": 15
+    "ppg": 2.7,
+    "gs_pg": 4.98,
+    "rank": 13
    },
    {
     "espn_id": "5023693",
@@ -3821,7 +2796,32 @@
     "sample": "偏少",
     "ppg": 3.5,
     "gs_pg": 3.89,
-    "rank": 16
+    "rank": 14
+   },
+   {
+    "espn_id": "5254165",
+    "name": "Keaton Wagler",
+    "class": "一年級",
+    "exp": 0,
+    "pos": "G",
+    "age": 19,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5254165.png",
+    "team": "LAC",
+    "team_name": "LA Clippers",
+    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
+    "g": 5,
+    "mpg": 26.2,
+    "pts36": 19.8,
+    "reb36": 6.3,
+    "ast36": 4.7,
+    "stl36": 1.4,
+    "blk36": 0.3,
+    "ts": 54.4,
+    "gs36": 13.3,
+    "sample": "足夠",
+    "ppg": 14.4,
+    "gs_pg": 9.68,
+    "rank": 15
    },
    {
     "espn_id": "4576060",
@@ -3834,18 +2834,43 @@
     "team": "CHA",
     "team_name": "Charlotte Hornets",
     "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/cha.png",
-    "g": 5,
-    "mpg": 16.4,
-    "pts36": 10.1,
-    "reb36": 9.7,
-    "ast36": 3.5,
-    "stl36": 0.4,
-    "blk36": 3.1,
-    "ts": 77.8,
-    "gs36": 13.37,
+    "g": 6,
+    "mpg": 16.2,
+    "pts36": 9.3,
+    "reb36": 9.6,
+    "ast36": 3.0,
+    "stl36": 0.7,
+    "blk36": 2.6,
+    "ts": 79.4,
+    "gs36": 13.05,
     "sample": "足夠",
-    "ppg": 4.6,
-    "gs_pg": 6.09,
+    "ppg": 4.2,
+    "gs_pg": 5.86,
+    "rank": 16
+   },
+   {
+    "espn_id": "5093267",
+    "name": "Collin Murray-Boyles",
+    "class": "二年級",
+    "exp": 1,
+    "pos": "F",
+    "age": 21,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5093267.png",
+    "team": "TOR",
+    "team_name": "Toronto Raptors",
+    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/tor.png",
+    "g": 5,
+    "mpg": 18.8,
+    "pts36": 16.1,
+    "reb36": 9.6,
+    "ast36": 2.7,
+    "stl36": 1.5,
+    "blk36": 0.8,
+    "ts": 60.7,
+    "gs36": 12.59,
+    "sample": "足夠",
+    "ppg": 8.4,
+    "gs_pg": 6.57,
     "rank": 17
    },
    {
@@ -3909,68 +2934,68 @@
     "team": "DEN",
     "team_name": "Denver Nuggets",
     "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
-    "g": 4,
-    "mpg": 23.8,
-    "pts36": 14.4,
-    "reb36": 11.4,
-    "ast36": 0.0,
-    "stl36": 0.8,
-    "blk36": 1.1,
-    "ts": 61.1,
-    "gs36": 11.87,
-    "sample": "偏少",
-    "ppg": 9.5,
-    "gs_pg": 7.83,
+    "g": 5,
+    "mpg": 22.8,
+    "pts36": 13.9,
+    "reb36": 10.4,
+    "ast36": 0.3,
+    "stl36": 0.9,
+    "blk36": 1.3,
+    "ts": 63.0,
+    "gs36": 12.26,
+    "sample": "足夠",
+    "ppg": 8.8,
+    "gs_pg": 7.76,
     "rank": 20
    },
    {
-    "espn_id": "5238230",
-    "name": "Tre Johnson",
+    "espn_id": "5203685",
+    "name": "Khaman Maluach",
     "class": "二年級",
     "exp": 1,
-    "pos": "G",
+    "pos": "C",
     "age": 20,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5238230.png",
-    "team": "WSH",
-    "team_name": "Washington Wizards",
-    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/wsh.png",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5203685.png",
+    "team": "PHX",
+    "team_name": "Phoenix Suns",
+    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
     "g": 4,
-    "mpg": 22.8,
-    "pts36": 19.0,
-    "reb36": 3.2,
-    "ast36": 1.6,
+    "mpg": 21.8,
+    "pts36": 13.2,
+    "reb36": 11.6,
+    "ast36": 2.1,
     "stl36": 0.8,
-    "blk36": 0.4,
-    "ts": 59.8,
-    "gs36": 11.46,
+    "blk36": 1.7,
+    "ts": 63.9,
+    "gs36": 11.67,
     "sample": "偏少",
-    "ppg": 12.0,
-    "gs_pg": 7.24,
+    "ppg": 8.0,
+    "gs_pg": 7.05,
     "rank": 21
    },
    {
-    "espn_id": "5093267",
-    "name": "Collin Murray-Boyles",
+    "espn_id": "4896372",
+    "name": "Walter Clayton Jr.",
     "class": "二年級",
     "exp": 1,
-    "pos": "F",
-    "age": 21,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5093267.png",
-    "team": "TOR",
-    "team_name": "Toronto Raptors",
-    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/tor.png",
-    "g": 4,
-    "mpg": 17.8,
-    "pts36": 13.7,
-    "reb36": 10.1,
-    "ast36": 3.0,
-    "stl36": 2.0,
-    "blk36": 1.0,
-    "ts": 55.2,
-    "gs36": 11.34,
-    "sample": "偏少",
-    "ppg": 6.8,
-    "gs_pg": 5.59,
+    "pos": "G",
+    "age": 23,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4896372.png",
+    "team": "DAL",
+    "team_name": "Dallas Mavericks",
+    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
+    "g": 5,
+    "mpg": 11.2,
+    "pts36": 13.5,
+    "reb36": 7.1,
+    "ast36": 9.6,
+    "stl36": 0.6,
+    "blk36": 0.6,
+    "ts": 54.3,
+    "gs36": 11.22,
+    "sample": "足夠",
+    "ppg": 4.2,
+    "gs_pg": 3.49,
     "rank": 22
    },
    {
@@ -4049,28 +3074,28 @@
     "rank": 25
    },
    {
-    "espn_id": "5203685",
-    "name": "Khaman Maluach",
+    "espn_id": "4702352",
+    "name": "Kobe Sanders",
     "class": "二年級",
     "exp": 1,
-    "pos": "C",
-    "age": 20,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5203685.png",
-    "team": "PHX",
-    "team_name": "Phoenix Suns",
-    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
-    "g": 3,
-    "mpg": 23.3,
-    "pts36": 11.8,
-    "reb36": 11.3,
-    "ast36": 2.6,
-    "stl36": 1.0,
-    "blk36": 2.1,
-    "ts": 62.1,
-    "gs36": 10.73,
-    "sample": "偏少",
-    "ppg": 7.6,
-    "gs_pg": 6.95,
+    "pos": "G",
+    "age": 24,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702352.png",
+    "team": "LAC",
+    "team_name": "LA Clippers",
+    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
+    "g": 5,
+    "mpg": 21.8,
+    "pts36": 11.6,
+    "reb36": 5.0,
+    "ast36": 4.0,
+    "stl36": 2.6,
+    "blk36": 0.0,
+    "ts": 53.8,
+    "gs36": 10.65,
+    "sample": "足夠",
+    "ppg": 7.0,
+    "gs_pg": 6.45,
     "rank": 26
    },
    {
@@ -4099,54 +3124,29 @@
     "rank": 27
    },
    {
-    "espn_id": "4702352",
-    "name": "Kobe Sanders",
+    "espn_id": "5238230",
+    "name": "Tre Johnson",
     "class": "二年級",
     "exp": 1,
     "pos": "G",
-    "age": 24,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702352.png",
-    "team": "LAC",
-    "team_name": "LA Clippers",
-    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
-    "g": 4,
-    "mpg": 21.2,
-    "pts36": 11.9,
-    "reb36": 4.7,
-    "ast36": 4.2,
-    "stl36": 3.4,
-    "blk36": 0.0,
-    "ts": 49.2,
-    "gs36": 10.42,
-    "sample": "偏少",
-    "ppg": 7.0,
-    "gs_pg": 6.15,
-    "rank": 28
-   },
-   {
-    "espn_id": "4873153",
-    "name": "Morez Johnson Jr.",
-    "class": "一年級",
-    "exp": 0,
-    "pos": "F",
     "age": 20,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4873153.png",
-    "team": "DAL",
-    "team_name": "Dallas Mavericks",
-    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5238230.png",
+    "team": "WSH",
+    "team_name": "Washington Wizards",
+    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/wsh.png",
     "g": 5,
-    "mpg": 15.2,
-    "pts36": 17.1,
-    "reb36": 8.5,
-    "ast36": 3.3,
-    "stl36": 0.5,
-    "blk36": 0.0,
-    "ts": 61.2,
-    "gs36": 10.21,
+    "mpg": 20.6,
+    "pts36": 18.2,
+    "reb36": 3.5,
+    "ast36": 1.4,
+    "stl36": 0.7,
+    "blk36": 0.3,
+    "ts": 55.3,
+    "gs36": 10.15,
     "sample": "足夠",
-    "ppg": 7.2,
-    "gs_pg": 4.31,
-    "rank": 29
+    "ppg": 10.4,
+    "gs_pg": 5.81,
+    "rank": 28
    },
    {
     "espn_id": "5124612",
@@ -4159,18 +3159,43 @@
     "team": "PHI",
     "team_name": "Philadelphia 76ers",
     "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
-    "g": 4,
-    "mpg": 31.8,
+    "g": 5,
+    "mpg": 32.6,
     "pts36": 12.8,
-    "reb36": 8.8,
-    "ast36": 3.1,
-    "stl36": 1.7,
-    "blk36": 0.6,
-    "ts": 47.4,
-    "gs36": 10.1,
-    "sample": "偏少",
-    "ppg": 11.3,
-    "gs_pg": 8.91,
+    "reb36": 8.6,
+    "ast36": 2.9,
+    "stl36": 1.3,
+    "blk36": 0.4,
+    "ts": 50.4,
+    "gs36": 10.12,
+    "sample": "足夠",
+    "ppg": 11.6,
+    "gs_pg": 9.16,
+    "rank": 29
+   },
+   {
+    "espn_id": "5174983",
+    "name": "Aday Mara",
+    "class": "一年級",
+    "exp": 0,
+    "pos": "C",
+    "age": 21,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5174983.png",
+    "team": "OKC",
+    "team_name": "Oklahoma City Thunder",
+    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png",
+    "g": 5,
+    "mpg": 15.8,
+    "pts36": 12.8,
+    "reb36": 9.6,
+    "ast36": 2.3,
+    "stl36": 0.5,
+    "blk36": 3.2,
+    "ts": 59.9,
+    "gs36": 9.58,
+    "sample": "足夠",
+    "ppg": 5.6,
+    "gs_pg": 4.2,
     "rank": 30
    }
   ],
@@ -4201,6 +3226,31 @@
     "rank": 1
    },
    {
+    "espn_id": "4433149",
+    "name": "LJ Cryer",
+    "class": "二年級",
+    "exp": 1,
+    "pos": "G",
+    "age": 25,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433149.png",
+    "team": "GS",
+    "team_name": "Golden State Warriors",
+    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
+    "g": 4,
+    "mpg": 6.5,
+    "pts36": 24.9,
+    "reb36": 2.8,
+    "ast36": 9.7,
+    "stl36": 0.0,
+    "blk36": 0.0,
+    "ts": 60.3,
+    "gs36": 18.11,
+    "sample": "偏少",
+    "ppg": 4.5,
+    "gs_pg": 3.27,
+    "rank": 2
+   },
+   {
     "espn_id": "4684208",
     "name": "Brooks Barnhizer",
     "class": "二年級",
@@ -4223,7 +3273,32 @@
     "sample": "偏少",
     "ppg": 0.8,
     "gs_pg": 0.35,
-    "rank": 2
+    "rank": 3
+   },
+   {
+    "espn_id": "5107157",
+    "name": "Ryan Conwell",
+    "class": "一年級",
+    "exp": 0,
+    "pos": "G",
+    "age": 22,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5107157.png",
+    "team": "MIA",
+    "team_name": "Miami Heat",
+    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png",
+    "g": 4,
+    "mpg": 4.2,
+    "pts36": 19.1,
+    "reb36": 2.1,
+    "ast36": 4.2,
+    "stl36": 2.1,
+    "blk36": 0.0,
+    "ts": 57.4,
+    "gs36": 14.45,
+    "sample": "偏少",
+    "ppg": 2.3,
+    "gs_pg": 1.71,
+    "rank": 4
    },
    {
     "espn_id": "4702656",
@@ -4248,7 +3323,7 @@
     "sample": "偏少",
     "ppg": 2.5,
     "gs_pg": 1.17,
-    "rank": 3
+    "rank": 5
    },
    {
     "espn_id": "4432737",
@@ -4273,7 +3348,7 @@
     "sample": "偏少",
     "ppg": 1.5,
     "gs_pg": 1.38,
-    "rank": 4
+    "rank": 6
    },
    {
     "espn_id": "4701208",
@@ -4298,7 +3373,7 @@
     "sample": "偏少",
     "ppg": 2.5,
     "gs_pg": 2.32,
-    "rank": 5
+    "rank": 7
    },
    {
     "espn_id": "5105837",
@@ -4323,56 +3398,6 @@
     "sample": "偏少",
     "ppg": 1.3,
     "gs_pg": 0.45,
-    "rank": 6
-   },
-   {
-    "espn_id": "5105809",
-    "name": "Tarris Reed Jr.",
-    "class": "一年級",
-    "exp": 0,
-    "pos": "C",
-    "age": 23,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105809.png",
-    "team": "SA",
-    "team_name": "San Antonio Spurs",
-    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
-    "g": 3,
-    "mpg": 4.3,
-    "pts36": 16.6,
-    "reb36": 22.2,
-    "ast36": 0.0,
-    "stl36": 0.0,
-    "blk36": 0.0,
-    "ts": 74.8,
-    "gs36": 10.51,
-    "sample": "偏少",
-    "ppg": 2.0,
-    "gs_pg": 1.27,
-    "rank": 7
-   },
-   {
-    "espn_id": "5107157",
-    "name": "Ryan Conwell",
-    "class": "一年級",
-    "exp": 0,
-    "pos": "G",
-    "age": 22,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5107157.png",
-    "team": "MIA",
-    "team_name": "Miami Heat",
-    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png",
-    "g": 3,
-    "mpg": 3.3,
-    "pts36": 18.0,
-    "reb36": 3.6,
-    "ast36": 7.2,
-    "stl36": 0.0,
-    "blk36": 0.0,
-    "ts": 50.0,
-    "gs36": 12.96,
-    "sample": "偏少",
-    "ppg": 1.7,
-    "gs_pg": 1.2,
     "rank": 8
    },
    {
@@ -4386,44 +3411,19 @@
     "team": "WSH",
     "team_name": "Washington Wizards",
     "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/wsh.png",
-    "g": 3,
-    "mpg": 3.3,
-    "pts36": 14.4,
+    "g": 4,
+    "mpg": 2.8,
+    "pts36": 13.1,
     "reb36": 0.0,
     "ast36": 0.0,
     "stl36": 0.0,
     "blk36": 0.0,
-    "ts": 69.4,
-    "gs36": 2.16,
+    "ts": 51.7,
+    "gs36": -0.26,
     "sample": "偏少",
-    "ppg": 1.3,
-    "gs_pg": 0.2,
+    "ppg": 1.0,
+    "gs_pg": -0.02,
     "rank": 9
-   },
-   {
-    "espn_id": "5106040",
-    "name": "Tobi Lawal",
-    "class": "一年級",
-    "exp": 0,
-    "pos": "F",
-    "age": 23,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5106040.png",
-    "team": "DAL",
-    "team_name": "Dallas Mavericks",
-    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
-    "g": 3,
-    "mpg": 2.7,
-    "pts36": 22.5,
-    "reb36": 4.5,
-    "ast36": 9.0,
-    "stl36": 4.5,
-    "blk36": 0.0,
-    "ts": 62.5,
-    "gs36": 27.45,
-    "sample": "偏少",
-    "ppg": 1.7,
-    "gs_pg": 2.03,
-    "rank": 10
    },
    {
     "espn_id": "5061585",
@@ -4436,43 +3436,68 @@
     "team": "MIN",
     "team_name": "Minnesota Timberwolves",
     "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
-    "g": 3,
-    "mpg": 2.7,
+    "g": 4,
+    "mpg": 2.5,
     "pts36": 0.0,
-    "reb36": 4.5,
-    "ast36": 9.0,
+    "reb36": 3.6,
+    "ast36": 7.2,
     "stl36": 0.0,
     "blk36": 0.0,
     "ts": 0,
-    "gs36": -4.95,
+    "gs36": -6.48,
     "sample": "偏少",
     "ppg": 0.0,
-    "gs_pg": -0.37,
-    "rank": 11
+    "gs_pg": -0.45,
+    "rank": 10
    },
    {
-    "espn_id": "5105800",
-    "name": "Josh Dix",
+    "espn_id": "4873090",
+    "name": "Labaron Philon Jr.",
     "class": "一年級",
     "exp": 0,
     "pos": "G",
-    "age": 22,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105800.png",
-    "team": "OKC",
-    "team_name": "Oklahoma City Thunder",
-    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png",
-    "g": 2,
-    "mpg": 23.0,
-    "pts36": 1.6,
-    "reb36": 2.3,
-    "ast36": 0.0,
-    "stl36": 0.8,
+    "age": 20,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4873090.png",
+    "team": "PHI",
+    "team_name": "Philadelphia 76ers",
+    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
+    "g": 3,
+    "mpg": 7.3,
+    "pts36": 11.5,
+    "reb36": 6.5,
+    "ast36": 1.6,
+    "stl36": 0.0,
     "blk36": 0.0,
-    "ts": 9.3,
-    "gs36": -4.18,
+    "ts": 43.9,
+    "gs36": 4.44,
     "sample": "偏少",
-    "ppg": 1.0,
-    "gs_pg": -2.67,
+    "ppg": 2.3,
+    "gs_pg": 0.9,
+    "rank": 11
+   },
+   {
+    "espn_id": "5239590",
+    "name": "Liam McNeeley",
+    "class": "二年級",
+    "exp": 1,
+    "pos": "G",
+    "age": 21,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5239590.png",
+    "team": "CHA",
+    "team_name": "Charlotte Hornets",
+    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/cha.png",
+    "g": 3,
+    "mpg": 6.3,
+    "pts36": 7.6,
+    "reb36": 13.3,
+    "ast36": 0.0,
+    "stl36": 0.0,
+    "blk36": 0.0,
+    "ts": 29.6,
+    "gs36": -2.28,
+    "sample": "偏少",
+    "ppg": 1.3,
+    "gs_pg": -0.4,
     "rank": 12
    }
   ],
@@ -4554,19 +3579,19 @@
     "team": "CHI",
     "team_name": "Chicago Bulls",
     "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/chi.png",
-    "g": 5,
-    "mpg": 34.6,
-    "pts36": 21.6,
-    "reb36": 7.3,
-    "ast36": 2.3,
-    "stl36": 1.9,
-    "blk36": 1.5,
-    "ts": 50.1,
-    "gs36": 14.04,
+    "g": 6,
+    "mpg": 34.2,
+    "pts36": 22.3,
+    "reb36": 7.0,
+    "ast36": 2.6,
+    "stl36": 1.8,
+    "blk36": 1.6,
+    "ts": 51.7,
+    "gs36": 14.8,
     "sample": "足夠",
-    "ppg": 20.8,
-    "gs_pg": 13.49,
-    "rank": 14,
+    "ppg": 21.2,
+    "gs_pg": 14.05,
+    "rank": 9,
     "trend": {
      "recent_games": 4,
      "recent_gs36": 18.1,
@@ -4587,18 +3612,18 @@
     "team": "MIN",
     "team_name": "Minnesota Timberwolves",
     "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
-    "g": 5,
-    "mpg": 15.6,
-    "pts36": 15.7,
-    "reb36": 17.5,
-    "ast36": 1.4,
-    "stl36": 0.5,
-    "blk36": 1.4,
-    "ts": 67.6,
-    "gs36": 18.54,
+    "g": 6,
+    "mpg": 16.0,
+    "pts36": 14.2,
+    "reb36": 15.8,
+    "ast36": 1.1,
+    "stl36": 0.4,
+    "blk36": 1.5,
+    "ts": 65.2,
+    "gs36": 16.65,
     "sample": "足夠",
-    "ppg": 6.8,
-    "gs_pg": 8.03,
+    "ppg": 6.3,
+    "gs_pg": 7.4,
     "rank": 4,
     "trend": {
      "recent_games": 4,
@@ -4632,7 +3657,7 @@
     "sample": "偏少",
     "ppg": 3.5,
     "gs_pg": 3.89,
-    "rank": 16,
+    "rank": 14,
     "trend": {
      "recent_games": 3,
      "recent_gs36": 16.64,
@@ -4731,7 +3756,7 @@
     "sample": "足夠",
     "ppg": 6.3,
     "gs_pg": 5.05,
-    "rank": 33,
+    "rank": 31,
     "trend": {
      "recent_games": 4,
      "recent_gs36": 11.92,
@@ -4752,18 +3777,18 @@
     "team": "CHA",
     "team_name": "Charlotte Hornets",
     "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/cha.png",
-    "g": 5,
-    "mpg": 10.4,
-    "pts36": 4.8,
-    "reb36": 4.8,
-    "ast36": 4.2,
-    "stl36": 2.1,
-    "blk36": 0.7,
-    "ts": 23.1,
-    "gs36": -0.84,
+    "g": 6,
+    "mpg": 10.8,
+    "pts36": 6.1,
+    "reb36": 5.5,
+    "ast36": 5.0,
+    "stl36": 1.7,
+    "blk36": 0.6,
+    "ts": 24.0,
+    "gs36": 0.36,
     "sample": "足夠",
-    "ppg": 1.4,
-    "gs_pg": -0.24,
+    "ppg": 1.8,
+    "gs_pg": 0.11,
     "rank": 48,
     "trend": {
      "recent_games": 4,
@@ -4797,7 +3822,7 @@
     "sample": "足夠",
     "ppg": 1.6,
     "gs_pg": 0.56,
-    "rank": 44,
+    "rank": 46,
     "trend": {
      "recent_games": 4,
      "recent_gs36": 4.26,
@@ -4841,39 +3866,6 @@
     "trend_rank": 11
    },
    {
-    "espn_id": "5175737",
-    "name": "Yaxel Lendeborg",
-    "class": "一年級",
-    "exp": 0,
-    "pos": "F",
-    "age": 24,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5175737.png",
-    "team": "GS",
-    "team_name": "Golden State Warriors",
-    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
-    "g": 5,
-    "mpg": 33.6,
-    "pts36": 24.2,
-    "reb36": 9.9,
-    "ast36": 4.3,
-    "stl36": 1.1,
-    "blk36": 0.6,
-    "ts": 59.3,
-    "gs36": 18.99,
-    "sample": "足夠",
-    "ppg": 22.6,
-    "gs_pg": 17.72,
-    "rank": 3,
-    "trend": {
-     "recent_games": 4,
-     "recent_gs36": 20.15,
-     "season_gs36_log": 18.28,
-     "delta": 1.87,
-     "recent_min": 34.8
-    },
-    "trend_rank": 12
-   },
-   {
     "espn_id": "5144091",
     "name": "Jeremiah Fears",
     "class": "二年級",
@@ -4904,7 +3896,7 @@
      "delta": 1.87,
      "recent_min": 25.0
     },
-    "trend_rank": 13
+    "trend_rank": 12
    },
    {
     "espn_id": "4602025",
@@ -4917,18 +3909,18 @@
     "team": "CHA",
     "team_name": "Charlotte Hornets",
     "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/cha.png",
-    "g": 5,
-    "mpg": 25.8,
-    "pts36": 4.5,
-    "reb36": 3.9,
-    "ast36": 4.5,
-    "stl36": 0.6,
+    "g": 6,
+    "mpg": 26.2,
+    "pts36": 5.0,
+    "reb36": 4.4,
+    "ast36": 4.6,
+    "stl36": 0.9,
     "blk36": 0.0,
-    "ts": 29.0,
-    "gs36": 2.27,
+    "ts": 28.1,
+    "gs36": 2.72,
     "sample": "足夠",
-    "ppg": 3.2,
-    "gs_pg": 1.63,
+    "ppg": 3.6,
+    "gs_pg": 1.98,
     "rank": 45,
     "trend": {
      "recent_games": 4,
@@ -4937,7 +3929,7 @@
      "delta": 1.86,
      "recent_min": 26.8
     },
-    "trend_rank": 14
+    "trend_rank": 13
    },
    {
     "espn_id": "4903027",
@@ -4962,7 +3954,7 @@
     "sample": "偏少",
     "ppg": 13.8,
     "gs_pg": 11.62,
-    "rank": 13,
+    "rank": 12,
     "trend": {
      "recent_games": 3,
      "recent_gs36": 16.52,
@@ -4970,12 +3962,45 @@
      "delta": 1.81,
      "recent_min": 30.0
     },
+    "trend_rank": 14
+   },
+   {
+    "espn_id": "5175647",
+    "name": "Hugo Gonzalez",
+    "class": "二年級",
+    "exp": 1,
+    "pos": "G",
+    "age": 20,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5175647.png",
+    "team": "BOS",
+    "team_name": "Boston Celtics",
+    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
+    "g": 5,
+    "mpg": 11.8,
+    "pts36": 7.9,
+    "reb36": 7.3,
+    "ast36": 1.8,
+    "stl36": 0.6,
+    "blk36": 0.6,
+    "ts": 47.6,
+    "gs36": 6.89,
+    "sample": "足夠",
+    "ppg": 2.6,
+    "gs_pg": 2.26,
+    "rank": 39,
+    "trend": {
+     "recent_games": 3,
+     "recent_gs36": 8.64,
+     "season_gs36_log": 6.89,
+     "delta": 1.75,
+     "recent_min": 15.0
+    },
     "trend_rank": 15
    }
   ],
   "counts": {
-   "rookies": 22,
-   "sophomores": 26,
+   "rookies": 24,
+   "sophomores": 25,
    "trend_window_days": 7
   }
  },
