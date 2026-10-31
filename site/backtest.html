@@ -27,7 +27,7 @@
     </nav>
   </div>
   <div class="wrap statusbar">
-    <div class="stamp">最後更新 <b>2026-10-31 09:27</b>（台灣時間）· 球季 2026-27</div>
+    <div class="stamp">最後更新 <b>2026-10-31 10:39</b>（台灣時間）· 球季 2026-27</div>
     <div class="stamp-links">
       <button id="manualUpdateBtn" class="btn-ghost primary" aria-expanded="false" aria-controls="manualUpdatePanel">手動更新資料</button>
       <button id="reloadBtn" class="btn-ghost" title="重新載入本頁">重新整理</button>
@@ -38,13 +38,13 @@
         <i></i>ESPN API <em>60</em>
       </span>
       <span class="chip ok" title="per-36 球員數據">
-        <i></i>Basketball-Reference <em>453</em>
+        <i></i>Basketball-Reference <em>455</em>
       </span>
       <span class="chip ok" title="傷病報告">
-        <i></i>CBS Sports <em>89</em>
+        <i></i>CBS Sports <em>86</em>
       </span>
       <span class="chip ok" title="傷病報告">
-        <i></i>Yahoo Sports <em>92</em>
+        <i></i>Yahoo Sports <em>98</em>
       </span>
       <span class="chip ok" title="球員大頭貼">
         <i></i>NBA CDN <em>522</em>
@@ -70,25 +70,133 @@
     <p class="sub">每一次更新都會把當日預測存檔；比賽結束後自動用官方比分評分，不做任何事後修改。全部紀錄公開，含失準的場次。</p>
   </div>
   <div class="hero-stats">
-    <div><b>0</b><span>已評分場次</span></div>
-    <div><b>—%</b><span>勝負命中率</span></div>
-    <div><b>—</b><span>總分平均誤差</span></div>
+    <div><b>7</b><span>已評分場次</span></div>
+    <div><b>57.1%</b><span>勝負命中率</span></div>
+    <div><b>22.3</b><span>總分平均誤差</span></div>
   </div>
 </section>
 
-  <div class="empty">
-    <h3>回測從今天開始累積</h3>
-    <p>為了不做事後校準（避免後見之明偏誤），系統只記錄「更新當下」的預測，等比賽結束後再評分。目前還沒有已完成的比賽，下一次更新後就會出現第一批成績。</p>
+<div class="kpis">
+  <div class="kpi"><span>勝負命中</span><b>57.1%</b><em>7 場</em></div>
+  <div class="kpi"><span>主隊級距命中</span><b>0.0%</b></div>
+  <div class="kpi"><span>客隊級距命中</span><b>28.6%</b></div>
+  <div class="kpi"><span>兩隊同時命中</span><b>0.0%</b></div>
+  <div class="kpi"><span>總分 MAE</span><b>22.3</b><em>分</em></div>
+  <div class="kpi"><span>Brier 分數</span><b>0.2409</b><em>越低越好</em></div>
+</div>
+
+<div class="two-col">
+  <div>
+    <h2 class="sec">近期場次</h2>
+    <table class="board">
+      <thead><tr><th>日期</th><th>對戰</th><th>預測</th><th>實際</th><th>勝負</th><th>級距</th><th>誤差</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>10-30</td>
+          <td><b>CHA</b> @ <b>WSH</b></td>
+          <td class="mono">100–111</td>
+          <td class="mono">79–95</td>
+          <td><span class="hit">✓</span></td>
+          <td>
+<span class="miss">✕</span>          </td>
+          <td class="mono">37.0</td>
+        </tr>
+        <tr>
+          <td>10-30</td>
+          <td><b>CHI</b> @ <b>BOS</b></td>
+          <td class="mono">116–117</td>
+          <td class="mono">111–125</td>
+          <td><span class="hit">✓</span></td>
+          <td>
+<span class="half">✓</span>
+          </td>
+          <td class="mono">3.1</td>
+        </tr>
+        <tr>
+          <td>10-30</td>
+          <td><b>DET</b> @ <b>BKN</b></td>
+          <td class="mono">108–113</td>
+          <td class="mono">110–94</td>
+          <td><span class="miss">✕</span></td>
+          <td>
+<span class="half">✓</span>
+          </td>
+          <td class="mono">17.1</td>
+        </tr>
+        <tr>
+          <td>10-30</td>
+          <td><b>NY</b> @ <b>PHI</b></td>
+          <td class="mono">115–108</td>
+          <td class="mono">93–98</td>
+          <td><span class="miss">✕</span></td>
+          <td>
+<span class="miss">✕</span>          </td>
+          <td class="mono">31.5</td>
+        </tr>
+        <tr>
+          <td>10-30</td>
+          <td><b>ORL</b> @ <b>TOR</b></td>
+          <td class="mono">110–109</td>
+          <td class="mono">121–114</td>
+          <td><span class="miss">✕</span></td>
+          <td>
+<span class="miss">✕</span>          </td>
+          <td class="mono">16.7</td>
+        </tr>
+        <tr>
+          <td>10-30</td>
+          <td><b>IND</b> @ <b>MIA</b></td>
+          <td class="mono">115–116</td>
+          <td class="mono">125–145</td>
+          <td><span class="hit">✓</span></td>
+          <td>
+<span class="miss">✕</span>          </td>
+          <td class="mono">39.3</td>
+        </tr>
+        <tr>
+          <td>10-30</td>
+          <td><b>LAC</b> @ <b>MIN</b></td>
+          <td class="mono">108–108</td>
+          <td class="mono">101–127</td>
+          <td><span class="hit">✓</span></td>
+          <td>
+<span class="miss">✕</span>          </td>
+          <td class="mono">11.2</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
+  <aside>
+    <h2 class="sec">滾動表現</h2>
+    <div class="roll">
+      <h4>近 7 天 <span>7 場</span></h4>
+      <div class="roll-row"><span>勝負</span><b>57.1%</b></div>
+      <div class="roll-row"><span>兩隊級距</span><b>—%</b></div>
+      <div class="roll-row"><span>總分 MAE</span><b>22.3</b></div>
+    </div>
+    <div class="roll">
+      <h4>近 30 天 <span>7 場</span></h4>
+      <div class="roll-row"><span>勝負</span><b>57.1%</b></div>
+      <div class="roll-row"><span>兩隊級距</span><b>—%</b></div>
+      <div class="roll-row"><span>總分 MAE</span><b>22.3</b></div>
+    </div>
+    <div class="roll">
+      <h4>全部 <span>7 場</span></h4>
+      <div class="roll-row"><span>勝負</span><b>57.1%</b></div>
+      <div class="roll-row"><span>兩隊級距</span><b>—%</b></div>
+      <div class="roll-row"><span>總分 MAE</span><b>22.3</b></div>
+    </div>
+  </aside>
+</div>
 </main>
 
 <footer class="wrap foot">
   <p>資料來源：ESPN · Basketball-Reference · CBS Sports · Yahoo Sports · NBA CDN（多重來源交叉比對）。</p>
   <p>所有數字為模型估計值，僅供研究與討論，不構成任何投注建議。</p>
-  <p class="muted">建置時間 2026-10-31T01:27:09+00:00 UTC · 每次更新自動重新抓取名單、傷病與 per-36 數據後重算。</p>
+  <p class="muted">建置時間 2026-10-31T02:39:05+00:00 UTC · 每次更新自動重新抓取名單、傷病與 per-36 數據後重算。</p>
 </footer>
 
-<script>window.HOOPSLAB_BUILT_AT = "2026-10-31T01:27:09+00:00";</script>
+<script>window.HOOPSLAB_BUILT_AT = "2026-10-31T02:39:05+00:00";</script>
 <script src="app.js?v=bilingual-20261031" defer></script>
 </body>
 </html>

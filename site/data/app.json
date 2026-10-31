@@ -1,6 +1,6 @@
 {
- "updated_utc": "2026-10-31T01:27:09+00:00",
- "updated_tpe": "2026-10-31 09:27",
+ "updated_utc": "2026-10-31T02:39:05+00:00",
+ "updated_tpe": "2026-10-31 10:39",
  "game_date": "2026-10-30",
  "season": "2026-27",
  "league": {
@@ -20,19 +20,19 @@
   {
    "name": "Basketball-Reference",
    "role": "per-36 球員數據",
-   "count": 453,
+   "count": 455,
    "ok": true
   },
   {
    "name": "CBS Sports",
    "role": "傷病報告",
-   "count": 89,
+   "count": 86,
    "ok": true
   },
   {
    "name": "Yahoo Sports",
    "role": "傷病報告",
-   "count": 92,
+   "count": 98,
    "ok": true
   },
   {
@@ -45,16 +45,16 @@
  "br_fallback": false,
  "injury_counts": {
   "ESPN": 85,
-  "CBS": 89,
-  "Yahoo": 92
+  "CBS": 86,
+  "Yahoo": 98
  },
  "conflicts": 6,
- "players_tracked": 181,
+ "players_tracked": 184,
  "games": [
   {
    "event_id": "401909277",
    "date_utc": "2026-10-30T23:00Z",
-   "status": "STATUS_IN_PROGRESS",
+   "status": "STATUS_FINAL",
    "venue": "Capital One Arena",
    "home": {
     "team": {
@@ -221,15 +221,15 @@
     "ortg": 107.3,
     "drtg_opp": 110.1,
     "pace": 100.8,
-    "availability": 0.858,
+    "availability": 0.857,
     "season_ppg": 101.0,
-    "lost_points": 16.6,
+    "lost_points": 16.7,
     "out_players": [
      {
       "name": "Kon Knueppel",
       "pos": "G",
       "status": "OUT",
-      "est_lost_points": 7.1,
+      "est_lost_points": 7.2,
       "detail": "Knueppel (hamstring) was recalled from the G League's Greensboro Swarm on Friday. He remains out for Friday's contest against the Wizards.",
       "sources": {
        "ESPN": "OUT",
@@ -269,8 +269,8 @@
       "exp": 4,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433287.png",
       "status": "AVAILABLE",
-      "proj_min": 32.7,
-      "proj_pts": 22.4
+      "proj_min": 32.4,
+      "proj_pts": 22.2
      },
      {
       "name": "Grayson Allen",
@@ -278,8 +278,8 @@
       "exp": 9,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3135045.png",
       "status": "AVAILABLE",
-      "proj_min": 29.8,
-      "proj_pts": 17.1
+      "proj_min": 29.5,
+      "proj_pts": 16.9
      },
      {
       "name": "Naz Reid",
@@ -287,8 +287,8 @@
       "exp": 8,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4396971.png",
       "status": "AVAILABLE",
-      "proj_min": 27.6,
-      "proj_pts": 15.1
+      "proj_min": 27.3,
+      "proj_pts": 14.9
      },
      {
       "name": "Royce O'Neale",
@@ -296,7 +296,7 @@
       "exp": 10,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2583632.png",
       "status": "AVAILABLE",
-      "proj_min": 26.2,
+      "proj_min": 26.0,
       "proj_pts": 8.4
      },
      {
@@ -305,7 +305,7 @@
       "exp": 2,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4602025.png",
       "status": "AVAILABLE",
-      "proj_min": 24.5,
+      "proj_min": 24.3,
       "proj_pts": 4.7
      },
      {
@@ -314,7 +314,7 @@
       "exp": 2,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4576060.png",
       "status": "AVAILABLE",
-      "proj_min": 20.8,
+      "proj_min": 20.7,
       "proj_pts": 7.7
      },
      {
@@ -323,7 +323,7 @@
       "exp": 3,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4701225.png",
       "status": "AVAILABLE",
-      "proj_min": 15.8,
+      "proj_min": 15.7,
       "proj_pts": 5.6
      },
      {
@@ -332,8 +332,8 @@
       "exp": 14,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3032979.png",
       "status": "AVAILABLE",
-      "proj_min": 14.4,
-      "proj_pts": 5.4
+      "proj_min": 15.2,
+      "proj_pts": 5.6
      },
      {
       "name": "Moussa Diabate",
@@ -341,8 +341,8 @@
       "exp": 5,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433249.png",
       "status": "AVAILABLE",
-      "proj_min": 13.4,
-      "proj_pts": 4.7
+      "proj_min": 14.4,
+      "proj_pts": 5.0
      },
      {
       "name": "Liam McNeeley",
@@ -350,8 +350,8 @@
       "exp": 2,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5239590.png",
       "status": "AVAILABLE",
-      "proj_min": 11.7,
-      "proj_pts": 4.0
+      "proj_min": 11.6,
+      "proj_pts": 3.9
      },
      {
       "name": "Tidjane Salaun",
@@ -359,8 +359,8 @@
       "exp": 3,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5211176.png",
       "status": "AVAILABLE",
-      "proj_min": 8.7,
-      "proj_pts": 3.1
+      "proj_min": 8.6,
+      "proj_pts": 3.2
      }
     ],
     "data_games": 5
@@ -416,7 +416,7 @@
   {
    "event_id": "401909278",
    "date_utc": "2026-10-30T23:30Z",
-   "status": "STATUS_IN_PROGRESS",
+   "status": "STATUS_FINAL",
    "venue": "TD Garden",
    "home": {
     "team": {
@@ -730,7 +730,7 @@
   {
    "event_id": "401909279",
    "date_utc": "2026-10-30T23:30Z",
-   "status": "STATUS_IN_PROGRESS",
+   "status": "STATUS_FINAL",
    "venue": "Barclays Center",
    "home": {
     "team": {
@@ -758,8 +758,8 @@
       "exp": 13,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3064514.png",
       "status": "AVAILABLE",
-      "proj_min": 33.4,
-      "proj_pts": 21.6
+      "proj_min": 33.6,
+      "proj_pts": 21.7
      },
      {
       "name": "Michael Porter Jr.",
@@ -767,8 +767,8 @@
       "exp": 8,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278104.png",
       "status": "AVAILABLE",
-      "proj_min": 32.2,
-      "proj_pts": 24.1
+      "proj_min": 32.3,
+      "proj_pts": 24.2
      },
      {
       "name": "Noah Clowney",
@@ -776,8 +776,8 @@
       "exp": 4,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4712896.png",
       "status": "AVAILABLE",
-      "proj_min": 25.5,
-      "proj_pts": 10.5
+      "proj_min": 25.6,
+      "proj_pts": 10.6
      },
      {
       "name": "Keon Ellis",
@@ -785,8 +785,8 @@
       "exp": 5,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702177.png",
       "status": "AVAILABLE",
-      "proj_min": 25.1,
-      "proj_pts": 7.8
+      "proj_min": 25.2,
+      "proj_pts": 7.9
      },
      {
       "name": "Terance Mann",
@@ -794,8 +794,8 @@
       "exp": 8,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3907823.png",
       "status": "AVAILABLE",
-      "proj_min": 24.2,
-      "proj_pts": 7.2
+      "proj_min": 23.3,
+      "proj_pts": 6.8
      },
      {
       "name": "Chaney Johnson",
@@ -803,7 +803,7 @@
       "exp": 2,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5174655.png",
       "status": "AVAILABLE",
-      "proj_min": 20.4,
+      "proj_min": 20.5,
       "proj_pts": 8.1
      },
      {
@@ -812,7 +812,7 @@
       "exp": 2,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5107173.png",
       "status": "AVAILABLE",
-      "proj_min": 20.3,
+      "proj_min": 20.4,
       "proj_pts": 8.5
      },
      {
@@ -830,7 +830,7 @@
       "exp": 2,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5242502.png",
       "status": "AVAILABLE",
-      "proj_min": 19.4,
+      "proj_min": 19.5,
       "proj_pts": 7.0
      },
      {
@@ -839,8 +839,8 @@
       "exp": 6,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432194.png",
       "status": "AVAILABLE",
-      "proj_min": 19.3,
-      "proj_pts": 8.7
+      "proj_min": 19.4,
+      "proj_pts": 8.8
      }
     ],
     "data_games": 4
@@ -855,20 +855,20 @@
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/det.png",
      "color": "#1d428a"
     },
-    "pred_pts": 108.4,
+    "pred_pts": 108.6,
     "sigma": 11.3,
     "ortg": 110.5,
     "drtg_opp": 110.1,
     "pace": 102.9,
-    "availability": 0.924,
+    "availability": 0.927,
     "season_ppg": 109.8,
-    "lost_points": 8.9,
+    "lost_points": 8.6,
     "out_players": [
      {
       "name": "Jalen Duren",
       "pos": "C",
       "status": "OUT",
-      "est_lost_points": 5.8,
+      "est_lost_points": 5.6,
       "detail": "Duren will be re-evaluated in two weeks due to a right hamstring strain, Eric Vincent of ClutchPoints.com reports.",
       "sources": {
        "ESPN": "OUT",
@@ -880,7 +880,7 @@
       "name": "Isaiah Joe",
       "pos": "G",
       "status": "OUT",
-      "est_lost_points": 3.1,
+      "est_lost_points": 3.0,
       "detail": "Joe (hip) has been ruled out for Friday's game against the Nets.",
       "sources": {
        "ESPN": "OUT",
@@ -896,7 +896,7 @@
       "exp": 6,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432166.png",
       "status": "AVAILABLE",
-      "proj_min": 33.9,
+      "proj_min": 33.8,
       "proj_pts": 23.3
      },
      {
@@ -905,8 +905,8 @@
       "exp": 9,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3157465.png",
       "status": "AVAILABLE",
-      "proj_min": 28.1,
-      "proj_pts": 13.8
+      "proj_min": 28.0,
+      "proj_pts": 13.7
      },
      {
       "name": "John Collins",
@@ -914,7 +914,7 @@
       "exp": 10,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3908845.png",
       "status": "AVAILABLE",
-      "proj_min": 26.8,
+      "proj_min": 26.7,
       "proj_pts": 12.7
      },
      {
@@ -923,8 +923,8 @@
       "exp": 4,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4684742.png",
       "status": "AVAILABLE",
-      "proj_min": 26.0,
-      "proj_pts": 9.3
+      "proj_min": 25.9,
+      "proj_pts": 9.2
      },
      {
       "name": "Daniss Jenkins",
@@ -932,8 +932,8 @@
       "exp": 3,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5107199.png",
       "status": "AVAILABLE",
-      "proj_min": 21.4,
-      "proj_pts": 10.0
+      "proj_min": 21.3,
+      "proj_pts": 9.9
      },
      {
       "name": "Taurean Prince",
@@ -941,8 +941,8 @@
       "exp": 11,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2990962.png",
       "status": "AVAILABLE",
-      "proj_min": 21.0,
-      "proj_pts": 8.1
+      "proj_min": 20.9,
+      "proj_pts": 8.0
      },
      {
       "name": "Kevin Huerter",
@@ -950,7 +950,7 @@
       "exp": 9,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066372.png",
       "status": "AVAILABLE",
-      "proj_min": 20.2,
+      "proj_min": 20.1,
       "proj_pts": 7.3
      },
      {
@@ -968,7 +968,7 @@
       "exp": 8,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2596112.png",
       "status": "AVAILABLE",
-      "proj_min": 17.6,
+      "proj_min": 17.5,
       "proj_pts": 7.1
      },
      {
@@ -977,7 +977,7 @@
       "exp": 7,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278562.png",
       "status": "AVAILABLE",
-      "proj_min": 17.3,
+      "proj_min": 17.2,
       "proj_pts": 10.2
      },
      {
@@ -986,16 +986,16 @@
       "exp": 3,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683771.png",
       "status": "AVAILABLE",
-      "proj_min": 8.4,
-      "proj_pts": 2.5
+      "proj_min": 9.1,
+      "proj_pts": 3.1
      }
     ],
     "data_games": 5
    },
    "sim": {
-    "home_win_prob": 0.6663,
-    "away_win_prob": 0.3337,
-    "exp_margin": 7.0,
+    "home_win_prob": 0.6611,
+    "away_win_prob": 0.3389,
+    "exp_margin": 6.8,
     "home_buckets": [
      [
       "111-115",
@@ -1017,33 +1017,33 @@
     "away_buckets": [
      [
       "106-110",
-      0.1764
+      0.176
      ],
      [
       "101-105",
-      0.1659
+      0.1662
      ],
      [
       "111-115",
-      0.1456
+      0.148
      ],
      [
       "96-100",
-      0.1296
+      0.1275
      ]
     ],
     "likely_score": "105-113",
-    "both_bucket_hit_prob": 0.0305,
+    "both_bucket_hit_prob": 0.0304,
     "confidence": 3.0
    },
-   "pred_total": 221.1,
+   "pred_total": 221.3,
    "pred_total_bucket": "221-225",
-   "pred_margin": 7.1
+   "pred_margin": 6.9
   },
   {
    "event_id": "401909280",
    "date_utc": "2026-10-30T23:30Z",
-   "status": "STATUS_IN_PROGRESS",
+   "status": "STATUS_FINAL",
    "venue": "Xfinity Mobile Arena",
    "home": {
     "team": {
@@ -1333,7 +1333,7 @@
   {
    "event_id": "401909281",
    "date_utc": "2026-10-30T23:30Z",
-   "status": "STATUS_IN_PROGRESS",
+   "status": "STATUS_FINAL",
    "venue": "Scotiabank Arena",
    "home": {
     "team": {
@@ -1485,7 +1485,7 @@
     "ortg": 107.8,
     "drtg_opp": 110.1,
     "pace": 106.1,
-    "availability": 0.917,
+    "availability": 0.918,
     "season_ppg": 107.0,
     "lost_points": 9.9,
     "out_players": [
@@ -1493,7 +1493,7 @@
       "name": "Paolo Banchero",
       "pos": "F",
       "status": "OUT",
-      "est_lost_points": 5.2,
+      "est_lost_points": 5.1,
       "detail": "Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports.",
       "sources": {
        "ESPN": "OUT",
@@ -1505,7 +1505,7 @@
       "name": "Jalen Suggs",
       "pos": "G",
       "status": "OUT",
-      "est_lost_points": 2.9,
+      "est_lost_points": 2.8,
       "detail": "Suggs has been diagnosed with a mild bone bruise in his right knee and will be re-evaluated in two weeks, Shams Charania of ESPN reports.",
       "sources": {
        "ESPN": "OUT",
@@ -1542,8 +1542,8 @@
       "exp": 6,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4566434.png",
       "status": "AVAILABLE",
-      "proj_min": 32.8,
-      "proj_pts": 21.6
+      "proj_min": 32.9,
+      "proj_pts": 21.7
      },
      {
       "name": "Wendell Carter Jr.",
@@ -1569,7 +1569,7 @@
       "exp": 3,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702382.png",
       "status": "AVAILABLE",
-      "proj_min": 27.3,
+      "proj_min": 27.4,
       "proj_pts": 11.8
      },
      {
@@ -1614,7 +1614,7 @@
       "exp": 16,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6478.png",
       "status": "AVAILABLE",
-      "proj_min": 7.5,
+      "proj_min": 7.4,
       "proj_pts": 2.4
      },
      {
@@ -1680,7 +1680,7 @@
   {
    "event_id": "401909282",
    "date_utc": "2026-10-31T00:00Z",
-   "status": "STATUS_HALFTIME",
+   "status": "STATUS_FINAL",
    "venue": "Kaseya Center",
    "home": {
     "team": {
@@ -2400,7 +2400,7 @@
   {
    "event_id": "401909284",
    "date_utc": "2026-10-31T00:00Z",
-   "status": "STATUS_IN_PROGRESS",
+   "status": "STATUS_FINAL",
    "venue": "Target Center",
    "home": {
     "team": {
@@ -2559,20 +2559,20 @@
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
      "color": "#12173f"
     },
-    "pred_pts": 108.4,
+    "pred_pts": 108.1,
     "sigma": 11.5,
     "ortg": 108.1,
     "drtg_opp": 110.1,
     "pace": 104.9,
-    "availability": 0.913,
+    "availability": 0.909,
     "season_ppg": 106.5,
-    "lost_points": 10.3,
+    "lost_points": 10.8,
     "out_players": [
      {
       "name": "Brandon Ingram",
       "pos": "F",
       "status": "OUT",
-      "est_lost_points": 4.2,
+      "est_lost_points": 4.4,
       "detail": "Ingram (Achilles) is making progress but is set to miss at least one more week, Ohm Youngmisuk of ESPN.com reports.",
       "sources": {
        "ESPN": "OUT",
@@ -2584,7 +2584,7 @@
       "name": "Max Strus",
       "pos": "G",
       "status": "OUT",
-      "est_lost_points": 2.2,
+      "est_lost_points": 2.3,
       "detail": "Strus (foot) is making progress but is set to miss at least one more week, Ohm Youngmisuk of ESPN.com reports.",
       "sources": {
        "ESPN": "OUT",
@@ -2596,7 +2596,7 @@
       "name": "Jordan Miller",
       "pos": "G",
       "status": "OUT",
-      "est_lost_points": 2.0,
+      "est_lost_points": 2.1,
       "detail": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic.",
       "sources": {
        "ESPN": "OUT",
@@ -2608,7 +2608,7 @@
       "name": "Bradley Beal",
       "pos": "G",
       "status": "OUT",
-      "est_lost_points": 1.5,
+      "est_lost_points": 1.6,
       "detail": "Beal (knee) will not be ready for the start of the regular season, NBA writer Justin Russo reports.",
       "sources": {
        "ESPN": "OUT",
@@ -2624,8 +2624,8 @@
       "exp": 8,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4396907.png",
       "status": "AVAILABLE",
-      "proj_min": 29.7,
-      "proj_pts": 20.5
+      "proj_min": 29.8,
+      "proj_pts": 20.6
      },
      {
       "name": "Rui Hachimura",
@@ -2642,7 +2642,7 @@
       "exp": 11,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2991139.png",
       "status": "AVAILABLE",
-      "proj_min": 27.7,
+      "proj_min": 27.8,
       "proj_pts": 7.7
      },
      {
@@ -2651,8 +2651,8 @@
       "exp": 11,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3936099.png",
       "status": "AVAILABLE",
-      "proj_min": 27.5,
-      "proj_pts": 10.9
+      "proj_min": 27.6,
+      "proj_pts": 11.0
      },
      {
       "name": "Brook Lopez",
@@ -2660,7 +2660,7 @@
       "exp": 19,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3448.png",
       "status": "AVAILABLE",
-      "proj_min": 21.9,
+      "proj_min": 22.0,
       "proj_pts": 9.9
      },
      {
@@ -2678,8 +2678,8 @@
       "exp": 6,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432170.png",
       "status": "AVAILABLE",
-      "proj_min": 17.1,
-      "proj_pts": 8.3
+      "proj_min": 17.2,
+      "proj_pts": 8.4
      },
      {
       "name": "Gradey Dick",
@@ -2700,15 +2700,6 @@
       "proj_pts": 5.5
      },
      {
-      "name": "Blake Wesley",
-      "pos": "G",
-      "exp": 5,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683935.png",
-      "status": "AVAILABLE",
-      "proj_min": 11.6,
-      "proj_pts": 4.6
-     },
-     {
       "name": "Keaton Wagler",
       "pos": "G",
       "exp": 0,
@@ -2716,14 +2707,23 @@
       "status": "AVAILABLE",
       "proj_min": 11.1,
       "proj_pts": 4.5
+     },
+     {
+      "name": "Blake Wesley",
+      "pos": "G",
+      "exp": 5,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683935.png",
+      "status": "AVAILABLE",
+      "proj_min": 11.1,
+      "proj_pts": 4.0
      }
     ],
     "data_games": 4
    },
    "sim": {
-    "home_win_prob": 0.562,
-    "away_win_prob": 0.438,
-    "exp_margin": 2.7,
+    "home_win_prob": 0.5697,
+    "away_win_prob": 0.4303,
+    "exp_margin": 3.0,
     "home_buckets": [
      [
       "106-110",
@@ -2745,33 +2745,33 @@
     "away_buckets": [
      [
       "106-110",
-      0.1732
+      0.1714
      ],
      [
       "101-105",
-      0.1633
+      0.1658
      ],
      [
       "111-115",
-      0.1447
+      0.1431
      ],
      [
       "96-100",
-      0.1288
+      0.1316
      ]
     ],
-    "likely_score": "106-103",
-    "both_bucket_hit_prob": 0.0301,
-    "confidence": 1.5
+    "likely_score": "105-109",
+    "both_bucket_hit_prob": 0.0298,
+    "confidence": 2.0
    },
-   "pred_total": 216.8,
+   "pred_total": 216.5,
    "pred_total_bucket": "216-220",
-   "pred_margin": 2.8
+   "pred_margin": 3.1
   },
   {
    "event_id": "401909285",
    "date_utc": "2026-10-31T02:00Z",
-   "status": "STATUS_SCHEDULED",
+   "status": "STATUS_IN_PROGRESS",
    "venue": "Chase Center",
    "home": {
     "team": {
@@ -3097,7 +3097,7 @@
   {
    "event_id": "401909286",
    "date_utc": "2026-10-31T02:00Z",
-   "status": "STATUS_SCHEDULED",
+   "status": "STATUS_IN_PROGRESS",
    "venue": "Mortgage Matchup Center",
    "home": {
     "team": {
@@ -3799,31 +3799,6 @@
     "rank": 15
    },
    {
-    "espn_id": "5279130",
-    "name": "Nolan Traore",
-    "class": "二年級",
-    "exp": 1,
-    "pos": "G",
-    "age": 20,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5279130.png",
-    "team": "BKN",
-    "team_name": "Brooklyn Nets",
-    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/bkn.png",
-    "g": 4,
-    "mpg": 17.5,
-    "pts36": 19.5,
-    "reb36": 3.6,
-    "ast36": 4.1,
-    "stl36": 1.5,
-    "blk36": 1.0,
-    "ts": 59.9,
-    "gs36": 13.78,
-    "sample": "偏少",
-    "ppg": 9.5,
-    "gs_pg": 6.7,
-    "rank": 16
-   },
-   {
     "espn_id": "5023693",
     "name": "Tyrese Proctor",
     "class": "二年級",
@@ -3846,7 +3821,7 @@
     "sample": "偏少",
     "ppg": 3.5,
     "gs_pg": 3.89,
-    "rank": 17
+    "rank": 16
    },
    {
     "espn_id": "4576060",
@@ -3871,7 +3846,7 @@
     "sample": "足夠",
     "ppg": 4.6,
     "gs_pg": 6.09,
-    "rank": 18
+    "rank": 17
    },
    {
     "espn_id": "5142620",
@@ -3896,7 +3871,7 @@
     "sample": "足夠",
     "ppg": 24.0,
     "gs_pg": 12.54,
-    "rank": 19
+    "rank": 18
    },
    {
     "espn_id": "5214640",
@@ -3921,7 +3896,7 @@
     "sample": "足夠",
     "ppg": 9.0,
     "gs_pg": 7.8,
-    "rank": 20
+    "rank": 19
    },
    {
     "espn_id": "4698719",
@@ -3946,7 +3921,7 @@
     "sample": "偏少",
     "ppg": 9.5,
     "gs_pg": 7.83,
-    "rank": 21
+    "rank": 20
    },
    {
     "espn_id": "5238230",
@@ -3971,7 +3946,7 @@
     "sample": "偏少",
     "ppg": 12.0,
     "gs_pg": 7.24,
-    "rank": 22
+    "rank": 21
    },
    {
     "espn_id": "5093267",
@@ -3996,7 +3971,7 @@
     "sample": "偏少",
     "ppg": 6.8,
     "gs_pg": 5.59,
-    "rank": 23
+    "rank": 22
    },
    {
     "espn_id": "5041955",
@@ -4021,6 +3996,31 @@
     "sample": "足夠",
     "ppg": 12.8,
     "gs_pg": 8.77,
+    "rank": 23
+   },
+   {
+    "espn_id": "5279130",
+    "name": "Nolan Traore",
+    "class": "二年級",
+    "exp": 1,
+    "pos": "G",
+    "age": 20,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5279130.png",
+    "team": "BKN",
+    "team_name": "Brooklyn Nets",
+    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/bkn.png",
+    "g": 5,
+    "mpg": 19.2,
+    "pts36": 17.6,
+    "reb36": 3.4,
+    "ast36": 3.8,
+    "stl36": 1.5,
+    "blk36": 1.5,
+    "ts": 52.8,
+    "gs36": 10.98,
+    "sample": "足夠",
+    "ppg": 9.4,
+    "gs_pg": 5.86,
     "rank": 24
    },
    {
@@ -4478,72 +4478,6 @@
   ],
   "trend": [
    {
-    "espn_id": "5279133",
-    "name": "Joan Beringer",
-    "class": "二年級",
-    "exp": 1,
-    "pos": "F",
-    "age": 19,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5279133.png",
-    "team": "MIN",
-    "team_name": "Minnesota Timberwolves",
-    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
-    "g": 5,
-    "mpg": 15.6,
-    "pts36": 15.7,
-    "reb36": 17.5,
-    "ast36": 1.4,
-    "stl36": 0.5,
-    "blk36": 1.4,
-    "ts": 67.6,
-    "gs36": 18.54,
-    "sample": "足夠",
-    "ppg": 6.8,
-    "gs_pg": 8.03,
-    "rank": 4,
-    "trend": {
-     "recent_games": 3,
-     "recent_gs36": 22.54,
-     "season_gs36_log": 17.04,
-     "delta": 5.49,
-     "recent_min": 16.7
-    },
-    "trend_rank": 1
-   },
-   {
-    "espn_id": "5279130",
-    "name": "Nolan Traore",
-    "class": "二年級",
-    "exp": 1,
-    "pos": "G",
-    "age": 20,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5279130.png",
-    "team": "BKN",
-    "team_name": "Brooklyn Nets",
-    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/bkn.png",
-    "g": 4,
-    "mpg": 17.5,
-    "pts36": 19.5,
-    "reb36": 3.6,
-    "ast36": 4.1,
-    "stl36": 1.5,
-    "blk36": 1.0,
-    "ts": 59.9,
-    "gs36": 13.78,
-    "sample": "偏少",
-    "ppg": 9.5,
-    "gs_pg": 6.7,
-    "rank": 16,
-    "trend": {
-     "recent_games": 3,
-     "recent_gs36": 19.07,
-     "season_gs36_log": 13.78,
-     "delta": 5.28,
-     "recent_min": 18.0
-    },
-    "trend_rank": 2
-   },
-   {
     "espn_id": "5175643",
     "name": "Egor Demin",
     "class": "二年級",
@@ -4566,7 +4500,7 @@
     "sample": "偏少",
     "ppg": 7.8,
     "gs_pg": 4.3,
-    "rank": 39,
+    "rank": 38,
     "trend": {
      "recent_games": 3,
      "recent_gs36": 11.28,
@@ -4574,40 +4508,40 @@
      "delta": 4.16,
      "recent_min": 20.0
     },
-    "trend_rank": 3
+    "trend_rank": 1
    },
    {
-    "espn_id": "5175647",
-    "name": "Hugo Gonzalez",
-    "class": "二年級",
-    "exp": 1,
+    "espn_id": "5142620",
+    "name": "Darius Acuff Jr.",
+    "class": "一年級",
+    "exp": 0,
     "pos": "G",
-    "age": 20,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5175647.png",
-    "team": "BOS",
-    "team_name": "Boston Celtics",
-    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
-    "g": 4,
-    "mpg": 11.0,
-    "pts36": 10.6,
-    "reb36": 8.2,
-    "ast36": 2.5,
-    "stl36": 0.0,
-    "blk36": 0.8,
-    "ts": 51.4,
-    "gs36": 9.65,
-    "sample": "偏少",
-    "ppg": 3.3,
-    "gs_pg": 2.95,
-    "rank": 31,
+    "age": 19,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5142620.png",
+    "team": "SAC",
+    "team_name": "Sacramento Kings",
+    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/sac.png",
+    "g": 5,
+    "mpg": 36.4,
+    "pts36": 23.7,
+    "reb36": 3.4,
+    "ast36": 6.5,
+    "stl36": 0.6,
+    "blk36": 0.2,
+    "ts": 46.3,
+    "gs36": 12.4,
+    "sample": "足夠",
+    "ppg": 24.0,
+    "gs_pg": 12.54,
+    "rank": 18,
     "trend": {
-     "recent_games": 2,
-     "recent_gs36": 13.56,
-     "season_gs36_log": 9.65,
-     "delta": 3.91,
-     "recent_min": 15.0
+     "recent_games": 4,
+     "recent_gs36": 16.46,
+     "season_gs36_log": 12.8,
+     "delta": 3.66,
+     "recent_min": 36.8
     },
-    "trend_rank": 4
+    "trend_rank": 2
    },
    {
     "espn_id": "5095151",
@@ -4634,46 +4568,46 @@
     "gs_pg": 13.49,
     "rank": 14,
     "trend": {
-     "recent_games": 3,
-     "recent_gs36": 17.43,
-     "season_gs36_log": 13.73,
-     "delta": 3.7,
-     "recent_min": 36.0
+     "recent_games": 4,
+     "recent_gs36": 18.1,
+     "season_gs36_log": 14.75,
+     "delta": 3.35,
+     "recent_min": 34.8
     },
-    "trend_rank": 5
+    "trend_rank": 3
    },
    {
-    "espn_id": "5142620",
-    "name": "Darius Acuff Jr.",
-    "class": "一年級",
-    "exp": 0,
-    "pos": "G",
+    "espn_id": "5279133",
+    "name": "Joan Beringer",
+    "class": "二年級",
+    "exp": 1,
+    "pos": "F",
     "age": 19,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5142620.png",
-    "team": "SAC",
-    "team_name": "Sacramento Kings",
-    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/sac.png",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5279133.png",
+    "team": "MIN",
+    "team_name": "Minnesota Timberwolves",
+    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
     "g": 5,
-    "mpg": 36.4,
-    "pts36": 23.7,
-    "reb36": 3.4,
-    "ast36": 6.5,
-    "stl36": 0.6,
-    "blk36": 0.2,
-    "ts": 46.3,
-    "gs36": 12.4,
+    "mpg": 15.6,
+    "pts36": 15.7,
+    "reb36": 17.5,
+    "ast36": 1.4,
+    "stl36": 0.5,
+    "blk36": 1.4,
+    "ts": 67.6,
+    "gs36": 18.54,
     "sample": "足夠",
-    "ppg": 24.0,
-    "gs_pg": 12.54,
-    "rank": 19,
+    "ppg": 6.8,
+    "gs_pg": 8.03,
+    "rank": 4,
     "trend": {
      "recent_games": 4,
-     "recent_gs36": 16.46,
-     "season_gs36_log": 12.8,
-     "delta": 3.66,
-     "recent_min": 36.8
+     "recent_gs36": 18.58,
+     "season_gs36_log": 15.29,
+     "delta": 3.29,
+     "recent_min": 17.0
     },
-    "trend_rank": 6
+    "trend_rank": 4
    },
    {
     "espn_id": "5023693",
@@ -4698,7 +4632,7 @@
     "sample": "偏少",
     "ppg": 3.5,
     "gs_pg": 3.89,
-    "rank": 17,
+    "rank": 16,
     "trend": {
      "recent_games": 3,
      "recent_gs36": 16.64,
@@ -4706,7 +4640,7 @@
      "delta": 3.27,
      "recent_min": 12.3
     },
-    "trend_rank": 7
+    "trend_rank": 5
    },
    {
     "espn_id": "5041935",
@@ -4739,7 +4673,40 @@
      "delta": 3.06,
      "recent_min": 31.8
     },
-    "trend_rank": 8
+    "trend_rank": 6
+   },
+   {
+    "espn_id": "5279130",
+    "name": "Nolan Traore",
+    "class": "二年級",
+    "exp": 1,
+    "pos": "G",
+    "age": 20,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5279130.png",
+    "team": "BKN",
+    "team_name": "Brooklyn Nets",
+    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/bkn.png",
+    "g": 5,
+    "mpg": 19.2,
+    "pts36": 17.6,
+    "reb36": 3.4,
+    "ast36": 3.8,
+    "stl36": 1.5,
+    "blk36": 1.5,
+    "ts": 52.8,
+    "gs36": 10.98,
+    "sample": "足夠",
+    "ppg": 9.4,
+    "gs_pg": 5.86,
+    "rank": 24,
+    "trend": {
+     "recent_games": 4,
+     "recent_gs36": 13.99,
+     "season_gs36_log": 10.99,
+     "delta": 3.01,
+     "recent_min": 20.0
+    },
+    "trend_rank": 7
    },
    {
     "espn_id": "5149077",
@@ -4764,7 +4731,7 @@
     "sample": "足夠",
     "ppg": 6.3,
     "gs_pg": 5.05,
-    "rank": 34,
+    "rank": 33,
     "trend": {
      "recent_games": 4,
      "recent_gs36": 11.92,
@@ -4772,73 +4739,40 @@
      "delta": 2.48,
      "recent_min": 19.2
     },
-    "trend_rank": 9
+    "trend_rank": 8
    },
    {
-    "espn_id": "4602025",
-    "name": "Sion James",
-    "class": "二年級",
-    "exp": 1,
+    "espn_id": "5060701",
+    "name": "Christian Anderson",
+    "class": "一年級",
+    "exp": 0,
     "pos": "G",
-    "age": 23,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4602025.png",
+    "age": 20,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5060701.png",
     "team": "CHA",
     "team_name": "Charlotte Hornets",
     "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/cha.png",
     "g": 5,
-    "mpg": 25.8,
-    "pts36": 4.5,
-    "reb36": 3.9,
-    "ast36": 4.5,
-    "stl36": 0.6,
-    "blk36": 0.0,
-    "ts": 29.0,
-    "gs36": 2.27,
+    "mpg": 10.4,
+    "pts36": 4.8,
+    "reb36": 4.8,
+    "ast36": 4.2,
+    "stl36": 2.1,
+    "blk36": 0.7,
+    "ts": 23.1,
+    "gs36": -0.84,
     "sample": "足夠",
-    "ppg": 3.2,
-    "gs_pg": 1.63,
-    "rank": 45,
+    "ppg": 1.4,
+    "gs_pg": -0.24,
+    "rank": 48,
     "trend": {
-     "recent_games": 3,
-     "recent_gs36": 4.43,
-     "season_gs36_log": 2.2,
-     "delta": 2.23,
-     "recent_min": 26.0
+     "recent_games": 4,
+     "recent_gs36": 2.14,
+     "season_gs36_log": -0.05,
+     "delta": 2.2,
+     "recent_min": 9.2
     },
-    "trend_rank": 10
-   },
-   {
-    "espn_id": "5174655",
-    "name": "Chaney Johnson",
-    "class": "二年級",
-    "exp": 1,
-    "pos": "F",
-    "age": 24,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5174655.png",
-    "team": "BKN",
-    "team_name": "Brooklyn Nets",
-    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/bkn.png",
-    "g": 4,
-    "mpg": 20.8,
-    "pts36": 12.6,
-    "reb36": 6.1,
-    "ast36": 2.2,
-    "stl36": 1.3,
-    "blk36": 0.0,
-    "ts": 52.1,
-    "gs36": 8.8,
-    "sample": "偏少",
-    "ppg": 7.3,
-    "gs_pg": 5.07,
-    "rank": 37,
-    "trend": {
-     "recent_games": 3,
-     "recent_gs36": 9.96,
-     "season_gs36_log": 7.9,
-     "delta": 2.06,
-     "recent_min": 25.7
-    },
-    "trend_rank": 11
+    "trend_rank": 9
    },
    {
     "espn_id": "5061568",
@@ -4871,40 +4805,7 @@
      "delta": 2.05,
      "recent_min": 9.5
     },
-    "trend_rank": 12
-   },
-   {
-    "espn_id": "4702352",
-    "name": "Kobe Sanders",
-    "class": "二年級",
-    "exp": 1,
-    "pos": "G",
-    "age": 24,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702352.png",
-    "team": "LAC",
-    "team_name": "LA Clippers",
-    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
-    "g": 4,
-    "mpg": 21.2,
-    "pts36": 11.9,
-    "reb36": 4.7,
-    "ast36": 4.2,
-    "stl36": 3.4,
-    "blk36": 0.0,
-    "ts": 49.2,
-    "gs36": 10.42,
-    "sample": "偏少",
-    "ppg": 7.0,
-    "gs_pg": 6.15,
-    "rank": 28,
-    "trend": {
-     "recent_games": 3,
-     "recent_gs36": 12.55,
-     "season_gs36_log": 10.5,
-     "delta": 2.04,
-     "recent_min": 22.0
-    },
-    "trend_rank": 13
+    "trend_rank": 10
    },
    {
     "espn_id": "5279129",
@@ -4937,38 +4838,137 @@
      "delta": 2.03,
      "recent_min": 19.5
     },
-    "trend_rank": 14
+    "trend_rank": 11
    },
    {
-    "espn_id": "5060701",
-    "name": "Christian Anderson",
+    "espn_id": "5175737",
+    "name": "Yaxel Lendeborg",
     "class": "一年級",
     "exp": 0,
+    "pos": "F",
+    "age": 24,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5175737.png",
+    "team": "GS",
+    "team_name": "Golden State Warriors",
+    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
+    "g": 5,
+    "mpg": 33.6,
+    "pts36": 24.2,
+    "reb36": 9.9,
+    "ast36": 4.3,
+    "stl36": 1.1,
+    "blk36": 0.6,
+    "ts": 59.3,
+    "gs36": 18.99,
+    "sample": "足夠",
+    "ppg": 22.6,
+    "gs_pg": 17.72,
+    "rank": 3,
+    "trend": {
+     "recent_games": 4,
+     "recent_gs36": 20.15,
+     "season_gs36_log": 18.28,
+     "delta": 1.87,
+     "recent_min": 34.8
+    },
+    "trend_rank": 12
+   },
+   {
+    "espn_id": "5144091",
+    "name": "Jeremiah Fears",
+    "class": "二年級",
+    "exp": 1,
     "pos": "G",
     "age": 20,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5060701.png",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5144091.png",
+    "team": "NO",
+    "team_name": "New Orleans Pelicans",
+    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/no.png",
+    "g": 5,
+    "mpg": 24.2,
+    "pts36": 17.3,
+    "reb36": 6.2,
+    "ast36": 6.0,
+    "stl36": 1.5,
+    "blk36": 1.2,
+    "ts": 44.8,
+    "gs36": 10.98,
+    "sample": "足夠",
+    "ppg": 11.6,
+    "gs_pg": 7.38,
+    "rank": 25,
+    "trend": {
+     "recent_games": 4,
+     "recent_gs36": 12.67,
+     "season_gs36_log": 10.8,
+     "delta": 1.87,
+     "recent_min": 25.0
+    },
+    "trend_rank": 13
+   },
+   {
+    "espn_id": "4602025",
+    "name": "Sion James",
+    "class": "二年級",
+    "exp": 1,
+    "pos": "G",
+    "age": 23,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4602025.png",
     "team": "CHA",
     "team_name": "Charlotte Hornets",
     "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/cha.png",
     "g": 5,
-    "mpg": 10.4,
-    "pts36": 4.8,
-    "reb36": 4.8,
-    "ast36": 4.2,
-    "stl36": 2.1,
-    "blk36": 0.7,
-    "ts": 23.1,
-    "gs36": -0.84,
+    "mpg": 25.8,
+    "pts36": 4.5,
+    "reb36": 3.9,
+    "ast36": 4.5,
+    "stl36": 0.6,
+    "blk36": 0.0,
+    "ts": 29.0,
+    "gs36": 2.27,
     "sample": "足夠",
-    "ppg": 1.4,
-    "gs_pg": -0.24,
-    "rank": 48,
+    "ppg": 3.2,
+    "gs_pg": 1.63,
+    "rank": 45,
+    "trend": {
+     "recent_games": 4,
+     "recent_gs36": 4.58,
+     "season_gs36_log": 2.71,
+     "delta": 1.86,
+     "recent_min": 26.8
+    },
+    "trend_rank": 14
+   },
+   {
+    "espn_id": "4903027",
+    "name": "Cedric Coward",
+    "class": "二年級",
+    "exp": 1,
+    "pos": "F",
+    "age": 23,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4903027.png",
+    "team": "MEM",
+    "team_name": "Memphis Grizzlies",
+    "team_logo": "https://a.espncdn.com/i/teamlogos/nba/500/mem.png",
+    "g": 4,
+    "mpg": 29.5,
+    "pts36": 16.8,
+    "reb36": 11.0,
+    "ast36": 3.4,
+    "stl36": 1.5,
+    "blk36": 0.3,
+    "ts": 64.1,
+    "gs36": 14.18,
+    "sample": "偏少",
+    "ppg": 13.8,
+    "gs_pg": 11.62,
+    "rank": 13,
     "trend": {
      "recent_games": 3,
-     "recent_gs36": 0.78,
-     "season_gs36_log": -1.25,
-     "delta": 2.03,
-     "recent_min": 7.7
+     "recent_gs36": 16.52,
+     "season_gs36_log": 14.71,
+     "delta": 1.81,
+     "recent_min": 30.0
     },
     "trend_rank": 15
    }
@@ -4981,14 +4981,201 @@
  },
  "backtest": {
   "summary": {
-   "games": 0
+   "games": 7,
+   "winner_acc": 57.1,
+   "home_bucket_acc": 0.0,
+   "away_bucket_acc": 28.6,
+   "both_bucket_acc": 0.0,
+   "mae_total": 22.3,
+   "brier": 0.2409
   },
   "rolling7": {
-   "games": 0
+   "games": 7,
+   "winner_acc": 57.1,
+   "home_bucket_acc": 0.0,
+   "away_bucket_acc": 28.6,
+   "both_bucket_acc": 0.0,
+   "mae_total": 22.3,
+   "brier": 0.2409
   },
   "rolling30": {
-   "games": 0
+   "games": 7,
+   "winner_acc": 57.1,
+   "home_bucket_acc": 0.0,
+   "away_bucket_acc": 28.6,
+   "both_bucket_acc": 0.0,
+   "mae_total": 22.3,
+   "brier": 0.2409
   },
-  "records": []
+  "records": [
+   {
+    "event_id": "401909277",
+    "date": "2026-10-30",
+    "home": "WSH",
+    "away": "CHA",
+    "pred_home": 111.1,
+    "pred_away": 99.9,
+    "act_home": 95,
+    "act_away": 79,
+    "pred_winner": "WSH",
+    "act_winner": "WSH",
+    "winner_hit": true,
+    "home_win_prob": 0.8054,
+    "pred_home_bucket": "111-115",
+    "pred_away_bucket": "96-100",
+    "act_home_bucket": "91-95",
+    "act_away_bucket": "76-80",
+    "home_bucket_hit": false,
+    "away_bucket_hit": false,
+    "both_bucket_hit": false,
+    "abs_err_home": 16.1,
+    "abs_err_away": 20.9,
+    "abs_err_total": 37.0
+   },
+   {
+    "event_id": "401909278",
+    "date": "2026-10-30",
+    "home": "BOS",
+    "away": "CHI",
+    "pred_home": 116.9,
+    "pred_away": 116.0,
+    "act_home": 125,
+    "act_away": 111,
+    "pred_winner": "BOS",
+    "act_winner": "BOS",
+    "winner_hit": true,
+    "home_win_prob": 0.5826,
+    "pred_home_bucket": "116-120",
+    "pred_away_bucket": "111-115",
+    "act_home_bucket": "121-125",
+    "act_away_bucket": "111-115",
+    "home_bucket_hit": false,
+    "away_bucket_hit": true,
+    "both_bucket_hit": false,
+    "abs_err_home": 8.1,
+    "abs_err_away": 5.0,
+    "abs_err_total": 3.1
+   },
+   {
+    "event_id": "401909279",
+    "date": "2026-10-30",
+    "home": "BKN",
+    "away": "DET",
+    "pred_home": 112.7,
+    "pred_away": 108.4,
+    "act_home": 94,
+    "act_away": 110,
+    "pred_winner": "BKN",
+    "act_winner": "DET",
+    "winner_hit": false,
+    "home_win_prob": 0.6663,
+    "pred_home_bucket": "111-115",
+    "pred_away_bucket": "106-110",
+    "act_home_bucket": "91-95",
+    "act_away_bucket": "106-110",
+    "home_bucket_hit": false,
+    "away_bucket_hit": true,
+    "both_bucket_hit": false,
+    "abs_err_home": 18.7,
+    "abs_err_away": 1.6,
+    "abs_err_total": 17.1
+   },
+   {
+    "event_id": "401909280",
+    "date": "2026-10-30",
+    "home": "PHI",
+    "away": "NY",
+    "pred_home": 107.8,
+    "pred_away": 114.7,
+    "act_home": 98,
+    "act_away": 93,
+    "pred_winner": "NY",
+    "act_winner": "PHI",
+    "winner_hit": false,
+    "home_win_prob": 0.3948,
+    "pred_home_bucket": "106-110",
+    "pred_away_bucket": "111-115",
+    "act_home_bucket": "96-100",
+    "act_away_bucket": "91-95",
+    "home_bucket_hit": false,
+    "away_bucket_hit": false,
+    "both_bucket_hit": false,
+    "abs_err_home": 9.8,
+    "abs_err_away": 21.7,
+    "abs_err_total": 31.5
+   },
+   {
+    "event_id": "401909281",
+    "date": "2026-10-30",
+    "home": "TOR",
+    "away": "ORL",
+    "pred_home": 108.6,
+    "pred_away": 109.7,
+    "act_home": 114,
+    "act_away": 121,
+    "pred_winner": "TOR",
+    "act_winner": "ORL",
+    "winner_hit": false,
+    "home_win_prob": 0.5359,
+    "pred_home_bucket": "106-110",
+    "pred_away_bucket": "106-110",
+    "act_home_bucket": "111-115",
+    "act_away_bucket": "121-125",
+    "home_bucket_hit": false,
+    "away_bucket_hit": false,
+    "both_bucket_hit": false,
+    "abs_err_home": 5.4,
+    "abs_err_away": 11.3,
+    "abs_err_total": 16.7
+   },
+   {
+    "event_id": "401909282",
+    "date": "2026-10-30",
+    "home": "MIA",
+    "away": "IND",
+    "pred_home": 115.5,
+    "pred_away": 115.2,
+    "act_home": 145,
+    "act_away": 125,
+    "pred_winner": "MIA",
+    "act_winner": "MIA",
+    "winner_hit": true,
+    "home_win_prob": 0.5698,
+    "pred_home_bucket": "116-120",
+    "pred_away_bucket": "111-115",
+    "act_home_bucket": "141-145",
+    "act_away_bucket": "121-125",
+    "home_bucket_hit": false,
+    "away_bucket_hit": false,
+    "both_bucket_hit": false,
+    "abs_err_home": 29.5,
+    "abs_err_away": 9.8,
+    "abs_err_total": 39.3
+   },
+   {
+    "event_id": "401909284",
+    "date": "2026-10-30",
+    "home": "MIN",
+    "away": "LAC",
+    "pred_home": 108.4,
+    "pred_away": 108.4,
+    "act_home": 127,
+    "act_away": 101,
+    "pred_winner": "MIN",
+    "act_winner": "MIN",
+    "winner_hit": true,
+    "home_win_prob": 0.562,
+    "pred_home_bucket": "106-110",
+    "pred_away_bucket": "106-110",
+    "act_home_bucket": "126-130",
+    "act_away_bucket": "101-105",
+    "home_bucket_hit": false,
+    "away_bucket_hit": false,
+    "both_bucket_hit": false,
+    "abs_err_home": 18.6,
+    "abs_err_away": 7.4,
+    "abs_err_total": 11.2
+   }
+  ]
  }
 }
