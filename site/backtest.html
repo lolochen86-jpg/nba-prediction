@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>命中率回測 · HoopsLab</title>
+<meta name="description" content="NBA 賽前預測：依實際會上場球員推算兩隊得分級距與不讓分勝率，附新人（一年級＋二年級）每 36 分鐘排行榜。">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏀</text></svg>">
+</head>
+<body>
+<header class="top">
+  <div class="wrap topbar">
+    <a class="brand" href="index.html">
+      <span class="ball"></span>
+      <span>HoopsLab<small>NBA 賽前預測</small></span>
+    </a>
+    <nav>
+      <a href="index.html" class="">今日預測</a>
+      <a href="rookies.html" class="">新人榜</a>
+      <a href="backtest.html" class="on">命中率回測</a>
+      <a href="method.html" class="">方法與資料源</a>
+    </nav>
+  </div>
+  <div class="wrap statusbar">
+    <div class="stamp">最後更新 <b>2026-10-31 08:19</b>（台灣時間）· 球季 2026-27</div>
+    <div class="stamp-links">
+      <a class="btn-ghost" href="method.html#update" title="這份資料是怎麼產生的、怎麼更新">更新方式</a>
+      <button id="reloadBtn" class="btn-ghost" title="重新載入本頁">重新整理</button>
+    </div>
+  </div>
+  <div class="wrap health">
+      <span class="chip ok" title="賽程・名單・球隊數據">
+        <i></i>ESPN API <em>60</em>
+      </span>
+      <span class="chip ok" title="BR 被封鎖，改用逐場紀錄回推 per-36">
+        <i></i>ESPN 逐場（BR 備援） <em>515</em>
+      </span>
+      <span class="chip ok" title="傷病報告">
+        <i></i>CBS Sports <em>89</em>
+      </span>
+      <span class="chip ok" title="傷病報告">
+        <i></i>Yahoo Sports <em>95</em>
+      </span>
+      <span class="chip ok" title="球員大頭貼">
+        <i></i>NBA CDN <em>522</em>
+      </span>
+    <span class="chip neutral" title="三源傷病報告比對後不一致的球員數">傷病衝突 8</span>
+  </div>
+</header>
+
+<div class="wrap"><div id="staleBar" class="stale" hidden></div></div>
+
+<main class="wrap">
+<section class="hero">
+  <div>
+    <h1>命中率回測</h1>
+    <p class="sub">每一次更新都會把當日預測存檔；比賽結束後自動用官方比分評分，不做任何事後修改。全部紀錄公開，含失準的場次。</p>
+  </div>
+  <div class="hero-stats">
+    <div><b>0</b><span>已評分場次</span></div>
+    <div><b>—%</b><span>勝負命中率</span></div>
+    <div><b>—</b><span>總分平均誤差</span></div>
+  </div>
+</section>
+
+  <div class="empty">
+    <h3>回測從今天開始累積</h3>
+    <p>為了不做事後校準（避免後見之明偏誤），系統只記錄「更新當下」的預測，等比賽結束後再評分。目前還沒有已完成的比賽，下一次更新後就會出現第一批成績。</p>
+  </div>
+</main>
+
+<footer class="wrap foot">
+  <p>資料來源：ESPN · Basketball-Reference · CBS Sports · Yahoo Sports · NBA CDN（多重來源交叉比對）。</p>
+  <p>所有數字為模型估計值，僅供研究與討論，不構成任何投注建議。</p>
+  <p class="muted">建置時間 2026-10-31T00:19:40+00:00 UTC · 每次更新自動重新抓取名單、傷病與 per-36 數據後重算。</p>
+</footer>
+
+<script>
+// 資料快照時間（台灣時間）→ 超過 12 小時就在頁面上警示
+const BUILT_AT = "2026-10-31T00:19:40+00:00";
+const RELOAD = document.getElementById('reloadBtn');
+if (RELOAD) RELOAD.addEventListener('click', () => location.reload());
+
+(function () {
+  const bar = document.getElementById('staleBar');
+  if (!bar || !BUILT_AT) return;
+  const built = new Date(BUILT_AT);
+  if (isNaN(built)) return;
+  const hours = (Date.now() - built.getTime()) / 36e5;
+  if (hours < 12) return;
+  const days = Math.floor(hours / 24);
+  const age = days >= 1 ? days + ' 天' : Math.round(hours) + ' 小時';
+  bar.innerHTML = '⚠ 這份預測是 <b>' + age + '</b>前產生的快照，最新傷病與賽程可能已經變動。'
+    + '本站目前為手動更新：請在對話中要求更新，再重新上傳新檔。';
+  bar.hidden = false;
+})();
+</script>
+</body>
+</html>

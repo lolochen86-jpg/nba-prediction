@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+{% block title %}新人榜{% endblock %}
+{% block content %}
+
+<section class="hero">
+  <div>
+    <h1>新人榜 <small>一年級＋二年級合併</small></h1>
+    <p class="sub">排名用 <b>Game Score / 36 分鐘</b>（Hollinger Game Score 標準化到 36 分鐘），避免上場時間多寡直接決定名次。右側另有「近 7 天進步榜」，看誰正在升溫。</p>
+  </div>
+  <div class="hero-stats">
+    <div><b>{{ rookies.counts.rookies }}</b><span>一年級（達標）</span></div>
+    <div><b>{{ rookies.counts.sophomores }}</b><span>二年級（達標）</span></div>
+    <div><b>7</b><span>進步榜天數</span></div>
+  </div>
+</section>
+
+<div class="two-col">
+  <div>
+    <h2 class="sec">綜合排行 <span class="hint">出賽 ≥3 場、平均 ≥8 分鐘</span></h2>
+    <div class="filters">
+      <button class="fbtn on" data-f="all">全部 <em>{{ rookies.counts.rookies + rookies.counts.sophomores }}</em></button>
+      <button class="fbtn" data-f="0">一年級 <em>{{ rookies.counts.rookies }}</em></button>
+      <button class="fbtn" data-f="1">二年級 <em>{{ rookies.counts.sophomores }}</em></button>
+    </div>
+    <table class="board" id="board">
+      <thead>
+        <tr>
+          <th>#</th><th>球員</th><th>年級</th>
+          <th data-sort="num">G</th><th data-sort="num">MIN</th>
+          <th data-sort="num">PTS</th><th data-sort="num">REB</th><th data-sort="num">AST</th>
+          <th data-sort="num">STL</th><th data-sort="num">BLK</th>
+          <th data-sort="num">TS%</th><th data-sort="num">GS/36</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for p in rookies.combined %}
+        <tr data-cls="{{ p.exp }}">
+          <td class="rk {{ 'top' if loop.index <= 3 }}">{{ p.rank }}</td>
+          <td class="who"><div class="whoflex">
+            <img class="face" src="{{ p.headshot }}" alt="{{ p.name }}" loading="lazy"
+                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
+            <div>
+              <b>{{ p.name }}</b>
+              <span class="team"><img src="{{ p.team_logo }}" alt="" loading="lazy">{{ p.team }} · {{ p.pos }}</span>
+            </div></div>
+          </td>
+          <td><span class="cls c{{ p.exp }}">{{ p.class }}</span></td>
+          <td>{{ p.g }}</td>
+          <td>{{ p.mpg }}</td>
+          <td class="hi">{{ p.pts36 }}</td>
+          <td>{{ p.reb36 }}</td>
+          <td>{{ p.ast36 }}</td>
+          <td>{{ p.stl36 }}</td>
+          <td>{{ p.blk36 }}</td>
+          <td>{{ p.ts }}</td>
+          <td class="gs">{{ p.gs36 }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    <p class="note">數據為每 36 分鐘。GS = PTS + 0.4×FGM − 0.7×FGA − 0.4×(FTA−FT) + 0.7×OREB + 0.3×DREB + STL + 0.7×AST + 0.7×BLK − 0.4×PF − TOV。</p>
+  </div>
+
+  <aside>
+    <h2 class="sec">近 7 天進步榜 <span class="hint">GS/36 變化</span></h2>
+    {% if rookies.trend %}
+    <ol class="trend">
+      {% for p in rookies.trend %}
+      <li>
+        <img class="face sm" src="{{ p.headshot }}" alt="{{ p.name }}" loading="lazy"
+             onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
+        <div class="tinfo">
+          <b>{{ p.name }}</b>
+          <span>{{ p.team }} · {{ p.class }} · 近 {{ p.trend.recent_games }} 場</span>
+        </div>
+        <div class="tdelta {{ 'up' if p.trend.delta > 0 else 'down' }}">
+          {{ '%+.1f'|format(p.trend.delta) }}
+          <small>{{ p.trend.recent_gs36 }} ← {{ p.trend.season_gs36_log }}</small>
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+    {% else %}
+      <p class="note">近期無足夠出賽樣本。</p>
+    {% endif %}
+
+    <h2 class="sec" style="margin-top:2rem">觀察名單 <span class="hint">樣本不足</span></h2>
+    <table class="board small">
+      <thead><tr><th>球員</th><th>年級</th><th>G</th><th>MIN</th><th>GS/36</th></tr></thead>
+      <tbody>
+      {% for p in rookies.watch %}
+        <tr>
+          <td class="who"><div class="whoflex"><b>{{ p.name }}</b><span class="team">{{ p.team }}</span></div></td>
+          <td><span class="cls c{{ p.exp }}">{{ p.class }}</span></td>
+          <td>{{ p.g }}</td><td>{{ p.mpg }}</td><td>{{ p.gs36 }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </aside>
+</div>
+
+<script>
+document.querySelectorAll('.fbtn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.fbtn').forEach(b => b.classList.toggle('on', b === btn));
+    const f = btn.dataset.f;
+    document.querySelectorAll('#board tbody tr').forEach(tr => {
+      tr.style.display = (f === 'all' || tr.dataset.cls === f) ? '' : 'none';
+    });
+  });
+});
+document.querySelectorAll('#board th[data-sort]').forEach((th, i) => {
+  th.addEventListener('click', () => {
+    const tb = document.querySelector('#board tbody');
+    const rows = [...tb.rows];
+    const col = [...th.parentElement.children].indexOf(th);
+    const dir = th.dataset.dir === 'asc' ? -1 : 1;
+    th.dataset.dir = dir === 1 ? 'asc' : 'desc';
+    rows.sort((a, b) => dir * (parseFloat(a.cells[col].textContent) - parseFloat(b.cells[col].textContent)));
+    rows.forEach(r => tb.appendChild(r));
+  });
+});
+</script>
+{% endblock %}

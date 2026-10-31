@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日賽前預測 · HoopsLab</title>
+<meta name="description" content="NBA 賽前預測：依實際會上場球員推算兩隊得分級距與不讓分勝率，附新人（一年級＋二年級）每 36 分鐘排行榜。">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏀</text></svg>">
+</head>
+<body>
+<header class="top">
+  <div class="wrap topbar">
+    <a class="brand" href="index.html">
+      <span class="ball"></span>
+      <span>HoopsLab<small>NBA 賽前預測</small></span>
+    </a>
+    <nav>
+      <a href="index.html" class="on">今日預測</a>
+      <a href="rookies.html" class="">新人榜</a>
+      <a href="backtest.html" class="">命中率回測</a>
+      <a href="method.html" class="">方法與資料源</a>
+    </nav>
+  </div>
+  <div class="wrap statusbar">
+    <div class="stamp">最後更新 <b>2026-10-31 08:19</b>（台灣時間）· 球季 2026-27</div>
+    <div class="stamp-links">
+      <a class="btn-ghost" href="method.html#update" title="這份資料是怎麼產生的、怎麼更新">更新方式</a>
+      <button id="reloadBtn" class="btn-ghost" title="重新載入本頁">重新整理</button>
+    </div>
+  </div>
+  <div class="wrap health">
+      <span class="chip ok" title="賽程・名單・球隊數據">
+        <i></i>ESPN API <em>60</em>
+      </span>
+      <span class="chip ok" title="BR 被封鎖，改用逐場紀錄回推 per-36">
+        <i></i>ESPN 逐場（BR 備援） <em>515</em>
+      </span>
+      <span class="chip ok" title="傷病報告">
+        <i></i>CBS Sports <em>89</em>
+      </span>
+      <span class="chip ok" title="傷病報告">
+        <i></i>Yahoo Sports <em>95</em>
+      </span>
+      <span class="chip ok" title="球員大頭貼">
+        <i></i>NBA CDN <em>522</em>
+      </span>
+    <span class="chip neutral" title="三源傷病報告比對後不一致的球員數">傷病衝突 8</span>
+  </div>
+</header>
+
+<div class="wrap"><div id="staleBar" class="stale" hidden></div></div>
+
+<main class="wrap">
+
+<section class="hero">
+  <div>
+    <h1>今日賽前預測 <small class="gdate">2026-10-30（美東球日）</small></h1>
+    <p class="sub">依「實際會上場的球員」推算兩隊得分，換算成 5 分一級的得分級距與<b>不讓分勝率</b>。傷病、停賽、個人因素缺陣者一律先從陣容剔除，其分鐘數自動分配給替補。</p>
+  </div>
+  <div class="hero-stats">
+    <div><b>10</b><span>今日場次</span></div>
+    <div><b>114.3</b><span>聯盟場均得分</span></div>
+    <div><b>103.8</b><span>聯盟場均回合</span></div>
+  </div>
+</section>
+
+
+<div class="cards">
+  <article class="card">
+    <div class="card-top">
+      <span class="tipoff">10/31 07:00</span>
+<span class="tag">未開賽</span>      <span class="venue">Capital One Arena</span>
+    </div>
+
+    <div class="matchup">
+      <div class="side ">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/cha.png" alt="CHA" loading="lazy">
+        <div class="abbr">CHA</div>
+        <div class="tname">Charlotte Hornets</div>
+      </div>
+      <div class="score">
+        <div class="nums"><span class="dimmer">109</span><i>:</i><span class="">109</span></div>
+        <div class="score-note">預測比分（客 : 主）</div>
+        <div class="margin">預期分差 +2.6</div>
+      </div>
+      <div class="side winner">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/wsh.png" alt="WSH" loading="lazy">
+        <div class="abbr">WSH</div>
+        <div class="tname">Washington Wizards</div>
+      </div>
+    </div>
+
+    <div class="winprob">
+      <div class="wp-head"><span>不讓分勝率</span><span class="stars">★★☆☆☆ <em>信心</em></span></div>
+      <div class="wp-bar">
+        <div class="wp-away" style="width: 44.2%">44.2%</div>
+        <div class="wp-home" style="width: 55.8%">55.8%</div>
+      </div>
+      <div class="wp-foot"><span>CHA 勝</span><span>WSH 勝</span></div>
+    </div>
+
+    <div class="buckets">
+      <div class="bcol">
+        <div class="bhead">CHA 得分級距</div>
+          <div class="brow lead"><span class="bl">106-110</span><span class="bb"><i style="width: 53.1%"></i></span><span class="bp">17.7%</span></div>
+          <div class="brow "><span class="bl">101-105</span><span class="bb"><i style="width: 48.7%"></i></span><span class="bp">16.2%</span></div>
+          <div class="brow "><span class="bl">111-115</span><span class="bb"><i style="width: 46.1%"></i></span><span class="bp">15.4%</span></div>
+          <div class="brow "><span class="bl">96-100</span><span class="bb"><i style="width: 36.2%"></i></span><span class="bp">12.1%</span></div>
+      </div>
+      <div class="bcol">
+        <div class="bhead">WSH 得分級距</div>
+          <div class="brow lead"><span class="bl">106-110</span><span class="bb"><i style="width: 51.4%"></i></span><span class="bp">17.1%</span></div>
+          <div class="brow "><span class="bl">111-115</span><span class="bb"><i style="width: 50.2%"></i></span><span class="bp">16.7%</span></div>
+          <div class="brow "><span class="bl">101-105</span><span class="bb"><i style="width: 43.1%"></i></span><span class="bp">14.4%</span></div>
+          <div class="brow "><span class="bl">116-120</span><span class="bb"><i style="width: 40.5%"></i></span><span class="bp">13.5%</span></div>
+      </div>
+    </div>
+
+    <div class="mini">
+      <div><span>預測總分</span><b>218</b> <em>216-220</em></div>
+      <div><span>兩隊級距同時命中</span><b>3.0%</b></div>
+      <div><span>最可能比分</span><b>107-115</b></div>
+    </div>
+
+    <details class="detail">
+      <summary>缺陣與上場狀態（2 位影響輪替）</summary>
+      <div class="detail-body">
+          <div class="ds">
+            <h4>CHA · 預估少 0.0 分（可用性 100%）</h4>
+<p class="ok-note">主要輪替無傷病回報。</p>          </div>
+          <div class="ds">
+            <h4>WSH · 預估少 3.7 分（可用性 97%）</h4>
+            <ul>
+              <li>
+                <span class="st st-out">OUT</span>
+                <b>Tristan Vukcevic</b> <em>F</em>
+                <span class="lost">影響 −1.6 分</span>
+              </li>
+              <li>
+                <span class="st st-out">OUT</span>
+                <b>Jamir Watkins</b> <em>G</em>
+                <span class="lost">影響 −1.4 分</span>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </details>
+
+    <details class="detail">
+      <summary>預期輪替與分鐘分配</summary>
+      <div class="detail-body rot">
+          <div class="ds">
+            <h4>CHA</h4>
+            <table class="mini-table">
+              <thead><tr><th>球員</th><th>MIN</th><th>PTS</th></tr></thead>
+              <tbody>
+                <tr><td>Brandon Miller</td><td>26.1</td><td>12.2</td></tr>
+                <tr><td>Dennis Schroder</td><td>25.4</td><td>9.5</td></tr>
+                <tr><td>Moussa Diabate</td><td>23.7</td><td>8.3</td></tr>
+                <tr><td>Grayson Allen</td><td>23.0</td><td>9.6</td></tr>
+                <tr><td>Naz Reid</td><td>22.6</td><td>9.7</td></tr>
+                <tr><td>Sion James</td><td>21.7</td><td>5.9</td></tr>
+                <tr><td>Royce O&#39;Neale</td><td>17.1</td><td>5.6</td></tr>
+                <tr><td>Ryan Kalkbrenner</td><td>16.7</td><td>5.7</td></tr>
+                <tr><td>Tidjane Salaun</td><td>15.3</td><td>5.4</td></tr>
+                <tr><td>Christian Anderson</td><td>13.4</td><td>3.6</td></tr>
+                <tr><td>Hannes Steinbach</td><td>11.9</td><td>4.3</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="ds">
+            <h4>WSH</h4>
+            <table class="mini-table">
+              <thead><tr><th>球員</th><th>MIN</th><th>PTS</th></tr></thead>
+              <tbody>
+                <tr><td>Trae Young</td><td>25.7</td><td>10.7</td></tr>
+                <tr><td>Anthony Davis</td><td>24.3</td><td>10.6</td></tr>
+                <tr><td>Kyshawn George</td><td>23.4</td><td>9.2</td></tr>
+                <tr><td>Bilal Coulibaly</td><td>21.2</td><td>7.6</td></tr>
+                <tr><td>Alex Sarr</td><td>19.9</td><td>7.5</td></tr>
+                <tr><td>Tre Johnson</td><td>17.6</td><td>7.0</td></tr>
+                <tr><td>Bub Carrington</td><td>17.4</td><td>5.9</td></tr>
+                <tr><td>Khris Middleton</td><td>14.7</td><td>4.6</td></tr>
+                <tr><td>Deandre Ayton</td><td>14.3</td><td>5.7</td></tr>
+                <tr><td>AJ Dybantsa</td><td>13.2</td><td>5.1</td></tr>
+                <tr><td>Reece Beekman</td><td>9.7</td><td>3.1</td></tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+    </details>
+  </article>
+  <article class="card">
+    <div class="card-top">
+      <span class="tipoff">10/31 07:30</span>
+<span class="tag">未開賽</span>      <span class="venue">TD Garden</span>
+    </div>
+
+    <div class="matchup">
+      <div class="side ">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/chi.png" alt="CHI" loading="lazy">
+        <div class="abbr">CHI</div>
+        <div class="tname">Chicago Bulls</div>
+      </div>
+      <div class="score">
+        <div class="nums"><span class="dimmer">116</span><i>:</i><span class="">117</span></div>
+        <div class="score-note">預測比分（客 : 主）</div>
+        <div class="margin">預期分差 +4.6</div>
+      </div>
+      <div class="side winner">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/bos.png" alt="BOS" loading="lazy">
+        <div class="abbr">BOS</div>
+        <div class="tname">Boston Celtics</div>
+      </div>
+    </div>
+
+    <div class="winprob">
+      <div class="wp-head"><span>不讓分勝率</span><span class="stars">★★☆☆☆ <em>信心</em></span></div>
+      <div class="wp-bar">
+        <div class="wp-away" style="width: 39.3%">39.3%</div>
+        <div class="wp-home" style="width: 60.7%">60.7%</div>
+      </div>
+      <div class="wp-foot"><span>CHI 勝</span><span>BOS 勝</span></div>
+    </div>
+
+    <div class="buckets">
+      <div class="bcol">
+        <div class="bhead">CHI 得分級距</div>
+          <div class="brow lead"><span class="bl">111-115</span><span class="bb"><i style="width: 53.1%"></i></span><span class="bp">17.7%</span></div>
+          <div class="brow "><span class="bl">116-120</span><span class="bb"><i style="width: 48.9%"></i></span><span class="bp">16.3%</span></div>
+          <div class="brow "><span class="bl">106-110</span><span class="bb"><i style="width: 45.2%"></i></span><span class="bp">15.1%</span></div>
+          <div class="brow "><span class="bl">121-125</span><span class="bb"><i style="width: 37.6%"></i></span><span class="bp">12.5%</span></div>
+      </div>
+      <div class="bcol">
+        <div class="bhead">BOS 得分級距</div>
+          <div class="brow lead"><span class="bl">116-120</span><span class="bb"><i style="width: 51.9%"></i></span><span class="bp">17.3%</span></div>
+          <div class="brow "><span class="bl">121-125</span><span class="bb"><i style="width: 47.1%"></i></span><span class="bp">15.7%</span></div>
+          <div class="brow "><span class="bl">111-115</span><span class="bb"><i style="width: 46.4%"></i></span><span class="bp">15.5%</span></div>
+          <div class="brow "><span class="bl">126-130</span><span class="bb"><i style="width: 35.7%"></i></span><span class="bp">11.9%</span></div>
+      </div>
+    </div>
+
+    <div class="mini">
+      <div><span>預測總分</span><b>233</b> <em>231-235</em></div>
+      <div><span>兩隊級距同時命中</span><b>3.1%</b></div>
+      <div><span>最可能比分</span><b>112-118</b></div>
+    </div>
+
+    <details class="detail">
+      <summary>缺陣與上場狀態（2 位影響輪替）</summary>
+      <div class="detail-body">
+          <div class="ds">
+            <h4>CHI · 預估少 1.4 分（可用性 99%）</h4>
+            <ul>
+              <li>
+                <span class="st st-out">OUT</span>
+                <b>Nic Claxton</b> <em>C</em>
+                <span class="lost">影響 −1.2 分</span>
+              </li>
+            </ul>
+          </div>
+          <div class="ds">
+            <h4>BOS · 預估少 2.0 分（可用性 98%）</h4>
+            <ul>
+              <li>
+                <span class="st st-out">OUT</span>
+                <b>Devin Carter</b> <em>G</em>
+                <span class="lost">影響 −2.0 分</span>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </details>
+
+    <details class="detail">
+      <summary>預期輪替與分鐘分配</summary>
+      <div class="detail-body rot">
+          <div class="ds">
+            <h4>CHI</h4>
+            <table class="mini-table">
+              <thead><tr><th>球員</th><th>MIN</th><th>PTS</th></tr></thead>
+              <tbody>
+                <tr><td>Patrick Williams</td><td>28.9</td><td>9.5</td></tr>
+                <tr><td>Caleb Wilson</td><td>22.6</td><td>9.5</td></tr>
+                <tr><td>Norman Powell</td><td>20.4</td><td>9.5</td></tr>
+                <tr><td>Josh Giddey</td><td>19.0</td><td>6.1</td></tr>
+                <tr><td>Matas Buzelis</td><td>18.8</td><td>7.7</td></tr>
+                <tr><td>Jalen Smith</td><td>17.5</td><td>7.4</td></tr>
+                <tr><td>Leonard Miller</td><td>16.1</td><td>6.3</td></tr>
+                <tr><td>Isaac Okoro</td><td>14.9</td><td>4.9</td></tr>
+                <tr><td>Tre Jones</td><td>14.8</td><td>6.4</td></tr>
+                <tr><td>Buddy Hield</td><td>12.8</td><td>4.7</td></tr>
+                <tr><td>Noa Essengue</td><td>12.3</td><td>3.6</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="ds">
+            <h4>BOS</h4>
+            <table class="mini-table">
+              <thead><tr><th>球員</th><th>MIN</th><th>PTS</th></tr></thead>
+              <tbody>
+                <tr><td>Jayson Tatum</td><td>22.8</td><td>10.4</td></tr>
+                <tr><td>Paul George</td><td>20.8</td><td>9.2</td></tr>
+                <tr><td>Derrick White</td><td>20.1</td><td>7.4</td></tr>
+                <tr><td>Payton Pritchard</td><td>18.5</td><td>7.3</td></tr>
+                <tr><td>Sam Hauser</td><td>16.6</td><td>6.4</td></tr>
+                <tr><td>Mitchell Robinson</td><td>16.0</td><td>5.4</td></tr>
+                <tr><td>Neemias Queta</td><td>15.7</td><td>5.8</td></tr>
+                <tr><td>Jordan Walsh</td><td>15.4</td><td>5.3</td></tr>
+                <tr><td>Baylor Scheierman</td><td>14.7</td><td>4.6</td></tr>
+                <tr><td>Dillon Mitchell</td><td>14.4</td><td>5.1</td></tr>
+                <tr><td>Hugo Gonzalez</td><td>12.2</td><td>4.1</td></tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+    </details>
+  </article>
+  <article class="card">
+    <div class="card-top">
+      <span class="tipoff">10/31 07:30</span>
+<span class="tag">未開賽</span>      <span class="venue">Barclays Center</span>
+    </div>
+
+    <div class="matchup">
+      <div class="side ">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/det.png" alt="DET" loading="lazy">
+        <div class="abbr">DET</div>
+        <div class="tname">Detroit Pistons</div>
+      </div>
+      <div class="score">
+        <div class="nums"><span class="dimmer">113</span><i>:</i><span class="">113</span></div>
+        <div class="score-note">預測比分（客 : 主）</div>
+        <div class="margin">預期分差 +2.4</div>
+      </div>
+      <div class="side winner">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/bkn.png" alt="BKN" loading="lazy">
+        <div class="abbr">BKN</div>
+        <div class="tname">Brooklyn Nets</div>
+      </div>
+    </div>
+
+    <div class="winprob">
+      <div class="wp-head"><span>不讓分勝率</span><span class="stars">★★☆☆☆ <em>信心</em></span></div>
+      <div class="wp-bar">
+        <div class="wp-away" style="width: 44.7%">44.7%</div>
+        <div class="wp-home" style="width: 55.3%">55.3%</div>
+      </div>
+      <div class="wp-foot"><span>DET 勝</span><span>BKN 勝</span></div>
+    </div>
+
+    <div class="buckets">
+      <div class="bcol">
+        <div class="bhead">DET 得分級距</div>
+          <div class="brow lead"><span class="bl">111-115</span><span class="bb"><i style="width: 52.2%"></i></span><span class="bp">17.4%</span></div>
+          <div class="brow "><span class="bl">106-110</span><span class="bb"><i style="width: 50.7%"></i></span><span class="bp">16.9%</span></div>
+          <div class="brow "><span class="bl">116-120</span><span class="bb"><i style="width: 43.5%"></i></span><span class="bp">14.5%</span></div>
+          <div class="brow "><span class="bl">101-105</span><span class="bb"><i style="width: 39.8%"></i></span><span class="bp">13.2%</span></div>
+      </div>
+      <div class="bcol">
+        <div class="bhead">BKN 得分級距</div>
+          <div class="brow lead"><span class="bl">111-115</span><span class="bb"><i style="width: 51.8%"></i></span><span class="bp">17.3%</span></div>
+          <div class="brow "><span class="bl">116-120</span><span class="bb"><i style="width: 47.5%"></i></span><span class="bp">15.8%</span></div>
+          <div class="brow "><span class="bl">106-110</span><span class="bb"><i style="width: 46.0%"></i></span><span class="bp">15.3%</span></div>
+          <div class="brow "><span class="bl">121-125</span><span class="bb"><i style="width: 36.4%"></i></span><span class="bp">12.1%</span></div>
+      </div>
+    </div>
+
+    <div class="mini">
+      <div><span>預測總分</span><b>226</b> <em>221-225</em></div>
+      <div><span>兩隊級距同時命中</span><b>3.0%</b></div>
+      <div><span>最可能比分</span><b>110-113</b></div>
+    </div>
+
+    <details class="detail">
+      <summary>缺陣與上場狀態（0 位影響輪替）</summary>
+      <div class="detail-body">
+          <div class="ds">
+            <h4>DET · 預估少 0.8 分（可用性 99%）</h4>
+<p class="ok-note">主要輪替無傷病回報。</p>          </div>
+          <div class="ds">
+            <h4>BKN · 預估少 0.0 分（可用性 100%）</h4>
+<p class="ok-note">主要輪替無傷病回報。</p>          </div>
+      </div>
+    </details>
+
+    <details class="detail">
+      <summary>預期輪替與分鐘分配</summary>
+      <div class="detail-body rot">
+          <div class="ds">
+            <h4>DET</h4>
+            <table class="mini-table">
+              <thead><tr><th>球員</th><th>MIN</th><th>PTS</th></tr></thead>
+              <tbody>
+                <tr><td>Cade Cunningham</td><td>24.3</td><td>10.7</td></tr>
+                <tr><td>Duncan Robinson</td><td>22.3</td><td>9.2</td></tr>
+                <tr><td>John Collins</td><td>20.3</td><td>7.3</td></tr>
+                <tr><td>Paul Reed</td><td>20.0</td><td>8.4</td></tr>
+                <tr><td>Daniss Jenkins</td><td>19.3</td><td>7.7</td></tr>
+                <tr><td>Ausar Thompson</td><td>18.7</td><td>6.4</td></tr>
+                <tr><td>Kevin Huerter</td><td>16.9</td><td>5.5</td></tr>
+                <tr><td>Javonte Green</td><td>16.1</td><td>5.9</td></tr>
+                <tr><td>Ronald Holland II</td><td>14.3</td><td>4.2</td></tr>
+                <tr><td>Ugonna Onyenso</td><td>10.2</td><td>3.2</td></tr>
+                <tr><td>Taurean Prince</td><td>10.2</td><td>3.5</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="ds">
+            <h4>BKN</h4>
+            <table class="mini-table">
+              <thead><tr><th>球員</th><th>MIN</th><th>PTS</th></tr></thead>
+              <tbody>
+                <tr><td>Terance Mann</td><td>33.5</td><td>10.2</td></tr>
+                <tr><td>Julius Randle</td><td>20.8</td><td>8.8</td></tr>
+                <tr><td>Michael Porter Jr.</td><td>19.6</td><td>8.7</td></tr>
+                <tr><td>Keon Ellis</td><td>17.2</td><td>5.5</td></tr>
+                <tr><td>Noah Clowney</td><td>15.5</td><td>5.2</td></tr>
+                <tr><td>Day&#39;Ron Sharpe</td><td>15.5</td><td>5.4</td></tr>
+                <tr><td>Chaney Johnson</td><td>15.1</td><td>5.3</td></tr>
+                <tr><td>Mikel Brown Jr.</td><td>14.6</td><td>5.4</td></tr>
+                <tr><td>Nolan Traore</td><td>13.9</td><td>5.6</td></tr>
+                <tr><td>Moritz Wagner</td><td>13.6</td><td>5.8</td></tr>
+                <tr><td>Josh Minott</td><td>11.4</td><td>4.5</td></tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+    </details>
+  </article>
+  <article class="card">
+    <div class="card-top">
+      <span class="tipoff">10/31 07:30</span>
+<span class="tag">未開賽</span>      <span class="venue">Xfinity Mobile Arena</span>
+    </div>
+
+    <div class="matchup">
+      <div class="side ">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/ny.png" alt="NY" loading="lazy">
+        <div class="abbr">NY</div>
+        <div class="tname">New York Knicks</div>
+      </div>
+      <div class="score">
+        <div class="nums"><span class="dimmer">115</span><i>:</i><span class="">114</span></div>
+        <div class="score-note">預測比分（客 : 主）</div>
+        <div class="margin">預期分差 +2.2</div>
+      </div>
+      <div class="side winner">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/phi.png" alt="PHI" loading="lazy">
+        <div class="abbr">PHI</div>
+        <div class="tname">Philadelphia 76ers</div>
+      </div>
+    </div>
+
+    <div class="winprob">
+      <div class="wp-head"><span>不讓分勝率</span><span class="stars">★★☆☆☆ <em>信心</em></span></div>
+      <div class="wp-bar">
+        <div class="wp-away" style="width: 45.2%">45.2%</div>
+        <div class="wp-home" style="width: 54.8%">54.8%</div>
+      </div>
+      <div class="wp-foot"><span>NY 勝</span><span>PHI 勝</span></div>
+    </div>
+
+    <div class="buckets">
+      <div class="bcol">
+        <div class="bhead">NY 得分級距</div>
+          <div class="brow lead"><span class="bl">111-115</span><span class="bb"><i style="width: 53.0%"></i></span><span class="bp">17.7%</span></div>
+          <div class="brow "><span class="bl">106-110</span><span class="bb"><i style="width: 47.7%"></i></span><span class="bp">15.9%</span></div>
+          <div class="brow "><span class="bl">116-120</span><span class="bb"><i style="width: 47.1%"></i></span><span class="bp">15.7%</span></div>
+          <div class="brow "><span class="bl">101-105</span><span class="bb"><i style="width: 35.1%"></i></span><span class="bp">11.7%</span></div>
+      </div>
+      <div class="bcol">
+        <div class="bhead">PHI 得分級距</div>
+          <div class="brow lead"><span class="bl">111-115</span><span class="bb"><i style="width: 51.2%"></i></span><span class="bp">17.1%</span></div>
+          <div class="brow "><span class="bl">116-120</span><span class="bb"><i style="width: 50.3%"></i></span><span class="bp">16.8%</span></div>
+          <div class="brow "><span class="bl">106-110</span><span class="bb"><i style="width: 43.0%"></i></span><span class="bp">14.4%</span></div>
+          <div class="brow "><span class="bl">121-125</span><span class="bb"><i style="width: 40.8%"></i></span><span class="bp">13.6%</span></div>
+      </div>
+    </div>
+
+    <div class="mini">
+      <div><span>預測總分</span><b>229</b> <em>226-230</em></div>
+      <div><span>兩隊級距同時命中</span><b>3.0%</b></div>
+      <div><span>最可能比分</span><b>114-106</b></div>
+    </div>
+
+    <details class="detail">
+      <summary>缺陣與上場狀態（1 位影響輪替）</summary>
+      <div class="detail-body">
+          <div class="ds">
+            <h4>NY · 預估少 0.0 分（可用性 100%）</h4>
+<p class="ok-note">主要輪替無傷病回報。</p>          </div>
+          <div class="ds">
+            <h4>PHI · 預估少 0.0 分（可用性 100%）</h4>
+            <ul>
+              <li>
+                <span class="st st-out">OUT</span>
+                <b>Jaylen Brown</b> <em>G</em>
+                <span class="lost">影響 −0.0 分</span>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </details>
+
+    <details class="detail">
+      <summary>預期輪替與分鐘分配</summary>
+      <div class="detail-body rot">
+          <div class="ds">
+            <h4>NY</h4>
+            <table class="mini-table">
+              <thead><tr><th>球員</th><th>MIN</th><th>PTS</th></tr></thead>
+              <tbody>
+                <tr><td>Jalen Brunson</td><td>23.1</td><td>10.7</td></tr>
+                <tr><td>OG Anunoby</td><td>22.5</td><td>9.0</td></tr>
+                <tr><td>Josh Hart</td><td>22.1</td><td>7.2</td></tr>
+                <tr><td>Karl-Anthony Towns</td><td>21.3</td><td>9.9</td></tr>
+                <tr><td>Mikal Bridges</td><td>19.4</td><td>5.6</td></tr>
+                <tr><td>Landry Shamet</td><td>18.8</td><td>6.7</td></tr>
+                <tr><td>Dalton Knecht</td><td>15.1</td><td>6.1</td></tr>
+                <tr><td>Miles McBride</td><td>15.0</td><td>5.3</td></tr>
+                <tr><td>Andre Drummond</td><td>13.0</td><td>5.0</td></tr>
+                <tr><td>Tyler Kolek</td><td>12.3</td><td>4.0</td></tr>
+                <tr><td>Tyler Nickel</td><td>11.1</td><td>4.0</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="ds">
+            <h4>PHI</h4>
+            <table class="mini-table">
+              <thead><tr><th>球員</th><th>MIN</th><th>PTS</th></tr></thead>
+              <tbody>
+                <tr><td>Tyrese Maxey</td><td>28.7</td><td>13.5</td></tr>
+                <tr><td>Rayan Rupert</td><td>28.3</td><td>8.6</td></tr>
+                <tr><td>Joel Embiid</td><td>25.1</td><td>10.4</td></tr>
+                <tr><td>LeBron James</td><td>24.1</td><td>9.1</td></tr>
+                <tr><td>VJ Edgecombe</td><td>23.4</td><td>8.1</td></tr>
+                <tr><td>Kentavious Caldwell-Pope</td><td>22.4</td><td>7.4</td></tr>
+                <tr><td>Anfernee Simons</td><td>20.8</td><td>7.4</td></tr>
+                <tr><td>Dean Wade</td><td>19.3</td><td>6.2</td></tr>
+                <tr><td>Adem Bona</td><td>14.9</td><td>4.2</td></tr>
+                <tr><td>Labaron Philon Jr.</td><td>11.9</td><td>4.1</td></tr>
+                <tr><td>Justin Edwards</td><td>10.5</td><td>3.3</td></tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+    </details>
+  </article>
+  <article class="card">
+    <div class="card-top">
+      <span class="tipoff">10/31 07:30</span>
+<span class="tag">未開賽</span>      <span class="venue">Scotiabank Arena</span>
+    </div>
+
+    <div class="matchup">
+      <div class="side ">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/orl.png" alt="ORL" loading="lazy">
+        <div class="abbr">ORL</div>
+        <div class="tname">Orlando Magic</div>
+      </div>
+      <div class="score">
+        <div class="nums"><span class="dimmer">115</span><i>:</i><span class="">116</span></div>
+        <div class="score-note">預測比分（客 : 主）</div>
+        <div class="margin">預期分差 +3.9</div>
+      </div>
+      <div class="side winner">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/tor.png" alt="TOR" loading="lazy">
+        <div class="abbr">TOR</div>
+        <div class="tname">Toronto Raptors</div>
+      </div>
+    </div>
+
+    <div class="winprob">
+      <div class="wp-head"><span>不讓分勝率</span><span class="stars">★★☆☆☆ <em>信心</em></span></div>
+      <div class="wp-bar">
+        <div class="wp-away" style="width: 41.3%">41.3%</div>
+        <div class="wp-home" style="width: 58.7%">58.7%</div>
+      </div>
+      <div class="wp-foot"><span>ORL 勝</span><span>TOR 勝</span></div>
+    </div>
+
+    <div class="buckets">
+      <div class="bcol">
+        <div class="bhead">ORL 得分級距</div>
+          <div class="brow lead"><span class="bl">111-115</span><span class="bb"><i style="width: 52.2%"></i></span><span class="bp">17.4%</span></div>
+          <div class="brow "><span class="bl">116-120</span><span class="bb"><i style="width: 47.9%"></i></span><span class="bp">16.0%</span></div>
+          <div class="brow "><span class="bl">106-110</span><span class="bb"><i style="width: 45.2%"></i></span><span class="bp">15.1%</span></div>
+          <div class="brow "><span class="bl">121-125</span><span class="bb"><i style="width: 36.9%"></i></span><span class="bp">12.3%</span></div>
+      </div>
+      <div class="bcol">
+        <div class="bhead">TOR 得分級距</div>
+          <div class="brow lead"><span class="bl">116-120</span><span class="bb"><i style="width: 51.4%"></i></span><span class="bp">17.1%</span></div>
+          <div class="brow "><span class="bl">111-115</span><span class="bb"><i style="width: 48.2%"></i></span><span class="bp">16.1%</span></div>
+          <div class="brow "><span class="bl">121-125</span><span class="bb"><i style="width: 45.5%"></i></span><span class="bp">15.2%</span></div>
+          <div class="brow "><span class="bl">106-110</span><span class="bb"><i style="width: 37.3%"></i></span><span class="bp">12.4%</span></div>
+      </div>
+    </div>
+
+    <div class="mini">
+      <div><span>預測總分</span><b>232</b> <em>231-235</em></div>
+      <div><span>兩隊級距同時命中</span><b>3.0%</b></div>
+      <div><span>最可能比分</span><b>113-111</b></div>
+    </div>
+
+    <details class="detail">
+      <summary>缺陣與上場狀態（0 位影響輪替）</summary>
+      <div class="detail-body">
+          <div class="ds">
+            <h4>ORL · 預估少 0.0 分（可用性 100%）</h4>
+<p class="ok-note">主要輪替無傷病回報。</p>          </div>
+          <div class="ds">
+            <h4>TOR · 預估少 0.4 分（可用性 100%）</h4>
+<p class="ok-note">主要輪替無傷病回報。</p>          </div>
+      </div>
+    </details>
+
+    <details class="detail">
+      <summary>預期輪替與分鐘分配</summary>
+      <div class="detail-body rot">
+          <div class="ds">
+            <h4>ORL</h4>
+            <table class="mini-table">
+              <thead><tr><th>球員</th><th>MIN</th><th>PTS</th></tr></thead>
+              <tbody>
+                <tr><td>Franz Wagner</td><td>28.6</td><td>11.6</td></tr>
+                <tr><td>Desmond Bane</td><td>28.1</td><td>10.4</td></tr>
+                <tr><td>Wendell Carter Jr.</td><td>26.7</td><td>10.4</td></tr>
+                <tr><td>Tristan da Silva</td><td>26.1</td><td>10.3</td></tr>
+                <tr><td>Anthony Black</td><td>19.2</td><td>7.3</td></tr>
+                <tr><td>Jase Richardson</td><td>18.3</td><td>6.6</td></tr>
+                <tr><td>Jamal Cain</td><td>17.9</td><td>5.7</td></tr>
+                <tr><td>Jevon Carter</td><td>17.1</td><td>5.5</td></tr>
+                <tr><td>Goga Bitadze</td><td>15.9</td><td>6.1</td></tr>
+                <tr><td>Nikola Vucevic</td><td>15.6</td><td>5.0</td></tr>
+                <tr><td>Colin Castleton</td><td>13.2</td><td>5.6</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="ds">
+            <h4>TOR</h4>
+            <table class="mini-table">
+              <thead><tr><th>球員</th><th>MIN</th><th>PTS</th></tr></thead>
+              <tbody>
+                <tr><td>Malachi Smith</td><td>29.1</td><td>10.3</td></tr>
+                <tr><td>RJ Barrett</td><td>22.3</td><td>9.8</td></tr>
+                <tr><td>Scottie Barnes</td><td>22.1</td><td>9.3</td></tr>
+                <tr><td>Immanuel Quickley</td><td>21.2</td><td>8.8</td></tr>
+                <tr><td>Ja&#39;Kobe Walter</td><td>20.3</td><td>8.0</td></tr>
+                <tr><td>Jamal Shead</td><td>17.8</td><td>5.9</td></tr>
+                <tr><td>Jakob Poeltl</td><td>17.1</td><td>5.1</td></tr>
+                <tr><td>Collin Murray-Boyles</td><td>16.4</td><td>5.9</td></tr>
+                <tr><td>Allen Graves</td><td>15.4</td><td>5.3</td></tr>
+                <tr><td>Jamison Battle</td><td>14.6</td><td>5.5</td></tr>
+                <tr><td>Trayce Jackson-Davis</td><td>12.4</td><td>4.9</td></tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+    </details>
+  </article>
+  <article class="card">
+    <div class="card-top">
+      <span class="tipoff">10/31 08:00</span>
+<span class="tag">未開賽</span>      <span class="venue">Kaseya Center</span>
+    </div>
+
+    <div class="matchup">
+      <div class="side ">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/ind.png" alt="IND" loading="lazy">
+        <div class="abbr">IND</div>
+        <div class="tname">Indiana Pacers</div>
+      </div>
+      <div class="score">
+        <div class="nums"><span class="dimmer">113</span><i>:</i><span class="">116</span></div>
+        <div class="score-note">預測比分（客 : 主）</div>
+        <div class="margin">預期分差 +5.2</div>
+      </div>
+      <div class="side winner">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/mia.png" alt="MIA" loading="lazy">
+        <div class="abbr">MIA</div>
+        <div class="tname">Miami Heat</div>
+      </div>
+    </div>
+
+    <div class="winprob">
+      <div class="wp-head"><span>不讓分勝率</span><span class="stars">★★☆☆☆ <em>信心</em></span></div>
+      <div class="wp-bar">
+        <div class="wp-away" style="width: 37.7%">37.7%</div>
+        <div class="wp-home" style="width: 62.3%">62.3%</div>
+      </div>
+      <div class="wp-foot"><span>IND 勝</span><span>MIA 勝</span></div>
+    </div>
+
+    <div class="buckets">
+      <div class="bcol">
+        <div class="bhead">IND 得分級距</div>
+          <div class="brow lead"><span class="bl">111-115</span><span class="bb"><i style="width: 52.2%"></i></span><span class="bp">17.4%</span></div>
+          <div class="brow "><span class="bl">106-110</span><span class="bb"><i style="width: 50.7%"></i></span><span class="bp">16.9%</span></div>
+          <div class="brow "><span class="bl">116-120</span><span class="bb"><i style="width: 43.5%"></i></span><span class="bp">14.5%</span></div>
+          <div class="brow "><span class="bl">101-105</span><span class="bb"><i style="width: 39.8%"></i></span><span class="bp">13.2%</span></div>
+      </div>
+      <div class="bcol">
+        <div class="bhead">MIA 得分級距</div>
+          <div class="brow lead"><span class="bl">116-120</span><span class="bb"><i style="width: 51.6%"></i></span><span class="bp">17.2%</span></div>
+          <div class="brow "><span class="bl">111-115</span><span class="bb"><i style="width: 50.3%"></i></span><span class="bp">16.8%</span></div>
+          <div class="brow "><span class="bl">121-125</span><span class="bb"><i style="width: 43.7%"></i></span><span class="bp">14.6%</span></div>
+          <div class="brow "><span class="bl">106-110</span><span class="bb"><i style="width: 40.4%"></i></span><span class="bp">13.4%</span></div>
+      </div>
+    </div>
+
+    <div class="mini">
+      <div><span>預測總分</span><b>229</b> <em>226-230</em></div>
+      <div><span>兩隊級距同時命中</span><b>3.0%</b></div>
+      <div><span>最可能比分</span><b>110-116</b></div>
+    </div>
+
+    <details class="detail">
+      <summary>缺陣與上場狀態（3 位影響輪替）</summary>
+      <div class="detail-body">
+          <div class="ds">
+            <h4>IND · 預估少 5.4 分（可用性 95%）</h4>
+            <ul>
+              <li>
+                <span class="st st-out">OUT</span>
+                <b>T.J. McConnell</b> <em>G</em>
+                <span class="lost">影響 −1.5 分</span>
+              </li>
+              <li>
+                <span class="st st-out">OUT</span>
+                <b>Tyrese Haliburton</b> <em>G</em>
+                <span class="lost">影響 −1.1 分</span>
+              </li>
+              <li>
+                <span class="st st-out">OUT</span>
+                <b>Johnny Furphy</b> <em>G</em>
+                <span class="lost">影響 −0.9 分</span>
+              </li>
+            </ul>
+          </div>
+          <div class="ds">
+            <h4>MIA · 預估少 0.0 分（可用性 100%）</h4>
+<p class="ok-note">主要輪替無傷病回報。</p>          </div>
+      </div>
+    </details>
+
+    <details class="detail">
+      <summary>預期輪替與分鐘分配</summary>
+      <div class="detail-body rot">
+          <div class="ds">
+            <h4>IND</h4>
+            <table class="mini-table">
+              <thead><tr><th>球員</th><th>MIN</th><th>PTS</th></tr></thead>
+              <tbody>
+                <tr><td>Pascal Siakam</td><td>31.9</td><td>15.0</td></tr>
+                <tr><td>Andrew Nembhard</td><td>29.5</td><td>11.6</td></tr>
+                <tr><td>Kelly Oubre Jr.</td><td>26.4</td><td>9.3</td></tr>
+                <tr><td>Jarace Walker</td><td>24.4</td><td>7.7</td></tr>
+                <tr><td>Aaron Nesmith</td><td>23.1</td><td>9.6</td></tr>
+                <tr><td>Quenton Jackson</td><td>22.4</td><td>7.2</td></tr>
+                <tr><td>Jay Huff</td><td>19.9</td><td>7.0</td></tr>
+                <tr><td>Larry Nance Jr.</td><td>19.4</td><td>5.7</td></tr>
+                <tr><td>Jalen Slawson</td><td>16.1</td><td>5.4</td></tr>
+                <tr><td>Braden Smith</td><td>13.8</td><td>4.4</td></tr>
+                <tr><td>Kobe Brown</td><td>13.1</td><td>4.2</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="ds">
+            <h4>MIA</h4>
+            <table class="mini-table">
+              <thead><tr><th>球員</th><th>MIN</th><th>PTS</th></tr></thead>
+              <tbody>
+                <tr><td>Davion Mitchell</td><td>21.9</td><td>8.6</td></tr>
+                <tr><td>Giannis Antetokounmpo</td><td>20.9</td><td>10.6</td></tr>
+                <tr><td>Bam Adebayo</td><td>20.7</td><td>7.8</td></tr>
+                <tr><td>Pelle Larsson</td><td>20.5</td><td>7.2</td></tr>
+                <tr><td>Andrew Wiggins</td><td>18.7</td><td>6.8</td></tr>
+                <tr><td>Bobby Portis</td><td>17.4</td><td>6.5</td></tr>
+                <tr><td>Klay Thompson</td><td>15.5</td><td>5.6</td></tr>
+                <tr><td>Tim Hardaway Jr.</td><td>15.4</td><td>5.3</td></tr>
+                <tr><td>Tre Donaldson</td><td>12.8</td><td>4.6</td></tr>
+                <tr><td>Keshad Johnson</td><td>12.3</td><td>5.6</td></tr>
+                <tr><td>Nikola Jovic</td><td>11.8</td><td>3.9</td></tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+    </details>
+  </article>
+  <article class="card">
+    <div class="card-top">
+      <span class="tipoff">10/31 08:00</span>
+<span class="tag">未開賽</span>      <span class="venue">American Airlines Center</span>
+    </div>
+
+    <div class="matchup">
+      <div class="side ">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/hou.png" alt="HOU" loading="lazy">
+        <div class="abbr">HOU</div>
+        <div class="tname">Houston Rockets</div>
+      </div>
+      <div class="score">
+        <div class="nums"><span class="dimmer">112</span><i>:</i><span class="">110</span></div>
+        <div class="score-note">預測比分（客 : 主）</div>
+        <div class="margin">預期分差 +0.8</div>
+      </div>
+      <div class="side winner">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/dal.png" alt="DAL" loading="lazy">
+        <div class="abbr">DAL</div>
+        <div class="tname">Dallas Mavericks</div>
+      </div>
+    </div>
+
+    <div class="winprob">
+      <div class="wp-head"><span>不讓分勝率</span><span class="stars">★☆☆☆☆ <em>信心</em></span></div>
+      <div class="wp-bar">
+        <div class="wp-away" style="width: 48.6%">48.6%</div>
+        <div class="wp-home" style="width: 51.4%">51.4%</div>
+      </div>
+      <div class="wp-foot"><span>HOU 勝</span><span>DAL 勝</span></div>
+    </div>
+
+    <div class="buckets">
+      <div class="bcol">
+        <div class="bhead">HOU 得分級距</div>
+          <div class="brow lead"><span class="bl">106-110</span><span class="bb"><i style="width: 51.8%"></i></span><span class="bp">17.3%</span></div>
+          <div class="brow "><span class="bl">111-115</span><span class="bb"><i style="width: 51.4%"></i></span><span class="bp">17.1%</span></div>
+          <div class="brow "><span class="bl">116-120</span><span class="bb"><i style="width: 41.8%"></i></span><span class="bp">13.9%</span></div>
+          <div class="brow "><span class="bl">101-105</span><span class="bb"><i style="width: 41.4%"></i></span><span class="bp">13.8%</span></div>
+      </div>
+      <div class="bcol">
+        <div class="bhead">DAL 得分級距</div>
+          <div class="brow lead"><span class="bl">111-115</span><span class="bb"><i style="width: 51.6%"></i></span><span class="bp">17.2%</span></div>
+          <div class="brow "><span class="bl">106-110</span><span class="bb"><i style="width: 50.3%"></i></span><span class="bp">16.8%</span></div>
+          <div class="brow "><span class="bl">116-120</span><span class="bb"><i style="width: 43.5%"></i></span><span class="bp">14.5%</span></div>
+          <div class="brow "><span class="bl">101-105</span><span class="bb"><i style="width: 40.7%"></i></span><span class="bp">13.6%</span></div>
+      </div>
+    </div>
+
+    <div class="mini">
+      <div><span>預測總分</span><b>223</b> <em>221-225</em></div>
+      <div><span>兩隊級距同時命中</span><b>3.0%</b></div>
+      <div><span>最可能比分</span><b>110-105</b></div>
+    </div>
+
+    <details class="detail">
+      <summary>缺陣與上場狀態（2 位影響輪替）</summary>
+      <div class="detail-body">
+          <div class="ds">
+            <h4>HOU · 預估少 1.5 分（可用性 99%）</h4>
+            <ul>
+              <li>
+                <span class="st st-out">OUT</span>
+                <b>Alperen Sengun</b> <em>C</em>
+                <span class="lost">影響 −0.7 分</span>
+              </li>
+            </ul>
+          </div>
+          <div class="ds">
+            <h4>DAL · 預估少 1.6 分（可用性 99%）</h4>
+            <ul>
+              <li>
+                <span class="st st-out">OUT</span>
+                <b>Santi Aldama</b> <em>F</em>
+                <span class="lost">影響 −0.8 分</span>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </details>
+
+    <details class="detail">
+      <summary>預期輪替與分鐘分配</summary>
+      <div class="detail-body rot">
+          <div class="ds">
+            <h4>HOU</h4>
+            <table class="mini-table">
+              <thead><tr><th>球員</th><th>MIN</th><th>PTS</th></tr></thead>
+              <tbody>
+                <tr><td>Kevin Durant</td><td>27.0</td><td>12.2</td></tr>
+                <tr><td>Jabari Smith Jr.</td><td>27.0</td><td>10.5</td></tr>
+                <tr><td>Amen Thompson</td><td>26.7</td><td>11.0</td></tr>
+                <tr><td>Fred VanVleet</td><td>22.6</td><td>8.3</td></tr>
+                <tr><td>Tari Eason</td><td>21.8</td><td>8.1</td></tr>
+                <tr><td>Marcus Smart</td><td>16.0</td><td>5.6</td></tr>
+                <tr><td>Bogdan Bogdanovic</td><td>15.7</td><td>6.9</td></tr>
+                <tr><td>Julian Phillips</td><td>15.7</td><td>5.1</td></tr>
+                <tr><td>Clint Capela</td><td>13.8</td><td>4.9</td></tr>
+                <tr><td>Oscar Tshiebwe</td><td>12.5</td><td>4.6</td></tr>
+                <tr><td>Quadir Copeland</td><td>12.4</td><td>4.0</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="ds">
+            <h4>DAL</h4>
+            <table class="mini-table">
+              <thead><tr><th>球員</th><th>MIN</th><th>PTS</th></tr></thead>
+              <tbody>
+                <tr><td>P.J. Washington</td><td>25.3</td><td>9.8</td></tr>
+                <tr><td>Zaccharie Risacher</td><td>23.4</td><td>7.7</td></tr>
+                <tr><td>Max Christie</td><td>22.4</td><td>7.7</td></tr>
+                <tr><td>Cooper Flagg</td><td>21.8</td><td>10.3</td></tr>
+                <tr><td>Kyrie Irving</td><td>20.2</td><td>8.7</td></tr>
+                <tr><td>Daniel Gafford</td><td>19.5</td><td>6.6</td></tr>
+                <tr><td>Marcus Sasser</td><td>18.9</td><td>7.1</td></tr>
+                <tr><td>Naji Marshall</td><td>18.5</td><td>7.0</td></tr>
+                <tr><td>Morez Johnson Jr.</td><td>15.6</td><td>6.1</td></tr>
+                <tr><td>Walter Clayton Jr.</td><td>13.4</td><td>4.8</td></tr>
+                <tr><td>Caleb Martin</td><td>11.8</td><td>4.5</td></tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+    </details>
+  </article>
+  <article class="card">
+    <div class="card-top">
+      <span class="tipoff">10/31 08:00</span>
+<span class="tag">未開賽</span>      <span class="venue">Target Center</span>
+    </div>
+
+    <div class="matchup">
+      <div class="side ">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/lac.png" alt="LAC" loading="lazy">
+        <div class="abbr">LAC</div>
+        <div class="tname">LA Clippers</div>
+      </div>
+      <div class="score">
+        <div class="nums"><span class="dimmer">108</span><i>:</i><span class="">113</span></div>
+        <div class="score-note">預測比分（客 : 主）</div>
+        <div class="margin">預期分差 +7.9</div>
+      </div>
+      <div class="side winner">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/min.png" alt="MIN" loading="lazy">
+        <div class="abbr">MIN</div>
+        <div class="tname">Minnesota Timberwolves</div>
+      </div>
+    </div>
+
+    <div class="winprob">
+      <div class="wp-head"><span>不讓分勝率</span><span class="stars">★★★☆☆ <em>信心</em></span></div>
+      <div class="wp-bar">
+        <div class="wp-away" style="width: 31.5%">31.5%</div>
+        <div class="wp-home" style="width: 68.5%">68.5%</div>
+      </div>
+      <div class="wp-foot"><span>LAC 勝</span><span>MIN 勝</span></div>
+    </div>
+
+    <div class="buckets">
+      <div class="bcol">
+        <div class="bhead">LAC 得分級距</div>
+          <div class="brow lead"><span class="bl">106-110</span><span class="bb"><i style="width: 52.0%"></i></span><span class="bp">17.3%</span></div>
+          <div class="brow "><span class="bl">101-105</span><span class="bb"><i style="width: 49.2%"></i></span><span class="bp">16.4%</span></div>
+          <div class="brow "><span class="bl">111-115</span><span class="bb"><i style="width: 43.1%"></i></span><span class="bp">14.4%</span></div>
+          <div class="brow "><span class="bl">96-100</span><span class="bb"><i style="width: 39.1%"></i></span><span class="bp">13.0%</span></div>
+      </div>
+      <div class="bcol">
+        <div class="bhead">MIN 得分級距</div>
+          <div class="brow lead"><span class="bl">111-115</span><span class="bb"><i style="width: 52.2%"></i></span><span class="bp">17.4%</span></div>
+          <div class="brow "><span class="bl">116-120</span><span class="bb"><i style="width: 49.2%"></i></span><span class="bp">16.4%</span></div>
+          <div class="brow "><span class="bl">106-110</span><span class="bb"><i style="width: 44.7%"></i></span><span class="bp">14.9%</span></div>
+          <div class="brow "><span class="bl">121-125</span><span class="bb"><i style="width: 38.7%"></i></span><span class="bp">12.9%</span></div>
+      </div>
+    </div>
+
+    <div class="mini">
+      <div><span>預測總分</span><b>222</b> <em>221-225</em></div>
+      <div><span>兩隊級距同時命中</span><b>3.0%</b></div>
+      <div><span>最可能比分</span><b>106-108</b></div>
+    </div>
+
+    <details class="detail">
+      <summary>缺陣與上場狀態（4 位影響輪替）</summary>
+      <div class="detail-body">
+          <div class="ds">
+            <h4>LAC · 預估少 10.6 分（可用性 91%）</h4>
+            <ul>
+              <li>
+                <span class="st st-out">OUT</span>
+                <b>Brandon Ingram</b> <em>F</em>
+                <span class="lost">影響 −5.5 分</span>
+              </li>
+              <li>
+                <span class="st st-out">OUT</span>
+                <b>Max Strus</b> <em>G</em>
+                <span class="lost">影響 −1.9 分</span>
+              </li>
+            </ul>
+          </div>
+          <div class="ds">
+            <h4>MIN · 預估少 4.7 分（可用性 96%）</h4>
+            <ul>
+              <li>
+                <span class="st st-out">OUT</span>
+                <b>Donte DiVincenzo</b> <em>G</em>
+                <span class="lost">影響 −2.9 分</span>
+              </li>
+              <li>
+                <span class="st st-out">OUT</span>
+                <b>Anthony Edwards</b> <em>G</em>
+                <span class="lost">影響 −1.8 分</span>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </details>
+
+    <details class="detail">
+      <summary>預期輪替與分鐘分配</summary>
+      <div class="detail-body rot">
+          <div class="ds">
+            <h4>LAC</h4>
+            <table class="mini-table">
+              <thead><tr><th>球員</th><th>MIN</th><th>PTS</th></tr></thead>
+              <tbody>
+                <tr><td>Darius Garland</td><td>23.0</td><td>9.9</td></tr>
+                <tr><td>Kris Dunn</td><td>21.9</td><td>7.5</td></tr>
+                <tr><td>Derrick Jones Jr.</td><td>21.7</td><td>8.2</td></tr>
+                <tr><td>Keaton Wagler</td><td>20.3</td><td>8.2</td></tr>
+                <tr><td>Rui Hachimura</td><td>20.1</td><td>6.8</td></tr>
+                <tr><td>Brook Lopez</td><td>18.6</td><td>7.9</td></tr>
+                <tr><td>Blake Wesley</td><td>18.4</td><td>7.0</td></tr>
+                <tr><td>Isaiah Jackson</td><td>17.9</td><td>6.5</td></tr>
+                <tr><td>Kobe Sanders</td><td>17.8</td><td>6.1</td></tr>
+                <tr><td>Gradey Dick</td><td>15.9</td><td>6.0</td></tr>
+                <tr><td>Baba Miller</td><td>12.1</td><td>4.2</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="ds">
+            <h4>MIN</h4>
+            <table class="mini-table">
+              <thead><tr><th>球員</th><th>MIN</th><th>PTS</th></tr></thead>
+              <tbody>
+                <tr><td>Jaden McDaniels</td><td>24.4</td><td>9.7</td></tr>
+                <tr><td>Jonathan Kuminga</td><td>23.2</td><td>8.8</td></tr>
+                <tr><td>Rudy Gobert</td><td>23.1</td><td>7.1</td></tr>
+                <tr><td>Ayo Dosunmu</td><td>21.8</td><td>8.5</td></tr>
+                <tr><td>LaMelo Ball</td><td>20.8</td><td>8.3</td></tr>
+                <tr><td>Terrence Shannon Jr.</td><td>19.6</td><td>8.5</td></tr>
+                <tr><td>Joan Beringer</td><td>15.7</td><td>6.0</td></tr>
+                <tr><td>Trey Lyles</td><td>15.6</td><td>5.3</td></tr>
+                <tr><td>Bones Hyland</td><td>12.5</td><td>4.8</td></tr>
+                <tr><td>Enrique Freeman</td><td>12.1</td><td>4.3</td></tr>
+                <tr><td>Rocco Zikarsky</td><td>11.4</td><td>4.2</td></tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+    </details>
+  </article>
+  <article class="card">
+    <div class="card-top">
+      <span class="tipoff">10/31 10:00</span>
+<span class="tag">未開賽</span>      <span class="venue">Chase Center</span>
+    </div>
+
+    <div class="matchup">
+      <div class="side winner">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/lal.png" alt="LAL" loading="lazy">
+        <div class="abbr">LAL</div>
+        <div class="tname">Los Angeles Lakers</div>
+      </div>
+      <div class="score">
+        <div class="nums"><span class="">114</span><i>:</i><span class="dimmer">107</span></div>
+        <div class="score-note">預測比分（客 : 主）</div>
+        <div class="margin">預期分差 -4.0</div>
+      </div>
+      <div class="side ">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/gs.png" alt="GS" loading="lazy">
+        <div class="abbr">GS</div>
+        <div class="tname">Golden State Warriors</div>
+      </div>
+    </div>
+
+    <div class="winprob">
+      <div class="wp-head"><span>不讓分勝率</span><span class="stars">★★☆☆☆ <em>信心</em></span></div>
+      <div class="wp-bar">
+        <div class="wp-away" style="width: 60.0%">60.0%</div>
+        <div class="wp-home" style="width: 40.0%">40.0%</div>
+      </div>
+      <div class="wp-foot"><span>LAL 勝</span><span>GS 勝</span></div>
+    </div>
+
+    <div class="buckets">
+      <div class="bcol">
+        <div class="bhead">LAL 得分級距</div>
+          <div class="brow lead"><span class="bl">111-115</span><span class="bb"><i style="width: 53.3%"></i></span><span class="bp">17.8%</span></div>
+          <div class="brow "><span class="bl">106-110</span><span class="bb"><i style="width: 48.8%"></i></span><span class="bp">16.2%</span></div>
+          <div class="brow "><span class="bl">116-120</span><span class="bb"><i style="width: 45.7%"></i></span><span class="bp">15.2%</span></div>
+          <div class="brow "><span class="bl">101-105</span><span class="bb"><i style="width: 36.4%"></i></span><span class="bp">12.1%</span></div>
+      </div>
+      <div class="bcol">
+        <div class="bhead">GS 得分級距</div>
+          <div class="brow lead"><span class="bl">106-110</span><span class="bb"><i style="width: 49.5%"></i></span><span class="bp">16.5%</span></div>
+          <div class="brow "><span class="bl">101-105</span><span class="bb"><i style="width: 45.0%"></i></span><span class="bp">15.0%</span></div>
+          <div class="brow "><span class="bl">111-115</span><span class="bb"><i style="width: 45.0%"></i></span><span class="bp">15.0%</span></div>
+          <div class="brow "><span class="bl">116-120</span><span class="bb"><i style="width: 34.5%"></i></span><span class="bp">11.5%</span></div>
+      </div>
+    </div>
+
+    <div class="mini">
+      <div><span>預測總分</span><b>221</b> <em>221-225</em></div>
+      <div><span>兩隊級距同時命中</span><b>2.9%</b></div>
+      <div><span>最可能比分</span><b>113-104</b></div>
+    </div>
+
+    <details class="detail">
+      <summary>缺陣與上場狀態（2 位影響輪替）</summary>
+      <div class="detail-body">
+          <div class="ds">
+            <h4>LAL · 預估少 0.0 分（可用性 100%）</h4>
+<p class="ok-note">主要輪替無傷病回報。</p>          </div>
+          <div class="ds">
+            <h4>GS · 預估少 9.6 分（可用性 92%）</h4>
+            <ul>
+              <li>
+                <span class="st st-out">OUT</span>
+                <b>Jimmy Butler III</b> <em>F</em>
+                <span class="lost">影響 −4.9 分</span>
+              </li>
+              <li>
+                <span class="st st-out">OUT</span>
+                <b>Moses Moody</b> <em>G</em>
+                <span class="lost">影響 −3.4 分</span>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </details>
+
+    <details class="detail">
+      <summary>預期輪替與分鐘分配</summary>
+      <div class="detail-body rot">
+          <div class="ds">
+            <h4>LAL</h4>
+            <table class="mini-table">
+              <thead><tr><th>球員</th><th>MIN</th><th>PTS</th></tr></thead>
+              <tbody>
+                <tr><td>Austin Reaves</td><td>22.5</td><td>10.5</td></tr>
+                <tr><td>Luka Doncic</td><td>20.6</td><td>10.8</td></tr>
+                <tr><td>Walker Kessler</td><td>20.3</td><td>8.2</td></tr>
+                <tr><td>Quentin Grimes</td><td>18.8</td><td>6.8</td></tr>
+                <tr><td>Matisse Thybulle</td><td>17.7</td><td>6.6</td></tr>
+                <tr><td>Sandro Mamukelashvili</td><td>17.5</td><td>6.6</td></tr>
+                <tr><td>Jake LaRavia</td><td>15.3</td><td>4.9</td></tr>
+                <tr><td>Collin Sexton</td><td>13.8</td><td>6.0</td></tr>
+                <tr><td>Lawson Lovering</td><td>13.4</td><td>4.6</td></tr>
+                <tr><td>Cameron Carr</td><td>11.8</td><td>4.8</td></tr>
+                <tr><td>Jarred Vanderbilt</td><td>11.0</td><td>3.5</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="ds">
+            <h4>GS</h4>
+            <table class="mini-table">
+              <thead><tr><th>球員</th><th>MIN</th><th>PTS</th></tr></thead>
+              <tbody>
+                <tr><td>Yaxel Lendeborg</td><td>25.0</td><td>11.2</td></tr>
+                <tr><td>Draymond Green</td><td>20.3</td><td>5.9</td></tr>
+                <tr><td>Stephen Curry</td><td>20.2</td><td>10.8</td></tr>
+                <tr><td>Brandin Podziemski</td><td>20.1</td><td>7.5</td></tr>
+                <tr><td>De&#39;Anthony Melton</td><td>18.7</td><td>7.1</td></tr>
+                <tr><td>Georges Niang</td><td>17.6</td><td>5.9</td></tr>
+                <tr><td>Al Horford</td><td>16.1</td><td>5.3</td></tr>
+                <tr><td>Will Richard</td><td>15.9</td><td>5.4</td></tr>
+                <tr><td>Brandon Williams</td><td>15.9</td><td>7.1</td></tr>
+                <tr><td>Gary Payton II</td><td>14.6</td><td>5.4</td></tr>
+                <tr><td>Graham Ike</td><td>13.9</td><td>5.9</td></tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+    </details>
+  </article>
+  <article class="card">
+    <div class="card-top">
+      <span class="tipoff">10/31 10:00</span>
+<span class="tag">未開賽</span>      <span class="venue">Mortgage Matchup Center</span>
+    </div>
+
+    <div class="matchup">
+      <div class="side ">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/den.png" alt="DEN" loading="lazy">
+        <div class="abbr">DEN</div>
+        <div class="tname">Denver Nuggets</div>
+      </div>
+      <div class="score">
+        <div class="nums"><span class="dimmer">110</span><i>:</i><span class="">110</span></div>
+        <div class="score-note">預測比分（客 : 主）</div>
+        <div class="margin">預期分差 +2.8</div>
+      </div>
+      <div class="side winner">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/phx.png" alt="PHX" loading="lazy">
+        <div class="abbr">PHX</div>
+        <div class="tname">Phoenix Suns</div>
+      </div>
+    </div>
+
+    <div class="winprob">
+      <div class="wp-head"><span>不讓分勝率</span><span class="stars">★★☆☆☆ <em>信心</em></span></div>
+      <div class="wp-bar">
+        <div class="wp-away" style="width: 44.0%">44.0%</div>
+        <div class="wp-home" style="width: 56.0%">56.0%</div>
+      </div>
+      <div class="wp-foot"><span>DEN 勝</span><span>PHX 勝</span></div>
+    </div>
+
+    <div class="buckets">
+      <div class="bcol">
+        <div class="bhead">DEN 得分級距</div>
+          <div class="brow lead"><span class="bl">106-110</span><span class="bb"><i style="width: 52.2%"></i></span><span class="bp">17.4%</span></div>
+          <div class="brow "><span class="bl">111-115</span><span class="bb"><i style="width: 47.2%"></i></span><span class="bp">15.7%</span></div>
+          <div class="brow "><span class="bl">101-105</span><span class="bb"><i style="width: 46.0%"></i></span><span class="bp">15.4%</span></div>
+          <div class="brow "><span class="bl">116-120</span><span class="bb"><i style="width: 36.2%"></i></span><span class="bp">12.1%</span></div>
+      </div>
+      <div class="bcol">
+        <div class="bhead">PHX 得分級距</div>
+          <div class="brow lead"><span class="bl">111-115</span><span class="bb"><i style="width: 47.5%"></i></span><span class="bp">15.8%</span></div>
+          <div class="brow "><span class="bl">106-110</span><span class="bb"><i style="width: 46.9%"></i></span><span class="bp">15.6%</span></div>
+          <div class="brow "><span class="bl">116-120</span><span class="bb"><i style="width: 40.4%"></i></span><span class="bp">13.5%</span></div>
+          <div class="brow "><span class="bl">101-105</span><span class="bb"><i style="width: 38.9%"></i></span><span class="bp">13.0%</span></div>
+      </div>
+    </div>
+
+    <div class="mini">
+      <div><span>預測總分</span><b>220</b> <em>216-220</em></div>
+      <div><span>兩隊級距同時命中</span><b>2.8%</b></div>
+      <div><span>最可能比分</span><b>107-111</b></div>
+    </div>
+
+    <details class="detail">
+      <summary>缺陣與上場狀態（2 位影響輪替）</summary>
+      <div class="detail-body">
+          <div class="ds">
+            <h4>DEN · 預估少 0.0 分（可用性 100%）</h4>
+            <ul>
+              <li>
+                <span class="st st-out">OUT</span>
+                <b>Spencer Jones</b> <em>F</em>
+                <span class="lost">影響 −0.0 分</span>
+              </li>
+              <li>
+                <span class="st st-out">OUT</span>
+                <b>Julian Strawther</b> <em>G</em>
+                <span class="lost">影響 −0.0 分</span>
+              </li>
+            </ul>
+          </div>
+          <div class="ds">
+            <h4>PHX · 預估少 0.0 分（可用性 100%）</h4>
+<p class="ok-note">主要輪替無傷病回報。</p>          </div>
+      </div>
+    </details>
+
+    <details class="detail">
+      <summary>預期輪替與分鐘分配</summary>
+      <div class="detail-body rot">
+          <div class="ds">
+            <h4>DEN</h4>
+            <table class="mini-table">
+              <thead><tr><th>球員</th><th>MIN</th><th>PTS</th></tr></thead>
+              <tbody>
+                <tr><td>Jamal Murray</td><td>27.9</td><td>11.5</td></tr>
+                <tr><td>Nikola Jokic</td><td>27.2</td><td>11.2</td></tr>
+                <tr><td>Christian Braun</td><td>26.5</td><td>9.1</td></tr>
+                <tr><td>Aaron Gordon</td><td>23.9</td><td>8.7</td></tr>
+                <tr><td>DeMar DeRozan</td><td>22.1</td><td>8.5</td></tr>
+                <tr><td>Trevon Brazile</td><td>20.6</td><td>7.6</td></tr>
+                <tr><td>Bryce Hopkins</td><td>17.0</td><td>5.5</td></tr>
+                <tr><td>Marvin Bagley III</td><td>15.1</td><td>5.7</td></tr>
+                <tr><td>Tyus Jones</td><td>13.8</td><td>4.4</td></tr>
+                <tr><td>Cam Whitmore</td><td>12.3</td><td>4.6</td></tr>
+                <tr><td>Zeke Nnaji</td><td>11.5</td><td>5.0</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="ds">
+            <h4>PHX</h4>
+            <table class="mini-table">
+              <thead><tr><th>球員</th><th>MIN</th><th>PTS</th></tr></thead>
+              <tbody>
+                <tr><td>Devin Booker</td><td>21.3</td><td>9.1</td></tr>
+                <tr><td>Miles Bridges</td><td>20.7</td><td>7.6</td></tr>
+                <tr><td>Dillon Brooks</td><td>20.7</td><td>7.7</td></tr>
+                <tr><td>Jalen Green</td><td>19.2</td><td>7.4</td></tr>
+                <tr><td>Collin Gillespie</td><td>18.0</td><td>5.9</td></tr>
+                <tr><td>Khaman Maluach</td><td>17.8</td><td>6.2</td></tr>
+                <tr><td>Jordan Goodwin</td><td>16.3</td><td>5.9</td></tr>
+                <tr><td>Drew Timme</td><td>15.2</td><td>6.0</td></tr>
+                <tr><td>Luke Kennard</td><td>14.2</td><td>5.6</td></tr>
+                <tr><td>Ryan Dunn</td><td>14.1</td><td>5.0</td></tr>
+                <tr><td>Rasheer Fleming</td><td>11.6</td><td>3.5</td></tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+    </details>
+  </article>
+</div>
+
+<p class="disclaimer">模型假設：球員 per-36 產出可轉移、缺陣分鐘由替補吸收且效率下降、主場優勢 1.4 分。實際傷病名單以開賽前 30 分鐘官方公布為準，本站每次更新都會重抓。</p>
+</main>
+
+<footer class="wrap foot">
+  <p>資料來源：ESPN · Basketball-Reference · CBS Sports · Yahoo Sports · NBA CDN（多重來源交叉比對）。</p>
+  <p>所有數字為模型估計值，僅供研究與討論，不構成任何投注建議。</p>
+  <p class="muted">建置時間 2026-10-31T00:19:40+00:00 UTC · 每次更新自動重新抓取名單、傷病與 per-36 數據後重算。</p>
+</footer>
+
+<script>
+// 資料快照時間（台灣時間）→ 超過 12 小時就在頁面上警示
+const BUILT_AT = "2026-10-31T00:19:40+00:00";
+const RELOAD = document.getElementById('reloadBtn');
+if (RELOAD) RELOAD.addEventListener('click', () => location.reload());
+
+(function () {
+  const bar = document.getElementById('staleBar');
+  if (!bar || !BUILT_AT) return;
+  const built = new Date(BUILT_AT);
+  if (isNaN(built)) return;
+  const hours = (Date.now() - built.getTime()) / 36e5;
+  if (hours < 12) return;
+  const days = Math.floor(hours / 24);
+  const age = days >= 1 ? days + ' 天' : Math.round(hours) + ' 小時';
+  bar.innerHTML = '⚠ 這份預測是 <b>' + age + '</b>前產生的快照，最新傷病與賽程可能已經變動。'
+    + '本站目前為手動更新：請在對話中要求更新，再重新上傳新檔。';
+  bar.hidden = false;
+})();
+</script>
+</body>
+</html>

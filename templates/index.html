@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+{% block title %}今日賽前預測{% endblock %}
+{% block content %}
+
+<section class="hero">
+  <div>
+    <h1>今日賽前預測 <small class="gdate">{{ game_date }}（美東球日）</small></h1>
+    <p class="sub">依「實際會上場的球員」推算兩隊得分，換算成 5 分一級的得分級距與<b>不讓分勝率</b>。傷病、停賽、個人因素缺陣者一律先從陣容剔除，其分鐘數自動分配給替補。</p>
+  </div>
+  <div class="hero-stats">
+    <div><b>{{ games|length }}</b><span>今日場次</span></div>
+    <div><b>{{ league.ppg|round(1) }}</b><span>聯盟場均得分</span></div>
+    <div><b>{{ league.poss|round(1) }}</b><span>聯盟場均回合</span></div>
+  </div>
+</section>
+
+{% if not games %}
+  <div class="empty">
+    <h3>今日沒有排定比賽</h3>
+    <p>NBA 休兵日或球季尚未開打。下一次更新會自動抓取新的賽程。</p>
+  </div>
+{% endif %}
+
+<div class="cards">
+{% for g in games %}
+  {% set h = g.home %}{% set a = g.away %}
+  {% set hw = g.sim.home_win_prob %}
+  <article class="card">
+    <div class="card-top">
+      <span class="tipoff">{{ g.date_utc|tpe }}</span>
+      {% if g.status and 'Final' in g.status %}<span class="tag done">已結束</span>
+      {% elif g.status and ('Progress' in g.status or 'Half' in g.status) %}<span class="tag live">進行中</span>
+      {% else %}<span class="tag">未開賽</span>{% endif %}
+      <span class="venue">{{ g.venue }}</span>
+    </div>
+
+    <div class="matchup">
+      <div class="side {{ 'winner' if hw < 0.5 }}">
+        <img src="{{ a.team.logo }}" alt="{{ a.team.abbrev }}" loading="lazy">
+        <div class="abbr">{{ a.team.abbrev }}</div>
+        <div class="tname">{{ a.team.name }}</div>
+      </div>
+      <div class="score">
+        <div class="nums"><span class="{{ 'dimmer' if hw >= 0.5 }}">{{ a.pred_pts|round(0)|int }}</span><i>:</i><span class="{{ 'dimmer' if hw < 0.5 }}">{{ h.pred_pts|round(0)|int }}</span></div>
+        <div class="score-note">預測比分（客 : 主）</div>
+        <div class="margin">預期分差 {{ '%+.1f'|format(g.pred_margin) }}</div>
+      </div>
+      <div class="side {{ 'winner' if hw >= 0.5 }}">
+        <img src="{{ h.team.logo }}" alt="{{ h.team.abbrev }}" loading="lazy">
+        <div class="abbr">{{ h.team.abbrev }}</div>
+        <div class="tname">{{ h.team.name }}</div>
+      </div>
+    </div>
+
+    <div class="winprob">
+      <div class="wp-head"><span>不讓分勝率</span><span class="stars">{{ g.sim.confidence|stars }} <em>信心</em></span></div>
+      <div class="wp-bar">
+        <div class="wp-away" style="width: {{ (100 - hw*100)|round(1) }}%">{{ (100 - hw*100)|round(1) }}%</div>
+        <div class="wp-home" style="width: {{ (hw*100)|round(1) }}%">{{ (hw*100)|round(1) }}%</div>
+      </div>
+      <div class="wp-foot"><span>{{ a.team.abbrev }} 勝</span><span>{{ h.team.abbrev }} 勝</span></div>
+    </div>
+
+    <div class="buckets">
+      <div class="bcol">
+        <div class="bhead">{{ a.team.abbrev }} 得分級距</div>
+        {% for label, p in g.sim.away_buckets %}
+          <div class="brow {{ 'lead' if loop.first }}"><span class="bl">{{ label }}</span><span class="bb"><i style="width: {{ (p*300)|round(1) }}%"></i></span><span class="bp">{{ (p*100)|round(1) }}%</span></div>
+        {% endfor %}
+      </div>
+      <div class="bcol">
+        <div class="bhead">{{ h.team.abbrev }} 得分級距</div>
+        {% for label, p in g.sim.home_buckets %}
+          <div class="brow {{ 'lead' if loop.first }}"><span class="bl">{{ label }}</span><span class="bb"><i style="width: {{ (p*300)|round(1) }}%"></i></span><span class="bp">{{ (p*100)|round(1) }}%</span></div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="mini">
+      <div><span>預測總分</span><b>{{ g.pred_total|round(0)|int }}</b> <em>{{ g.pred_total_bucket }}</em></div>
+      <div><span>兩隊級距同時命中</span><b>{{ (g.sim.both_bucket_hit_prob*100)|round(1) }}%</b></div>
+      <div><span>最可能比分</span><b>{{ g.sim.likely_score }}</b></div>
+    </div>
+
+    <details class="detail">
+      <summary>缺陣與上場狀態（{{ (g.home.out_players|length) + (g.away.out_players|length) }} 位影響輪替）</summary>
+      <div class="detail-body">
+        {% for side in [a, h] %}
+          <div class="ds">
+            <h4>{{ side.team.abbrev }} · 預估少 {{ side.lost_points }} 分（可用性 {{ (side.availability*100)|round(0)|int }}%）</h4>
+            {% if side.out_players %}
+            <ul>
+              {% for p in side.out_players %}
+              <li>
+                <span class="st st-{{ p.status|lower }}">{{ p.status }}</span>
+                <b>{{ p.name }}</b> <em>{{ p.pos }}</em>
+                <span class="lost">影響 −{{ p.est_lost_points }} 分</span>
+                {% if p.conflict %}<span class="warn" title="來源不一致">⚠︎</span>{% endif %}
+              </li>
+              {% endfor %}
+            </ul>
+            {% else %}<p class="ok-note">主要輪替無傷病回報。</p>{% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </details>
+
+    <details class="detail">
+      <summary>預期輪替與分鐘分配</summary>
+      <div class="detail-body rot">
+        {% for side in [a, h] %}
+          <div class="ds">
+            <h4>{{ side.team.abbrev }}</h4>
+            <table class="mini-table">
+              <thead><tr><th>球員</th><th>MIN</th><th>PTS</th></tr></thead>
+              <tbody>
+              {% for p in side.rotation %}
+                <tr><td>{{ p.name }}</td><td>{{ p.proj_min }}</td><td>{{ p.proj_pts }}</td></tr>
+              {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        {% endfor %}
+      </div>
+    </details>
+  </article>
+{% endfor %}
+</div>
+
+<p class="disclaimer">模型假設：球員 per-36 產出可轉移、缺陣分鐘由替補吸收且效率下降、主場優勢 1.4 分。實際傷病名單以開賽前 30 分鐘官方公布為準，本站每次更新都會重抓。</p>
+{% endblock %}

@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block title %}命中率回測{% endblock %}
+{% block content %}
+{% set s = backtest.summary %}
+<section class="hero">
+  <div>
+    <h1>命中率回測</h1>
+    <p class="sub">每一次更新都會把當日預測存檔；比賽結束後自動用官方比分評分，不做任何事後修改。全部紀錄公開，含失準的場次。</p>
+  </div>
+  <div class="hero-stats">
+    <div><b>{{ s.games or 0 }}</b><span>已評分場次</span></div>
+    <div><b>{{ s.winner_acc or '—' }}%</b><span>勝負命中率</span></div>
+    <div><b>{{ s.mae_total or '—' }}</b><span>總分平均誤差</span></div>
+  </div>
+</section>
+
+{% if not s.games %}
+  <div class="empty">
+    <h3>回測從今天開始累積</h3>
+    <p>為了不做事後校準（避免後見之明偏誤），系統只記錄「更新當下」的預測，等比賽結束後再評分。目前還沒有已完成的比賽，下一次更新後就會出現第一批成績。</p>
+  </div>
+{% else %}
+<div class="kpis">
+  <div class="kpi"><span>勝負命中</span><b>{{ s.winner_acc }}%</b><em>{{ s.games }} 場</em></div>
+  <div class="kpi"><span>主隊級距命中</span><b>{{ s.home_bucket_acc }}%</b></div>
+  <div class="kpi"><span>客隊級距命中</span><b>{{ s.away_bucket_acc }}%</b></div>
+  <div class="kpi"><span>兩隊同時命中</span><b>{{ s.both_bucket_acc }}%</b></div>
+  <div class="kpi"><span>總分 MAE</span><b>{{ s.mae_total }}</b><em>分</em></div>
+  <div class="kpi"><span>Brier 分數</span><b>{{ s.brier }}</b><em>越低越好</em></div>
+</div>
+
+<div class="two-col">
+  <div>
+    <h2 class="sec">近期場次</h2>
+    <table class="board">
+      <thead><tr><th>日期</th><th>對戰</th><th>預測</th><th>實際</th><th>勝負</th><th>級距</th><th>誤差</th></tr></thead>
+      <tbody>
+      {% for r in backtest.records %}
+        <tr>
+          <td>{{ r.date[5:] }}</td>
+          <td><b>{{ r.away }}</b> @ <b>{{ r.home }}</b></td>
+          <td class="mono">{{ r.pred_away|round(0)|int }}–{{ r.pred_home|round(0)|int }}</td>
+          <td class="mono">{{ r.act_away }}–{{ r.act_home }}</td>
+          <td>{% if r.winner_hit %}<span class="hit">✓</span>{% else %}<span class="miss">✕</span>{% endif %}</td>
+          <td>
+            {% if r.both_bucket_hit %}<span class="hit">✓✓</span>
+            {% elif r.home_bucket_hit or r.away_bucket_hit %}<span class="half">✓</span>
+            {% else %}<span class="miss">✕</span>{% endif %}
+          </td>
+          <td class="mono">{{ r.abs_err_total }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <aside>
+    <h2 class="sec">滾動表現</h2>
+    {% for label, r in [('近 7 天', backtest.rolling7), ('近 30 天', backtest.rolling30), ('全部', s)] %}
+    <div class="roll">
+      <h4>{{ label }} <span>{{ r.games or 0 }} 場</span></h4>
+      <div class="roll-row"><span>勝負</span><b>{{ r.winner_acc or '—' }}%</b></div>
+      <div class="roll-row"><span>兩隊級距</span><b>{{ r.both_bucket_acc or '—' }}%</b></div>
+      <div class="roll-row"><span>總分 MAE</span><b>{{ r.mae_total or '—' }}</b></div>
+    </div>
+    {% endfor %}
+  </aside>
+</div>
+{% endif %}
+{% endblock %}
