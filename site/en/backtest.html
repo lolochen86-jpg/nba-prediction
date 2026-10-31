@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Backtesting · HoopsLab</title>
+<meta content="NBA pregame predictions based on available lineups: scoring ranges, straight-up win probabilities and per-36 rankings for rookies and sophomores." name="description"/>
+<link href="../style.css?v=bilingual-20261031" rel="stylesheet"/>
+<link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;🏀&lt;/text&gt;&lt;/svg&gt;" rel="icon"/>
+</head>
+<body>
+<header class="top">
+<div class="wrap topbar">
+<a class="brand" href="index.html">
+<span class="ball"></span>
+<span>HoopsLab<small>NBA pregame predictions</small></span>
+</a>
+<nav>
+<a class="" href="index.html">Predictions</a>
+<a class="" href="rookies.html">Rookie rankings</a>
+<a class="on" href="backtest.html">Backtesting</a>
+<a class="" href="method.html">Method &amp; sources</a>
+<span aria-label="Language" class="language-switch">
+<a data-language="zh" href="../backtest.html" id="langZh">中文</a>
+<a aria-current="true" data-language="en" href="backtest.html" id="langEn">English</a>
+</span>
+</nav>
+</div>
+<div class="wrap statusbar">
+<div class="stamp">Last updated <b>2026-10-31 09:27</b> (Taipei) · Season 2026-27</div>
+<div class="stamp-links">
+<button aria-controls="manualUpdatePanel" aria-expanded="false" class="btn-ghost primary" id="manualUpdateBtn">Update data</button>
+<button class="btn-ghost" id="reloadBtn" title="Reload this page">Reload page</button>
+</div>
+</div>
+<div class="wrap health">
+<span class="chip ok" title="Schedules, rosters &amp; team statistics">
+<i></i>ESPN API <em>60</em>
+</span>
+<span class="chip ok" title="Player statistics per 36 minutes">
+<i></i>Basketball-Reference <em>453</em>
+</span>
+<span class="chip ok" title="Injury reports">
+<i></i>CBS Sports <em>89</em>
+</span>
+<span class="chip ok" title="Injury reports">
+<i></i>Yahoo Sports <em>92</em>
+</span>
+<span class="chip ok" title="Player headshots">
+<i></i>NBA CDN <em>522</em>
+</span>
+<span class="chip neutral" title="Players with conflicting reports across the three injury sources">Injury conflicts 6</span>
+</div>
+</header>
+<div class="wrap"><div class="stale" hidden="" id="staleBar"></div></div>
+<section aria-label="Manual update" class="wrap update-panel" hidden="" id="manualUpdatePanel">
+<h2>Update data</h2>
+<p>Start an update with your GitHub account: open the link below, select the main branch, then choose Run workflow. The workflow fetches fresh data, validates the rookie rankings and deploys the site. This page will tell you when new data is live.</p>
+<a class="btn-ghost primary" href="https://github.com/lolochen86-jpg/nba-prediction/actions/workflows/update.yml" id="runWorkflowLink" rel="noopener noreferrer" target="_blank">Open GitHub · Run workflow ↗</a>
+<a class="btn-ghost" href="https://github.com/lolochen86-jpg/nba-prediction/actions/workflows/update.yml" id="workflowRunLink" rel="noopener noreferrer" target="_blank">View run logs ↗</a>
+<p aria-live="polite" id="updateStatus" role="status">Checking the latest update…</p>
+<p class="note">Only GitHub accounts with write access to this repository can start updates. Reloading the page only loads the existing snapshot.</p>
+</section>
+<main class="wrap">
+<section class="hero">
+<div>
+<h1>Backtesting</h1>
+<p class="sub">Each update archives predictions. Completed games are graded against official scores. Published results include incorrect predictions as well as correct ones.</p>
+</div>
+<div class="hero-stats">
+<div><b>0</b><span>Graded games</span></div>
+<div><b>—%</b><span>Winner accuracy</span></div>
+<div><b>—</b><span>Mean total-score error</span></div>
+</div>
+</section>
+<div class="empty">
+<h3>Backtesting starts with saved predictions</h3>
+<p>To avoid hindsight calibration, predictions are saved at update time and graded after games finish. There are currently no graded games; results will appear after a subsequent update processes completed games.</p>
+</div>
+</main>
+<footer class="wrap foot">
+<p>Sources: ESPN · Basketball-Reference · CBS Sports · Yahoo Sports · NBA CDN (cross-checked across sources).</p>
+<p>All figures are model estimates for research and discussion, and are not betting advice.</p>
+<p class="muted">Snapshot built 2026-10-31T01:27:09+00:00 UTC · Each update fetches rosters, injury reports and per-36 statistics, then recalculates the model.</p>
+</footer>
+<script>window.HOOPSLAB_BUILT_AT = "2026-10-31T01:27:09+00:00";</script>
+<script defer="" src="../app.js?v=bilingual-20261031"></script>
+</body>
+</html>

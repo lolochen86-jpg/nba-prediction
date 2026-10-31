@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>方法與資料源 · HoopsLab</title>
 <meta name="description" content="NBA 賽前預測：依實際會上場球員推算兩隊得分級距與不讓分勝率，附新人（一年級＋二年級）每 36 分鐘排行榜。">
-<link rel="stylesheet" href="style.css?v=layout-large-20261031">
+<link rel="stylesheet" href="style.css?v=bilingual-20261031">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏀</text></svg>">
 </head>
 <body>
@@ -20,12 +20,16 @@
       <a href="rookies.html" class="">新人榜</a>
       <a href="backtest.html" class="">命中率回測</a>
       <a href="method.html" class="on">方法與資料源</a>
+      <span class="language-switch" aria-label="語言">
+        <a id="langZh" href="method.html" data-language="zh" aria-current="true">中文</a>
+        <a id="langEn" href="en/method.html" data-language="en">English</a>
+      </span>
     </nav>
   </div>
   <div class="wrap statusbar">
     <div class="stamp">最後更新 <b>2026-10-31 09:27</b>（台灣時間）· 球季 2026-27</div>
     <div class="stamp-links">
-      <a class="btn-ghost" href="method.html#update" title="這份資料是怎麼產生的、怎麼更新">更新方式</a>
+      <button id="manualUpdateBtn" class="btn-ghost primary" aria-expanded="false" aria-controls="manualUpdatePanel">手動更新資料</button>
       <button id="reloadBtn" class="btn-ghost" title="重新載入本頁">重新整理</button>
     </div>
   </div>
@@ -50,12 +54,20 @@
 </header>
 
 <div class="wrap"><div id="staleBar" class="stale" hidden></div></div>
+<section id="manualUpdatePanel" class="wrap update-panel" hidden aria-label="手動更新">
+  <h2>更新資料</h2>
+  <p>使用你的 GitHub 帳號啟動更新：開啟下方連結，選 main 分支，再按 Run workflow。系統會重新抓取資料、驗證新人榜並部署；完成後此頁會提示載入新資料。</p>
+  <a class="btn-ghost primary" id="runWorkflowLink" href="https://github.com/lolochen86-jpg/nba-prediction/actions/workflows/update.yml" target="_blank" rel="noopener noreferrer">開啟 GitHub · Run workflow ↗</a>
+  <a class="btn-ghost" id="workflowRunLink" href="https://github.com/lolochen86-jpg/nba-prediction/actions/workflows/update.yml" target="_blank" rel="noopener noreferrer">查看執行紀錄 ↗</a>
+  <p id="updateStatus" role="status" aria-live="polite">讀取最近一次更新狀態…</p>
+  <p class="note">只有擁有儲存庫寫入權限的 GitHub 帳號可以啟動更新。重新整理只會載入現有資料。</p>
+</section>
 
 <main class="wrap">
 <section class="hero">
   <div>
     <h1>方法與資料源</h1>
-    <p class="sub">整個流程每天在雲端自動重跑：抓名單 → 比對傷病 → 更新 per-36 數據 → 分配上場分鐘 → 算兩隊得分 → 蒙地卡羅出勝率與級距 → 產生網頁 → 部署。</p>
+    <p class="sub">更新流程：抓名單 → 比對傷病 → 更新 per-36 數據 → 分配上場分鐘 → 算兩隊得分 → 蒙地卡羅出勝率與級距 → 產生網頁 → 部署。</p>
   </div>
 </section>
 
@@ -116,12 +128,12 @@
     <h2 class="sec" id="update">更新方式</h2>
     <p class="note" style="margin:0 0 .7rem">本站目前是<strong>靜態快照</strong>：每次更新都重新抓名單、三家傷病報告與 per-36 數據，整份重算後重新部署。頁面上方的「最後更新」就是這份快照的產生時間。</p>
     <ul class="sched">
-      <li><b>手動</b><span>在對話中要求更新 → 重新上傳新檔</span></li>
+      <li><b>手動</b><span>點「手動更新資料」→ GitHub → Run workflow</span></li>
       <li><b>07:00</b><span>台灣時間（可設定自動）</span></li>
       <li><b>14:00</b><span>台灣時間（可設定自動）</span></li>
       <li><b>21:00</b><span>台灣時間（開賽前最終版，可設定自動）</span></li>
     </ul>
-    <p class="note" style="margin:0 0 1.2rem">開啟自動更新的條件：把 Cloudflare 權杖加上「帳戶 › Cloudflare Pages › 編輯」權限，之後由排程自動重跑並重新部署，上方時程就會生效。</p>
+    <p class="note" style="margin:0 0 1.2rem">GitHub 更新流程需要在儲存庫 Secrets 設定 CLOUDFLARE_API_TOKEN（Cloudflare Pages 編輯權限）。手動更新會使用全新快取重新抓取資料；驗證失敗時不會部署。</p>
 
     <h2 class="sec">已知限制</h2>
     <ul class="limits">
@@ -140,25 +152,7 @@
   <p class="muted">建置時間 2026-10-31T01:27:09+00:00 UTC · 每次更新自動重新抓取名單、傷病與 per-36 數據後重算。</p>
 </footer>
 
-<script>
-// 資料快照時間（台灣時間）→ 超過 12 小時就在頁面上警示
-const BUILT_AT = "2026-10-31T01:27:09+00:00";
-const RELOAD = document.getElementById('reloadBtn');
-if (RELOAD) RELOAD.addEventListener('click', () => location.reload());
-
-(function () {
-  const bar = document.getElementById('staleBar');
-  if (!bar || !BUILT_AT) return;
-  const built = new Date(BUILT_AT);
-  if (isNaN(built)) return;
-  const hours = (Date.now() - built.getTime()) / 36e5;
-  if (hours < 12) return;
-  const days = Math.floor(hours / 24);
-  const age = days >= 1 ? days + ' 天' : Math.round(hours) + ' 小時';
-  bar.innerHTML = '⚠ 這份預測是 <b>' + age + '</b>前產生的快照，最新傷病與賽程可能已經變動。'
-    + '本站目前為手動更新：請在對話中要求更新，再重新上傳新檔。';
-  bar.hidden = false;
-})();
-</script>
+<script>window.HOOPSLAB_BUILT_AT = "2026-10-31T01:27:09+00:00";</script>
+<script src="app.js?v=bilingual-20261031" defer></script>
 </body>
 </html>

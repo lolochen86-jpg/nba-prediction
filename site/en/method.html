@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Method &amp; sources · HoopsLab</title>
+<meta content="NBA pregame predictions based on available lineups: scoring ranges, straight-up win probabilities and per-36 rankings for rookies and sophomores." name="description"/>
+<link href="../style.css?v=bilingual-20261031" rel="stylesheet"/>
+<link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;🏀&lt;/text&gt;&lt;/svg&gt;" rel="icon"/>
+</head>
+<body>
+<header class="top">
+<div class="wrap topbar">
+<a class="brand" href="index.html">
+<span class="ball"></span>
+<span>HoopsLab<small>NBA pregame predictions</small></span>
+</a>
+<nav>
+<a class="" href="index.html">Predictions</a>
+<a class="" href="rookies.html">Rookie rankings</a>
+<a class="" href="backtest.html">Backtesting</a>
+<a class="on" href="method.html">Method &amp; sources</a>
+<span aria-label="Language" class="language-switch">
+<a data-language="zh" href="../method.html" id="langZh">中文</a>
+<a aria-current="true" data-language="en" href="method.html" id="langEn">English</a>
+</span>
+</nav>
+</div>
+<div class="wrap statusbar">
+<div class="stamp">Last updated <b>2026-10-31 09:27</b> (Taipei) · Season 2026-27</div>
+<div class="stamp-links">
+<button aria-controls="manualUpdatePanel" aria-expanded="false" class="btn-ghost primary" id="manualUpdateBtn">Update data</button>
+<button class="btn-ghost" id="reloadBtn" title="Reload this page">Reload page</button>
+</div>
+</div>
+<div class="wrap health">
+<span class="chip ok" title="Schedules, rosters &amp; team statistics">
+<i></i>ESPN API <em>60</em>
+</span>
+<span class="chip ok" title="Player statistics per 36 minutes">
+<i></i>Basketball-Reference <em>453</em>
+</span>
+<span class="chip ok" title="Injury reports">
+<i></i>CBS Sports <em>89</em>
+</span>
+<span class="chip ok" title="Injury reports">
+<i></i>Yahoo Sports <em>92</em>
+</span>
+<span class="chip ok" title="Player headshots">
+<i></i>NBA CDN <em>522</em>
+</span>
+<span class="chip neutral" title="Players with conflicting reports across the three injury sources">Injury conflicts 6</span>
+</div>
+</header>
+<div class="wrap"><div class="stale" hidden="" id="staleBar"></div></div>
+<section aria-label="Manual update" class="wrap update-panel" hidden="" id="manualUpdatePanel">
+<h2>Update data</h2>
+<p>Start an update with your GitHub account: open the link below, select the main branch, then choose Run workflow. The workflow fetches fresh data, validates the rookie rankings and deploys the site. This page will tell you when new data is live.</p>
+<a class="btn-ghost primary" href="https://github.com/lolochen86-jpg/nba-prediction/actions/workflows/update.yml" id="runWorkflowLink" rel="noopener noreferrer" target="_blank">Open GitHub · Run workflow ↗</a>
+<a class="btn-ghost" href="https://github.com/lolochen86-jpg/nba-prediction/actions/workflows/update.yml" id="workflowRunLink" rel="noopener noreferrer" target="_blank">View run logs ↗</a>
+<p aria-live="polite" id="updateStatus" role="status">Checking the latest update…</p>
+<p class="note">Only GitHub accounts with write access to this repository can start updates. Reloading the page only loads the existing snapshot.</p>
+</section>
+<main class="wrap">
+<section class="hero">
+<div>
+<h1>Method &amp; sources</h1>
+<p class="sub">Update pipeline: fetch rosters → reconcile injuries → update per-36 statistics → allocate minutes → estimate scores → simulate win probabilities and scoring ranges → generate pages → deploy.</p>
+</div>
+</section>
+<div class="two-col wide-left">
+<div>
+<h2 class="sec">Prediction pipeline</h2>
+<ol class="steps">
+<li><b>Available roster</b> — ESPN team rosters include experience, position and headshots; only available players enter the lineup.</li>
+<li><b>Injury adjustments</b> — Injury reports from ESPN, CBS and Yahoo are compared; the most restrictive reported status determines availability: <code>Out / Suspended → 0 minutes</code>、<code>Doubtful → 15%</code>、<code>Questionable → 50%</code>、
+        <code>Day-to-day → 75%</code>、<code>Probable → 95%</code>. Conflicting reports are flagged on the game card with <span class="warn">⚠︎</span>。</li>
+<li><b>Player strength</b> — Current-season Basketball-Reference per-36 statistics are shrunk toward previous-season values (k=12 games) to reduce early-season small-sample volatility. Missing current players are supplemented with current-season ESPN regular-season logs.</li>
+<li><b>Minutes allocation</b> — Allocate 240 team minutes using potential output per minute and scoring weights, capped at 40 minutes per player. Unavailable minutes shift to replacements, including their lower projected efficiency.</li>
+<li><b>Team efficiency</b> — Available-lineup scoring divided by full-lineup scoring produces an availability index. Adjusted offensive efficiency is geometrically blended with opposing defensive efficiency (0.58 / 0.42) to estimate points per possession.</li>
+<li><b>Game prediction</b> — Expected possessions × points per possession gives expected points, with a ±1.4-point home-court adjustment.</li>
+<li><b>Uncertainty</b> — σ = 10.3 points plus injury uncertainty and an early-season small-sample penalty, capped at 15 points.</li>
+<li><b>Monte Carlo simulation</b> — 20,000 simulations produce straight-up win probabilities, five-point scoring-range probabilities and the most likely score.</li>
+</ol>
+<h2 class="sec">Reading scoring ranges</h2>
+<p class="note wide">Scoring ranges use five-point intervals: 101–105, 106–110, 111–115, etc. Each card shows the four most likely ranges for each team. Hitting both teams' ranges is less likely than hitting one; backtesting reports these separately.</p>
+<h2 class="sec">Rookie ranking metrics</h2>
+<p class="note wide">Rookies and sophomores are ranked together by Game Score per 36 minutes so playing time alone does not determine rank.<b>Seven-day improvement</b>compares GS/36 over the last seven days with season GS/36, showing the 15 biggest improvements with at least two recent games.</p>
+</div>
+<aside>
+<h2 class="sec">Cross-checking sources</h2>
+<ul class="srcs">
+<li class="ok">
+<b>ESPN API</b>
+<span>Schedules, rosters &amp; team statistics</span>
+<em>60</em>
+</li>
+<li class="ok">
+<b>Basketball-Reference</b>
+<span>Player statistics per 36 minutes</span>
+<em>453</em>
+</li>
+<li class="ok">
+<b>CBS Sports</b>
+<span>Injury reports</span>
+<em>89</em>
+</li>
+<li class="ok">
+<b>Yahoo Sports</b>
+<span>Injury reports</span>
+<em>92</em>
+</li>
+<li class="ok">
+<b>NBA CDN</b>
+<span>Player headshots</span>
+<em>522</em>
+</li>
+</ul>
+<p class="note">Injury reports: ESPN 85, CBS 89, Yahoo 92; 6 conflicting players.</p>
+<h2 class="sec" id="update">How updates work</h2>
+<p class="note" style="margin:0 0 .7rem">This site serves a<strong>static snapshot</strong>: each update fetches rosters, three injury feeds and per-36 statistics, recalculates the model and redeploys. Last updated at the top is the snapshot's generation time.</p>
+<ul class="sched">
+<li><b>Manual</b><span>Select Update data → GitHub → Run workflow</span></li>
+<li><b>07:00</b><span>Taipei time (scheduled workflow)</span></li>
+<li><b>14:00</b><span>Taipei time (scheduled workflow)</span></li>
+<li><b>21:00</b><span>Taipei time (scheduled pregame update)</span></li>
+</ul>
+<p class="note" style="margin:0 0 1.2rem">The GitHub workflow requires CLOUDFLARE_API_TOKEN in repository Secrets with Cloudflare Pages edit access. Manual updates use a fresh cache to fetch current data. Failed validation stops deployment.</p>
+<h2 class="sec">Known limitations</h2>
+<ul class="limits">
+<li>No betting lines or odds are used; predictions are based on lineups and efficiency.</li>
+<li>Back-to-back games, travel and unannounced load management are not modeled.</li>
+<li>Samples are small during the first 10 games; uncertainty increases and confidence falls.</li>
+<li>Where current data are unavailable, traded or two-way players may use prior-season statistics or league-average estimates.</li>
+</ul>
+</aside>
+</div>
+</main>
+<footer class="wrap foot">
+<p>Sources: ESPN · Basketball-Reference · CBS Sports · Yahoo Sports · NBA CDN (cross-checked across sources).</p>
+<p>All figures are model estimates for research and discussion, and are not betting advice.</p>
+<p class="muted">Snapshot built 2026-10-31T01:27:09+00:00 UTC · Each update fetches rosters, injury reports and per-36 statistics, then recalculates the model.</p>
+</footer>
+<script>window.HOOPSLAB_BUILT_AT = "2026-10-31T01:27:09+00:00";</script>
+<script defer="" src="../app.js?v=bilingual-20261031"></script>
+</body>
+</html>

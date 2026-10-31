@@ -1,7 +1,7 @@
 # HoopsLab — NBA 賽前預測 + 新人榜
 
 以「今天真的會上場的球員」為基礎的 NBA 賽前預測網站，加上一年級／二年級新人排行。
-每天自動更新三次（台灣時間 07:00 / 14:00 / 21:00），網站上另有手動更新按鈕。
+提供中文與英文版本，右上角可切換並記住語言。GitHub workflow 已設定台灣時間 07:00 / 14:00 / 21:00 排程；執行部署前必須先設定下方 Cloudflare secret。
 
 ## 網站內容
 
@@ -46,34 +46,47 @@
 pip install -r requirements.txt
 python -m pipeline.build            # 完整建置（含賽後評分）
 python -m pipeline.build --no-grade # 只跑預測
+python -m pipeline.validate          # 驗證兩個新人年級、場次與八個中英文頁面
+python -m unittest discover -s tests -v
 ```
 
 輸出在 `site/`，直接用瀏覽器開 `site/index.html` 即可。
 
-## 部署到 Vercel
+## 中英文與手動更新
 
-1. 把這個資料夾推上 GitHub（private 也可以）。
-2. GitHub → Settings → Actions → General，確認 Workflow permissions 為 **Read and write**。
-3. Vercel → Add New Project → 匯入該 repo（framework 選 **Other**，root 保持預設）。
-   專案已附 `vercel.json`，`outputDirectory` 指向 `site/`，不需要建置指令。
-4. 在 Vercel 專案 → Settings → Environment Variables 加入：
-   - `GITHUB_TOKEN`：fine-grained PAT，權限 `Actions: Read and write`（僅此 repo）
-   - `GITHUB_REPO`：`<你的帳號>/<repo 名稱>`
-   - `GITHUB_WORKFLOW`（選填）：預設 `update.yml`
-5. 重新部署一次，網站右上角的「手動更新」按鈕即可用。
+- 中文：`https://nba-prediction-00.pages.dev/`
+- English: `https://nba-prediction-00.pages.dev/en/`
+- 各頁面右上角的「中文 / English」會保留目前頁面，語言偏好儲存在本機瀏覽器。
+- 「手動更新資料 / Update data」會展開更新面板。按 Open GitHub，使用有此 repo 寫入權限的帳號，選 `main` 再按 **Run workflow**。
+- 網站只讀取公開的執行狀態，不持有 GitHub 或 Cloudflare 權杖。流程成功與新快照實際上線會分別顯示；新快照可按「載入新資料」。
+- 「重新整理 / Reload page」只載入現有資料，不會啟動重算。
 
-排程由 `.github/workflows/update.yml` 控制，改 `cron` 即可調整更新時間（UTC 時間）。
+## Cloudflare Pages 與 GitHub Actions 設定
+
+1. 在 GitHub repo **Settings → Secrets and variables → Actions** 新增 `CLOUDFLARE_API_TOKEN`。
+2. 權杖需有此 Cloudflare 帳戶的 **Cloudflare Pages → Edit** 權限。請透過 GitHub Secrets 填入，不寫進程式、JSON 或網頁。
+3. 帳戶 ID 已在 workflow 提供預設值；如需覆寫，可設定 `CLOUDFLARE_ACCOUNT_ID` secret。
+4. 開啟 **Actions → 更新 NBA 預測網站 → Run workflow**，選 `main` 執行。
+5. 手動執行使用全新的資料快取；排程執行則沿用快取。建置後會跑測試與資料驗證，通過才部署 `nba-prediction-00`，並驗證正式站 JSON 與八個頁面。
+
+排程由 `.github/workflows/update.yml` 控制。GitHub 排程可能延遲；以 workflow 執行紀錄與網站「最後更新」為準。
+
+本機已授權 Wrangler 時也可部署：
+
+```bash
+npx --yes wrangler@latest pages deploy site --project-name nba-prediction-00 --branch main --commit-dirty=true
+```
 
 ## 資料夾結構
 
 ```
 pipeline/      抓資料、模型、新人榜、回測、網站產生
 templates/     Jinja2 頁面模板
-static/        樣式表
-site/          產出的靜態網站（Vercel 的 outputDirectory）
+static/        樣式表、語言記憶與手動更新狀態介面
+site/          Cloudflare Pages 部署目錄（含 en/ 英文頁）
 data/predictions/  每次更新的預測快照（回測用，需進版控）
 data/results/      賽後評分結果（回測用，需進版控）
-api/refresh.js 手動更新 API（Vercel serverless function）
+tests/         語言連結與資料驗證回歸測試
 ```
 
 > 免責：所有數字為模型估計值，僅供研究與討論，不構成任何投注建議。

@@ -4,7 +4,7 @@
 <section class="hero">
   <div>
     <h1>方法與資料源</h1>
-    <p class="sub">整個流程每天在雲端自動重跑：抓名單 → 比對傷病 → 更新 per-36 數據 → 分配上場分鐘 → 算兩隊得分 → 蒙地卡羅出勝率與級距 → 產生網頁 → 部署。</p>
+    <p class="sub">更新流程：抓名單 → 比對傷病 → 更新 per-36 數據 → 分配上場分鐘 → 算兩隊得分 → 蒙地卡羅出勝率與級距 → 產生網頁 → 部署。</p>
   </div>
 </section>
 
@@ -47,12 +47,12 @@
     <h2 class="sec" id="update">更新方式</h2>
     <p class="note" style="margin:0 0 .7rem">本站目前是<strong>靜態快照</strong>：每次更新都重新抓名單、三家傷病報告與 per-36 數據，整份重算後重新部署。頁面上方的「最後更新」就是這份快照的產生時間。</p>
     <ul class="sched">
-      <li><b>手動</b><span>在對話中要求更新 → 重新上傳新檔</span></li>
+      <li><b>手動</b><span>點「手動更新資料」→ GitHub → Run workflow</span></li>
       <li><b>07:00</b><span>台灣時間（可設定自動）</span></li>
       <li><b>14:00</b><span>台灣時間（可設定自動）</span></li>
       <li><b>21:00</b><span>台灣時間（開賽前最終版，可設定自動）</span></li>
     </ul>
-    <p class="note" style="margin:0 0 1.2rem">開啟自動更新的條件：把 Cloudflare 權杖加上「帳戶 › Cloudflare Pages › 編輯」權限，之後由排程自動重跑並重新部署，上方時程就會生效。</p>
+    <p class="note" style="margin:0 0 1.2rem">GitHub 更新流程需要在儲存庫 Secrets 設定 CLOUDFLARE_API_TOKEN（Cloudflare Pages 編輯權限）。手動更新會使用全新快取重新抓取資料；驗證失敗時不會部署。</p>
 
     <h2 class="sec">已知限制</h2>
     <ul class="limits">

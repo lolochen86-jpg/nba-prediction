@@ -247,6 +247,18 @@ nav a.on{color:#0b1017;background:linear-gradient(120deg,var(--acc2),var(--acc))
 .fbtn.on{background:linear-gradient(120deg,var(--acc2),var(--acc));color:#0b1017;border-color:transparent}
 .fbtn.on em{color:#3a1c05}
 
+[hidden]{display:none!important}
+.language-switch{display:inline-flex;border:1px solid var(--line2);border-radius:999px;margin-left:.4rem;align-items:center}
+.language-switch a{font-size:.78rem;padding:.3rem .6rem}
+.language-switch a[aria-current="true"]{color:var(--acc2);background:#241a12}
+.btn-ghost.primary{border-color:var(--acc);color:var(--acc2)}
+.update-panel{margin-block:1rem;padding:1.2rem;border:1px solid var(--line2);border-radius:var(--r);background:var(--card)}
+.update-panel h2{font-size:1.1rem}
+.update-panel p{font-size:.85rem;color:var(--dim)}
+.update-panel .btn-ghost{margin:.2rem .4rem .2rem 0}
+.stamp-links{flex-wrap:wrap}
+nav{justify-content:flex-end}
+
 /* Keep enlarged tables readable on smaller screens. */
 .two-col > *{min-width:0}
 .table-scroll{max-width:100%;overflow-x:auto;border-radius:var(--r)}

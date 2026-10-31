@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Today's predictions · HoopsLab</title>
+<meta content="NBA pregame predictions based on available lineups: scoring ranges, straight-up win probabilities and per-36 rankings for rookies and sophomores." name="description"/>
+<link href="../style.css?v=bilingual-20261031" rel="stylesheet"/>
+<link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;🏀&lt;/text&gt;&lt;/svg&gt;" rel="icon"/>
+</head>
+<body>
+<header class="top">
+<div class="wrap topbar">
+<a class="brand" href="index.html">
+<span class="ball"></span>
+<span>HoopsLab<small>NBA pregame predictions</small></span>
+</a>
+<nav>
+<a class="on" href="index.html">Predictions</a>
+<a class="" href="rookies.html">Rookie rankings</a>
+<a class="" href="backtest.html">Backtesting</a>
+<a class="" href="method.html">Method &amp; sources</a>
+<span aria-label="Language" class="language-switch">
+<a data-language="zh" href="../index.html" id="langZh">中文</a>
+<a aria-current="true" data-language="en" href="index.html" id="langEn">English</a>
+</span>
+</nav>
+</div>
+<div class="wrap statusbar">
+<div class="stamp">Last updated <b>2026-10-31 09:27</b> (Taipei) · Season 2026-27</div>
+<div class="stamp-links">
+<button aria-controls="manualUpdatePanel" aria-expanded="false" class="btn-ghost primary" id="manualUpdateBtn">Update data</button>
+<button class="btn-ghost" id="reloadBtn" title="Reload this page">Reload page</button>
+</div>
+</div>
+<div class="wrap health">
+<span class="chip ok" title="Schedules, rosters &amp; team statistics">
+<i></i>ESPN API <em>60</em>
+</span>
+<span class="chip ok" title="Player statistics per 36 minutes">
+<i></i>Basketball-Reference <em>453</em>
+</span>
+<span class="chip ok" title="Injury reports">
+<i></i>CBS Sports <em>89</em>
+</span>
+<span class="chip ok" title="Injury reports">
+<i></i>Yahoo Sports <em>92</em>
+</span>
+<span class="chip ok" title="Player headshots">
+<i></i>NBA CDN <em>522</em>
+</span>
+<span class="chip neutral" title="Players with conflicting reports across the three injury sources">Injury conflicts 6</span>
+</div>
+</header>
+<div class="wrap"><div class="stale" hidden="" id="staleBar"></div></div>
+<section aria-label="Manual update" class="wrap update-panel" hidden="" id="manualUpdatePanel">
+<h2>Update data</h2>
+<p>Start an update with your GitHub account: open the link below, select the main branch, then choose Run workflow. The workflow fetches fresh data, validates the rookie rankings and deploys the site. This page will tell you when new data is live.</p>
+<a class="btn-ghost primary" href="https://github.com/lolochen86-jpg/nba-prediction/actions/workflows/update.yml" id="runWorkflowLink" rel="noopener noreferrer" target="_blank">Open GitHub · Run workflow ↗</a>
+<a class="btn-ghost" href="https://github.com/lolochen86-jpg/nba-prediction/actions/workflows/update.yml" id="workflowRunLink" rel="noopener noreferrer" target="_blank">View run logs ↗</a>
+<p aria-live="polite" id="updateStatus" role="status">Checking the latest update…</p>
+<p class="note">Only GitHub accounts with write access to this repository can start updates. Reloading the page only loads the existing snapshot.</p>
+</section>
+<main class="wrap">
+<section class="hero">
+<div>
+<h1>Today's predictions <small class="gdate">2026-10-30(US Eastern game date)</small></h1>
+<p class="sub">Scores are estimated from available lineups, then converted into five-point scoring ranges and <b>Straight-up win probability</b>. Players absent through injury, suspension or personal reasons are removed; their minutes are redistributed to available teammates.</p>
+</div>
+<div class="hero-stats">
+<div><b>10</b><span>Games today</span></div>
+<div><b>114.3</b><span>League points per game</span></div>
+<div><b>103.8</b><span>League possessions per game</span></div>
+</div>
+</section>
+<div class="cards">
+<article class="card">
+<div class="card-top">
+<span class="tipoff">10/31 07:00</span>
+<span class="tag">Pregame</span> <span class="venue">Capital One Arena</span>
+</div>
+<div class="matchup">
+<div class="side">
+<img alt="CHA" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/cha.png"/>
+<div class="abbr">CHA</div>
+<div class="tname">Charlotte Hornets</div>
+</div>
+<div class="score">
+<div class="nums"><span class="dimmer">100</span><i>:</i><span class="">111</span></div>
+<div class="score-note">Predicted score (away : home)</div>
+<div class="margin">Expected margin +14.0</div>
+</div>
+<div class="side winner">
+<img alt="WSH" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/wsh.png"/>
+<div class="abbr">WSH</div>
+<div class="tname">Washington Wizards</div>
+</div>
+</div>
+<div class="winprob">
+<div class="wp-head"><span>Straight-up win probability</span><span class="stars">★★★★☆ <em>Confidence</em></span></div>
+<div class="wp-bar">
+<div class="wp-away" style="width: 19.5%">19.5%</div>
+<div class="wp-home" style="width: 80.5%">80.5%</div>
+</div>
+<div class="wp-foot"><span>CHA win</span><span>WSH win</span></div>
+</div>
+<div class="buckets">
+<div class="bcol">
+<div class="bhead">CHA Scoring range</div>
+<div class="brow lead"><span class="bl">96-100</span><span class="bb"><i style="width: 53.3%"></i></span><span class="bp">17.8%</span></div>
+<div class="brow"><span class="bl">101-105</span><span class="bb"><i style="width: 47.2%"></i></span><span class="bp">15.7%</span></div>
+<div class="brow"><span class="bl">91-95</span><span class="bb"><i style="width: 47.1%"></i></span><span class="bp">15.7%</span></div>
+<div class="brow"><span class="bl">106-110</span><span class="bb"><i style="width: 35.3%"></i></span><span class="bp">11.8%</span></div>
+</div>
+<div class="bcol">
+<div class="bhead">WSH Scoring range</div>
+<div class="brow lead"><span class="bl">111-115</span><span class="bb"><i style="width: 52.6%"></i></span><span class="bp">17.5%</span></div>
+<div class="brow"><span class="bl">106-110</span><span class="bb"><i style="width: 49.6%"></i></span><span class="bp">16.5%</span></div>
+<div class="brow"><span class="bl">116-120</span><span class="bb"><i style="width: 45.0%"></i></span><span class="bp">15.0%</span></div>
+<div class="brow"><span class="bl">101-105</span><span class="bb"><i style="width: 38.2%"></i></span><span class="bp">12.7%</span></div>
+</div>
+</div>
+<div class="mini">
+<div><span>Predicted total</span><b>211</b> <em>211-215</em></div>
+<div><span>Both scoring ranges hit</span><b>3.1%</b></div>
+<div><span>Most likely score</span><b>100-114</b></div>
+</div>
+<details class="detail">
+<summary>Absences &amp; availability (6 rotation players affected)</summary>
+<div class="detail-body">
+<div class="ds">
+<h4>CHA · Estimated loss: 16.6 points (availability 86%)</h4>
+<ul>
+<li>
+<span class="st st-out">OUT</span>
+<b>Kon Knueppel</b> <em>G</em>
+<span class="lost">Impact −7.1 points</span>
+</li>
+<li>
+<span class="st st-out">OUT</span>
+<b>Coby White</b> <em>G</em>
+<span class="lost">Impact −6.0 points</span>
+</li>
+<li>
+<span class="st st-out">OUT</span>
+<b>Grant Williams</b> <em>F</em>
+<span class="lost">Impact −2.7 points</span>
+</li>
+</ul>
+</div>
+<div class="ds">
+<h4>WSH · Estimated loss: 0.0 points (availability 100%)</h4>
+<ul>
+<li>
+<span class="st st-out">OUT</span>
+<b>Justin Champagnie</b> <em>F</em>
+<span class="lost">Impact −0.0 points</span>
+</li>
+<li>
+<span class="st st-out">OUT</span>
+<b>Tristan Vukcevic</b> <em>F</em>
+<span class="lost">Impact −0.0 points</span>
+</li>
+<li>
+<span class="st st-out">OUT</span>
+<b>Jamir Watkins</b> <em>G</em>
+<span class="lost">Impact −0.0 points</span>
+</li>
+</ul>
+</div>
+</div>
+</details>
+<details class="detail">
+<summary>Expected rotation &amp; minutes</summary>
+<div class="detail-body rot">
+<div class="ds">
+<h4>CHA</h4>
+<table class="mini-table">
+<thead><tr><th>Player</th><th>MIN</th><th>PTS</th></tr></thead>
+<tbody>
+<tr><td>Brandon Miller</td><td>32.7</td><td>22.4</td></tr>
+<tr><td>Grayson Allen</td><td>29.8</td><td>17.1</td></tr>
+<tr><td>Naz Reid</td><td>27.6</td><td>15.1</td></tr>
+<tr><td>Royce O'Neale</td><td>26.2</td><td>8.4</td></tr>
+<tr><td>Sion James</td><td>24.5</td><td>4.7</td></tr>
+<tr><td>Ryan Kalkbrenner</td><td>20.8</td><td>7.7</td></tr>
+<tr><td>PJ Hall</td><td>15.8</td><td>5.6</td></tr>
+<tr><td>Dennis Schroder</td><td>14.4</td><td>5.4</td></tr>
+<tr><td>Moussa Diabate</td><td>13.4</td><td>4.7</td></tr>
+<tr><td>Liam McNeeley</td><td>11.7</td><td>4.0</td></tr>
+<tr><td>Tidjane Salaun</td><td>8.7</td><td>3.1</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ds">
+<h4>WSH</h4>
+<table class="mini-table">
+<thead><tr><th>Player</th><th>MIN</th><th>PTS</th></tr></thead>
+<tbody>
+<tr><td>Anthony Davis</td><td>30.5</td><td>19.5</td></tr>
+<tr><td>Kyshawn George</td><td>28.5</td><td>14.4</td></tr>
+<tr><td>Bilal Coulibaly</td><td>25.4</td><td>10.7</td></tr>
+<tr><td>Alex Sarr</td><td>25.4</td><td>14.0</td></tr>
+<tr><td>Bub Carrington</td><td>24.3</td><td>8.8</td></tr>
+<tr><td>Trae Young</td><td>24.2</td><td>17.6</td></tr>
+<tr><td>Tre Johnson</td><td>22.7</td><td>11.5</td></tr>
+<tr><td>Deandre Ayton</td><td>22.3</td><td>11.0</td></tr>
+<tr><td>Khris Middleton</td><td>19.0</td><td>7.5</td></tr>
+<tr><td>Will Riley</td><td>17.6</td><td>8.0</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</details>
+</article>
+<article class="card">
+<div class="card-top">
+<span class="tipoff">10/31 07:30</span>
+<span class="tag">Pregame</span> <span class="venue">TD Garden</span>
+</div>
+<div class="matchup">
+<div class="side">
+<img alt="CHI" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/chi.png"/>
+<div class="abbr">CHI</div>
+<div class="tname">Chicago Bulls</div>
+</div>
+<div class="score">
+<div class="nums"><span class="dimmer">116</span><i>:</i><span class="">117</span></div>
+<div class="score-note">Predicted score (away : home)</div>
+<div class="margin">Expected margin +3.7</div>
+</div>
+<div class="side winner">
+<img alt="BOS" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/bos.png"/>
+<div class="abbr">BOS</div>
+<div class="tname">Boston Celtics</div>
+</div>
+</div>
+<div class="winprob">
+<div class="wp-head"><span>Straight-up win probability</span><span class="stars">★★☆☆☆ <em>Confidence</em></span></div>
+<div class="wp-bar">
+<div class="wp-away" style="width: 41.7%">41.7%</div>
+<div class="wp-home" style="width: 58.3%">58.3%</div>
+</div>
+<div class="wp-foot"><span>CHI win</span><span>BOS win</span></div>
+</div>
+<div class="buckets">
+<div class="bcol">
+<div class="bhead">CHI Scoring range</div>
+<div class="brow lead"><span class="bl">111-115</span><span class="bb"><i style="width: 53.0%"></i></span><span class="bp">17.7%</span></div>
+<div class="brow"><span class="bl">116-120</span><span class="bb"><i style="width: 49.4%"></i></span><span class="bp">16.5%</span></div>
+<div class="brow"><span class="bl">106-110</span><span class="bb"><i style="width: 44.2%"></i></span><span class="bp">14.8%</span></div>
+<div class="brow"><span class="bl">121-125</span><span class="bb"><i style="width: 38.7%"></i></span><span class="bp">12.9%</span></div>
+</div>
+<div class="bcol">
+<div class="bhead">BOS Scoring range</div>
+<div class="brow lead"><span class="bl">116-120</span><span class="bb"><i style="width: 52.1%"></i></span><span class="bp">17.4%</span></div>
+<div class="brow"><span class="bl">111-115</span><span class="bb"><i style="width: 47.6%"></i></span><span class="bp">15.9%</span></div>
+<div class="brow"><span class="bl">121-125</span><span class="bb"><i style="width: 45.8%"></i></span><span class="bp">15.3%</span></div>
+<div class="brow"><span class="bl">106-110</span><span class="bb"><i style="width: 36.1%"></i></span><span class="bp">12.0%</span></div>
+</div>
+</div>
+<div class="mini">
+<div><span>Predicted total</span><b>233</b> <em>231-235</em></div>
+<div><span>Both scoring ranges hit</span><b>3.1%</b></div>
+<div><span>Most likely score</span><b>112-117</b></div>
+</div>
+<details class="detail">
+<summary>Absences &amp; availability (2 rotation players affected)</summary>
+<div class="detail-body">
+<div class="ds">
+<h4>CHI · Estimated loss: 0.8 points (availability 99%)</h4>
+<ul>
+<li>
+<span class="st st-out">OUT</span>
+<b>Nic Claxton</b> <em>C</em>
+<span class="lost">Impact −0.7 points</span>
+</li>
+</ul>
+</div>
+<div class="ds">
+<h4>BOS · Estimated loss: 3.0 points (availability 98%)</h4>
+<ul>
+<li>
+<span class="st st-out">OUT</span>
+<b>Devin Carter</b> <em>G</em>
+<span class="lost">Impact −3.0 points</span>
+</li>
+</ul>
+</div>
+</div>
+</details>
+<details class="detail">
+<summary>Expected rotation &amp; minutes</summary>
+<div class="detail-body rot">
+<div class="ds">
+<h4>CHI</h4>
+<table class="mini-table">
+<thead><tr><th>Player</th><th>MIN</th><th>PTS</th></tr></thead>
+<tbody>
+<tr><td>Josh Giddey</td><td>29.8</td><td>13.3</td></tr>
+<tr><td>Norman Powell</td><td>29.0</td><td>21.8</td></tr>
+<tr><td>Matas Buzelis</td><td>27.8</td><td>15.5</td></tr>
+<tr><td>Tre Jones</td><td>23.8</td><td>13.4</td></tr>
+<tr><td>Isaac Okoro</td><td>23.7</td><td>7.7</td></tr>
+<tr><td>Leonard Miller</td><td>21.8</td><td>11.2</td></tr>
+<tr><td>Jalen Smith</td><td>21.0</td><td>11.1</td></tr>
+<tr><td>Patrick Williams</td><td>20.1</td><td>6.5</td></tr>
+<tr><td>Zach Collins</td><td>16.1</td><td>7.3</td></tr>
+<tr><td>Caleb Wilson</td><td>14.1</td><td>5.9</td></tr>
+<tr><td>Jordan Hawkins</td><td>12.8</td><td>4.7</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ds">
+<h4>BOS</h4>
+<table class="mini-table">
+<thead><tr><th>Player</th><th>MIN</th><th>PTS</th></tr></thead>
+<tbody>
+<tr><td>Jayson Tatum</td><td>32.2</td><td>21.9</td></tr>
+<tr><td>Derrick White</td><td>31.8</td><td>14.5</td></tr>
+<tr><td>Paul George</td><td>29.6</td><td>17.9</td></tr>
+<tr><td>Payton Pritchard</td><td>29.6</td><td>15.6</td></tr>
+<tr><td>Sam Hauser</td><td>23.0</td><td>9.3</td></tr>
+<tr><td>Neemias Queta</td><td>23.0</td><td>9.8</td></tr>
+<tr><td>Mitchell Robinson</td><td>19.0</td><td>5.7</td></tr>
+<tr><td>Baylor Scheierman</td><td>17.5</td><td>4.9</td></tr>
+<tr><td>Jordan Walsh</td><td>17.4</td><td>5.4</td></tr>
+<tr><td>Mike Conley</td><td>16.8</td><td>5.0</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</details>
+</article>
+<article class="card">
+<div class="card-top">
+<span class="tipoff">10/31 07:30</span>
+<span class="tag">Pregame</span> <span class="venue">Barclays Center</span>
+</div>
+<div class="matchup">
+<div class="side">
+<img alt="DET" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/det.png"/>
+<div class="abbr">DET</div>
+<div class="tname">Detroit Pistons</div>
+</div>
+<div class="score">
+<div class="nums"><span class="dimmer">108</span><i>:</i><span class="">113</span></div>
+<div class="score-note">Predicted score (away : home)</div>
+<div class="margin">Expected margin +7.1</div>
+</div>
+<div class="side winner">
+<img alt="BKN" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/bkn.png"/>
+<div class="abbr">BKN</div>
+<div class="tname">Brooklyn Nets</div>
+</div>
+</div>
+<div class="winprob">
+<div class="wp-head"><span>Straight-up win probability</span><span class="stars">★★★☆☆ <em>Confidence</em></span></div>
+<div class="wp-bar">
+<div class="wp-away" style="width: 33.4%">33.4%</div>
+<div class="wp-home" style="width: 66.6%">66.6%</div>
+</div>
+<div class="wp-foot"><span>DET win</span><span>BKN win</span></div>
+</div>
+<div class="buckets">
+<div class="bcol">
+<div class="bhead">DET Scoring range</div>
+<div class="brow lead"><span class="bl">106-110</span><span class="bb"><i style="width: 52.9%"></i></span><span class="bp">17.6%</span></div>
+<div class="brow"><span class="bl">101-105</span><span class="bb"><i style="width: 49.8%"></i></span><span class="bp">16.6%</span></div>
+<div class="brow"><span class="bl">111-115</span><span class="bb"><i style="width: 43.7%"></i></span><span class="bp">14.6%</span></div>
+<div class="brow"><span class="bl">96-100</span><span class="bb"><i style="width: 38.9%"></i></span><span class="bp">13.0%</span></div>
+</div>
+<div class="bcol">
+<div class="bhead">BKN Scoring range</div>
+<div class="brow lead"><span class="bl">111-115</span><span class="bb"><i style="width: 51.8%"></i></span><span class="bp">17.3%</span></div>
+<div class="brow"><span class="bl">116-120</span><span class="bb"><i style="width: 47.5%"></i></span><span class="bp">15.8%</span></div>
+<div class="brow"><span class="bl">106-110</span><span class="bb"><i style="width: 46.0%"></i></span><span class="bp">15.3%</span></div>
+<div class="brow"><span class="bl">121-125</span><span class="bb"><i style="width: 36.4%"></i></span><span class="bp">12.1%</span></div>
+</div>
+</div>
+<div class="mini">
+<div><span>Predicted total</span><b>221</b> <em>221-225</em></div>
+<div><span>Both scoring ranges hit</span><b>3.0%</b></div>
+<div><span>Most likely score</span><b>105-113</b></div>
+</div>
+<details class="detail">
+<summary>Absences &amp; availability (2 rotation players affected)</summary>
+<div class="detail-body">
+<div class="ds">
+<h4>DET · Estimated loss: 8.9 points (availability 92%)</h4>
+<ul>
+<li>
+<span class="st st-out">OUT</span>
+<b>Jalen Duren</b> <em>C</em>
+<span class="lost">Impact −5.8 points</span>
+</li>
+<li>
+<span class="st st-out">OUT</span>
+<b>Isaiah Joe</b> <em>G</em>
+<span class="lost">Impact −3.1 points</span>
+</li>
+</ul>
+</div>
+<div class="ds">
+<h4>BKN · Estimated loss: 0.0 points (availability 100%)</h4>
+<p class="ok-note">No injuries reported for the main rotation.</p> </div>
+</div>
+</details>
+<details class="detail">
+<summary>Expected rotation &amp; minutes</summary>
+<div class="detail-body rot">
+<div class="ds">
+<h4>DET</h4>
+<table class="mini-table">
+<thead><tr><th>Player</th><th>MIN</th><th>PTS</th></tr></thead>
+<tbody>
+<tr><td>Cade Cunningham</td><td>33.9</td><td>23.3</td></tr>
+<tr><td>Duncan Robinson</td><td>28.1</td><td>13.8</td></tr>
+<tr><td>John Collins</td><td>26.8</td><td>12.7</td></tr>
+<tr><td>Ausar Thompson</td><td>26.0</td><td>9.3</td></tr>
+<tr><td>Daniss Jenkins</td><td>21.4</td><td>10.0</td></tr>
+<tr><td>Taurean Prince</td><td>21.0</td><td>8.1</td></tr>
+<tr><td>Kevin Huerter</td><td>20.2</td><td>7.3</td></tr>
+<tr><td>Elijah Harkless</td><td>19.4</td><td>5.4</td></tr>
+<tr><td>Javonte Green</td><td>17.6</td><td>7.1</td></tr>
+<tr><td>Paul Reed</td><td>17.3</td><td>10.2</td></tr>
+<tr><td>Ronald Holland II</td><td>8.4</td><td>2.5</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ds">
+<h4>BKN</h4>
+<table class="mini-table">
+<thead><tr><th>Player</th><th>MIN</th><th>PTS</th></tr></thead>
+<tbody>
+<tr><td>Julius Randle</td><td>33.4</td><td>21.6</td></tr>
+<tr><td>Michael Porter Jr.</td><td>32.2</td><td>24.1</td></tr>
+<tr><td>Noah Clowney</td><td>25.5</td><td>10.5</td></tr>
+<tr><td>Keon Ellis</td><td>25.1</td><td>7.8</td></tr>
+<tr><td>Terance Mann</td><td>24.2</td><td>7.2</td></tr>
+<tr><td>Chaney Johnson</td><td>20.4</td><td>8.1</td></tr>
+<tr><td>Danny Wolf</td><td>20.3</td><td>8.5</td></tr>
+<tr><td>Drake Powell</td><td>20.2</td><td>5.4</td></tr>
+<tr><td>Ben Saraf</td><td>19.4</td><td>7.0</td></tr>
+<tr><td>Day'Ron Sharpe</td><td>19.3</td><td>8.7</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</details>
+</article>
+<article class="card">
+<div class="card-top">
+<span class="tipoff">10/31 07:30</span>
+<span class="tag">Pregame</span> <span class="venue">Xfinity Mobile Arena</span>
+</div>
+<div class="matchup">
+<div class="side winner">
+<img alt="NY" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/ny.png"/>
+<div class="abbr">NY</div>
+<div class="tname">New York Knicks</div>
+</div>
+<div class="score">
+<div class="nums"><span class="">115</span><i>:</i><span class="dimmer">108</span></div>
+<div class="score-note">Predicted score (away : home)</div>
+<div class="margin">Expected margin -4.1</div>
+</div>
+<div class="side">
+<img alt="PHI" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/phi.png"/>
+<div class="abbr">PHI</div>
+<div class="tname">Philadelphia 76ers</div>
+</div>
+</div>
+<div class="winprob">
+<div class="wp-head"><span>Straight-up win probability</span><span class="stars">★★☆☆☆ <em>Confidence</em></span></div>
+<div class="wp-bar">
+<div class="wp-away" style="width: 60.5%">60.5%</div>
+<div class="wp-home" style="width: 39.5%">39.5%</div>
+</div>
+<div class="wp-foot"><span>NY win</span><span>PHI win</span></div>
+</div>
+<div class="buckets">
+<div class="bcol">
+<div class="bhead">NY Scoring range</div>
+<div class="brow lead"><span class="bl">111-115</span><span class="bb"><i style="width: 53.0%"></i></span><span class="bp">17.7%</span></div>
+<div class="brow"><span class="bl">106-110</span><span class="bb"><i style="width: 47.7%"></i></span><span class="bp">15.9%</span></div>
+<div class="brow"><span class="bl">116-120</span><span class="bb"><i style="width: 47.1%"></i></span><span class="bp">15.7%</span></div>
+<div class="brow"><span class="bl">101-105</span><span class="bb"><i style="width: 35.1%"></i></span><span class="bp">11.7%</span></div>
+</div>
+<div class="bcol">
+<div class="bhead">PHI Scoring range</div>
+<div class="brow lead"><span class="bl">106-110</span><span class="bb"><i style="width: 52.7%"></i></span><span class="bp">17.6%</span></div>
+<div class="brow"><span class="bl">111-115</span><span class="bb"><i style="width: 48.3%"></i></span><span class="bp">16.1%</span></div>
+<div class="brow"><span class="bl">101-105</span><span class="bb"><i style="width: 46.4%"></i></span><span class="bp">15.5%</span></div>
+<div class="brow"><span class="bl">116-120</span><span class="bb"><i style="width: 36.8%"></i></span><span class="bp">12.3%</span></div>
+</div>
+</div>
+<div class="mini">
+<div><span>Predicted total</span><b>222</b> <em>221-225</em></div>
+<div><span>Both scoring ranges hit</span><b>3.1%</b></div>
+<div><span>Most likely score</span><b>111-108</b></div>
+</div>
+<details class="detail">
+<summary>Absences &amp; availability (3 rotation players affected)</summary>
+<div class="detail-body">
+<div class="ds">
+<h4>NY · Estimated loss: 0.0 points (availability 100%)</h4>
+<ul>
+<li>
+<span class="st st-out">OUT</span>
+<b>Jose Alvarado</b> <em>G</em>
+<span class="lost">Impact −0.0 points</span>
+</li>
+</ul>
+</div>
+<div class="ds">
+<h4>PHI · Estimated loss: 11.0 points (availability 91%)</h4>
+<ul>
+<li>
+<span class="st st-out">OUT</span>
+<b>Jaylen Brown</b> <em>G</em>
+<span class="lost">Impact −6.8 points</span>
+</li>
+<li>
+<span class="st st-out">OUT</span>
+<b>Dominick Barlow</b> <em>F</em>
+<span class="lost">Impact −2.0 points</span>
+</li>
+</ul>
+</div>
+</div>
+</details>
+<details class="detail">
+<summary>Expected rotation &amp; minutes</summary>
+<div class="detail-body rot">
+<div class="ds">
+<h4>NY</h4>
+<table class="mini-table">
+<thead><tr><th>Player</th><th>MIN</th><th>PTS</th></tr></thead>
+<tbody>
+<tr><td>Jalen Brunson</td><td>34.8</td><td>25.6</td></tr>
+<tr><td>OG Anunoby</td><td>33.0</td><td>17.2</td></tr>
+<tr><td>Mikal Bridges</td><td>30.9</td><td>10.9</td></tr>
+<tr><td>Josh Hart</td><td>30.7</td><td>11.2</td></tr>
+<tr><td>Karl-Anthony Towns</td><td>30.7</td><td>21.2</td></tr>
+<tr><td>Miles McBride</td><td>23.6</td><td>10.1</td></tr>
+<tr><td>Landry Shamet</td><td>23.5</td><td>9.3</td></tr>
+<tr><td>Andre Drummond</td><td>17.6</td><td>6.3</td></tr>
+<tr><td>Jordan Clarkson</td><td>15.3</td><td>8.1</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ds">
+<h4>PHI</h4>
+<table class="mini-table">
+<thead><tr><th>Player</th><th>MIN</th><th>PTS</th></tr></thead>
+<tbody>
+<tr><td>Tyrese Maxey</td><td>37.6</td><td>28.4</td></tr>
+<tr><td>VJ Edgecombe</td><td>33.9</td><td>14.3</td></tr>
+<tr><td>LeBron James</td><td>32.9</td><td>19.4</td></tr>
+<tr><td>Joel Embiid</td><td>32.4</td><td>25.8</td></tr>
+<tr><td>Rayan Rupert</td><td>30.7</td><td>11.8</td></tr>
+<tr><td>Anfernee Simons</td><td>26.6</td><td>12.8</td></tr>
+<tr><td>Dean Wade</td><td>23.2</td><td>5.7</td></tr>
+<tr><td>Kentavious Caldwell-Pope</td><td>22.6</td><td>8.0</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</details>
+</article>
+<article class="card">
+<div class="card-top">
+<span class="tipoff">10/31 07:30</span>
+<span class="tag">Pregame</span> <span class="venue">Scotiabank Arena</span>
+</div>
+<div class="matchup">
+<div class="side">
+<img alt="ORL" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/orl.png"/>
+<div class="abbr">ORL</div>
+<div class="tname">Orlando Magic</div>
+</div>
+<div class="score">
+<div class="nums"><span class="dimmer">110</span><i>:</i><span class="">109</span></div>
+<div class="score-note">Predicted score (away : home)</div>
+<div class="margin">Expected margin +1.7</div>
+</div>
+<div class="side winner">
+<img alt="TOR" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/tor.png"/>
+<div class="abbr">TOR</div>
+<div class="tname">Toronto Raptors</div>
+</div>
+</div>
+<div class="winprob">
+<div class="wp-head"><span>Straight-up win probability</span><span class="stars">★★☆☆☆ <em>Confidence</em></span></div>
+<div class="wp-bar">
+<div class="wp-away" style="width: 46.4%">46.4%</div>
+<div class="wp-home" style="width: 53.6%">53.6%</div>
+</div>
+<div class="wp-foot"><span>ORL win</span><span>TOR win</span></div>
+</div>
+<div class="buckets">
+<div class="bcol">
+<div class="bhead">ORL Scoring range</div>
+<div class="brow lead"><span class="bl">106-110</span><span class="bb"><i style="width: 52.3%"></i></span><span class="bp">17.4%</span></div>
+<div class="brow"><span class="bl">101-105</span><span class="bb"><i style="width: 46.9%"></i></span><span class="bp">15.6%</span></div>
+<div class="brow"><span class="bl">111-115</span><span class="bb"><i style="width: 46.4%"></i></span><span class="bp">15.5%</span></div>
+<div class="brow"><span class="bl">96-100</span><span class="bb"><i style="width: 35.0%"></i></span><span class="bp">11.7%</span></div>
+</div>
+<div class="bcol">
+<div class="bhead">TOR Scoring range</div>
+<div class="brow lead"><span class="bl">106-110</span><span class="bb"><i style="width: 50.9%"></i></span><span class="bp">17.0%</span></div>
+<div class="brow"><span class="bl">111-115</span><span class="bb"><i style="width: 48.7%"></i></span><span class="bp">16.2%</span></div>
+<div class="brow"><span class="bl">101-105</span><span class="bb"><i style="width: 43.8%"></i></span><span class="bp">14.6%</span></div>
+<div class="brow"><span class="bl">116-120</span><span class="bb"><i style="width: 39.1%"></i></span><span class="bp">13.0%</span></div>
+</div>
+</div>
+<div class="mini">
+<div><span>Predicted total</span><b>218</b> <em>216-220</em></div>
+<div><span>Both scoring ranges hit</span><b>3.0%</b></div>
+<div><span>Most likely score</span><b>109-111</b></div>
+</div>
+<details class="detail">
+<summary>Absences &amp; availability (4 rotation players affected)</summary>
+<div class="detail-body">
+<div class="ds">
+<h4>ORL · Estimated loss: 9.9 points (availability 92%)</h4>
+<ul>
+<li>
+<span class="st st-out">OUT</span>
+<b>Paolo Banchero</b> <em>F</em>
+<span class="lost">Impact −5.2 points</span>
+</li>
+<li>
+<span class="st st-out">OUT</span>
+<b>Jalen Suggs</b> <em>G</em>
+<span class="lost">Impact −2.9 points</span>
+</li>
+<li>
+<span class="st st-out">OUT</span>
+<b>Noah Penda</b> <em>F</em>
+<span class="lost">Impact −0.8 points</span>
+</li>
+</ul>
+</div>
+<div class="ds">
+<h4>TOR · Estimated loss: 14.3 points (availability 88%)</h4>
+<ul>
+<li>
+<span class="st st-out">OUT</span>
+<b>Kawhi Leonard</b> <em>F</em>
+<span class="lost">Impact −13.3 points</span>
+</li>
+</ul>
+</div>
+</div>
+</details>
+<details class="detail">
+<summary>Expected rotation &amp; minutes</summary>
+<div class="detail-body rot">
+<div class="ds">
+<h4>ORL</h4>
+<table class="mini-table">
+<thead><tr><th>Player</th><th>MIN</th><th>PTS</th></tr></thead>
+<tbody>
+<tr><td>Desmond Bane</td><td>35.4</td><td>19.9</td></tr>
+<tr><td>Franz Wagner</td><td>32.8</td><td>21.6</td></tr>
+<tr><td>Wendell Carter Jr.</td><td>31.3</td><td>13.8</td></tr>
+<tr><td>Anthony Black</td><td>30.9</td><td>15.6</td></tr>
+<tr><td>Tristan da Silva</td><td>27.3</td><td>11.8</td></tr>
+<tr><td>Jevon Carter</td><td>21.3</td><td>6.6</td></tr>
+<tr><td>Goga Bitadze</td><td>15.4</td><td>6.7</td></tr>
+<tr><td>Jamal Cain</td><td>13.4</td><td>5.3</td></tr>
+<tr><td>Jase Richardson</td><td>12.7</td><td>5.1</td></tr>
+<tr><td>Nikola Vucevic</td><td>7.5</td><td>2.4</td></tr>
+<tr><td>Alex Morales</td><td>6.3</td><td>1.9</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ds">
+<h4>TOR</h4>
+<table class="mini-table">
+<thead><tr><th>Player</th><th>MIN</th><th>PTS</th></tr></thead>
+<tbody>
+<tr><td>Scottie Barnes</td><td>32.5</td><td>18.2</td></tr>
+<tr><td>Immanuel Quickley</td><td>30.8</td><td>16.6</td></tr>
+<tr><td>RJ Barrett</td><td>30.3</td><td>19.9</td></tr>
+<tr><td>Malachi Smith</td><td>23.8</td><td>8.4</td></tr>
+<tr><td>Jakob Poeltl</td><td>23.4</td><td>8.8</td></tr>
+<tr><td>Jamal Shead</td><td>22.0</td><td>6.1</td></tr>
+<tr><td>Ja'Kobe Walter</td><td>21.8</td><td>9.0</td></tr>
+<tr><td>Collin Murray-Boyles</td><td>20.7</td><td>8.2</td></tr>
+<tr><td>Kyle Anderson</td><td>16.5</td><td>2.9</td></tr>
+<tr><td>Jamison Battle</td><td>9.8</td><td>3.9</td></tr>
+<tr><td>Allen Graves</td><td>8.4</td><td>2.9</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</details>
+</article>
+<article class="card">
+<div class="card-top">
+<span class="tipoff">10/31 08:00</span>
+<span class="tag">Pregame</span> <span class="venue">Kaseya Center</span>
+</div>
+<div class="matchup">
+<div class="side">
+<img alt="IND" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/ind.png"/>
+<div class="abbr">IND</div>
+<div class="tname">Indiana Pacers</div>
+</div>
+<div class="score">
+<div class="nums"><span class="dimmer">115</span><i>:</i><span class="">116</span></div>
+<div class="score-note">Predicted score (away : home)</div>
+<div class="margin">Expected margin +3.1</div>
+</div>
+<div class="side winner">
+<img alt="MIA" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/mia.png"/>
+<div class="abbr">MIA</div>
+<div class="tname">Miami Heat</div>
+</div>
+</div>
+<div class="winprob">
+<div class="wp-head"><span>Straight-up win probability</span><span class="stars">★★☆☆☆ <em>Confidence</em></span></div>
+<div class="wp-bar">
+<div class="wp-away" style="width: 43.0%">43.0%</div>
+<div class="wp-home" style="width: 57.0%">57.0%</div>
+</div>
+<div class="wp-foot"><span>IND win</span><span>MIA win</span></div>
+</div>
+<div class="buckets">
+<div class="bcol">
+<div class="bhead">IND Scoring range</div>
+<div class="brow lead"><span class="bl">111-115</span><span class="bb"><i style="width: 53.2%"></i></span><span class="bp">17.8%</span></div>
+<div class="brow"><span class="bl">116-120</span><span class="bb"><i style="width: 47.8%"></i></span><span class="bp">15.9%</span></div>
+<div class="brow"><span class="bl">106-110</span><span class="bb"><i style="width: 46.4%"></i></span><span class="bp">15.5%</span></div>
+<div class="brow"><span class="bl">121-125</span><span class="bb"><i style="width: 36.9%"></i></span><span class="bp">12.3%</span></div>
+</div>
+<div class="bcol">
+<div class="bhead">MIA Scoring range</div>
+<div class="brow lead"><span class="bl">116-120</span><span class="bb"><i style="width: 51.6%"></i></span><span class="bp">17.2%</span></div>
+<div class="brow"><span class="bl">111-115</span><span class="bb"><i style="width: 50.3%"></i></span><span class="bp">16.8%</span></div>
+<div class="brow"><span class="bl">121-125</span><span class="bb"><i style="width: 43.7%"></i></span><span class="bp">14.6%</span></div>
+<div class="brow"><span class="bl">106-110</span><span class="bb"><i style="width: 40.4%"></i></span><span class="bp">13.5%</span></div>
+</div>
+</div>
+<div class="mini">
+<div><span>Predicted total</span><b>231</b> <em>226-230</em></div>
+<div><span>Both scoring ranges hit</span><b>3.0%</b></div>
+<div><span>Most likely score</span><b>116-115</b></div>
+</div>
+<details class="detail">
+<summary>Absences &amp; availability (6 rotation players affected)</summary>
+<div class="detail-body">
+<div class="ds">
+<h4>IND · Estimated loss: 1.7 points (availability 99%)</h4>
+<ul>
+<li>
+<span class="st st-out">OUT</span>
+<b>Obi Toppin</b> <em>F</em>
+<span class="lost">Impact −0.4 points</span>
+</li>
+<li>
+<span class="st st-out">OUT</span>
+<b>Ivica Zubac</b> <em>C</em>
+<span class="lost">Impact −0.4 points</span>
+</li>
+<li>
+<span class="st st-out">OUT</span>
+<b>T.J. McConnell</b> <em>G</em>
+<span class="lost">Impact −0.3 points</span>
+</li>
+<li>
+<span class="st st-out">OUT</span>
+<b>Johnny Furphy</b> <em>G</em>
+<span class="lost">Impact −0.2 points</span>
+</li>
+<li>
+<span class="st st-out">OUT</span>
+<b>Tyrese Haliburton</b> <em>G</em>
+<span class="lost">Impact −0.2 points</span>
+</li>
+<li>
+<span class="st st-out">OUT</span>
+<b>Ben Sheppard</b> <em>G</em>
+<span class="lost">Impact −0.2 points</span>
+</li>
+</ul>
+</div>
+<div class="ds">
+<h4>MIA · Estimated loss: 0.0 points (availability 100%)</h4>
+<p class="ok-note">No injuries reported for the main rotation.</p> </div>
+</div>
+</details>
+<details class="detail">
+<summary>Expected rotation &amp; minutes</summary>
+<div class="detail-body rot">
+<div class="ds">
+<h4>IND</h4>
+<table class="mini-table">
+<thead><tr><th>Player</th><th>MIN</th><th>PTS</th></tr></thead>
+<tbody>
+<tr><td>Pascal Siakam</td><td>32.3</td><td>23.6</td></tr>
+<tr><td>Andrew Nembhard</td><td>31.1</td><td>16.6</td></tr>
+<tr><td>Kelly Oubre Jr.</td><td>28.8</td><td>12.2</td></tr>
+<tr><td>Aaron Nesmith</td><td>27.2</td><td>13.4</td></tr>
+<tr><td>Jarace Walker</td><td>23.9</td><td>9.1</td></tr>
+<tr><td>Kobe Brown</td><td>21.0</td><td>6.7</td></tr>
+<tr><td>Jalen Slawson</td><td>20.0</td><td>5.9</td></tr>
+<tr><td>Jay Huff</td><td>19.4</td><td>8.4</td></tr>
+<tr><td>Quenton Jackson</td><td>18.0</td><td>7.7</td></tr>
+<tr><td>Larry Nance Jr.</td><td>12.9</td><td>3.2</td></tr>
+<tr><td>Braden Smith</td><td>5.4</td><td>1.6</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ds">
+<h4>MIA</h4>
+<table class="mini-table">
+<thead><tr><th>Player</th><th>MIN</th><th>PTS</th></tr></thead>
+<tbody>
+<tr><td>Bam Adebayo</td><td>30.3</td><td>17.0</td></tr>
+<tr><td>Davion Mitchell</td><td>28.6</td><td>10.8</td></tr>
+<tr><td>Giannis Antetokounmpo</td><td>28.0</td><td>27.2</td></tr>
+<tr><td>Andrew Wiggins</td><td>27.7</td><td>13.1</td></tr>
+<tr><td>Pelle Larsson</td><td>26.2</td><td>10.9</td></tr>
+<tr><td>Tim Hardaway Jr.</td><td>23.2</td><td>10.8</td></tr>
+<tr><td>Bobby Portis</td><td>22.8</td><td>12.0</td></tr>
+<tr><td>Klay Thompson</td><td>20.1</td><td>9.7</td></tr>
+<tr><td>Nick Richards</td><td>18.5</td><td>10.3</td></tr>
+<tr><td>Dru Smith</td><td>14.5</td><td>5.1</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</details>
+</article>
+<article class="card">
+<div class="card-top">
+<span class="tipoff">10/31 08:00</span>
+<span class="tag">Pregame</span> <span class="venue">American Airlines Center</span>
+</div>
+<div class="matchup">
+<div class="side">
+<img alt="HOU" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/hou.png"/>
+<div class="abbr">HOU</div>
+<div class="tname">Houston Rockets</div>
+</div>
+<div class="score">
+<div class="nums"><span class="dimmer">113</span><i>:</i><span class="">111</span></div>
+<div class="score-note">Predicted score (away : home)</div>
+<div class="margin">Expected margin +1.1</div>
+</div>
+<div class="side winner">
+<img alt="DAL" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/dal.png"/>
+<div class="abbr">DAL</div>
+<div class="tname">Dallas Mavericks</div>
+</div>
+</div>
+<div class="winprob">
+<div class="wp-head"><span>Straight-up win probability</span><span class="stars">★☆☆☆☆ <em>Confidence</em></span></div>
+<div class="wp-bar">
+<div class="wp-away" style="width: 47.9%">47.9%</div>
+<div class="wp-home" style="width: 52.1%">52.1%</div>
+</div>
+<div class="wp-foot"><span>HOU win</span><span>DAL win</span></div>
+</div>
+<div class="buckets">
+<div class="bcol">
+<div class="bhead">HOU Scoring range</div>
+<div class="brow lead"><span class="bl">111-115</span><span class="bb"><i style="width: 51.5%"></i></span><span class="bp">17.2%</span></div>
+<div class="brow"><span class="bl">106-110</span><span class="bb"><i style="width: 51.5%"></i></span><span class="bp">17.2%</span></div>
+<div class="brow"><span class="bl">116-120</span><span class="bb"><i style="width: 42.2%"></i></span><span class="bp">14.1%</span></div>
+<div class="brow"><span class="bl">101-105</span><span class="bb"><i style="width: 41.2%"></i></span><span class="bp">13.7%</span></div>
+</div>
+<div class="bcol">
+<div class="bhead">DAL Scoring range</div>
+<div class="brow lead"><span class="bl">111-115</span><span class="bb"><i style="width: 52.3%"></i></span><span class="bp">17.4%</span></div>
+<div class="brow"><span class="bl">106-110</span><span class="bb"><i style="width: 50.1%"></i></span><span class="bp">16.7%</span></div>
+<div class="brow"><span class="bl">116-120</span><span class="bb"><i style="width: 44.1%"></i></span><span class="bp">14.7%</span></div>
+<div class="brow"><span class="bl">101-105</span><span class="bb"><i style="width: 38.9%"></i></span><span class="bp">13.0%</span></div>
+</div>
+</div>
+<div class="mini">
+<div><span>Predicted total</span><b>224</b> <em>221-225</em></div>
+<div><span>Both scoring ranges hit</span><b>3.0%</b></div>
+<div><span>Most likely score</span><b>112-103</b></div>
+</div>
+<details class="detail">
+<summary>Absences &amp; availability (5 rotation players affected)</summary>
+<div class="detail-body">
+<div class="ds">
+<h4>HOU · Estimated loss: 1.2 points (availability 99%)</h4>
+<ul>
+<li>
+<span class="st st-out">OUT</span>
+<b>Reed Sheppard</b> <em>G</em>
+<span class="lost">Impact −0.6 points</span>
+</li>
+<li>
+<span class="st st-out">OUT</span>
+<b>Steven Adams</b> <em>C</em>
+<span class="lost">Impact −0.3 points</span>
+</li>
+<li>
+<span class="st st-out">OUT</span>
+<b>Alperen Sengun</b> <em>C</em>
+<span class="lost">Impact −0.3 points</span>
+</li>
+</ul>
+</div>
+<div class="ds">
+<h4>DAL · Estimated loss: 0.7 points (availability 99%)</h4>
+<ul>
+<li>
+<span class="st st-out">OUT</span>
+<b>Santi Aldama</b> <em>F</em>
+<span class="lost">Impact −0.4 points</span>
+</li>
+<li>
+<span class="st st-out">OUT</span>
+<b>Dereck Lively II</b> <em>C</em>
+<span class="lost">Impact −0.1 points</span>
+</li>
+</ul>
+</div>
+</div>
+</details>
+<details class="detail">
+<summary>Expected rotation &amp; minutes</summary>
+<div class="detail-body rot">
+<div class="ds">
+<h4>HOU</h4>
+<table class="mini-table">
+<thead><tr><th>Player</th><th>MIN</th><th>PTS</th></tr></thead>
+<tbody>
+<tr><td>Amen Thompson</td><td>36.3</td><td>18.6</td></tr>
+<tr><td>Kevin Durant</td><td>35.8</td><td>26.2</td></tr>
+<tr><td>Jabari Smith Jr.</td><td>34.9</td><td>16.1</td></tr>
+<tr><td>Marcus Smart</td><td>27.8</td><td>8.9</td></tr>
+<tr><td>Tari Eason</td><td>25.5</td><td>10.1</td></tr>
+<tr><td>Oscar Tshiebwe</td><td>16.4</td><td>8.2</td></tr>
+<tr><td>Clint Capela</td><td>12.1</td><td>3.8</td></tr>
+<tr><td>Fred VanVleet</td><td>11.9</td><td>4.4</td></tr>
+<tr><td>Bogdan Bogdanovic</td><td>8.3</td><td>3.6</td></tr>
+<tr><td>Julian Phillips</td><td>7.2</td><td>3.1</td></tr>
+<tr><td>Jae'Sean Tate</td><td>7.2</td><td>1.6</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ds">
+<h4>DAL</h4>
+<table class="mini-table">
+<thead><tr><th>Player</th><th>MIN</th><th>PTS</th></tr></thead>
+<tbody>
+<tr><td>Cooper Flagg</td><td>32.4</td><td>21.9</td></tr>
+<tr><td>P.J. Washington</td><td>31.4</td><td>14.3</td></tr>
+<tr><td>Naji Marshall</td><td>28.8</td><td>14.9</td></tr>
+<tr><td>Max Christie</td><td>28.5</td><td>11.4</td></tr>
+<tr><td>Zaccharie Risacher</td><td>24.3</td><td>9.3</td></tr>
+<tr><td>Daniel Gafford</td><td>21.7</td><td>9.1</td></tr>
+<tr><td>Walter Clayton Jr.</td><td>21.4</td><td>8.0</td></tr>
+<tr><td>Marcus Sasser</td><td>14.6</td><td>6.2</td></tr>
+<tr><td>Caleb Martin</td><td>14.5</td><td>4.3</td></tr>
+<tr><td>Jett Howard</td><td>11.2</td><td>5.4</td></tr>
+<tr><td>Kyrie Irving</td><td>11.1</td><td>4.8</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</details>
+</article>
+<article class="card">
+<div class="card-top">
+<span class="tipoff">10/31 08:00</span>
+<span class="tag">Pregame</span> <span class="venue">Target Center</span>
+</div>
+<div class="matchup">
+<div class="side">
+<img alt="LAC" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/lac.png"/>
+<div class="abbr">LAC</div>
+<div class="tname">LA Clippers</div>
+</div>
+<div class="score">
+<div class="nums"><span class="dimmer">108</span><i>:</i><span class="">108</span></div>
+<div class="score-note">Predicted score (away : home)</div>
+<div class="margin">Expected margin +2.8</div>
+</div>
+<div class="side winner">
+<img alt="MIN" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/min.png"/>
+<div class="abbr">MIN</div>
+<div class="tname">Minnesota Timberwolves</div>
+</div>
+</div>
+<div class="winprob">
+<div class="wp-head"><span>Straight-up win probability</span><span class="stars">★★☆☆☆ <em>Confidence</em></span></div>
+<div class="wp-bar">
+<div class="wp-away" style="width: 43.8%">43.8%</div>
+<div class="wp-home" style="width: 56.2%">56.2%</div>
+</div>
+<div class="wp-foot"><span>LAC win</span><span>MIN win</span></div>
+</div>
+<div class="buckets">
+<div class="bcol">
+<div class="bhead">LAC Scoring range</div>
+<div class="brow lead"><span class="bl">106-110</span><span class="bb"><i style="width: 52.0%"></i></span><span class="bp">17.3%</span></div>
+<div class="brow"><span class="bl">101-105</span><span class="bb"><i style="width: 49.0%"></i></span><span class="bp">16.3%</span></div>
+<div class="brow"><span class="bl">111-115</span><span class="bb"><i style="width: 43.4%"></i></span><span class="bp">14.5%</span></div>
+<div class="brow"><span class="bl">96-100</span><span class="bb"><i style="width: 38.6%"></i></span><span class="bp">12.9%</span></div>
+</div>
+<div class="bcol">
+<div class="bhead">MIN Scoring range</div>
+<div class="brow lead"><span class="bl">106-110</span><span class="bb"><i style="width: 52.2%"></i></span><span class="bp">17.4%</span></div>
+<div class="brow"><span class="bl">111-115</span><span class="bb"><i style="width: 49.2%"></i></span><span class="bp">16.4%</span></div>
+<div class="brow"><span class="bl">101-105</span><span class="bb"><i style="width: 44.7%"></i></span><span class="bp">14.9%</span></div>
+<div class="brow"><span class="bl">116-120</span><span class="bb"><i style="width: 38.7%"></i></span><span class="bp">12.9%</span></div>
+</div>
+</div>
+<div class="mini">
+<div><span>Predicted total</span><b>217</b> <em>216-220</em></div>
+<div><span>Both scoring ranges hit</span><b>3.0%</b></div>
+<div><span>Most likely score</span><b>106-103</b></div>
+</div>
+<details class="detail">
+<summary>Absences &amp; availability (6 rotation players affected)</summary>
+<div class="detail-body">
+<div class="ds">
+<h4>LAC · Estimated loss: 10.3 points (availability 91%)</h4>
+<ul>
+<li>
+<span class="st st-out">OUT</span>
+<b>Brandon Ingram</b> <em>F</em>
+<span class="lost">Impact −4.2 points</span>
+</li>
+<li>
+<span class="st st-out">OUT</span>
+<b>Max Strus</b> <em>G</em>
+<span class="lost">Impact −2.2 points</span>
+</li>
+<li>
+<span class="st st-out">OUT</span>
+<b>Jordan Miller</b> <em>G</em>
+<span class="lost">Impact −2.0 points</span>
+</li>
+<li>
+<span class="st st-out">OUT</span>
+<b>Bradley Beal</b> <em>G</em>
+<span class="lost">Impact −1.5 points</span>
+</li>
+</ul>
+</div>
+<div class="ds">
+<h4>MIN · Estimated loss: 13.6 points (availability 89%)</h4>
+<ul>
+<li>
+<span class="st st-out">OUT</span>
+<b>Anthony Edwards</b> <em>G</em>
+<span class="lost">Impact −9.8 points</span>
+</li>
+<li>
+<span class="st st-out">OUT</span>
+<b>Donte DiVincenzo</b> <em>G</em>
+<span class="lost">Impact −3.9 points</span>
+</li>
+</ul>
+</div>
+</div>
+</details>
+<details class="detail">
+<summary>Expected rotation &amp; minutes</summary>
+<div class="detail-body rot">
+<div class="ds">
+<h4>LAC</h4>
+<table class="mini-table">
+<thead><tr><th>Player</th><th>MIN</th><th>PTS</th></tr></thead>
+<tbody>
+<tr><td>Darius Garland</td><td>29.7</td><td>20.5</td></tr>
+<tr><td>Rui Hachimura</td><td>28.8</td><td>11.2</td></tr>
+<tr><td>Kris Dunn</td><td>27.7</td><td>7.7</td></tr>
+<tr><td>Derrick Jones Jr.</td><td>27.5</td><td>10.9</td></tr>
+<tr><td>Brook Lopez</td><td>21.9</td><td>9.9</td></tr>
+<tr><td>Kobe Sanders</td><td>20.1</td><td>7.2</td></tr>
+<tr><td>Isaiah Jackson</td><td>17.1</td><td>8.3</td></tr>
+<tr><td>Gradey Dick</td><td>14.7</td><td>6.3</td></tr>
+<tr><td>Jalen Pickett</td><td>14.5</td><td>5.5</td></tr>
+<tr><td>Blake Wesley</td><td>11.6</td><td>4.6</td></tr>
+<tr><td>Keaton Wagler</td><td>11.1</td><td>4.5</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ds">
+<h4>MIN</h4>
+<table class="mini-table">
+<thead><tr><th>Player</th><th>MIN</th><th>PTS</th></tr></thead>
+<tbody>
+<tr><td>Jaden McDaniels</td><td>31.8</td><td>15.4</td></tr>
+<tr><td>Rudy Gobert</td><td>30.8</td><td>9.7</td></tr>
+<tr><td>Ayo Dosunmu</td><td>28.3</td><td>14.2</td></tr>
+<tr><td>LaMelo Ball</td><td>27.1</td><td>17.6</td></tr>
+<tr><td>Jonathan Kuminga</td><td>24.5</td><td>12.7</td></tr>
+<tr><td>Cody Williams</td><td>20.1</td><td>5.3</td></tr>
+<tr><td>Terrence Shannon Jr.</td><td>15.6</td><td>7.9</td></tr>
+<tr><td>Bones Hyland</td><td>14.5</td><td>7.3</td></tr>
+<tr><td>Jaylen Clark</td><td>10.9</td><td>3.4</td></tr>
+<tr><td>Joan Beringer</td><td>10.1</td><td>5.2</td></tr>
+<tr><td>Enrique Freeman</td><td>9.2</td><td>3.4</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</details>
+</article>
+<article class="card">
+<div class="card-top">
+<span class="tipoff">10/31 10:00</span>
+<span class="tag">Pregame</span> <span class="venue">Chase Center</span>
+</div>
+<div class="matchup">
+<div class="side">
+<img alt="LAL" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/lal.png"/>
+<div class="abbr">LAL</div>
+<div class="tname">Los Angeles Lakers</div>
+</div>
+<div class="score">
+<div class="nums"><span class="dimmer">112</span><i>:</i><span class="">111</span></div>
+<div class="score-note">Predicted score (away : home)</div>
+<div class="margin">Expected margin +1.6</div>
+</div>
+<div class="side winner">
+<img alt="GS" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/gs.png"/>
+<div class="abbr">GS</div>
+<div class="tname">Golden State Warriors</div>
+</div>
+</div>
+<div class="winprob">
+<div class="wp-head"><span>Straight-up win probability</span><span class="stars">★★☆☆☆ <em>Confidence</em></span></div>
+<div class="wp-bar">
+<div class="wp-away" style="width: 46.6%">46.6%</div>
+<div class="wp-home" style="width: 53.4%">53.4%</div>
+</div>
+<div class="wp-foot"><span>LAL win</span><span>GS win</span></div>
+</div>
+<div class="buckets">
+<div class="bcol">
+<div class="bhead">LAL Scoring range</div>
+<div class="brow lead"><span class="bl">106-110</span><span class="bb"><i style="width: 51.6%"></i></span><span class="bp">17.2%</span></div>
+<div class="brow"><span class="bl">111-115</span><span class="bb"><i style="width: 51.4%"></i></span><span class="bp">17.1%</span></div>
+<div class="brow"><span class="bl">101-105</span><span class="bb"><i style="width: 42.2%"></i></span><span class="bp">14.1%</span></div>
+<div class="brow"><span class="bl">116-120</span><span class="bb"><i style="width: 41.1%"></i></span><span class="bp">13.7%</span></div>
+</div>
+<div class="bcol">
+<div class="bhead">GS Scoring range</div>
+<div class="brow lead"><span class="bl">111-115</span><span class="bb"><i style="width: 52.3%"></i></span><span class="bp">17.4%</span></div>
+<div class="brow"><span class="bl">106-110</span><span class="bb"><i style="width: 50.1%"></i></span><span class="bp">16.7%</span></div>
+<div class="brow"><span class="bl">116-120</span><span class="bb"><i style="width: 44.1%"></i></span><span class="bp">14.7%</span></div>
+<div class="brow"><span class="bl">101-105</span><span class="bb"><i style="width: 38.9%"></i></span><span class="bp">13.0%</span></div>
+</div>
+</div>
+<div class="mini">
+<div><span>Predicted total</span><b>223</b> <em>221-225</em></div>
+<div><span>Both scoring ranges hit</span><b>3.0%</b></div>
+<div><span>Most likely score</span><b>109-111</b></div>
+</div>
+<details class="detail">
+<summary>Absences &amp; availability (3 rotation players affected)</summary>
+<div class="detail-body">
+<div class="ds">
+<h4>LAL · Estimated loss: 3.4 points (availability 97%)</h4>
+<ul>
+<li>
+<span class="st st-out">OUT</span>
+<b>Ziaire Williams</b> <em>F</em>
+<span class="lost">Impact −2.9 points</span>
+</li>
+</ul>
+</div>
+<div class="ds">
+<h4>GS · Estimated loss: 3.3 points (availability 97%)</h4>
+<ul>
+<li>
+<span class="st st-out">OUT</span>
+<b>Jimmy Butler III</b> <em>F</em>
+<span class="lost">Impact −1.9 points</span>
+</li>
+<li>
+<span class="st st-out">OUT</span>
+<b>Moses Moody</b> <em>G</em>
+<span class="lost">Impact −1.1 points</span>
+</li>
+</ul>
+</div>
+</div>
+</details>
+<details class="detail">
+<summary>Expected rotation &amp; minutes</summary>
+<div class="detail-body rot">
+<div class="ds">
+<h4>LAL</h4>
+<table class="mini-table">
+<thead><tr><th>Player</th><th>MIN</th><th>PTS</th></tr></thead>
+<tbody>
+<tr><td>Austin Reaves</td><td>34.1</td><td>24.6</td></tr>
+<tr><td>Walker Kessler</td><td>30.1</td><td>15.9</td></tr>
+<tr><td>Quentin Grimes</td><td>28.2</td><td>12.3</td></tr>
+<tr><td>Lawson Lovering</td><td>24.1</td><td>6.9</td></tr>
+<tr><td>Jake LaRavia</td><td>23.9</td><td>7.2</td></tr>
+<tr><td>Collin Sexton</td><td>23.5</td><td>16.0</td></tr>
+<tr><td>Sandro Mamukelashvili</td><td>22.2</td><td>11.2</td></tr>
+<tr><td>Jaden Hardy</td><td>18.3</td><td>10.3</td></tr>
+<tr><td>Matisse Thybulle</td><td>18.2</td><td>7.0</td></tr>
+<tr><td>Jarred Vanderbilt</td><td>17.3</td><td>3.9</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ds">
+<h4>GS</h4>
+<table class="mini-table">
+<thead><tr><th>Player</th><th>MIN</th><th>PTS</th></tr></thead>
+<tbody>
+<tr><td>Stephen Curry</td><td>28.6</td><td>27.2</td></tr>
+<tr><td>Brandin Podziemski</td><td>27.9</td><td>13.4</td></tr>
+<tr><td>Draymond Green</td><td>26.3</td><td>6.6</td></tr>
+<tr><td>De'Anthony Melton</td><td>21.5</td><td>10.7</td></tr>
+<tr><td>Gui Santos</td><td>20.4</td><td>9.0</td></tr>
+<tr><td>Al Horford</td><td>19.8</td><td>6.9</td></tr>
+<tr><td>Brandon Williams</td><td>19.4</td><td>11.8</td></tr>
+<tr><td>Will Richard</td><td>18.0</td><td>5.8</td></tr>
+<tr><td>Charles Bassey</td><td>16.3</td><td>9.7</td></tr>
+<tr><td>Gary Payton II</td><td>14.4</td><td>6.7</td></tr>
+<tr><td>LJ Cryer</td><td>14.0</td><td>7.7</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</details>
+</article>
+<article class="card">
+<div class="card-top">
+<span class="tipoff">10/31 10:00</span>
+<span class="tag">Pregame</span> <span class="venue">Mortgage Matchup Center</span>
+</div>
+<div class="matchup">
+<div class="side">
+<img alt="DEN" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/den.png"/>
+<div class="abbr">DEN</div>
+<div class="tname">Denver Nuggets</div>
+</div>
+<div class="score">
+<div class="nums"><span class="dimmer">110</span><i>:</i><span class="">109</span></div>
+<div class="score-note">Predicted score (away : home)</div>
+<div class="margin">Expected margin +1.5</div>
+</div>
+<div class="side winner">
+<img alt="PHX" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/phx.png"/>
+<div class="abbr">PHX</div>
+<div class="tname">Phoenix Suns</div>
+</div>
+</div>
+<div class="winprob">
+<div class="wp-head"><span>Straight-up win probability</span><span class="stars">★★☆☆☆ <em>Confidence</em></span></div>
+<div class="wp-bar">
+<div class="wp-away" style="width: 46.9%">46.9%</div>
+<div class="wp-home" style="width: 53.1%">53.1%</div>
+</div>
+<div class="wp-foot"><span>DEN win</span><span>PHX win</span></div>
+</div>
+<div class="buckets">
+<div class="bcol">
+<div class="bhead">DEN Scoring range</div>
+<div class="brow lead"><span class="bl">106-110</span><span class="bb"><i style="width: 52.2%"></i></span><span class="bp">17.4%</span></div>
+<div class="brow"><span class="bl">111-115</span><span class="bb"><i style="width: 47.2%"></i></span><span class="bp">15.7%</span></div>
+<div class="brow"><span class="bl">101-105</span><span class="bb"><i style="width: 46.0%"></i></span><span class="bp">15.3%</span></div>
+<div class="brow"><span class="bl">116-120</span><span class="bb"><i style="width: 36.2%"></i></span><span class="bp">12.1%</span></div>
+</div>
+<div class="bcol">
+<div class="bhead">PHX Scoring range</div>
+<div class="brow lead"><span class="bl">106-110</span><span class="bb"><i style="width: 49.7%"></i></span><span class="bp">16.6%</span></div>
+<div class="brow"><span class="bl">111-115</span><span class="bb"><i style="width: 48.4%"></i></span><span class="bp">16.1%</span></div>
+<div class="brow"><span class="bl">101-105</span><span class="bb"><i style="width: 42.9%"></i></span><span class="bp">14.3%</span></div>
+<div class="brow"><span class="bl">116-120</span><span class="bb"><i style="width: 39.3%"></i></span><span class="bp">13.1%</span></div>
+</div>
+</div>
+<div class="mini">
+<div><span>Predicted total</span><b>219</b> <em>216-220</em></div>
+<div><span>Both scoring ranges hit</span><b>2.9%</b></div>
+<div><span>Most likely score</span><b>106-109</b></div>
+</div>
+<details class="detail">
+<summary>Absences &amp; availability (3 rotation players affected)</summary>
+<div class="detail-body">
+<div class="ds">
+<h4>DEN · Estimated loss: 0.0 points (availability 100%)</h4>
+<ul>
+<li>
+<span class="st st-out">OUT</span>
+<b>Spencer Jones</b> <em>F</em>
+<span class="lost">Impact −0.0 points</span>
+</li>
+<li>
+<span class="st st-out">OUT</span>
+<b>Julian Strawther</b> <em>G</em>
+<span class="lost">Impact −0.0 points</span>
+</li>
+</ul>
+</div>
+<div class="ds">
+<h4>PHX · Estimated loss: 2.3 points (availability 98%)</h4>
+<ul>
+<li>
+<span class="st st-out">OUT</span>
+<b>Mark Williams</b> <em>C</em>
+<span class="lost">Impact −2.3 points</span>
+</li>
+</ul>
+</div>
+</div>
+</details>
+<details class="detail">
+<summary>Expected rotation &amp; minutes</summary>
+<div class="detail-body rot">
+<div class="ds">
+<h4>DEN</h4>
+<table class="mini-table">
+<thead><tr><th>Player</th><th>MIN</th><th>PTS</th></tr></thead>
+<tbody>
+<tr><td>Jamal Murray</td><td>35.6</td><td>25.0</td></tr>
+<tr><td>Christian Braun</td><td>32.3</td><td>11.8</td></tr>
+<tr><td>DeMar DeRozan</td><td>29.6</td><td>16.8</td></tr>
+<tr><td>Cameron Johnson</td><td>28.5</td><td>12.0</td></tr>
+<tr><td>Aaron Gordon</td><td>28.1</td><td>15.2</td></tr>
+<tr><td>Marvin Bagley III</td><td>18.8</td><td>9.7</td></tr>
+<tr><td>Ryan Nembhard</td><td>16.8</td><td>9.1</td></tr>
+<tr><td>Cam Whitmore</td><td>15.3</td><td>8.1</td></tr>
+<tr><td>Nikola Jokic</td><td>13.5</td><td>5.6</td></tr>
+<tr><td>Zeke Nnaji</td><td>11.2</td><td>4.3</td></tr>
+<tr><td>Trevon Brazile</td><td>10.3</td><td>3.8</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ds">
+<h4>PHX</h4>
+<table class="mini-table">
+<thead><tr><th>Player</th><th>MIN</th><th>PTS</th></tr></thead>
+<tbody>
+<tr><td>Devin Booker</td><td>32.1</td><td>24.8</td></tr>
+<tr><td>Miles Bridges</td><td>29.8</td><td>15.6</td></tr>
+<tr><td>Dillon Brooks</td><td>29.2</td><td>17.8</td></tr>
+<tr><td>Collin Gillespie</td><td>26.5</td><td>10.7</td></tr>
+<tr><td>Jalen Green</td><td>25.1</td><td>15.9</td></tr>
+<tr><td>Luke Kennard</td><td>21.2</td><td>9.6</td></tr>
+<tr><td>Jordan Goodwin</td><td>21.0</td><td>8.0</td></tr>
+<tr><td>Oso Ighodaro</td><td>20.6</td><td>6.7</td></tr>
+<tr><td>Ryan Dunn</td><td>17.5</td><td>5.4</td></tr>
+<tr><td>Pat Spencer</td><td>17.0</td><td>6.5</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</details>
+</article>
+</div>
+<p class="disclaimer">Model assumptions: per-36 production transfers across minutes, replacements absorb unavailable minutes with lower efficiency, and home advantage is 1.4 points. Check official injury reports 30 minutes before tipoff. Reports are fetched again during each update.</p>
+</main>
+<footer class="wrap foot">
+<p>Sources: ESPN · Basketball-Reference · CBS Sports · Yahoo Sports · NBA CDN (cross-checked across sources).</p>
+<p>All figures are model estimates for research and discussion, and are not betting advice.</p>
+<p class="muted">Snapshot built 2026-10-31T01:27:09+00:00 UTC · Each update fetches rosters, injury reports and per-36 statistics, then recalculates the model.</p>
+</footer>
+<script>window.HOOPSLAB_BUILT_AT = "2026-10-31T01:27:09+00:00";</script>
+<script defer="" src="../app.js?v=bilingual-20261031"></script>
+</body>
+</html>

@@ -17,6 +17,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from . import backtest, model, rookies, sources
 from .injuries import gather as gather_injuries
+from .i18n import english_page
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = os.path.join(ROOT, "site")
@@ -255,6 +256,9 @@ def render(payload: dict) -> None:
         html = env.get_template(tpl).render(**payload, page=out.replace(".html", ""))
         with open(os.path.join(SITE, out), "w", encoding="utf-8") as fh:
             fh.write(html)
+        os.makedirs(os.path.join(SITE, "en"), exist_ok=True)
+        with open(os.path.join(SITE, "en", out), "w", encoding="utf-8") as fh:
+            fh.write(english_page(html, out.removesuffix(".html")))
 
 
 if __name__ == "__main__":

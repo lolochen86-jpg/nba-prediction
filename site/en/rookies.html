@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Rookie rankings · HoopsLab</title>
+<meta content="NBA pregame predictions based on available lineups: scoring ranges, straight-up win probabilities and per-36 rankings for rookies and sophomores." name="description"/>
+<link href="../style.css?v=bilingual-20261031" rel="stylesheet"/>
+<link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;🏀&lt;/text&gt;&lt;/svg&gt;" rel="icon"/>
+</head>
+<body>
+<header class="top">
+<div class="wrap topbar">
+<a class="brand" href="index.html">
+<span class="ball"></span>
+<span>HoopsLab<small>NBA pregame predictions</small></span>
+</a>
+<nav>
+<a class="" href="index.html">Predictions</a>
+<a class="on" href="rookies.html">Rookie rankings</a>
+<a class="" href="backtest.html">Backtesting</a>
+<a class="" href="method.html">Method &amp; sources</a>
+<span aria-label="Language" class="language-switch">
+<a data-language="zh" href="../rookies.html" id="langZh">中文</a>
+<a aria-current="true" data-language="en" href="rookies.html" id="langEn">English</a>
+</span>
+</nav>
+</div>
+<div class="wrap statusbar">
+<div class="stamp">Last updated <b>2026-10-31 09:27</b> (Taipei) · Season 2026-27</div>
+<div class="stamp-links">
+<button aria-controls="manualUpdatePanel" aria-expanded="false" class="btn-ghost primary" id="manualUpdateBtn">Update data</button>
+<button class="btn-ghost" id="reloadBtn" title="Reload this page">Reload page</button>
+</div>
+</div>
+<div class="wrap health">
+<span class="chip ok" title="Schedules, rosters &amp; team statistics">
+<i></i>ESPN API <em>60</em>
+</span>
+<span class="chip ok" title="Player statistics per 36 minutes">
+<i></i>Basketball-Reference <em>453</em>
+</span>
+<span class="chip ok" title="Injury reports">
+<i></i>CBS Sports <em>89</em>
+</span>
+<span class="chip ok" title="Injury reports">
+<i></i>Yahoo Sports <em>92</em>
+</span>
+<span class="chip ok" title="Player headshots">
+<i></i>NBA CDN <em>522</em>
+</span>
+<span class="chip neutral" title="Players with conflicting reports across the three injury sources">Injury conflicts 6</span>
+</div>
+</header>
+<div class="wrap"><div class="stale" hidden="" id="staleBar"></div></div>
+<section aria-label="Manual update" class="wrap update-panel" hidden="" id="manualUpdatePanel">
+<h2>Update data</h2>
+<p>Start an update with your GitHub account: open the link below, select the main branch, then choose Run workflow. The workflow fetches fresh data, validates the rookie rankings and deploys the site. This page will tell you when new data is live.</p>
+<a class="btn-ghost primary" href="https://github.com/lolochen86-jpg/nba-prediction/actions/workflows/update.yml" id="runWorkflowLink" rel="noopener noreferrer" target="_blank">Open GitHub · Run workflow ↗</a>
+<a class="btn-ghost" href="https://github.com/lolochen86-jpg/nba-prediction/actions/workflows/update.yml" id="workflowRunLink" rel="noopener noreferrer" target="_blank">View run logs ↗</a>
+<p aria-live="polite" id="updateStatus" role="status">Checking the latest update…</p>
+<p class="note">Only GitHub accounts with write access to this repository can start updates. Reloading the page only loads the existing snapshot.</p>
+</section>
+<main class="wrap">
+<section class="hero">
+<div>
+<h1>Rookie rankings <small>Rookies &amp; sophomores combined</small></h1>
+<p class="sub">Ranked by <b>Game Score / 36 minutes</b> (Hollinger Game Score normalized to 36 minutes), so playing time alone does not determine rank. The seven-day improvement list highlights players who are trending upward.</p>
+</div>
+<div class="hero-stats">
+<div><b>22</b><span>Qualified rookies</span></div>
+<div><b>26</b><span>Qualified sophomores</span></div>
+<div><b>7</b><span>Trend window (days)</span></div>
+</div>
+</section>
+<div class="two-col">
+<div>
+<h2 class="sec">Combined rankings <span class="hint">At least 3 games &amp; 8 minutes per game</span></h2>
+<div class="filters">
+<button class="fbtn on" data-f="all">All <em>48</em></button>
+<button class="fbtn" data-f="0">Rookie <em>22</em></button>
+<button class="fbtn" data-f="1">Sophomore <em>26</em></button>
+</div>
+<div class="table-scroll">
+<table class="board" id="board">
+<thead>
+<tr>
+<th>#</th><th>Player</th><th>Class</th>
+<th data-sort="num">G</th><th data-sort="num">MIN</th>
+<th data-sort="num">PTS</th><th data-sort="num">REB</th><th data-sort="num">AST</th>
+<th data-sort="num">STL</th><th data-sort="num">BLK</th>
+<th data-sort="num">TS%</th><th data-sort="num">GS/36</th>
+</tr>
+</thead>
+<tbody>
+<tr data-cls="1">
+<td class="rk top">1</td>
+<td class="who"><div class="whoflex">
+<img alt="Cooper Flagg" class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5041939.png"/>
+<div>
+<b>Cooper Flagg</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/dal.png"/>DAL · F</span>
+</div></div>
+</td>
+<td><span class="cls c1">Sophomore</span></td>
+<td>4</td>
+<td>30.8</td>
+<td class="hi">29.6</td>
+<td>6.1</td>
+<td>7.9</td>
+<td>3.2</td>
+<td>1.5</td>
+<td>63.6</td>
+<td class="gs">26.49</td>
+</tr>
+<tr data-cls="0">
+<td class="rk top">2</td>
+<td class="who"><div class="whoflex">
+<img alt="Graham Ike" class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/4703396.png"/>
+<div>
+<b>Graham Ike</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/gs.png"/>GS · F</span>
+</div></div>
+</td>
+<td><span class="cls c0">Rookie</span></td>
+<td>4</td>
+<td>13.2</td>
+<td class="hi">22.4</td>
+<td>9.5</td>
+<td>3.4</td>
+<td>2.0</td>
+<td>0.7</td>
+<td>61.9</td>
+<td class="gs">20.03</td>
+</tr>
+<tr data-cls="0">
+<td class="rk top">3</td>
+<td class="who"><div class="whoflex">
+<img alt="Yaxel Lendeborg" class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5175737.png"/>
+<div>
+<b>Yaxel Lendeborg</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/gs.png"/>GS · F</span>
+</div></div>
+</td>
+<td><span class="cls c0">Rookie</span></td>
+<td>5</td>
+<td>33.6</td>
+<td class="hi">24.2</td>
+<td>9.9</td>
+<td>4.3</td>
+<td>1.1</td>
+<td>0.6</td>
+<td>59.3</td>
+<td class="gs">18.99</td>
+</tr>
+<tr data-cls="1">
+<td class="rk">4</td>
+<td class="who"><div class="whoflex">
+<img alt="Joan Beringer" class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5279133.png"/>
+<div>
+<b>Joan Beringer</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/min.png"/>MIN · F</span>
+</div></div>
+</td>
+<td><span class="cls c1">Sophomore</span></td>
+<td>5</td>
+<td>15.6</td>
+<td class="hi">15.7</td>
+<td>17.5</td>
+<td>1.4</td>
+<td>0.5</td>
+<td>1.4</td>
+<td>67.6</td>
+<td class="gs">18.54</td>
+</tr>
+<tr data-cls="1">
+<td class="rk">5</td>
+<td class="who"><div class="whoflex">
+<img alt="LJ Cryer" class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/4433149.png"/>
+<div>
+<b>LJ Cryer</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/gs.png"/>GS · G</span>
+</div></div>
+</td>
+<td><span class="cls c1">Sophomore</span></td>
+<td>3</td>
+<td>8.7</td>
+<td class="hi">24.9</td>
+<td>2.8</td>
+<td>8.3</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>60.3</td>
+<td class="gs">17.13</td>
+</tr>
+<tr data-cls="1">
+<td class="rk">6</td>
+<td class="who"><div class="whoflex">
+<img alt="Derik Queen" class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/4869780.png"/>
+<div>
+<b>Derik Queen</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/no.png"/>NO · C</span>
+</div></div>
+</td>
+<td><span class="cls c1">Sophomore</span></td>
+<td>5</td>
+<td>23.8</td>
+<td class="hi">17.8</td>
+<td>11.8</td>
+<td>2.7</td>
+<td>1.5</td>
+<td>0.9</td>
+<td>64.3</td>
+<td class="gs">15.17</td>
+</tr>
+<tr data-cls="0">
+<td class="rk">7</td>
+<td class="who"><div class="whoflex">
+<img alt="Cameron Boozer" class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5041935.png"/>
+<div>
+<b>Cameron Boozer</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/mem.png"/>MEM · F</span>
+</div></div>
+</td>
+<td><span class="cls c0">Rookie</span></td>
+<td>5</td>
+<td>32.2</td>
+<td class="hi">17.7</td>
+<td>12.1</td>
+<td>6.9</td>
+<td>0.4</td>
+<td>0.7</td>
+<td>49.3</td>
+<td class="gs">15.14</td>
+</tr>
+<tr data-cls="1">
+<td class="rk">8</td>
+<td class="who"><div class="whoflex">
+<img alt="Ace Bailey" class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/4873138.png"/>
+<div>
+<b>Ace Bailey</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/utah.png"/>UTAH · G</span>
+</div></div>
+</td>
+<td><span class="cls c1">Sophomore</span></td>
+<td>5</td>
+<td>29.8</td>
+<td class="hi">17.2</td>
+<td>9.7</td>
+<td>2.9</td>
+<td>0.0</td>
+<td>1.9</td>
+<td>59.6</td>
+<td class="gs">14.98</td>
+</tr>
+<tr data-cls="1">
+<td class="rk">9</td>
+<td class="who"><div class="whoflex">
+<img alt="Walter Clayton Jr." class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/4896372.png"/>
+<div>
+<b>Walter Clayton Jr.</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/dal.png"/>DAL · G</span>
+</div></div>
+</td>
+<td><span class="cls c1">Sophomore</span></td>
+<td>4</td>
+<td>11.8</td>
+<td class="hi">13.8</td>
+<td>6.9</td>
+<td>10.7</td>
+<td>0.8</td>
+<td>0.8</td>
+<td>58.9</td>
+<td class="gs">14.85</td>
+</tr>
+<tr data-cls="0">
+<td class="rk">10</td>
+<td class="who"><div class="whoflex">
+<img alt="Brayden Burries" class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5082206.png"/>
+<div>
+<b>Brayden Burries</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/mil.png"/>MIL · G</span>
+</div></div>
+</td>
+<td><span class="cls c0">Rookie</span></td>
+<td>5</td>
+<td>15.0</td>
+<td class="hi">18.7</td>
+<td>9.1</td>
+<td>3.4</td>
+<td>1.4</td>
+<td>0.0</td>
+<td>57.1</td>
+<td class="gs">14.67</td>
+</tr>
+<tr data-cls="0">
+<td class="rk">11</td>
+<td class="who"><div class="whoflex">
+<img alt="Allen Graves" class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5149115.png"/>
+<div>
+<b>Allen Graves</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/tor.png"/>TOR · F</span>
+</div></div>
+</td>
+<td><span class="cls c0">Rookie</span></td>
+<td>4</td>
+<td>16.0</td>
+<td class="hi">11.8</td>
+<td>7.9</td>
+<td>2.3</td>
+<td>1.7</td>
+<td>2.8</td>
+<td>55.1</td>
+<td class="gs">14.58</td>
+</tr>
+<tr data-cls="1">
+<td class="rk">12</td>
+<td class="who"><div class="whoflex">
+<img alt="Dylan Harper" class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5037871.png"/>
+<div>
+<b>Dylan Harper</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/sa.png"/>SA · G</span>
+</div></div>
+</td>
+<td><span class="cls c1">Sophomore</span></td>
+<td>5</td>
+<td>32.6</td>
+<td class="hi">19.0</td>
+<td>5.7</td>
+<td>5.1</td>
+<td>1.1</td>
+<td>0.0</td>
+<td>54.1</td>
+<td class="gs">14.45</td>
+</tr>
+<tr data-cls="1">
+<td class="rk">13</td>
+<td class="who"><div class="whoflex">
+<img alt="Cedric Coward" class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/4903027.png"/>
+<div>
+<b>Cedric Coward</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/mem.png"/>MEM · F</span>
+</div></div>
+</td>
+<td><span class="cls c1">Sophomore</span></td>
+<td>4</td>
+<td>29.5</td>
+<td class="hi">16.8</td>
+<td>11.0</td>
+<td>3.4</td>
+<td>1.5</td>
+<td>0.3</td>
+<td>64.1</td>
+<td class="gs">14.18</td>
+</tr>
+<tr data-cls="0">
+<td class="rk">14</td>
+<td class="who"><div class="whoflex">
+<img alt="Caleb Wilson" class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5095151.png"/>
+<div>
+<b>Caleb Wilson</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/chi.png"/>CHI · F</span>
+</div></div>
+</td>
+<td><span class="cls c0">Rookie</span></td>
+<td>5</td>
+<td>34.6</td>
+<td class="hi">21.6</td>
+<td>7.3</td>
+<td>2.3</td>
+<td>1.9</td>
+<td>1.5</td>
+<td>50.1</td>
+<td class="gs">14.04</td>
+</tr>
+<tr data-cls="0">
+<td class="rk">15</td>
+<td class="who"><div class="whoflex">
+<img alt="Keaton Wagler" class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5254165.png"/>
+<div>
+<b>Keaton Wagler</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/lac.png"/>LAC · G</span>
+</div></div>
+</td>
+<td><span class="cls c0">Rookie</span></td>
+<td>4</td>
+<td>26.5</td>
+<td class="hi">20.4</td>
+<td>5.8</td>
+<td>4.8</td>
+<td>1.7</td>
+<td>0.3</td>
+<td>58.2</td>
+<td class="gs">14.04</td>
+</tr>
+<tr data-cls="1">
+<td class="rk">16</td>
+<td class="who"><div class="whoflex">
+<img alt="Nolan Traore" class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5279130.png"/>
+<div>
+<b>Nolan Traore</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/bkn.png"/>BKN · G</span>
+</div></div>
+</td>
+<td><span class="cls c1">Sophomore</span></td>
+<td>4</td>
+<td>17.5</td>
+<td class="hi">19.5</td>
+<td>3.6</td>
+<td>4.1</td>
+<td>1.5</td>
+<td>1.0</td>
+<td>59.9</td>
+<td class="gs">13.78</td>
+</tr>
+<tr data-cls="1">
+<td class="rk">17</td>
+<td class="who"><div class="whoflex">
+<img alt="Tyrese Proctor" class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5023693.png"/>
+<div>
+<b>Tyrese Proctor</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/cle.png"/>CLE · G</span>
+</div></div>
+</td>
+<td><span class="cls c1">Sophomore</span></td>
+<td>4</td>
+<td>10.2</td>
+<td class="hi">12.3</td>
+<td>7.9</td>
+<td>5.3</td>
+<td>0.9</td>
+<td>0.0</td>
+<td>69.9</td>
+<td class="gs">13.66</td>
+</tr>
+<tr data-cls="1">
+<td class="rk">18</td>
+<td class="who"><div class="whoflex">
+<img alt="Ryan Kalkbrenner" class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/4576060.png"/>
+<div>
+<b>Ryan Kalkbrenner</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/cha.png"/>CHA · C</span>
+</div></div>
+</td>
+<td><span class="cls c1">Sophomore</span></td>
+<td>5</td>
+<td>16.4</td>
+<td class="hi">10.1</td>
+<td>9.7</td>
+<td>3.5</td>
+<td>0.4</td>
+<td>3.1</td>
+<td>77.8</td>
+<td class="gs">13.37</td>
+</tr>
+<tr data-cls="0">
+<td class="rk">19</td>
+<td class="who"><div class="whoflex">
+<img alt="Darius Acuff Jr." class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5142620.png"/>
+<div>
+<b>Darius Acuff Jr.</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/sac.png"/>SAC · G</span>
+</div></div>
+</td>
+<td><span class="cls c0">Rookie</span></td>
+<td>5</td>
+<td>36.4</td>
+<td class="hi">23.7</td>
+<td>3.4</td>
+<td>6.5</td>
+<td>0.6</td>
+<td>0.2</td>
+<td>46.3</td>
+<td class="gs">12.4</td>
+</tr>
+<tr data-cls="1">
+<td class="rk">20</td>
+<td class="who"><div class="whoflex">
+<img alt="Kasparas Jakucionis" class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5214640.png"/>
+<div>
+<b>Kasparas Jakucionis</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/mil.png"/>MIL · G</span>
+</div></div>
+</td>
+<td><span class="cls c1">Sophomore</span></td>
+<td>5</td>
+<td>22.8</td>
+<td class="hi">14.2</td>
+<td>4.4</td>
+<td>6.6</td>
+<td>1.3</td>
+<td>0.3</td>
+<td>66.3</td>
+<td class="gs">12.31</td>
+</tr>
+<tr data-cls="0">
+<td class="rk">21</td>
+<td class="who"><div class="whoflex">
+<img alt="Trevon Brazile" class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/4698719.png"/>
+<div>
+<b>Trevon Brazile</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/den.png"/>DEN · F</span>
+</div></div>
+</td>
+<td><span class="cls c0">Rookie</span></td>
+<td>4</td>
+<td>23.8</td>
+<td class="hi">14.4</td>
+<td>11.4</td>
+<td>0.0</td>
+<td>0.8</td>
+<td>1.1</td>
+<td>61.1</td>
+<td class="gs">11.87</td>
+</tr>
+<tr data-cls="1">
+<td class="rk">22</td>
+<td class="who"><div class="whoflex">
+<img alt="Tre Johnson" class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5238230.png"/>
+<div>
+<b>Tre Johnson</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/wsh.png"/>WSH · G</span>
+</div></div>
+</td>
+<td><span class="cls c1">Sophomore</span></td>
+<td>4</td>
+<td>22.8</td>
+<td class="hi">19.0</td>
+<td>3.2</td>
+<td>1.6</td>
+<td>0.8</td>
+<td>0.4</td>
+<td>59.8</td>
+<td class="gs">11.46</td>
+</tr>
+<tr data-cls="1">
+<td class="rk">23</td>
+<td class="who"><div class="whoflex">
+<img alt="Collin Murray-Boyles" class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5093267.png"/>
+<div>
+<b>Collin Murray-Boyles</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/tor.png"/>TOR · F</span>
+</div></div>
+</td>
+<td><span class="cls c1">Sophomore</span></td>
+<td>4</td>
+<td>17.8</td>
+<td class="hi">13.7</td>
+<td>10.1</td>
+<td>3.0</td>
+<td>2.0</td>
+<td>1.0</td>
+<td>55.2</td>
+<td class="gs">11.34</td>
+</tr>
+<tr data-cls="0">
+<td class="rk">24</td>
+<td class="who"><div class="whoflex">
+<img alt="Darryn Peterson" class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5041955.png"/>
+<div>
+<b>Darryn Peterson</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/utah.png"/>UTAH · G</span>
+</div></div>
+</td>
+<td><span class="cls c0">Rookie</span></td>
+<td>5</td>
+<td>28.6</td>
+<td class="hi">16.1</td>
+<td>5.5</td>
+<td>3.3</td>
+<td>1.3</td>
+<td>0.3</td>
+<td>46.2</td>
+<td class="gs">11.04</td>
+</tr>
+<tr data-cls="1">
+<td class="rk">25</td>
+<td class="who"><div class="whoflex">
+<img alt="Jeremiah Fears" class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5144091.png"/>
+<div>
+<b>Jeremiah Fears</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/no.png"/>NO · G</span>
+</div></div>
+</td>
+<td><span class="cls c1">Sophomore</span></td>
+<td>5</td>
+<td>24.2</td>
+<td class="hi">17.3</td>
+<td>6.2</td>
+<td>6.0</td>
+<td>1.5</td>
+<td>1.2</td>
+<td>44.8</td>
+<td class="gs">10.98</td>
+</tr>
+<tr data-cls="1">
+<td class="rk">26</td>
+<td class="who"><div class="whoflex">
+<img alt="Khaman Maluach" class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5203685.png"/>
+<div>
+<b>Khaman Maluach</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/phx.png"/>PHX · C</span>
+</div></div>
+</td>
+<td><span class="cls c1">Sophomore</span></td>
+<td>3</td>
+<td>23.3</td>
+<td class="hi">11.8</td>
+<td>11.3</td>
+<td>2.6</td>
+<td>1.0</td>
+<td>2.1</td>
+<td>62.1</td>
+<td class="gs">10.73</td>
+</tr>
+<tr data-cls="0">
+<td class="rk">27</td>
+<td class="who"><div class="whoflex">
+<img alt="Sergio de Larrea" class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5279129.png"/>
+<div>
+<b>Sergio de Larrea</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/dal.png"/>DAL · F</span>
+</div></div>
+</td>
+<td><span class="cls c0">Rookie</span></td>
+<td>4</td>
+<td>11.5</td>
+<td class="hi">16.4</td>
+<td>6.3</td>
+<td>3.9</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>58.2</td>
+<td class="gs">10.57</td>
+</tr>
+<tr data-cls="1">
+<td class="rk">28</td>
+<td class="who"><div class="whoflex">
+<img alt="Kobe Sanders" class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/4702352.png"/>
+<div>
+<b>Kobe Sanders</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/lac.png"/>LAC · G</span>
+</div></div>
+</td>
+<td><span class="cls c1">Sophomore</span></td>
+<td>4</td>
+<td>21.2</td>
+<td class="hi">11.9</td>
+<td>4.7</td>
+<td>4.2</td>
+<td>3.4</td>
+<td>0.0</td>
+<td>49.2</td>
+<td class="gs">10.42</td>
+</tr>
+<tr data-cls="0">
+<td class="rk">29</td>
+<td class="who"><div class="whoflex">
+<img alt="Morez Johnson Jr." class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/4873153.png"/>
+<div>
+<b>Morez Johnson Jr.</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/dal.png"/>DAL · F</span>
+</div></div>
+</td>
+<td><span class="cls c0">Rookie</span></td>
+<td>5</td>
+<td>15.2</td>
+<td class="hi">17.1</td>
+<td>8.5</td>
+<td>3.3</td>
+<td>0.5</td>
+<td>0.0</td>
+<td>61.2</td>
+<td class="gs">10.21</td>
+</tr>
+<tr data-cls="1">
+<td class="rk">30</td>
+<td class="who"><div class="whoflex">
+<img alt="VJ Edgecombe" class="face" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5124612.png"/>
+<div>
+<b>VJ Edgecombe</b>
+<span class="team"><img alt="" loading="lazy" src="https://a.espncdn.com/i/teamlogos/nba/500/phi.png"/>PHI · G</span>
+</div></div>
+</td>
+<td><span class="cls c1">Sophomore</span></td>
+<td>4</td>
+<td>31.8</td>
+<td class="hi">12.8</td>
+<td>8.8</td>
+<td>3.1</td>
+<td>1.7</td>
+<td>0.6</td>
+<td>47.4</td>
+<td class="gs">10.1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="note">Statistics per 36 minutes. GS = PTS + 0.4×FGM − 0.7×FGA − 0.4×(FTA−FT) + 0.7×OREB + 0.3×DREB + STL + 0.7×AST + 0.7×BLK − 0.4×PF − TOV.</p>
+</div>
+<aside>
+<h2 class="sec">Seven-day improvement <span class="hint">GS/36 change</span></h2>
+<ol class="trend">
+<li>
+<img alt="Joan Beringer" class="face sm" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5279133.png"/>
+<div class="tinfo">
+<b>Joan Beringer</b>
+<span>MIN · Sophomore · last 3 games</span>
+</div>
+<div class="tdelta up">
+          +5.5
+          <small>22.54 ← 17.04</small>
+</div>
+</li>
+<li>
+<img alt="Nolan Traore" class="face sm" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5279130.png"/>
+<div class="tinfo">
+<b>Nolan Traore</b>
+<span>BKN · Sophomore · last 3 games</span>
+</div>
+<div class="tdelta up">
+          +5.3
+          <small>19.07 ← 13.78</small>
+</div>
+</li>
+<li>
+<img alt="Egor Demin" class="face sm" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5175643.png"/>
+<div class="tinfo">
+<b>Egor Demin</b>
+<span>BKN · Sophomore · last 3 games</span>
+</div>
+<div class="tdelta up">
+          +4.2
+          <small>11.28 ← 7.12</small>
+</div>
+</li>
+<li>
+<img alt="Hugo Gonzalez" class="face sm" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5175647.png"/>
+<div class="tinfo">
+<b>Hugo Gonzalez</b>
+<span>BOS · Sophomore · last 2 games</span>
+</div>
+<div class="tdelta up">
+          +3.9
+          <small>13.56 ← 9.65</small>
+</div>
+</li>
+<li>
+<img alt="Caleb Wilson" class="face sm" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5095151.png"/>
+<div class="tinfo">
+<b>Caleb Wilson</b>
+<span>CHI · Rookie · last 3 games</span>
+</div>
+<div class="tdelta up">
+          +3.7
+          <small>17.43 ← 13.73</small>
+</div>
+</li>
+<li>
+<img alt="Darius Acuff Jr." class="face sm" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5142620.png"/>
+<div class="tinfo">
+<b>Darius Acuff Jr.</b>
+<span>SAC · Rookie · last 4 games</span>
+</div>
+<div class="tdelta up">
+          +3.7
+          <small>16.46 ← 12.8</small>
+</div>
+</li>
+<li>
+<img alt="Tyrese Proctor" class="face sm" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5023693.png"/>
+<div class="tinfo">
+<b>Tyrese Proctor</b>
+<span>CLE · Sophomore · last 3 games</span>
+</div>
+<div class="tdelta up">
+          +3.3
+          <small>16.64 ← 13.37</small>
+</div>
+</li>
+<li>
+<img alt="Cameron Boozer" class="face sm" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5041935.png"/>
+<div class="tinfo">
+<b>Cameron Boozer</b>
+<span>MEM · Rookie · last 4 games</span>
+</div>
+<div class="tdelta up">
+          +3.1
+          <small>18.57 ← 15.5</small>
+</div>
+</li>
+<li>
+<img alt="Kingston Flemings" class="face sm" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5149077.png"/>
+<div class="tinfo">
+<b>Kingston Flemings</b>
+<span>ATL · Rookie · last 4 games</span>
+</div>
+<div class="tdelta up">
+          +2.5
+          <small>11.92 ← 9.45</small>
+</div>
+</li>
+<li>
+<img alt="Sion James" class="face sm" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/4602025.png"/>
+<div class="tinfo">
+<b>Sion James</b>
+<span>CHA · Sophomore · last 3 games</span>
+</div>
+<div class="tdelta up">
+          +2.2
+          <small>4.43 ← 2.2</small>
+</div>
+</li>
+<li>
+<img alt="Chaney Johnson" class="face sm" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5174655.png"/>
+<div class="tinfo">
+<b>Chaney Johnson</b>
+<span>BKN · Sophomore · last 3 games</span>
+</div>
+<div class="tdelta up">
+          +2.1
+          <small>9.96 ← 7.9</small>
+</div>
+</li>
+<li>
+<img alt="Carter Bryant" class="face sm" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5061568.png"/>
+<div class="tinfo">
+<b>Carter Bryant</b>
+<span>SA · Sophomore · last 4 games</span>
+</div>
+<div class="tdelta up">
+          +2.0
+          <small>4.26 ← 2.21</small>
+</div>
+</li>
+<li>
+<img alt="Kobe Sanders" class="face sm" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/4702352.png"/>
+<div class="tinfo">
+<b>Kobe Sanders</b>
+<span>LAC · Sophomore · last 3 games</span>
+</div>
+<div class="tdelta up">
+          +2.0
+          <small>12.55 ← 10.5</small>
+</div>
+</li>
+<li>
+<img alt="Sergio de Larrea" class="face sm" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5279129.png"/>
+<div class="tinfo">
+<b>Sergio de Larrea</b>
+<span>DAL · Rookie · last 2 games</span>
+</div>
+<div class="tdelta up">
+          +2.0
+          <small>12.37 ← 10.34</small>
+</div>
+</li>
+<li>
+<img alt="Christian Anderson" class="face sm" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 fill=%22%23223%22/&gt;&lt;text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22&gt;?&lt;/text&gt;&lt;/svg&gt;'" src="https://a.espncdn.com/i/headshots/nba/players/full/5060701.png"/>
+<div class="tinfo">
+<b>Christian Anderson</b>
+<span>CHA · Rookie · last 3 games</span>
+</div>
+<div class="tdelta up">
+          +2.0
+          <small>0.78 ← -1.25</small>
+</div>
+</li>
+</ol>
+<h2 class="sec" style="margin-top:2rem">Watch list <span class="hint">Small sample</span></h2>
+<div class="table-scroll">
+<table class="board small">
+<thead><tr><th>Player</th><th>Class</th><th>G</th><th>MIN</th><th>GS/36</th></tr></thead>
+<tbody>
+<tr>
+<td class="who"><div class="whoflex"><b>Nique Clifford</b><span class="team">SAC</span></div></td>
+<td><span class="cls c1">Sophomore</span></td>
+<td>4</td><td>6.8</td><td>3.31</td>
+</tr>
+<tr>
+<td class="who"><div class="whoflex"><b>Brooks Barnhizer</b><span class="team">OKC</span></div></td>
+<td><span class="cls c1">Sophomore</span></td>
+<td>4</td><td>4.8</td><td>2.66</td>
+</tr>
+<tr>
+<td class="who"><div class="whoflex"><b>Alijah Martin</b><span class="team">TOR</span></div></td>
+<td><span class="cls c1">Sophomore</span></td>
+<td>4</td><td>4.2</td><td>9.93</td>
+</tr>
+<tr>
+<td class="who"><div class="whoflex"><b>Jaden Bradley</b><span class="team">TOR</span></div></td>
+<td><span class="cls c0">Rookie</span></td>
+<td>4</td><td>3.8</td><td>13.2</td>
+</tr>
+<tr>
+<td class="who"><div class="whoflex"><b>Moussa Cisse</b><span class="team">DAL</span></div></td>
+<td><span class="cls c1">Sophomore</span></td>
+<td>4</td><td>3.5</td><td>23.9</td>
+</tr>
+<tr>
+<td class="who"><div class="whoflex"><b>Bruce Thornton</b><span class="team">HOU</span></div></td>
+<td><span class="cls c0">Rookie</span></td>
+<td>4</td><td>2.8</td><td>5.91</td>
+</tr>
+<tr>
+<td class="who"><div class="whoflex"><b>Tarris Reed Jr.</b><span class="team">SA</span></div></td>
+<td><span class="cls c0">Rookie</span></td>
+<td>3</td><td>4.3</td><td>10.51</td>
+</tr>
+<tr>
+<td class="who"><div class="whoflex"><b>Ryan Conwell</b><span class="team">MIA</span></div></td>
+<td><span class="cls c0">Rookie</span></td>
+<td>3</td><td>3.3</td><td>12.96</td>
+</tr>
+<tr>
+<td class="who"><div class="whoflex"><b>Will Riley</b><span class="team">WSH</span></div></td>
+<td><span class="cls c1">Sophomore</span></td>
+<td>3</td><td>3.3</td><td>2.16</td>
+</tr>
+<tr>
+<td class="who"><div class="whoflex"><b>Tobi Lawal</b><span class="team">DAL</span></div></td>
+<td><span class="cls c0">Rookie</span></td>
+<td>3</td><td>2.7</td><td>27.45</td>
+</tr>
+<tr>
+<td class="who"><div class="whoflex"><b>Isaiah Evans</b><span class="team">MIN</span></div></td>
+<td><span class="cls c0">Rookie</span></td>
+<td>3</td><td>2.7</td><td>-4.95</td>
+</tr>
+<tr>
+<td class="who"><div class="whoflex"><b>Josh Dix</b><span class="team">OKC</span></div></td>
+<td><span class="cls c0">Rookie</span></td>
+<td>2</td><td>23.0</td><td>-4.18</td>
+</tr>
+</tbody>
+</table>
+</div>
+</aside>
+</div>
+<script>
+document.querySelectorAll('.fbtn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.fbtn').forEach(b => b.classList.toggle('on', b === btn));
+    const f = btn.dataset.f;
+    document.querySelectorAll('#board tbody tr').forEach(tr => {
+      tr.style.display = (f === 'all' || tr.dataset.cls === f) ? '' : 'none';
+    });
+  });
+});
+document.querySelectorAll('#board th[data-sort]').forEach((th, i) => {
+  th.addEventListener('click', () => {
+    const tb = document.querySelector('#board tbody');
+    const rows = [...tb.rows];
+    const col = [...th.parentElement.children].indexOf(th);
+    const dir = th.dataset.dir === 'asc' ? -1 : 1;
+    th.dataset.dir = dir === 1 ? 'asc' : 'desc';
+    rows.sort((a, b) => dir * (parseFloat(a.cells[col].textContent) - parseFloat(b.cells[col].textContent)));
+    rows.forEach(r => tb.appendChild(r));
+  });
+});
+</script>
+</main>
+<footer class="wrap foot">
+<p>Sources: ESPN · Basketball-Reference · CBS Sports · Yahoo Sports · NBA CDN (cross-checked across sources).</p>
+<p>All figures are model estimates for research and discussion, and are not betting advice.</p>
+<p class="muted">Snapshot built 2026-10-31T01:27:09+00:00 UTC · Each update fetches rosters, injury reports and per-36 statistics, then recalculates the model.</p>
+</footer>
+<script>window.HOOPSLAB_BUILT_AT = "2026-10-31T01:27:09+00:00";</script>
+<script defer="" src="../app.js?v=bilingual-20261031"></script>
+</body>
+</html>
