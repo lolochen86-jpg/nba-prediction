@@ -27,10 +27,17 @@ jobs:
 
       - name: 檢查部署設定
         run: |
-          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
-            echo "::error::Set CLOUDFLARE_API_TOKEN in repository Settings > Secrets and variables > Actions."
-            exit 1
-          fi
+          python - <<'PY'
+          import os, re
+          token = os.environ.get("CLOUDFLARE_API_TOKEN", "").strip()
+          if not token:
+              raise SystemExit("::error::Set CLOUDFLARE_API_TOKEN in repository Settings > Secrets and variables > Actions.")
+          if not re.fullmatch(r"[A-Za-z0-9_-]+", token):
+              raise SystemExit("::error::CLOUDFLARE_API_TOKEN must contain only the token value on one line, without commands, quotes or internal line breaks. Edit this repository secret and paste the token value only.")
+          print("::add-mask::" + token)
+          with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as env:
+              env.write("CLOUDFLARE_API_TOKEN=" + token + "\n")
+          PY
 
       - uses: actions/setup-node@v4
         with:
