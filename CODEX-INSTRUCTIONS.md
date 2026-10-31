@@ -250,6 +250,8 @@ Linux 用 crontab（`crontab -e`）：
 | 3 | 資料有內容 | `curl -s https://nba-prediction-00.pages.dev/data/app.json \| head -c 200` | 看到 `updated_tpe`、`games` |
 | 4 | 今日場次數 | 同上，`games` 陣列長度 | 等於當天 NBA 場次數 |
 | 4b | 新人榜非空 | `curl -s .../data/app.json` 看 `rookies.combined` 長度 | >= 10（若為 0，看 `br_fallback` 是否為 true） |
+| 4c | **一年級與二年級都有** | 同上，看 `rookies.counts.rookies` / `rookies.counts.sophomores` | **兩者都 > 0**（若 sophomores = 0，代表 ESPN 年資偏移處理失效） |
+| 4d | 場次合理 | 同上，檢查所有 `combined` 球員的 `g` | 開季一個月內 `g` 應 <= 15；出現 40/80 場代表抓到上一季 |
 | 5 | 頁面顯示更新時間 | 開網站看頁首「最後更新」 | 與剛才建置時間一致（台灣時間） |
 | 6 | 排程生效 | 隔天 07:00 後再看「最後更新」 | 時間有變 |
 | 7 | 回測頁開始累積 | 開 `/backtest` | 「已評分場次」> 0（賽後才會有） |
@@ -265,6 +267,10 @@ Linux 用 crontab（`crontab -e`）：
 | `ModuleNotFoundError: No module named 'jinja2'` | 沒啟用 venv 或沒安裝依賴 | `source .venv/bin/activate && pip install -r requirements.txt` |
 | `[5/7] 完成 0 場` | 當天沒有比賽，或時區判斷到休兵日 | 正常現象，隔天恢復 |
 | `requests.exceptions.ConnectionError`（某個來源） | 對方站台暫時阻擋 | 重跑一次；`build.sh` 會沿用快取。連續失敗才需處理 |
+| 新人榜出現「81 場」這種不可能場次 | ESPN gamelog 未指定 `?season=`，會回傳「最近有資料的球季」＝上一季 | `espn_gamelog()` 已強制帶 `season=current_season_year()` 並只認該球季的例行賽 |
+| 新人榜混入只打熱身賽的球員 | 舊寫法在找不到例行賽時退回最後一個分類（＝Preseason） | 已改為「找不到例行賽就回傳空」，不再退回熱身賽 |
+| 新人榜缺少部分主力（如 Kon Knueppel） | BR 本季 per_minute 頁只收錄約 432 人，會漏掉部分球員 | 已改為「BR 優先、ESPN 補齊」：BR 沒有的球員自動用 ESPN 逐場回推 |
+| 新人榜只有一年級、二年級 0 位 | ESPN 把「第 N 季」記成 `N+1`（新人記 0，全聯盟沒有 `exp=1`），若直接用 `exp in (0,1)` 會濾掉所有二年級生 | `pipeline/rookies.py` 的 `season_years()` 已處理（`exp==0 → 0`，否則 `exp-1`，並以「是否存在 exp=1」自動判斷是否為標準慣例），**不要改回直接用 `p["exp"]`** |
 | `[done] ... 0 位新人` 且 BR 回 0 筆 | Basketball-Reference 封鎖機房／雲端 IP | **已內建備援**：偵測到少於 200 筆會自動改用 ESPN 逐場紀錄回推 per-36，重跑即可。若備援後仍 0 筆，代表 ESPN 也不通，檢查網路 |
 | 部署成功但網址 522 | 專案沒有「正式環境」部署 | `wrangler pages deploy ... --branch main` 會產生 Production 部署 |
 | 頁面樣式跑掉 | 只上傳了 zip 未解壓或上傳錯目錄 | `site/` 的內容要放在專案根目錄（`index.html` 在最上層） |

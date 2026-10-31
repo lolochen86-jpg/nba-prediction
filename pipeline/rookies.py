@@ -9,7 +9,7 @@ from __future__ import annotations
 
 from concurrent.futures import ThreadPoolExecutor
 
-from .sources import espn_gamelog, norm_name
+from .sources import current_season_year, espn_gamelog, norm_name
 
 KEEP_POS = {"G", "F", "C"}
 
@@ -91,7 +91,7 @@ def recent_trend(espn_id: str, days: int = 7, today=None) -> dict:
     from datetime import date, datetime, timedelta, timezone
 
     today = today or datetime.now(timezone.utc).date()
-    logs = espn_gamelog(espn_id)
+    logs = espn_gamelog(espn_id, season=current_season_year())
     if not logs:
         return {}
     parsed = []

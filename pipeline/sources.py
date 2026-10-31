@@ -262,17 +262,46 @@ def espn_injuries() -> list:
     return out
 
 
-def espn_gamelog(athlete_id: str) -> list:
-    """球員本季逐場紀錄（用於近 7 天趨勢）。"""
+def current_season_year() -> int:
+    """目前球季的結束年度（2026-27 球季 → 2027）。ESPN 的 season 參數用這個值。"""
+    now = datetime.now(timezone.utc)
+    return now.year + 1 if now.month >= 8 else now.year
+
+
+def season_label(year: int) -> str:
+    return f"{year - 1}-{str(year)[2:]}"
+
+
+def espn_gamelog(athlete_id: str, season: int | None = None) -> list:
+    """球員逐場紀錄（只回傳指定球季的例行賽）。
+
+    season 一定要指定（例如 2027 = 2026-27 球季）。不指定時 ESPN 會回傳「最近有資料的球季」，
+    對本季還沒出賽的球員就會抓到上一季（曾出現 81 場這種不可能的數字）。
+    """
+    season = season or current_season_year()
     try:
-        data = fetch_json(f"{ESPN_WEB}/athletes/{athlete_id}/gamelog", ttl=3600)
+        data = fetch_json(f"{ESPN_WEB}/athletes/{athlete_id}/gamelog?season={season}", ttl=3600)
     except Exception:  # noqa: BLE001
         return []
     names = data.get("names") or []
     events = data.get("events") or {}
     rows = []
     seasons = data.get("seasonTypes") or []
-    target = next((s for s in seasons if "Regular" in (s.get("displayName") or "")), seasons[-1] if seasons else None)
+    # 只取例行賽，且必須是「最新球季」。
+    # 1) 不可退回最後一個分類 —— 那是熱身賽（Preseason），會把只打熱身賽的球員算成有例行賽數據。
+    # 2) gamelog 會同時回傳多個球季（例如 2025-26 + 2026-27），舊寫法取第一個，
+    #    對部分球員會抓到上一季（出現 40 場這種不可能的數字），必須取 displayName 最新的一組。
+    want = season_label(season)
+    regs = [
+        s
+        for s in seasons
+        if "Regular" in (s.get("displayName") or "") and (s.get("displayName") or "").startswith(want)
+    ]
+    regs.sort(key=lambda s: s.get("displayName") or "", reverse=True)
+    target = next(
+        (s for s in regs if any(c.get("events") for c in s.get("categories", []) or [])),
+        None,
+    )
     if not target:
         return []
     for cat in target.get("categories", []) or []:
@@ -405,7 +434,7 @@ def espn_per36(pairs: list, workers: int = 8) -> dict:
 
     def one(item):
         espn_id, name = item
-        logs = espn_gamelog(espn_id)
+        logs = espn_gamelog(espn_id, season=current_season_year())
         if not logs:
             return None
         tot = {k: 0.0 for k in ("min", "pts", "reb", "ast", "stl", "blk", "tov", "pf", "fgm", "fga", "ftm", "fta")}

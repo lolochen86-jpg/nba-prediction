@@ -23,7 +23,7 @@
     </nav>
   </div>
   <div class="wrap statusbar">
-    <div class="stamp">最後更新 <b>2026-10-31 08:19</b>（台灣時間）· 球季 2026-27</div>
+    <div class="stamp">最後更新 <b>2026-10-31 09:27</b>（台灣時間）· 球季 2026-27</div>
     <div class="stamp-links">
       <a class="btn-ghost" href="method.html#update" title="這份資料是怎麼產生的、怎麼更新">更新方式</a>
       <button id="reloadBtn" class="btn-ghost" title="重新載入本頁">重新整理</button>
@@ -33,19 +33,19 @@
       <span class="chip ok" title="賽程・名單・球隊數據">
         <i></i>ESPN API <em>60</em>
       </span>
-      <span class="chip ok" title="BR 被封鎖，改用逐場紀錄回推 per-36">
-        <i></i>ESPN 逐場（BR 備援） <em>515</em>
+      <span class="chip ok" title="per-36 球員數據">
+        <i></i>Basketball-Reference <em>453</em>
       </span>
       <span class="chip ok" title="傷病報告">
         <i></i>CBS Sports <em>89</em>
       </span>
       <span class="chip ok" title="傷病報告">
-        <i></i>Yahoo Sports <em>95</em>
+        <i></i>Yahoo Sports <em>92</em>
       </span>
       <span class="chip ok" title="球員大頭貼">
         <i></i>NBA CDN <em>522</em>
       </span>
-    <span class="chip neutral" title="三源傷病報告比對後不一致的球員數">傷病衝突 8</span>
+    <span class="chip neutral" title="三源傷病報告比對後不一致的球員數">傷病衝突 6</span>
   </div>
 </header>
 
@@ -59,8 +59,8 @@
     <p class="sub">排名用 <b>Game Score / 36 分鐘</b>（Hollinger Game Score 標準化到 36 分鐘），避免上場時間多寡直接決定名次。右側另有「近 7 天進步榜」，看誰正在升溫。</p>
   </div>
   <div class="hero-stats">
-    <div><b>30</b><span>一年級（達標）</span></div>
-    <div><b>42</b><span>二年級（達標）</span></div>
+    <div><b>22</b><span>一年級（達標）</span></div>
+    <div><b>26</b><span>二年級（達標）</span></div>
     <div><b>7</b><span>進步榜天數</span></div>
   </div>
 </section>
@@ -69,9 +69,9 @@
   <div>
     <h2 class="sec">綜合排行 <span class="hint">出賽 ≥3 場、平均 ≥8 分鐘</span></h2>
     <div class="filters">
-      <button class="fbtn on" data-f="all">全部 <em>72</em></button>
-      <button class="fbtn" data-f="0">一年級 <em>30</em></button>
-      <button class="fbtn" data-f="1">二年級 <em>42</em></button>
+      <button class="fbtn on" data-f="all">全部 <em>48</em></button>
+      <button class="fbtn" data-f="0">一年級 <em>22</em></button>
+      <button class="fbtn" data-f="1">二年級 <em>26</em></button>
     </div>
     <table class="board" id="board">
       <thead>
@@ -98,12 +98,12 @@
           <td>4</td>
           <td>30.8</td>
           <td class="hi">29.6</td>
-          <td>6.2</td>
+          <td>6.1</td>
           <td>7.9</td>
           <td>3.2</td>
           <td>1.5</td>
-          <td>63.5</td>
-          <td class="gs">27.07</td>
+          <td>63.6</td>
+          <td class="gs">26.49</td>
         </tr>
         <tr data-cls="0">
           <td class="rk top">2</td>
@@ -124,7 +124,7 @@
           <td>2.0</td>
           <td>0.7</td>
           <td>61.9</td>
-          <td class="gs">18.9</td>
+          <td class="gs">20.03</td>
         </tr>
         <tr data-cls="0">
           <td class="rk top">3</td>
@@ -144,11 +144,32 @@
           <td>4.3</td>
           <td>1.1</td>
           <td>0.6</td>
-          <td>59.2</td>
-          <td class="gs">18.27</td>
+          <td>59.3</td>
+          <td class="gs">18.99</td>
         </tr>
         <tr data-cls="1">
           <td class="rk ">4</td>
+          <td class="who"><div class="whoflex">
+            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/5279133.png" alt="Joan Beringer" loading="lazy"
+                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
+            <div>
+              <b>Joan Beringer</b>
+              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/min.png" alt="" loading="lazy">MIN · F</span>
+            </div></div>
+          </td>
+          <td><span class="cls c1">二年級</span></td>
+          <td>5</td>
+          <td>15.6</td>
+          <td class="hi">15.7</td>
+          <td>17.5</td>
+          <td>1.4</td>
+          <td>0.5</td>
+          <td>1.4</td>
+          <td>67.6</td>
+          <td class="gs">18.54</td>
+        </tr>
+        <tr data-cls="1">
+          <td class="rk ">5</td>
           <td class="who"><div class="whoflex">
             <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/4433149.png" alt="LJ Cryer" loading="lazy"
                  onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
@@ -165,53 +186,11 @@
           <td>8.3</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>60.5</td>
-          <td class="gs">17.45</td>
-        </tr>
-        <tr data-cls="1">
-          <td class="rk ">5</td>
-          <td class="who"><div class="whoflex">
-            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/5279133.png" alt="Joan Beringer" loading="lazy"
-                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
-            <div>
-              <b>Joan Beringer</b>
-              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/min.png" alt="" loading="lazy">MIN · F</span>
-            </div></div>
-          </td>
-          <td><span class="cls c1">二年級</span></td>
-          <td>5</td>
-          <td>15.8</td>
-          <td class="hi">15.5</td>
-          <td>17.3</td>
-          <td>1.4</td>
-          <td>0.5</td>
-          <td>1.4</td>
-          <td>67.8</td>
-          <td class="gs">17.05</td>
+          <td>60.3</td>
+          <td class="gs">17.13</td>
         </tr>
         <tr data-cls="1">
           <td class="rk ">6</td>
-          <td class="who"><div class="whoflex">
-            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/4702670.png" alt="Grant Nelson" loading="lazy"
-                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
-            <div>
-              <b>Grant Nelson</b>
-              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/bkn.png" alt="" loading="lazy">BKN · F</span>
-            </div></div>
-          </td>
-          <td><span class="cls c1">二年級</span></td>
-          <td>4</td>
-          <td>8.8</td>
-          <td class="hi">17.5</td>
-          <td>6.2</td>
-          <td>5.1</td>
-          <td>1.0</td>
-          <td>5.1</td>
-          <td>63.4</td>
-          <td class="gs">15.94</td>
-        </tr>
-        <tr data-cls="1">
-          <td class="rk ">7</td>
           <td class="who"><div class="whoflex">
             <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/4869780.png" alt="Derik Queen" loading="lazy"
                  onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
@@ -223,58 +202,16 @@
           <td><span class="cls c1">二年級</span></td>
           <td>5</td>
           <td>23.8</td>
-          <td class="hi">17.9</td>
+          <td class="hi">17.8</td>
           <td>11.8</td>
           <td>2.7</td>
           <td>1.5</td>
           <td>0.9</td>
-          <td>64.6</td>
-          <td class="gs">15.85</td>
-        </tr>
-        <tr data-cls="1">
-          <td class="rk ">8</td>
-          <td class="who"><div class="whoflex">
-            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/4396963.png" alt="Blake Hinson" loading="lazy"
-                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
-            <div>
-              <b>Blake Hinson</b>
-              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/utah.png" alt="" loading="lazy">UTAH · F</span>
-            </div></div>
-          </td>
-          <td><span class="cls c1">二年級</span></td>
-          <td>14</td>
-          <td>20.4</td>
-          <td class="hi">21.0</td>
-          <td>4.2</td>
-          <td>2.0</td>
-          <td>0.6</td>
-          <td>0.2</td>
-          <td>68.4</td>
-          <td class="gs">15.69</td>
-        </tr>
-        <tr data-cls="1">
-          <td class="rk ">9</td>
-          <td class="who"><div class="whoflex">
-            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/4781746.png" alt="Javon Small" loading="lazy"
-                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
-            <div>
-              <b>Javon Small</b>
-              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/mem.png" alt="" loading="lazy">MEM · G</span>
-            </div></div>
-          </td>
-          <td><span class="cls c1">二年級</span></td>
-          <td>40</td>
-          <td>20.8</td>
-          <td class="hi">17.2</td>
-          <td>5.5</td>
-          <td>6.5</td>
-          <td>1.5</td>
-          <td>0.4</td>
-          <td>61.1</td>
-          <td class="gs">15.51</td>
+          <td>64.3</td>
+          <td class="gs">15.17</td>
         </tr>
         <tr data-cls="0">
-          <td class="rk ">10</td>
+          <td class="rk ">7</td>
           <td class="who"><div class="whoflex">
             <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/5041935.png" alt="Cameron Boozer" loading="lazy"
                  onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
@@ -285,38 +222,38 @@
           </td>
           <td><span class="cls c0">一年級</span></td>
           <td>5</td>
-          <td>32.0</td>
-          <td class="hi">17.3</td>
-          <td>12.2</td>
-          <td>7.0</td>
-          <td>0.5</td>
+          <td>32.2</td>
+          <td class="hi">17.7</td>
+          <td>12.1</td>
+          <td>6.9</td>
+          <td>0.4</td>
           <td>0.7</td>
-          <td>48.0</td>
-          <td class="gs">15.5</td>
+          <td>49.3</td>
+          <td class="gs">15.14</td>
         </tr>
         <tr data-cls="1">
-          <td class="rk ">11</td>
+          <td class="rk ">8</td>
           <td class="who"><div class="whoflex">
-            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/4397114.png" alt="Cormac Ryan" loading="lazy"
+            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/4873138.png" alt="Ace Bailey" loading="lazy"
                  onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
             <div>
-              <b>Cormac Ryan</b>
-              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/mil.png" alt="" loading="lazy">MIL · G</span>
+              <b>Ace Bailey</b>
+              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/utah.png" alt="" loading="lazy">UTAH · G</span>
             </div></div>
           </td>
           <td><span class="cls c1">二年級</span></td>
-          <td>11</td>
-          <td>24.6</td>
-          <td class="hi">20.9</td>
-          <td>3.7</td>
-          <td>2.5</td>
-          <td>1.5</td>
-          <td>0.4</td>
-          <td>69.2</td>
-          <td class="gs">15.43</td>
+          <td>5</td>
+          <td>29.8</td>
+          <td class="hi">17.2</td>
+          <td>9.7</td>
+          <td>2.9</td>
+          <td>0.0</td>
+          <td>1.9</td>
+          <td>59.6</td>
+          <td class="gs">14.98</td>
         </tr>
         <tr data-cls="1">
-          <td class="rk ">12</td>
+          <td class="rk ">9</td>
           <td class="who"><div class="whoflex">
             <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/4896372.png" alt="Walter Clayton Jr." loading="lazy"
                  onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
@@ -327,14 +264,77 @@
           </td>
           <td><span class="cls c1">二年級</span></td>
           <td>4</td>
-          <td>12.0</td>
-          <td class="hi">13.5</td>
-          <td>6.8</td>
-          <td>10.5</td>
+          <td>11.8</td>
+          <td class="hi">13.8</td>
+          <td>6.9</td>
+          <td>10.7</td>
           <td>0.8</td>
           <td>0.8</td>
-          <td>62.8</td>
-          <td class="gs">15.3</td>
+          <td>58.9</td>
+          <td class="gs">14.85</td>
+        </tr>
+        <tr data-cls="0">
+          <td class="rk ">10</td>
+          <td class="who"><div class="whoflex">
+            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/5082206.png" alt="Brayden Burries" loading="lazy"
+                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
+            <div>
+              <b>Brayden Burries</b>
+              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/mil.png" alt="" loading="lazy">MIL · G</span>
+            </div></div>
+          </td>
+          <td><span class="cls c0">一年級</span></td>
+          <td>5</td>
+          <td>15.0</td>
+          <td class="hi">18.7</td>
+          <td>9.1</td>
+          <td>3.4</td>
+          <td>1.4</td>
+          <td>0.0</td>
+          <td>57.1</td>
+          <td class="gs">14.67</td>
+        </tr>
+        <tr data-cls="0">
+          <td class="rk ">11</td>
+          <td class="who"><div class="whoflex">
+            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/5149115.png" alt="Allen Graves" loading="lazy"
+                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
+            <div>
+              <b>Allen Graves</b>
+              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/tor.png" alt="" loading="lazy">TOR · F</span>
+            </div></div>
+          </td>
+          <td><span class="cls c0">一年級</span></td>
+          <td>4</td>
+          <td>16.0</td>
+          <td class="hi">11.8</td>
+          <td>7.9</td>
+          <td>2.3</td>
+          <td>1.7</td>
+          <td>2.8</td>
+          <td>55.1</td>
+          <td class="gs">14.58</td>
+        </tr>
+        <tr data-cls="1">
+          <td class="rk ">12</td>
+          <td class="who"><div class="whoflex">
+            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/5037871.png" alt="Dylan Harper" loading="lazy"
+                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
+            <div>
+              <b>Dylan Harper</b>
+              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/sa.png" alt="" loading="lazy">SA · G</span>
+            </div></div>
+          </td>
+          <td><span class="cls c1">二年級</span></td>
+          <td>5</td>
+          <td>32.6</td>
+          <td class="hi">19.0</td>
+          <td>5.7</td>
+          <td>5.1</td>
+          <td>1.1</td>
+          <td>0.0</td>
+          <td>54.1</td>
+          <td class="gs">14.45</td>
         </tr>
         <tr data-cls="1">
           <td class="rk ">13</td>
@@ -349,100 +349,37 @@
           <td><span class="cls c1">二年級</span></td>
           <td>4</td>
           <td>29.5</td>
-          <td class="hi">17.4</td>
+          <td class="hi">16.8</td>
           <td>11.0</td>
-          <td>3.0</td>
+          <td>3.4</td>
           <td>1.5</td>
           <td>0.3</td>
-          <td>63.3</td>
-          <td class="gs">14.71</td>
-        </tr>
-        <tr data-cls="1">
-          <td class="rk ">14</td>
-          <td class="who"><div class="whoflex">
-            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/5037871.png" alt="Dylan Harper" loading="lazy"
-                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
-            <div>
-              <b>Dylan Harper</b>
-              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/sa.png" alt="" loading="lazy">SA · G</span>
-            </div></div>
-          </td>
-          <td><span class="cls c1">二年級</span></td>
-          <td>5</td>
-          <td>32.2</td>
-          <td class="hi">19.2</td>
-          <td>5.8</td>
-          <td>5.1</td>
-          <td>1.1</td>
-          <td>0.0</td>
-          <td>53.9</td>
-          <td class="gs">14.68</td>
-        </tr>
-        <tr data-cls="1">
-          <td class="rk ">15</td>
-          <td class="who"><div class="whoflex">
-            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/4873138.png" alt="Ace Bailey" loading="lazy"
-                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
-            <div>
-              <b>Ace Bailey</b>
-              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/utah.png" alt="" loading="lazy">UTAH · G</span>
-            </div></div>
-          </td>
-          <td><span class="cls c1">二年級</span></td>
-          <td>5</td>
-          <td>29.8</td>
-          <td class="hi">17.1</td>
-          <td>9.7</td>
-          <td>2.9</td>
-          <td>0.0</td>
-          <td>1.9</td>
-          <td>59.4</td>
-          <td class="gs">14.5</td>
-        </tr>
-        <tr data-cls="1">
-          <td class="rk ">16</td>
-          <td class="who"><div class="whoflex">
-            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/4898371.png" alt="Maxime Raynaud" loading="lazy"
-                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
-            <div>
-              <b>Maxime Raynaud</b>
-              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/sac.png" alt="" loading="lazy">SAC · C</span>
-            </div></div>
-          </td>
-          <td><span class="cls c1">二年級</span></td>
-          <td>74</td>
-          <td>26.6</td>
-          <td class="hi">16.9</td>
-          <td>10.2</td>
-          <td>1.8</td>
-          <td>0.7</td>
-          <td>0.7</td>
-          <td>61.9</td>
-          <td class="gs">14.4</td>
+          <td>64.1</td>
+          <td class="gs">14.18</td>
         </tr>
         <tr data-cls="0">
-          <td class="rk ">17</td>
+          <td class="rk ">14</td>
           <td class="who"><div class="whoflex">
-            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/5082206.png" alt="Brayden Burries" loading="lazy"
+            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/5095151.png" alt="Caleb Wilson" loading="lazy"
                  onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
             <div>
-              <b>Brayden Burries</b>
-              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/mil.png" alt="" loading="lazy">MIL · G</span>
+              <b>Caleb Wilson</b>
+              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/chi.png" alt="" loading="lazy">CHI · F</span>
             </div></div>
           </td>
           <td><span class="cls c0">一年級</span></td>
           <td>5</td>
-          <td>14.8</td>
-          <td class="hi">19.0</td>
-          <td>9.2</td>
-          <td>3.4</td>
+          <td>34.6</td>
+          <td class="hi">21.6</td>
+          <td>7.3</td>
+          <td>2.3</td>
+          <td>1.9</td>
           <td>1.5</td>
-          <td>0.0</td>
-          <td>57.3</td>
-          <td class="gs">14.3</td>
+          <td>50.1</td>
+          <td class="gs">14.04</td>
         </tr>
         <tr data-cls="0">
-          <td class="rk ">18</td>
+          <td class="rk ">15</td>
           <td class="who"><div class="whoflex">
             <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/5254165.png" alt="Keaton Wagler" loading="lazy"
                  onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
@@ -453,38 +390,17 @@
           </td>
           <td><span class="cls c0">一年級</span></td>
           <td>4</td>
-          <td>26.8</td>
-          <td class="hi">20.2</td>
-          <td>5.7</td>
-          <td>4.7</td>
+          <td>26.5</td>
+          <td class="hi">20.4</td>
+          <td>5.8</td>
+          <td>4.8</td>
           <td>1.7</td>
           <td>0.3</td>
-          <td>58.1</td>
-          <td class="gs">14.16</td>
+          <td>58.2</td>
+          <td class="gs">14.04</td>
         </tr>
         <tr data-cls="1">
-          <td class="rk ">19</td>
-          <td class="who"><div class="whoflex">
-            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/4431734.png" alt="Tristan Enaruna" loading="lazy"
-                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
-            <div>
-              <b>Tristan Enaruna</b>
-              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/cle.png" alt="" loading="lazy">CLE · F</span>
-            </div></div>
-          </td>
-          <td><span class="cls c1">二年級</span></td>
-          <td>9</td>
-          <td>9.6</td>
-          <td class="hi">15.5</td>
-          <td>5.9</td>
-          <td>2.9</td>
-          <td>2.1</td>
-          <td>0.0</td>
-          <td>58.7</td>
-          <td class="gs">14.02</td>
-        </tr>
-        <tr data-cls="1">
-          <td class="rk ">20</td>
+          <td class="rk ">16</td>
           <td class="who"><div class="whoflex">
             <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/5279130.png" alt="Nolan Traore" loading="lazy"
                  onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
@@ -504,50 +420,8 @@
           <td>59.9</td>
           <td class="gs">13.78</td>
         </tr>
-        <tr data-cls="0">
-          <td class="rk ">21</td>
-          <td class="who"><div class="whoflex">
-            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/5095151.png" alt="Caleb Wilson" loading="lazy"
-                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
-            <div>
-              <b>Caleb Wilson</b>
-              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/chi.png" alt="" loading="lazy">CHI · F</span>
-            </div></div>
-          </td>
-          <td><span class="cls c0">一年級</span></td>
-          <td>5</td>
-          <td>34.6</td>
-          <td class="hi">21.6</td>
-          <td>7.3</td>
-          <td>2.3</td>
-          <td>1.9</td>
-          <td>1.5</td>
-          <td>50.1</td>
-          <td class="gs">13.74</td>
-        </tr>
-        <tr data-cls="0">
-          <td class="rk ">22</td>
-          <td class="who"><div class="whoflex">
-            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/5106283.png" alt="Dillon Mitchell" loading="lazy"
-                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
-            <div>
-              <b>Dillon Mitchell</b>
-              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/bos.png" alt="" loading="lazy">BOS · F</span>
-            </div></div>
-          </td>
-          <td><span class="cls c0">一年級</span></td>
-          <td>4</td>
-          <td>16.2</td>
-          <td class="hi">12.7</td>
-          <td>11.6</td>
-          <td>5.5</td>
-          <td>2.2</td>
-          <td>0.0</td>
-          <td>58.6</td>
-          <td class="gs">13.68</td>
-        </tr>
         <tr data-cls="1">
-          <td class="rk ">23</td>
+          <td class="rk ">17</td>
           <td class="who"><div class="whoflex">
             <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/5023693.png" alt="Tyrese Proctor" loading="lazy"
                  onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
@@ -558,101 +432,17 @@
           </td>
           <td><span class="cls c1">二年級</span></td>
           <td>4</td>
-          <td>10.5</td>
-          <td class="hi">12.0</td>
-          <td>7.7</td>
-          <td>5.1</td>
+          <td>10.2</td>
+          <td class="hi">12.3</td>
+          <td>7.9</td>
+          <td>5.3</td>
           <td>0.9</td>
           <td>0.0</td>
-          <td>70.0</td>
-          <td class="gs">13.37</td>
+          <td>69.9</td>
+          <td class="gs">13.66</td>
         </tr>
         <tr data-cls="1">
-          <td class="rk ">24</td>
-          <td class="who"><div class="whoflex">
-            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/5108024.png" alt="Yanic Konan Niederhauser" loading="lazy"
-                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
-            <div>
-              <b>Yanic Konan Niederhauser</b>
-              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/lac.png" alt="" loading="lazy">LAC · C</span>
-            </div></div>
-          </td>
-          <td><span class="cls c1">二年級</span></td>
-          <td>40</td>
-          <td>10.6</td>
-          <td class="hi">14.9</td>
-          <td>9.9</td>
-          <td>1.0</td>
-          <td>0.4</td>
-          <td>2.5</td>
-          <td>69.1</td>
-          <td class="gs">13.33</td>
-        </tr>
-        <tr data-cls="0">
-          <td class="rk ">25</td>
-          <td class="who"><div class="whoflex">
-            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/5149115.png" alt="Allen Graves" loading="lazy"
-                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
-            <div>
-              <b>Allen Graves</b>
-              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/tor.png" alt="" loading="lazy">TOR · F</span>
-            </div></div>
-          </td>
-          <td><span class="cls c0">一年級</span></td>
-          <td>4</td>
-          <td>15.8</td>
-          <td class="hi">12.0</td>
-          <td>8.0</td>
-          <td>2.3</td>
-          <td>1.7</td>
-          <td>2.9</td>
-          <td>55.0</td>
-          <td class="gs">13.32</td>
-        </tr>
-        <tr data-cls="0">
-          <td class="rk ">26</td>
-          <td class="who"><div class="whoflex">
-            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/4703115.png" alt="Jaron Pierre Jr." loading="lazy"
-                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
-            <div>
-              <b>Jaron Pierre Jr.</b>
-              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/no.png" alt="" loading="lazy">NO · G</span>
-            </div></div>
-          </td>
-          <td><span class="cls c0">一年級</span></td>
-          <td>4</td>
-          <td>11.5</td>
-          <td class="hi">21.1</td>
-          <td>5.5</td>
-          <td>3.9</td>
-          <td>1.6</td>
-          <td>1.6</td>
-          <td>68.7</td>
-          <td class="gs">12.84</td>
-        </tr>
-        <tr data-cls="0">
-          <td class="rk ">27</td>
-          <td class="who"><div class="whoflex">
-            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/5142620.png" alt="Darius Acuff Jr." loading="lazy"
-                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
-            <div>
-              <b>Darius Acuff Jr.</b>
-              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/sac.png" alt="" loading="lazy">SAC · G</span>
-            </div></div>
-          </td>
-          <td><span class="cls c0">一年級</span></td>
-          <td>5</td>
-          <td>36.4</td>
-          <td class="hi">23.7</td>
-          <td>3.4</td>
-          <td>6.5</td>
-          <td>0.8</td>
-          <td>0.2</td>
-          <td>46.3</td>
-          <td class="gs">12.8</td>
-        </tr>
-        <tr data-cls="1">
-          <td class="rk ">28</td>
+          <td class="rk ">18</td>
           <td class="who"><div class="whoflex">
             <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/4576060.png" alt="Ryan Kalkbrenner" loading="lazy"
                  onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
@@ -669,32 +459,32 @@
           <td>3.5</td>
           <td>0.4</td>
           <td>3.1</td>
-          <td>77.9</td>
-          <td class="gs">12.47</td>
+          <td>77.8</td>
+          <td class="gs">13.37</td>
         </tr>
-        <tr data-cls="1">
-          <td class="rk ">29</td>
+        <tr data-cls="0">
+          <td class="rk ">19</td>
           <td class="who"><div class="whoflex">
-            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/4397784.png" alt="Malachi Smith" loading="lazy"
+            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/5142620.png" alt="Darius Acuff Jr." loading="lazy"
                  onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
             <div>
-              <b>Malachi Smith</b>
-              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/tor.png" alt="" loading="lazy">TOR · G</span>
+              <b>Darius Acuff Jr.</b>
+              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/sac.png" alt="" loading="lazy">SAC · G</span>
             </div></div>
           </td>
-          <td><span class="cls c1">二年級</span></td>
-          <td>15</td>
-          <td>23.9</td>
-          <td class="hi">12.4</td>
-          <td>5.1</td>
-          <td>4.9</td>
-          <td>1.2</td>
-          <td>0.4</td>
-          <td>60.5</td>
-          <td class="gs">12.44</td>
+          <td><span class="cls c0">一年級</span></td>
+          <td>5</td>
+          <td>36.4</td>
+          <td class="hi">23.7</td>
+          <td>3.4</td>
+          <td>6.5</td>
+          <td>0.6</td>
+          <td>0.2</td>
+          <td>46.3</td>
+          <td class="gs">12.4</td>
         </tr>
         <tr data-cls="1">
-          <td class="rk ">30</td>
+          <td class="rk ">20</td>
           <td class="who"><div class="whoflex">
             <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/5214640.png" alt="Kasparas Jakucionis" loading="lazy"
                  onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
@@ -713,6 +503,216 @@
           <td>0.3</td>
           <td>66.3</td>
           <td class="gs">12.31</td>
+        </tr>
+        <tr data-cls="0">
+          <td class="rk ">21</td>
+          <td class="who"><div class="whoflex">
+            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/4698719.png" alt="Trevon Brazile" loading="lazy"
+                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
+            <div>
+              <b>Trevon Brazile</b>
+              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/den.png" alt="" loading="lazy">DEN · F</span>
+            </div></div>
+          </td>
+          <td><span class="cls c0">一年級</span></td>
+          <td>4</td>
+          <td>23.8</td>
+          <td class="hi">14.4</td>
+          <td>11.4</td>
+          <td>0.0</td>
+          <td>0.8</td>
+          <td>1.1</td>
+          <td>61.1</td>
+          <td class="gs">11.87</td>
+        </tr>
+        <tr data-cls="1">
+          <td class="rk ">22</td>
+          <td class="who"><div class="whoflex">
+            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/5238230.png" alt="Tre Johnson" loading="lazy"
+                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
+            <div>
+              <b>Tre Johnson</b>
+              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/wsh.png" alt="" loading="lazy">WSH · G</span>
+            </div></div>
+          </td>
+          <td><span class="cls c1">二年級</span></td>
+          <td>4</td>
+          <td>22.8</td>
+          <td class="hi">19.0</td>
+          <td>3.2</td>
+          <td>1.6</td>
+          <td>0.8</td>
+          <td>0.4</td>
+          <td>59.8</td>
+          <td class="gs">11.46</td>
+        </tr>
+        <tr data-cls="1">
+          <td class="rk ">23</td>
+          <td class="who"><div class="whoflex">
+            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/5093267.png" alt="Collin Murray-Boyles" loading="lazy"
+                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
+            <div>
+              <b>Collin Murray-Boyles</b>
+              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/tor.png" alt="" loading="lazy">TOR · F</span>
+            </div></div>
+          </td>
+          <td><span class="cls c1">二年級</span></td>
+          <td>4</td>
+          <td>17.8</td>
+          <td class="hi">13.7</td>
+          <td>10.1</td>
+          <td>3.0</td>
+          <td>2.0</td>
+          <td>1.0</td>
+          <td>55.2</td>
+          <td class="gs">11.34</td>
+        </tr>
+        <tr data-cls="0">
+          <td class="rk ">24</td>
+          <td class="who"><div class="whoflex">
+            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/5041955.png" alt="Darryn Peterson" loading="lazy"
+                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
+            <div>
+              <b>Darryn Peterson</b>
+              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/utah.png" alt="" loading="lazy">UTAH · G</span>
+            </div></div>
+          </td>
+          <td><span class="cls c0">一年級</span></td>
+          <td>5</td>
+          <td>28.6</td>
+          <td class="hi">16.1</td>
+          <td>5.5</td>
+          <td>3.3</td>
+          <td>1.3</td>
+          <td>0.3</td>
+          <td>46.2</td>
+          <td class="gs">11.04</td>
+        </tr>
+        <tr data-cls="1">
+          <td class="rk ">25</td>
+          <td class="who"><div class="whoflex">
+            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/5144091.png" alt="Jeremiah Fears" loading="lazy"
+                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
+            <div>
+              <b>Jeremiah Fears</b>
+              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/no.png" alt="" loading="lazy">NO · G</span>
+            </div></div>
+          </td>
+          <td><span class="cls c1">二年級</span></td>
+          <td>5</td>
+          <td>24.2</td>
+          <td class="hi">17.3</td>
+          <td>6.2</td>
+          <td>6.0</td>
+          <td>1.5</td>
+          <td>1.2</td>
+          <td>44.8</td>
+          <td class="gs">10.98</td>
+        </tr>
+        <tr data-cls="1">
+          <td class="rk ">26</td>
+          <td class="who"><div class="whoflex">
+            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/5203685.png" alt="Khaman Maluach" loading="lazy"
+                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
+            <div>
+              <b>Khaman Maluach</b>
+              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/phx.png" alt="" loading="lazy">PHX · C</span>
+            </div></div>
+          </td>
+          <td><span class="cls c1">二年級</span></td>
+          <td>3</td>
+          <td>23.3</td>
+          <td class="hi">11.8</td>
+          <td>11.3</td>
+          <td>2.6</td>
+          <td>1.0</td>
+          <td>2.1</td>
+          <td>62.1</td>
+          <td class="gs">10.73</td>
+        </tr>
+        <tr data-cls="0">
+          <td class="rk ">27</td>
+          <td class="who"><div class="whoflex">
+            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/5279129.png" alt="Sergio de Larrea" loading="lazy"
+                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
+            <div>
+              <b>Sergio de Larrea</b>
+              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/dal.png" alt="" loading="lazy">DAL · F</span>
+            </div></div>
+          </td>
+          <td><span class="cls c0">一年級</span></td>
+          <td>4</td>
+          <td>11.5</td>
+          <td class="hi">16.4</td>
+          <td>6.3</td>
+          <td>3.9</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>58.2</td>
+          <td class="gs">10.57</td>
+        </tr>
+        <tr data-cls="1">
+          <td class="rk ">28</td>
+          <td class="who"><div class="whoflex">
+            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/4702352.png" alt="Kobe Sanders" loading="lazy"
+                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
+            <div>
+              <b>Kobe Sanders</b>
+              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/lac.png" alt="" loading="lazy">LAC · G</span>
+            </div></div>
+          </td>
+          <td><span class="cls c1">二年級</span></td>
+          <td>4</td>
+          <td>21.2</td>
+          <td class="hi">11.9</td>
+          <td>4.7</td>
+          <td>4.2</td>
+          <td>3.4</td>
+          <td>0.0</td>
+          <td>49.2</td>
+          <td class="gs">10.42</td>
+        </tr>
+        <tr data-cls="0">
+          <td class="rk ">29</td>
+          <td class="who"><div class="whoflex">
+            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/4873153.png" alt="Morez Johnson Jr." loading="lazy"
+                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
+            <div>
+              <b>Morez Johnson Jr.</b>
+              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/dal.png" alt="" loading="lazy">DAL · F</span>
+            </div></div>
+          </td>
+          <td><span class="cls c0">一年級</span></td>
+          <td>5</td>
+          <td>15.2</td>
+          <td class="hi">17.1</td>
+          <td>8.5</td>
+          <td>3.3</td>
+          <td>0.5</td>
+          <td>0.0</td>
+          <td>61.2</td>
+          <td class="gs">10.21</td>
+        </tr>
+        <tr data-cls="1">
+          <td class="rk ">30</td>
+          <td class="who"><div class="whoflex">
+            <img class="face" src="https://a.espncdn.com/i/headshots/nba/players/full/5124612.png" alt="VJ Edgecombe" loading="lazy"
+                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23223%22/><text x=%2250%22 y=%2262%22 font-size=%2240%22 fill=%22%23667%22 text-anchor=%22middle%22>?</text></svg>'">
+            <div>
+              <b>VJ Edgecombe</b>
+              <span class="team"><img src="https://a.espncdn.com/i/teamlogos/nba/500/phi.png" alt="" loading="lazy">PHI · G</span>
+            </div></div>
+          </td>
+          <td><span class="cls c1">二年級</span></td>
+          <td>4</td>
+          <td>31.8</td>
+          <td class="hi">12.8</td>
+          <td>8.8</td>
+          <td>3.1</td>
+          <td>1.7</td>
+          <td>0.6</td>
+          <td>47.4</td>
+          <td class="gs">10.1</td>
         </tr>
       </tbody>
     </table>
@@ -909,54 +909,24 @@
       <thead><tr><th>球員</th><th>年級</th><th>G</th><th>MIN</th><th>GS/36</th></tr></thead>
       <tbody>
         <tr>
-          <td class="who"><div class="whoflex"><b>Chris Youngblood</b><span class="team">POR</span></div></td>
-          <td><span class="cls c1">二年級</span></td>
-          <td>32</td><td>5.8</td><td>9.66</td>
-        </tr>
-        <tr>
-          <td class="who"><div class="whoflex"><b>Adou Thiero</b><span class="team">LAL</span></div></td>
-          <td><span class="cls c1">二年級</span></td>
-          <td>25</td><td>6.0</td><td>9.18</td>
-        </tr>
-        <tr>
-          <td class="who"><div class="whoflex"><b>Amari Williams</b><span class="team">BOS</span></div></td>
-          <td><span class="cls c1">二年級</span></td>
-          <td>21</td><td>6.9</td><td>8.23</td>
-        </tr>
-        <tr>
-          <td class="who"><div class="whoflex"><b>Vladislav Goldin</b><span class="team">MIA</span></div></td>
-          <td><span class="cls c1">二年級</span></td>
-          <td>9</td><td>2.6</td><td>12.84</td>
-        </tr>
-        <tr>
-          <td class="who"><div class="whoflex"><b>Sean Pedulla</b><span class="team">SAC</span></div></td>
-          <td><span class="cls c1">二年級</span></td>
-          <td>7</td><td>4.4</td><td>7.67</td>
-        </tr>
-        <tr>
-          <td class="who"><div class="whoflex"><b>Rocco Zikarsky</b><span class="team">MIN</span></div></td>
-          <td><span class="cls c1">二年級</span></td>
-          <td>5</td><td>7.4</td><td>18.19</td>
-        </tr>
-        <tr>
           <td class="who"><div class="whoflex"><b>Nique Clifford</b><span class="team">SAC</span></div></td>
           <td><span class="cls c1">二年級</span></td>
-          <td>4</td><td>7.0</td><td>2.83</td>
+          <td>4</td><td>6.8</td><td>3.31</td>
         </tr>
         <tr>
           <td class="who"><div class="whoflex"><b>Brooks Barnhizer</b><span class="team">OKC</span></div></td>
           <td><span class="cls c1">二年級</span></td>
-          <td>4</td><td>5.0</td><td>2.16</td>
+          <td>4</td><td>4.8</td><td>2.66</td>
         </tr>
         <tr>
           <td class="who"><div class="whoflex"><b>Alijah Martin</b><span class="team">TOR</span></div></td>
           <td><span class="cls c1">二年級</span></td>
-          <td>4</td><td>4.5</td><td>10.0</td>
+          <td>4</td><td>4.2</td><td>9.93</td>
         </tr>
         <tr>
           <td class="who"><div class="whoflex"><b>Jaden Bradley</b><span class="team">TOR</span></div></td>
           <td><span class="cls c0">一年級</span></td>
-          <td>4</td><td>4.0</td><td>12.82</td>
+          <td>4</td><td>3.8</td><td>13.2</td>
         </tr>
         <tr>
           <td class="who"><div class="whoflex"><b>Moussa Cisse</b><span class="team">DAL</span></div></td>
@@ -966,7 +936,37 @@
         <tr>
           <td class="who"><div class="whoflex"><b>Bruce Thornton</b><span class="team">HOU</span></div></td>
           <td><span class="cls c0">一年級</span></td>
-          <td>4</td><td>2.8</td><td>5.89</td>
+          <td>4</td><td>2.8</td><td>5.91</td>
+        </tr>
+        <tr>
+          <td class="who"><div class="whoflex"><b>Tarris Reed Jr.</b><span class="team">SA</span></div></td>
+          <td><span class="cls c0">一年級</span></td>
+          <td>3</td><td>4.3</td><td>10.51</td>
+        </tr>
+        <tr>
+          <td class="who"><div class="whoflex"><b>Ryan Conwell</b><span class="team">MIA</span></div></td>
+          <td><span class="cls c0">一年級</span></td>
+          <td>3</td><td>3.3</td><td>12.96</td>
+        </tr>
+        <tr>
+          <td class="who"><div class="whoflex"><b>Will Riley</b><span class="team">WSH</span></div></td>
+          <td><span class="cls c1">二年級</span></td>
+          <td>3</td><td>3.3</td><td>2.16</td>
+        </tr>
+        <tr>
+          <td class="who"><div class="whoflex"><b>Tobi Lawal</b><span class="team">DAL</span></div></td>
+          <td><span class="cls c0">一年級</span></td>
+          <td>3</td><td>2.7</td><td>27.45</td>
+        </tr>
+        <tr>
+          <td class="who"><div class="whoflex"><b>Isaiah Evans</b><span class="team">MIN</span></div></td>
+          <td><span class="cls c0">一年級</span></td>
+          <td>3</td><td>2.7</td><td>-4.95</td>
+        </tr>
+        <tr>
+          <td class="who"><div class="whoflex"><b>Josh Dix</b><span class="team">OKC</span></div></td>
+          <td><span class="cls c0">一年級</span></td>
+          <td>2</td><td>23.0</td><td>-4.18</td>
         </tr>
       </tbody>
     </table>
@@ -1000,12 +1000,12 @@ document.querySelectorAll('#board th[data-sort]').forEach((th, i) => {
 <footer class="wrap foot">
   <p>資料來源：ESPN · Basketball-Reference · CBS Sports · Yahoo Sports · NBA CDN（多重來源交叉比對）。</p>
   <p>所有數字為模型估計值，僅供研究與討論，不構成任何投注建議。</p>
-  <p class="muted">建置時間 2026-10-31T00:19:40+00:00 UTC · 每次更新自動重新抓取名單、傷病與 per-36 數據後重算。</p>
+  <p class="muted">建置時間 2026-10-31T01:27:09+00:00 UTC · 每次更新自動重新抓取名單、傷病與 per-36 數據後重算。</p>
 </footer>
 
 <script>
 // 資料快照時間（台灣時間）→ 超過 12 小時就在頁面上警示
-const BUILT_AT = "2026-10-31T00:19:40+00:00";
+const BUILT_AT = "2026-10-31T01:27:09+00:00";
 const RELOAD = document.getElementById('reloadBtn');
 if (RELOAD) RELOAD.addEventListener('click', () => location.reload());
 

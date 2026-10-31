@@ -100,15 +100,28 @@ def main(grade: bool = True) -> None:
     if os.environ.get("NBA_FORCE_BR_FALLBACK") == "1":   # 測試用：模擬 BR 被封鎖
         per36_cur, per36_prev = {}, per36_prev
     br_fallback = False
-    # Basketball-Reference 會封鎖機房 IP，回 0 筆時改用 ESPN 逐場紀錄回推 per-36
+    # per-36 數據採「BR 優先、ESPN 補齊」：
+    #  a) BR 被機房 IP 封鎖 → 回 0 筆，全部改用 ESPN 逐場回推
+    #  b) BR 正常但收錄不全（本季約 432 人，缺部分主力）→ 只補缺少的球員
+    pairs = [(p["espn_id"], p["name"]) for ps in rosters.values() for p in ps if p.get("espn_id")]
     if len(per36_cur) < 200:
         print(f"      來源只有 {len(per36_cur)} 筆 → 啟用 ESPN 逐場資料備援（約 1–2 分鐘）")
-        pairs = [(p["espn_id"], p["name"]) for ps in rosters.values() for p in ps if p.get("espn_id")]
         fb = sources.espn_per36(pairs)
         for k, v in fb.items():
             per36_cur.setdefault(k, v)
         br_fallback = True
         print(f"      備援完成，合計 {len(per36_cur)} 筆")
+    else:
+        missing = [(eid, name) for eid, name in pairs if sources.norm_name(name) not in per36_cur]
+        if missing:
+            print(f"      BR 收錄 {len(per36_cur)} 筆，缺少 {len(missing)} 位 → 用 ESPN 補齊")
+            fb = sources.espn_per36(missing)
+            added = 0
+            for k, v in fb.items():
+                if k not in per36_cur:
+                    per36_cur[k] = v
+                    added += 1
+            print(f"      補齊 {added} 位，合計 {len(per36_cur)} 筆")
 
     print("[3/7] 傷病三源交叉比對…")
     consensus = gather_injuries()
