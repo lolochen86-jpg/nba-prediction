@@ -1,12 +1,12 @@
 {
- "updated_utc": "2026-10-31T11:41:59+00:00",
- "updated_tpe": "2026-10-31 19:41",
+ "updated_utc": "2026-10-31T17:30:11+00:00",
+ "updated_tpe": "2026-11-01 01:30",
  "game_date": "2026-10-31",
  "season": "2026-27",
  "league": {
-  "ppg": 113.73,
-  "poss": 103.34,
-  "ortg": 110.06,
+  "ppg": 114.02,
+  "poss": 103.26,
+  "ortg": 110.43,
   "ts": 0.57,
   "games_played": 6.0
  },
@@ -26,30 +26,30 @@
   {
    "name": "CBS Sports",
    "role": "傷病報告",
-   "count": 86,
+   "count": 88,
    "ok": true
   },
   {
    "name": "Yahoo Sports",
    "role": "傷病報告",
-   "count": 92,
+   "count": 94,
    "ok": true
   },
   {
    "name": "NBA CDN",
    "role": "球員大頭貼",
-   "count": 522,
+   "count": 521,
    "ok": true
   }
  ],
  "br_fallback": false,
  "injury_counts": {
-  "ESPN": 85,
-  "CBS": 86,
-  "Yahoo": 92
+  "ESPN": 87,
+  "CBS": 88,
+  "Yahoo": 94
  },
- "conflicts": 12,
- "players_tracked": 178,
+ "conflicts": 11,
+ "players_tracked": 182,
  "games": [
   {
    "event_id": "401909896",
@@ -66,14 +66,14 @@
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
      "color": "#4e008e"
     },
-    "pred_pts": 99.8,
+    "pred_pts": 100.1,
     "sigma": 12.7,
-    "ortg": 109.5,
-    "drtg_opp": 110.1,
+    "ortg": 109.8,
+    "drtg_opp": 110.4,
     "pace": 103.9,
     "availability": 0.795,
     "season_ppg": 112.4,
-    "lost_points": 25.8,
+    "lost_points": 25.9,
     "out_players": [
      {
       "name": "Jaren Jackson Jr.",
@@ -236,14 +236,14 @@
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/por.png",
      "color": "#e03a3e"
     },
-    "pred_pts": 108.4,
+    "pred_pts": 108.7,
     "sigma": 12.3,
-    "ortg": 112.3,
-    "drtg_opp": 110.1,
+    "ortg": 112.6,
+    "drtg_opp": 110.4,
     "pace": 103.9,
     "availability": 0.893,
     "season_ppg": 122.8,
-    "lost_points": 12.9,
+    "lost_points": 13.0,
     "out_players": [
      {
       "name": "Shaedon Sharpe",
@@ -392,44 +392,44 @@
     "home_buckets": [
      [
       "101-105",
-      0.1531
+      0.1537
      ],
      [
       "96-100",
-      0.1517
+      0.152
      ],
      [
       "106-110",
-      0.13
+      0.1319
      ],
      [
       "91-95",
-      0.129
+      0.1265
      ]
     ],
     "away_buckets": [
      [
       "106-110",
-      0.1616
+      0.1614
      ],
      [
       "101-105",
-      0.1548
+      0.1534
      ],
      [
       "111-115",
-      0.1394
+      0.142
      ],
      [
       "96-100",
-      0.1254
+      0.1236
      ]
     ],
-    "likely_score": "104-100",
-    "both_bucket_hit_prob": 0.0247,
+    "likely_score": "105-100",
+    "both_bucket_hit_prob": 0.0248,
     "confidence": 2.5
    },
-   "pred_total": 208.2,
+   "pred_total": 208.8,
    "pred_total_bucket": "206-210",
    "pred_margin": -5.8
   },
@@ -448,14 +448,14 @@
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/cha.png",
      "color": "#008ca8"
     },
-    "pred_pts": 101.4,
-    "sigma": 11.3,
-    "ortg": 107.3,
-    "drtg_opp": 110.1,
-    "pace": 101.8,
+    "pred_pts": 100.6,
+    "sigma": 11.1,
+    "ortg": 105.8,
+    "drtg_opp": 110.4,
+    "pace": 101.7,
     "availability": 0.863,
-    "season_ppg": 101.0,
-    "lost_points": 16.1,
+    "season_ppg": 97.3,
+    "lost_points": 15.9,
     "out_players": [
      {
       "name": "Kon Knueppel",
@@ -473,7 +473,7 @@
       "name": "Coby White",
       "pos": "G",
       "status": "OUT",
-      "est_lost_points": 5.8,
+      "est_lost_points": 5.7,
       "detail": "Head coach Charles Lee said Monday that White (calf) remains without a timeline for a return, though Lee added that he'll have a better idea of where things stand following the Hornets' two-game road trip, Rod Boone of T",
       "sources": {
        "ESPN": "OUT",
@@ -595,7 +595,7 @@
       "proj_pts": 3.2
      }
     ],
-    "data_games": 5
+    "data_games": 6
    },
    "away": {
     "team": {
@@ -607,21 +607,45 @@
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
      "color": "#1d428a"
     },
-    "pred_pts": 104.4,
-    "sigma": 11.1,
-    "ortg": 107.9,
-    "drtg_opp": 110.1,
-    "pace": 101.8,
-    "availability": 0.903,
+    "pred_pts": 97.3,
+    "sigma": 12.7,
+    "ortg": 108.1,
+    "drtg_opp": 110.4,
+    "pace": 101.7,
+    "availability": 0.797,
     "season_ppg": 108.7,
-    "lost_points": 11.2,
+    "lost_points": 24.7,
     "out_players": [
+     {
+      "name": "Joel Embiid",
+      "pos": "C",
+      "status": "OUT",
+      "est_lost_points": 8.3,
+      "detail": "Embiid (foot) is out for Saturday's game in Charlotte.",
+      "sources": {
+       "ESPN": "OUT",
+       "Yahoo": "OUT"
+      },
+      "conflict": false
+     },
+     {
+      "name": "LeBron James",
+      "pos": "F",
+      "status": "OUT",
+      "est_lost_points": 6.5,
+      "detail": "James (back) has been ruled out for Saturday's meeting in Charlotte.",
+      "sources": {
+       "ESPN": "OUT",
+       "Yahoo": "OUT"
+      },
+      "conflict": false
+     },
      {
       "name": "Jaylen Brown",
       "pos": "G",
       "status": "QUESTIONABLE",
-      "est_lost_points": 6.9,
-      "detail": "Brown (knee) is out for Friday's game against the Knicks.",
+      "est_lost_points": 4.4,
+      "detail": "Brown (knee) is questionable for Saturday's game in Charlotte.",
       "sources": {
        "ESPN": "DAY_TO_DAY",
        "Yahoo": "QUESTIONABLE"
@@ -632,7 +656,7 @@
       "name": "Dominick Barlow",
       "pos": "F",
       "status": "OUT",
-      "est_lost_points": 2.0,
+      "est_lost_points": 2.6,
       "detail": "Barlow will miss at least the next two weeks of action due to a lumbar spine bone stress response, Adam Aaronson of PhillyVoice.com reports.",
       "sources": {
        "ESPN": "OUT",
@@ -648,8 +672,8 @@
       "exp": 7,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431678.png",
       "status": "AVAILABLE",
-      "proj_min": 37.5,
-      "proj_pts": 28.3
+      "proj_min": 37.4,
+      "proj_pts": 28.2
      },
      {
       "name": "VJ Edgecombe",
@@ -657,26 +681,8 @@
       "exp": 2,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5124612.png",
       "status": "AVAILABLE",
-      "proj_min": 34.0,
+      "proj_min": 33.9,
       "proj_pts": 14.2
-     },
-     {
-      "name": "LeBron James",
-      "pos": "F",
-      "exp": 24,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/1966.png",
-      "status": "AVAILABLE",
-      "proj_min": 32.9,
-      "proj_pts": 19.4
-     },
-     {
-      "name": "Joel Embiid",
-      "pos": "C",
-      "exp": 11,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3059318.png",
-      "status": "AVAILABLE",
-      "proj_min": 32.4,
-      "proj_pts": 24.7
      },
      {
       "name": "Rayan Rupert",
@@ -684,7 +690,7 @@
       "exp": 4,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5099752.png",
       "status": "AVAILABLE",
-      "proj_min": 30.7,
+      "proj_min": 30.6,
       "proj_pts": 11.8
      },
      {
@@ -693,8 +699,8 @@
       "exp": 9,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4351851.png",
       "status": "AVAILABLE",
-      "proj_min": 26.8,
-      "proj_pts": 13.5
+      "proj_min": 26.7,
+      "proj_pts": 13.4
      },
      {
       "name": "Dean Wade",
@@ -711,59 +717,95 @@
       "exp": 14,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2581018.png",
       "status": "AVAILABLE",
-      "proj_min": 22.5,
+      "proj_min": 22.4,
       "proj_pts": 7.8
+     },
+     {
+      "name": "Caleb Love",
+      "pos": "G",
+      "exp": 2,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433144.png",
+      "status": "AVAILABLE",
+      "proj_min": 18.9,
+      "proj_pts": 8.2
+     },
+     {
+      "name": "Jaylen Brown",
+      "pos": "G",
+      "exp": 11,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3917376.png",
+      "status": "QUESTIONABLE",
+      "proj_min": 17.3,
+      "proj_pts": 13.0
+     },
+     {
+      "name": "Adem Bona",
+      "pos": "C",
+      "exp": 3,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105637.png",
+      "status": "AVAILABLE",
+      "proj_min": 15.6,
+      "proj_pts": 3.5
+     },
+     {
+      "name": "Justin Edwards",
+      "pos": "F",
+      "exp": 3,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4711297.png",
+      "status": "AVAILABLE",
+      "proj_min": 13.9,
+      "proj_pts": 4.9
      }
     ],
     "data_games": 6
    },
    "sim": {
-    "home_win_prob": 0.4901,
-    "away_win_prob": 0.5099,
-    "exp_margin": -0.3,
+    "home_win_prob": 0.6353,
+    "away_win_prob": 0.3647,
+    "exp_margin": 5.8,
     "home_buckets": [
      [
       "101-105",
-      0.1748
+      0.176
      ],
      [
       "96-100",
-      0.1634
+      0.17
      ],
      [
       "106-110",
-      0.1516
+      0.1482
      ],
      [
       "91-95",
-      0.1258
+      0.1338
      ]
     ],
     "away_buckets": [
      [
-      "101-105",
-      0.1803
+      "91-95",
+      0.1548
      ],
      [
       "96-100",
-      0.1635
+      0.1526
      ],
      [
-      "106-110",
-      0.1568
+      "101-105",
+      0.1296
      ],
      [
-      "91-95",
-      0.1196
+      "86-90",
+      0.129
      ]
     ],
-    "likely_score": "102-96",
-    "both_bucket_hit_prob": 0.0315,
-    "confidence": 1.0
+    "likely_score": "93-101",
+    "both_bucket_hit_prob": 0.0272,
+    "confidence": 2.5
    },
-   "pred_total": 205.8,
-   "pred_total_bucket": "201-205",
-   "pred_margin": -0.2
+   "pred_total": 197.9,
+   "pred_total_bucket": "196-200",
+   "pred_margin": 6.1
   },
   {
    "event_id": "401909898",
@@ -780,10 +822,10 @@
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/no.png",
      "color": "#0a2240"
     },
-    "pred_pts": 117.7,
+    "pred_pts": 118.0,
     "sigma": 11.3,
-    "ortg": 110.0,
-    "drtg_opp": 110.1,
+    "ortg": 110.3,
+    "drtg_opp": 110.4,
     "pace": 106.9,
     "availability": 1.0,
     "season_ppg": 119.4,
@@ -909,10 +951,10 @@
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/atl.png",
      "color": "#c8102e"
     },
-    "pred_pts": 118.4,
+    "pred_pts": 118.7,
     "sigma": 11.1,
-    "ortg": 111.2,
-    "drtg_opp": 110.1,
+    "ortg": 111.4,
+    "drtg_opp": 110.4,
     "pace": 106.9,
     "availability": 1.0,
     "season_ppg": 119.0,
@@ -1023,19 +1065,19 @@
     "home_buckets": [
      [
       "116-120",
-      0.176
+      0.175
      ],
      [
       "121-125",
-      0.161
+      0.1616
      ],
      [
       "111-115",
-      0.1548
+      0.1529
      ],
      [
       "126-130",
-      0.1216
+      0.1254
      ]
     ],
     "away_buckets": [
@@ -1045,22 +1087,22 @@
      ],
      [
       "111-115",
-      0.1689
+      0.168
      ],
      [
       "121-125",
-      0.1478
+      0.1506
      ],
      [
       "106-110",
-      0.1307
+      0.1269
      ]
     ],
-    "likely_score": "115-118",
-    "both_bucket_hit_prob": 0.0315,
+    "likely_score": "118-110",
+    "both_bucket_hit_prob": 0.0313,
     "confidence": 1.5
    },
-   "pred_total": 236.1,
+   "pred_total": 236.7,
    "pred_total_bucket": "236-240",
    "pred_margin": 2.1
   },
@@ -1079,10 +1121,10 @@
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/mem.png",
      "color": "#5d76a9"
     },
-    "pred_pts": 110.1,
+    "pred_pts": 110.4,
     "sigma": 11.3,
-    "ortg": 112.0,
-    "drtg_opp": 110.1,
+    "ortg": 112.3,
+    "drtg_opp": 110.4,
     "pace": 103.7,
     "availability": 0.924,
     "season_ppg": 118.2,
@@ -1133,7 +1175,7 @@
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2991070.png",
       "status": "AVAILABLE",
       "proj_min": 26.7,
-      "proj_pts": 14.4
+      "proj_pts": 14.3
      },
      {
       "name": "Jaylen Wells",
@@ -1169,7 +1211,7 @@
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433083.png",
       "status": "AVAILABLE",
       "proj_min": 20.9,
-      "proj_pts": 10.4
+      "proj_pts": 10.3
      },
      {
       "name": "Jahmai Mashack",
@@ -1196,7 +1238,7 @@
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4684806.png",
       "status": "AVAILABLE",
       "proj_min": 20.1,
-      "proj_pts": 7.2
+      "proj_pts": 7.1
      },
      {
       "name": "Kris Murray",
@@ -1238,10 +1280,10 @@
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/sac.png",
      "color": "#5a2d81"
     },
-    "pred_pts": 112.5,
+    "pred_pts": 112.8,
     "sigma": 11.3,
-    "ortg": 108.2,
-    "drtg_opp": 110.1,
+    "ortg": 108.5,
+    "drtg_opp": 110.4,
     "pace": 103.7,
     "availability": 0.992,
     "season_ppg": 110.2,
@@ -1275,7 +1317,7 @@
       "name": "Dylan Cardwell",
       "pos": "C",
       "status": "OUT",
-      "est_lost_points": 0.2,
+      "est_lost_points": 0.1,
       "detail": "Cardwell (calf) will be re-evaluated in one week, Brenden Nunes of KHTK Sactown Sports 1140 reports.",
       "sources": {
        "ESPN": "OUT",
@@ -1310,7 +1352,7 @@
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065732.png",
       "status": "AVAILABLE",
       "proj_min": 26.0,
-      "proj_pts": 8.2
+      "proj_pts": 8.1
      },
      {
       "name": "Precious Achiuwa",
@@ -1394,44 +1436,44 @@
     "home_buckets": [
      [
       "111-115",
-      0.171
+      0.172
      ],
      [
       "106-110",
-      0.1696
+      0.1676
      ],
      [
       "116-120",
-      0.1428
+      0.145
      ],
      [
       "101-105",
-      0.1374
+      0.1355
      ]
     ],
     "away_buckets": [
      [
-      "106-110",
-      0.1718
+      "111-115",
+      0.1732
      ],
      [
-      "111-115",
-      0.1716
+      "106-110",
+      0.1693
      ],
      [
       "116-120",
-      0.14
+      0.1424
      ],
      [
       "101-105",
-      0.1386
+      0.1361
      ]
     ],
-    "likely_score": "112-113",
-    "both_bucket_hit_prob": 0.0294,
+    "likely_score": "117-111",
+    "both_bucket_hit_prob": 0.0298,
     "confidence": 1.0
    },
-   "pred_total": 222.6,
+   "pred_total": 223.2,
    "pred_total_bucket": "221-225",
    "pred_margin": 0.4
   },
@@ -1450,10 +1492,10 @@
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/mil.png",
      "color": "#00471b"
     },
-    "pred_pts": 115.6,
+    "pred_pts": 115.9,
     "sigma": 11.3,
-    "ortg": 109.4,
-    "drtg_opp": 110.1,
+    "ortg": 109.7,
+    "drtg_opp": 110.4,
     "pace": 105.4,
     "availability": 1.0,
     "season_ppg": 113.4,
@@ -1467,7 +1509,7 @@
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395725.png",
       "status": "AVAILABLE",
       "proj_min": 29.7,
-      "proj_pts": 20.9
+      "proj_pts": 20.8
      },
      {
       "name": "Ryan Rollins",
@@ -1476,7 +1518,7 @@
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4591725.png",
       "status": "AVAILABLE",
       "proj_min": 29.0,
-      "proj_pts": 14.5
+      "proj_pts": 14.4
      },
      {
       "name": "Jaime Jaquez Jr.",
@@ -1563,10 +1605,10 @@
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/cle.png",
      "color": "#860038"
     },
-    "pred_pts": 116.0,
+    "pred_pts": 116.3,
     "sigma": 11.3,
-    "ortg": 110.5,
-    "drtg_opp": 110.1,
+    "ortg": 110.8,
+    "drtg_opp": 110.4,
     "pace": 105.4,
     "availability": 0.997,
     "season_ppg": 118.0,
@@ -1593,7 +1635,7 @@
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3992.png",
       "status": "AVAILABLE",
       "proj_min": 34.1,
-      "proj_pts": 20.1
+      "proj_pts": 20.0
      },
      {
       "name": "Donovan Mitchell",
@@ -1695,44 +1737,44 @@
     "home_buckets": [
      [
       "116-120",
-      0.1737
+      0.1742
      ],
      [
       "111-115",
-      0.1668
+      0.1669
      ],
      [
       "121-125",
-      0.1461
+      0.1471
      ],
      [
       "106-110",
-      0.1335
+      0.1296
      ]
     ],
     "away_buckets": [
      [
       "111-115",
-      0.1768
+      0.1754
      ],
      [
       "116-120",
-      0.1646
+      0.1666
      ],
      [
       "106-110",
-      0.1475
+      0.1458
      ],
      [
       "121-125",
-      0.129
+      0.1316
      ]
     ],
     "likely_score": "113-116",
-    "both_bucket_hit_prob": 0.0307,
+    "both_bucket_hit_prob": 0.0306,
     "confidence": 1.5
    },
-   "pred_total": 231.6,
+   "pred_total": 232.2,
    "pred_total_bucket": "231-235",
    "pred_margin": 2.4
   },
@@ -1751,14 +1793,14 @@
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
      "color": "#000000"
     },
-    "pred_pts": 113.5,
+    "pred_pts": 113.1,
     "sigma": 11.3,
-    "ortg": 110.4,
-    "drtg_opp": 110.1,
-    "pace": 105.8,
+    "ortg": 110.7,
+    "drtg_opp": 110.4,
+    "pace": 105.1,
     "availability": 0.955,
     "season_ppg": 116.6,
-    "lost_points": 5.4,
+    "lost_points": 5.3,
     "out_players": [
      {
       "name": "Tobias Harris",
@@ -1877,13 +1919,13 @@
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
      "color": "#266092"
     },
-    "pred_pts": 109.7,
-    "sigma": 11.3,
-    "ortg": 111.0,
-    "drtg_opp": 110.1,
-    "pace": 105.8,
+    "pred_pts": 109.9,
+    "sigma": 11.1,
+    "ortg": 112.3,
+    "drtg_opp": 110.4,
+    "pace": 105.1,
     "availability": 0.894,
-    "season_ppg": 120.4,
+    "season_ppg": 121.5,
     "lost_points": 13.0,
     "out_players": [
      {
@@ -1955,7 +1997,7 @@
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433247.png",
       "status": "AVAILABLE",
       "proj_min": 24.3,
-      "proj_pts": 12.3
+      "proj_pts": 12.2
      },
      {
       "name": "Cody Williams",
@@ -2012,55 +2054,55 @@
       "proj_pts": 3.3
      }
     ],
-    "data_games": 5
+    "data_games": 6
    },
    "sim": {
-    "home_win_prob": 0.6559,
-    "away_win_prob": 0.3441,
-    "exp_margin": 6.5,
+    "home_win_prob": 0.6435,
+    "away_win_prob": 0.3565,
+    "exp_margin": 5.9,
     "home_buckets": [
      [
       "111-115",
-      0.1734
+      0.1748
      ],
      [
       "116-120",
-      0.1651
+      0.1632
      ],
      [
       "106-110",
-      0.1484
+      0.1509
      ],
      [
       "121-125",
-      0.1298
+      0.1258
      ]
     ],
     "away_buckets": [
      [
       "106-110",
-      0.1767
-     ],
-     [
-      "101-105",
-      0.1589
+      0.1802
      ],
      [
       "111-115",
-      0.157
+      0.1601
      ],
      [
-      "96-100",
-      0.117
+      "101-105",
+      0.1598
+     ],
+     [
+      "116-120",
+      0.1182
      ]
     ],
-    "likely_score": "106-114",
-    "both_bucket_hit_prob": 0.0306,
+    "likely_score": "110-116",
+    "both_bucket_hit_prob": 0.0315,
     "confidence": 2.5
    },
-   "pred_total": 223.2,
+   "pred_total": 223.0,
    "pred_total_bucket": "221-225",
-   "pred_margin": 6.6
+   "pred_margin": 6.0
   },
   {
    "event_id": "401909902",
@@ -2077,10 +2119,10 @@
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png",
      "color": "#ce0e2d"
     },
-    "pred_pts": 113.2,
-    "sigma": 12.8,
-    "ortg": 113.9,
-    "drtg_opp": 110.1,
+    "pred_pts": 113.5,
+    "sigma": 12.2,
+    "ortg": 114.1,
+    "drtg_opp": 110.4,
     "pace": 100.8,
     "availability": 1.0,
     "season_ppg": 121.0,
@@ -2099,18 +2141,6 @@
       "conflict": false
      },
      {
-      "name": "Alperen Sengun",
-      "pos": "C",
-      "status": "QUESTIONABLE",
-      "est_lost_points": 0.0,
-      "detail": "Sengun (back) has been ruled out for Friday's game against the Mavericks, Mike Curtis of The Dallas Morning News reports.",
-      "sources": {
-       "ESPN": "DAY_TO_DAY",
-       "Yahoo": "QUESTIONABLE"
-      },
-      "conflict": true
-     },
-     {
       "name": "Reed Sheppard",
       "pos": "G",
       "status": "QUESTIONABLE",
@@ -2121,6 +2151,18 @@
        "Yahoo": "QUESTIONABLE"
       },
       "conflict": true
+     },
+     {
+      "name": "Fred VanVleet",
+      "pos": "G",
+      "status": "OUT",
+      "est_lost_points": 0.0,
+      "detail": "VanVleet notched 24 points (7-14 FG, 4-9 3Pt, 6-6 FT), six rebounds, five assists and two steals across 29 minutes in Wednesday's 132-100 win over the Bucks.",
+      "sources": {
+       "ESPN": "OUT",
+       "Yahoo": "OUT"
+      },
+      "conflict": false
      }
     ],
     "rotation": [
@@ -2130,8 +2172,8 @@
       "exp": 4,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4684740.png",
       "status": "AVAILABLE",
-      "proj_min": 35.9,
-      "proj_pts": 18.0
+      "proj_min": 36.0,
+      "proj_pts": 18.1
      },
      {
       "name": "Kevin Durant",
@@ -2139,7 +2181,7 @@
       "exp": 20,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3202.png",
       "status": "AVAILABLE",
-      "proj_min": 35.2,
+      "proj_min": 35.3,
       "proj_pts": 25.8
      },
      {
@@ -2148,8 +2190,8 @@
       "exp": 5,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432639.png",
       "status": "AVAILABLE",
-      "proj_min": 34.3,
-      "proj_pts": 16.1
+      "proj_min": 34.4,
+      "proj_pts": 16.2
      },
      {
       "name": "Marcus Smart",
@@ -2166,8 +2208,8 @@
       "exp": 5,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433192.png",
       "status": "AVAILABLE",
-      "proj_min": 25.0,
-      "proj_pts": 9.9
+      "proj_min": 25.1,
+      "proj_pts": 10.0
      },
      {
       "name": "Oscar Tshiebwe",
@@ -2175,7 +2217,7 @@
       "exp": 4,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432827.png",
       "status": "AVAILABLE",
-      "proj_min": 15.7,
+      "proj_min": 15.8,
       "proj_pts": 7.3
      },
      {
@@ -2188,13 +2230,13 @@
       "proj_pts": 3.7
      },
      {
-      "name": "Fred VanVleet",
-      "pos": "G",
-      "exp": 11,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2991230.png",
+      "name": "Alperen Sengun",
+      "pos": "C",
+      "exp": 6,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4871144.png",
       "status": "AVAILABLE",
-      "proj_min": 12.9,
-      "proj_pts": 4.8
+      "proj_min": 12.8,
+      "proj_pts": 5.8
      },
      {
       "name": "Reed Sheppard",
@@ -2211,7 +2253,7 @@
       "exp": 10,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3037789.png",
       "status": "AVAILABLE",
-      "proj_min": 8.3,
+      "proj_min": 8.4,
       "proj_pts": 3.7
      },
      {
@@ -2236,20 +2278,20 @@
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png",
      "color": "#007ac1"
     },
-    "pred_pts": 106.0,
+    "pred_pts": 107.2,
     "sigma": 11.3,
-    "ortg": 109.1,
-    "drtg_opp": 110.1,
+    "ortg": 109.3,
+    "drtg_opp": 110.4,
     "pace": 100.8,
-    "availability": 0.932,
+    "availability": 0.947,
     "season_ppg": 108.2,
-    "lost_points": 7.7,
+    "lost_points": 6.0,
     "out_players": [
      {
       "name": "Chet Holmgren",
       "pos": "C",
       "status": "OUT",
-      "est_lost_points": 2.5,
+      "est_lost_points": 1.9,
       "detail": "Holmgren underwent a biological treatment Friday to address a small patellar tendon tear and will miss at least 8-10 weeks, Nick Crain of Slam reports.",
       "sources": {
        "ESPN": "OUT",
@@ -2261,7 +2303,7 @@
       "name": "Jalen Williams",
       "pos": "G",
       "status": "OUT",
-      "est_lost_points": 2.4,
+      "est_lost_points": 1.9,
       "detail": "Williams (leg) underwent successful surgery Wednesday to \"address a fractured left fibula and reconstruction of ankle ligaments following a fracture and dislocation.\" He will be re-evaluated before the end of the regular",
       "sources": {
        "ESPN": "OUT",
@@ -2273,7 +2315,7 @@
       "name": "Cason Wallace",
       "pos": "G",
       "status": "OUT",
-      "est_lost_points": 1.2,
+      "est_lost_points": 0.9,
       "detail": "Wallace underwent surgery Friday to repair a torn labrum in his left shoulder and will be re-evaluated before the end of the regular season, Clemente Almanza of USA Today reports.",
       "sources": {
        "ESPN": "OUT",
@@ -2285,7 +2327,7 @@
       "name": "Alex Caruso",
       "pos": "G",
       "status": "OUT",
-      "est_lost_points": 1.0,
+      "est_lost_points": 0.8,
       "detail": "Caruso (ankle) is expected to miss time due to an ankle sprain, Clemente Almanza of USA Today reports.",
       "sources": {
        "ESPN": "OUT",
@@ -2310,8 +2352,8 @@
       "exp": 3,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4900671.png",
       "status": "AVAILABLE",
-      "proj_min": 31.0,
-      "proj_pts": 18.4
+      "proj_min": 34.3,
+      "proj_pts": 20.4
      },
      {
       "name": "Isaiah Hartenstein",
@@ -2319,8 +2361,8 @@
       "exp": 9,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4222252.png",
       "status": "AVAILABLE",
-      "proj_min": 29.0,
-      "proj_pts": 11.5
+      "proj_min": 32.1,
+      "proj_pts": 12.7
      },
      {
       "name": "Jared McCain",
@@ -2328,8 +2370,8 @@
       "exp": 3,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683778.png",
       "status": "AVAILABLE",
-      "proj_min": 23.8,
-      "proj_pts": 12.9
+      "proj_min": 26.4,
+      "proj_pts": 14.3
      },
      {
       "name": "Jaylin Williams",
@@ -2337,17 +2379,8 @@
       "exp": 5,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432823.png",
       "status": "AVAILABLE",
-      "proj_min": 22.6,
-      "proj_pts": 6.8
-     },
-     {
-      "name": "Ochai Agbaji",
-      "pos": "G",
-      "exp": 5,
-      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397018.png",
-      "status": "AVAILABLE",
-      "proj_min": 19.4,
-      "proj_pts": 8.0
+      "proj_min": 25.0,
+      "proj_pts": 7.5
      },
      {
       "name": "Kenrich Williams",
@@ -2355,8 +2388,8 @@
       "exp": 9,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3133626.png",
       "status": "AVAILABLE",
-      "proj_min": 17.3,
-      "proj_pts": 6.7
+      "proj_min": 19.2,
+      "proj_pts": 7.5
      },
      {
       "name": "Micah Peavy",
@@ -2364,8 +2397,8 @@
       "exp": 2,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432185.png",
       "status": "AVAILABLE",
-      "proj_min": 17.1,
-      "proj_pts": 4.1
+      "proj_min": 18.9,
+      "proj_pts": 4.5
      },
      {
       "name": "Aday Mara",
@@ -2373,8 +2406,8 @@
       "exp": 0,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5174983.png",
       "status": "AVAILABLE",
-      "proj_min": 10.7,
-      "proj_pts": 3.8
+      "proj_min": 11.8,
+      "proj_pts": 4.2
      },
      {
       "name": "Josh Dix",
@@ -2382,8 +2415,8 @@
       "exp": 0,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105800.png",
       "status": "AVAILABLE",
-      "proj_min": 10.1,
-      "proj_pts": 3.0
+      "proj_min": 11.2,
+      "proj_pts": 3.3
      },
      {
       "name": "Bennett Stirtz",
@@ -2391,59 +2424,68 @@
       "exp": 0,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5241364.png",
       "status": "AVAILABLE",
-      "proj_min": 9.8,
-      "proj_pts": 3.1
+      "proj_min": 10.8,
+      "proj_pts": 3.4
+     },
+     {
+      "name": "Brooks Barnhizer",
+      "pos": "F",
+      "exp": 2,
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4684208.png",
+      "status": "AVAILABLE",
+      "proj_min": 10.3,
+      "proj_pts": 1.7
      }
     ],
     "data_games": 5
    },
    "sim": {
-    "home_win_prob": 0.7162,
-    "away_win_prob": 0.2838,
-    "exp_margin": 9.8,
+    "home_win_prob": 0.7041,
+    "away_win_prob": 0.2959,
+    "exp_margin": 9.0,
     "home_buckets": [
      [
       "111-115",
-      0.1538
+      0.1609
      ],
      [
       "116-120",
-      0.1448
+      0.1532
      ],
      [
       "106-110",
-      0.1383
+      0.1408
      ],
      [
       "121-125",
-      0.1219
+      0.1262
      ]
     ],
     "away_buckets": [
      [
       "101-105",
-      0.1768
+      0.1724
      ],
      [
       "106-110",
-      0.1646
+      0.1713
      ],
      [
       "96-100",
-      0.1475
+      0.1398
      ],
      [
       "111-115",
-      0.129
+      0.1378
      ]
     ],
-    "likely_score": "103-114",
-    "both_bucket_hit_prob": 0.0272,
-    "confidence": 3.5
+    "likely_score": "104-114",
+    "both_bucket_hit_prob": 0.0277,
+    "confidence": 3.0
    },
-   "pred_total": 219.2,
+   "pred_total": 220.7,
    "pred_total_bucket": "216-220",
-   "pred_margin": 10.0
+   "pred_margin": 9.1
   }
  ],
  "rookies": {
