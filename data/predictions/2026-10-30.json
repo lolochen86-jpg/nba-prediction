@@ -13,7 +13,7 @@
   "away_bucket": "96-100",
   "home_win_prob": 0.8054,
   "pred_total": 211.0,
-  "created_at": "2026-10-31T02:39:21+00:00"
+  "created_at": "2026-10-31T03:12:09+00:00"
  },
  {
   "event_id": "401909278",
@@ -29,7 +29,7 @@
   "away_bucket": "111-115",
   "home_win_prob": 0.5826,
   "pred_total": 232.9,
-  "created_at": "2026-10-31T02:39:21+00:00"
+  "created_at": "2026-10-31T03:12:09+00:00"
  },
  {
   "event_id": "401909279",
@@ -45,7 +45,7 @@
   "away_bucket": "106-110",
   "home_win_prob": 0.6611,
   "pred_total": 221.3,
-  "created_at": "2026-10-31T02:39:21+00:00"
+  "created_at": "2026-10-31T03:12:09+00:00"
  },
  {
   "event_id": "401909280",
@@ -61,7 +61,7 @@
   "away_bucket": "111-115",
   "home_win_prob": 0.3948,
   "pred_total": 222.5,
-  "created_at": "2026-10-31T02:39:21+00:00"
+  "created_at": "2026-10-31T03:12:09+00:00"
  },
  {
   "event_id": "401909281",
@@ -77,7 +77,7 @@
   "away_bucket": "106-110",
   "home_win_prob": 0.5359,
   "pred_total": 218.3,
-  "created_at": "2026-10-31T02:39:21+00:00"
+  "created_at": "2026-10-31T03:12:09+00:00"
  },
  {
   "event_id": "401909282",
@@ -93,12 +93,12 @@
   "away_bucket": "111-115",
   "home_win_prob": 0.5698,
   "pred_total": 230.7,
-  "created_at": "2026-10-31T02:39:21+00:00"
+  "created_at": "2026-10-31T03:12:09+00:00"
  },
  {
   "event_id": "401909283",
   "date_utc": "2026-10-31T00:00Z",
-  "status": "STATUS_IN_PROGRESS",
+  "status": "STATUS_FINAL",
   "home_abbrev": "DAL",
   "away_abbrev": "HOU",
   "home_pred": 110.9,
@@ -109,7 +109,7 @@
   "away_bucket": "111-115",
   "home_win_prob": 0.5215,
   "pred_total": 223.5,
-  "created_at": "2026-10-31T02:39:21+00:00"
+  "created_at": "2026-10-31T03:12:09+00:00"
  },
  {
   "event_id": "401909284",
@@ -125,7 +125,7 @@
   "away_bucket": "106-110",
   "home_win_prob": 0.5697,
   "pred_total": 216.5,
-  "created_at": "2026-10-31T02:39:21+00:00"
+  "created_at": "2026-10-31T03:12:09+00:00"
  },
  {
   "event_id": "401909285",
@@ -141,12 +141,12 @@
   "away_bucket": "106-110",
   "home_win_prob": 0.5339,
   "pred_total": 223.0,
-  "created_at": "2026-10-31T02:39:21+00:00"
+  "created_at": "2026-10-31T03:12:09+00:00"
  },
  {
   "event_id": "401909286",
   "date_utc": "2026-10-31T02:00Z",
-  "status": "STATUS_IN_PROGRESS",
+  "status": "STATUS_HALFTIME",
   "home_abbrev": "PHX",
   "away_abbrev": "DEN",
   "home_pred": 108.8,
@@ -157,6 +157,6 @@
   "away_bucket": "106-110",
   "home_win_prob": 0.5308,
   "pred_total": 218.9,
-  "created_at": "2026-10-31T02:39:21+00:00"
+  "created_at": "2026-10-31T03:12:09+00:00"
  }
 ]

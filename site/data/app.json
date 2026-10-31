@@ -1,6 +1,6 @@
 {
- "updated_utc": "2026-10-31T02:39:05+00:00",
- "updated_tpe": "2026-10-31 10:39",
+ "updated_utc": "2026-10-31T03:11:52+00:00",
+ "updated_tpe": "2026-10-31 11:11",
  "game_date": "2026-10-30",
  "season": "2026-27",
  "league": {
@@ -32,7 +32,7 @@
   {
    "name": "Yahoo Sports",
    "role": "傷病報告",
-   "count": 98,
+   "count": 102,
    "ok": true
   },
   {
@@ -46,10 +46,10 @@
  "injury_counts": {
   "ESPN": 85,
   "CBS": 86,
-  "Yahoo": 98
+  "Yahoo": 102
  },
  "conflicts": 6,
- "players_tracked": 184,
+ "players_tracked": 188,
  "games": [
   {
    "event_id": "401909277",
@@ -2041,7 +2041,7 @@
   {
    "event_id": "401909283",
    "date_utc": "2026-10-31T00:00Z",
-   "status": "STATUS_IN_PROGRESS",
+   "status": "STATUS_FINAL",
    "venue": "American Airlines Center",
    "home": {
     "team": {
@@ -2205,7 +2205,7 @@
     "ortg": 114.3,
     "drtg_opp": 110.1,
     "pace": 100.7,
-    "availability": 0.989,
+    "availability": 0.99,
     "season_ppg": 123.0,
     "lost_points": 1.2,
     "out_players": [
@@ -2262,8 +2262,8 @@
       "exp": 20,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3202.png",
       "status": "AVAILABLE",
-      "proj_min": 35.8,
-      "proj_pts": 26.2
+      "proj_min": 35.7,
+      "proj_pts": 26.1
      },
      {
       "name": "Jabari Smith Jr.",
@@ -2271,8 +2271,8 @@
       "exp": 5,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432639.png",
       "status": "AVAILABLE",
-      "proj_min": 34.9,
-      "proj_pts": 16.1
+      "proj_min": 34.8,
+      "proj_pts": 16.0
      },
      {
       "name": "Marcus Smart",
@@ -2307,7 +2307,7 @@
       "exp": 13,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3102529.png",
       "status": "AVAILABLE",
-      "proj_min": 12.1,
+      "proj_min": 12.0,
       "proj_pts": 3.8
      },
      {
@@ -2325,8 +2325,8 @@
       "exp": 10,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3037789.png",
       "status": "AVAILABLE",
-      "proj_min": 8.3,
-      "proj_pts": 3.6
+      "proj_min": 8.5,
+      "proj_pts": 3.8
      },
      {
       "name": "Julian Phillips",
@@ -2343,7 +2343,7 @@
       "exp": 7,
       "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3136777.png",
       "status": "AVAILABLE",
-      "proj_min": 7.2,
+      "proj_min": 7.1,
       "proj_pts": 1.6
      }
     ],
@@ -3097,7 +3097,7 @@
   {
    "event_id": "401909286",
    "date_utc": "2026-10-31T02:00Z",
-   "status": "STATUS_IN_PROGRESS",
+   "status": "STATUS_HALFTIME",
    "venue": "Mortgage Matchup Center",
    "home": {
     "team": {
